@@ -1,0 +1,8 @@
+D:\Projects\NTPlatform\NTCore.Extensions\obj\Debug\netcoreapp2.0\NTCore.Extensions.csproj.CoreCompileInputs.cache
+D:\Projects\NTPlatform\NTCore.Extensions\obj\Debug\netcoreapp2.0\NTCore.Extensions.AssemblyInfoInputs.cache
+D:\Projects\NTPlatform\NTCore.Extensions\obj\Debug\netcoreapp2.0\NTCore.Extensions.AssemblyInfo.cs
+D:\Projects\NTPlatform\NTCore.Extensions\bin\Debug\netcoreapp2.0\NTCore.Extensions.deps.json
+D:\Projects\NTPlatform\NTCore.Extensions\bin\Debug\netcoreapp2.0\NTCore.Extensions.dll
+D:\Projects\NTPlatform\NTCore.Extensions\bin\Debug\netcoreapp2.0\NTCore.Extensions.pdb
+D:\Projects\NTPlatform\NTCore.Extensions\obj\Debug\netcoreapp2.0\NTCore.Extensions.dll
+D:\Projects\NTPlatform\NTCore.Extensions\obj\Debug\netcoreapp2.0\NTCore.Extensions.pdb

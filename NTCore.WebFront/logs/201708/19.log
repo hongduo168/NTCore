@@ -1,0 +1,320 @@
+
+-----------------------------------------
+
+time:2017-08-19 16:25:19,364 
+level:INFO 
+logger:Microsoft.AspNetCore.Hosting.Internal.WebHost
+file:? line? 
+content:Request starting HTTP/1.1 GET http://localhost:57942/api/values  
+
+-----------------------------------------
+
+time:2017-08-19 16:25:19,627 
+level:INFO 
+logger:Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker
+file:? line? 
+content:Executing action method NTCore.WebFront.Controllers.ValuesController.Get (NTCore.WebFront) with arguments ((null)) - ModelState is Valid
+
+-----------------------------------------
+
+time:2017-08-19 16:25:19,639 
+level:ERROR 
+logger:NTCore.WebFront.Controllers.ValuesController
+file:? line? 
+content:AAAAAAAAAAAAAA
+
+-----------------------------------------
+
+time:2017-08-19 16:25:19,647 
+level:INFO 
+logger:Microsoft.AspNetCore.Mvc.Internal.ObjectResultExecutor
+file:? line? 
+content:Executing ObjectResult, writing value Microsoft.AspNetCore.Mvc.ControllerContext.
+
+-----------------------------------------
+
+time:2017-08-19 16:25:19,731 
+level:INFO 
+logger:Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker
+file:? line? 
+content:Executed action NTCore.WebFront.Controllers.ValuesController.Get (NTCore.WebFront) in 131.1982ms
+
+-----------------------------------------
+
+time:2017-08-19 16:25:19,751 
+level:INFO 
+logger:Microsoft.AspNetCore.Hosting.Internal.WebHost
+file:? line? 
+content:Request finished in 382.464ms 200 application/json; charset=utf-8
+
+-----------------------------------------
+
+time:2017-08-19 16:25:19,804 
+level:INFO 
+logger:Microsoft.AspNetCore.Hosting.Internal.WebHost
+file:? line? 
+content:Request starting HTTP/1.1 GET http://localhost:57942/favicon.ico  
+
+-----------------------------------------
+
+time:2017-08-19 16:25:19,820 
+level:INFO 
+logger:Microsoft.AspNetCore.Hosting.Internal.WebHost
+file:? line? 
+content:Request finished in 3.7998ms 404 
+
+-----------------------------------------
+
+time:2017-08-19 16:27:38,533 
+level:INFO 
+logger:Microsoft.AspNetCore.Hosting.Internal.WebHost
+file:? line? 
+content:Request starting HTTP/1.1 GET http://localhost:57942/api/values  
+
+-----------------------------------------
+
+time:2017-08-19 16:27:38,762 
+level:INFO 
+logger:Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker
+file:? line? 
+content:Executing action method NTCore.WebFront.Controllers.ValuesController.Get (NTCore.WebFront) with arguments ((null)) - ModelState is Valid
+
+-----------------------------------------
+
+time:2017-08-19 16:27:38,776 
+level:ERROR 
+logger:NTCore.WebFront.Controllers.ValuesController
+file:? line? 
+content:AAAAAAAAAAAAAA
+
+-----------------------------------------
+
+time:2017-08-19 16:27:38,786 
+level:INFO 
+logger:Microsoft.AspNetCore.Mvc.Internal.ObjectResultExecutor
+file:? line? 
+content:Executing ObjectResult, writing value Microsoft.AspNetCore.Mvc.ControllerContext.
+
+-----------------------------------------
+
+time:2017-08-19 16:27:38,846 
+level:INFO 
+logger:Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker
+file:? line? 
+content:Executed action NTCore.WebFront.Controllers.ValuesController.Get (NTCore.WebFront) in 125.1983ms
+
+-----------------------------------------
+
+time:2017-08-19 16:27:38,850 
+level:INFO 
+logger:Microsoft.AspNetCore.Hosting.Internal.WebHost
+file:? line? 
+content:Request finished in 328.2465ms 200 application/json; charset=utf-8
+
+-----------------------------------------
+
+time:2017-08-19 16:27:38,865 
+level:INFO 
+logger:Microsoft.AspNetCore.Hosting.Internal.WebHost
+file:? line? 
+content:Request starting HTTP/1.1 GET http://localhost:57942/favicon.ico  
+
+-----------------------------------------
+
+time:2017-08-19 16:27:38,870 
+level:INFO 
+logger:Microsoft.AspNetCore.Hosting.Internal.WebHost
+file:? line? 
+content:Request finished in 3.1505ms 404 
+
+-----------------------------------------
+
+time:2017-08-19 16:27:51,475 
+level:INFO 
+logger:Microsoft.AspNetCore.Hosting.Internal.WebHost
+file:? line? 
+content:Request starting HTTP/1.1 GET http://localhost:57942/api/values  
+
+-----------------------------------------
+
+time:2017-08-19 16:27:51,704 
+level:INFO 
+logger:Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker
+file:? line? 
+content:Executing action method NTCore.WebFront.Controllers.ValuesController.Get (NTCore.WebFront) with arguments ((null)) - ModelState is Valid
+
+-----------------------------------------
+
+time:2017-08-19 16:27:51,713 
+level:ERROR 
+logger:NTCore.WebFront.Controllers.ValuesController
+file:? line? 
+content:AAAAAAAAAAAAAA
+
+-----------------------------------------
+
+time:2017-08-19 16:27:51,720 
+level:INFO 
+logger:Microsoft.AspNetCore.Mvc.Internal.ObjectResultExecutor
+file:? line? 
+content:Executing ObjectResult, writing value Microsoft.AspNetCore.Mvc.ControllerContext.
+
+-----------------------------------------
+
+time:2017-08-19 16:27:51,777 
+level:INFO 
+logger:Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker
+file:? line? 
+content:Executed action NTCore.WebFront.Controllers.ValuesController.Get (NTCore.WebFront) in 111.2999ms
+
+-----------------------------------------
+
+time:2017-08-19 16:27:51,782 
+level:INFO 
+logger:Microsoft.AspNetCore.Hosting.Internal.WebHost
+file:? line? 
+content:Request finished in 317.6601ms 200 application/json; charset=utf-8
+
+-----------------------------------------
+
+time:2017-08-19 16:27:51,797 
+level:INFO 
+logger:Microsoft.AspNetCore.Hosting.Internal.WebHost
+file:? line? 
+content:Request starting HTTP/1.1 GET http://localhost:57942/favicon.ico  
+
+-----------------------------------------
+
+time:2017-08-19 16:27:51,802 
+level:INFO 
+logger:Microsoft.AspNetCore.Hosting.Internal.WebHost
+file:? line? 
+content:Request finished in 3.1711ms 404 
+
+-----------------------------------------
+
+time:2017-08-19 16:28:37,578 
+level:INFO 
+logger:Microsoft.AspNetCore.Hosting.Internal.WebHost
+file:? line? 
+content:Request starting HTTP/1.1 GET http://localhost:57942/api/values  
+
+-----------------------------------------
+
+time:2017-08-19 16:28:37,796 
+level:INFO 
+logger:Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker
+file:? line? 
+content:Executing action method NTCore.WebFront.Controllers.ValuesController.Get (NTCore.WebFront) with arguments ((null)) - ModelState is Valid
+
+-----------------------------------------
+
+time:2017-08-19 16:28:37,806 
+level:ERROR 
+logger:NTCore.WebFront.Controllers.ValuesController
+file:? line? 
+content:AAAAAAAAAAAAAA
+
+-----------------------------------------
+
+time:2017-08-19 16:28:37,813 
+level:INFO 
+logger:Microsoft.AspNetCore.Mvc.Internal.ObjectResultExecutor
+file:? line? 
+content:Executing ObjectResult, writing value Microsoft.AspNetCore.Mvc.ControllerContext.
+
+-----------------------------------------
+
+time:2017-08-19 16:28:37,868 
+level:INFO 
+logger:Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker
+file:? line? 
+content:Executed action NTCore.WebFront.Controllers.ValuesController.Get (NTCore.WebFront) in 108.0752ms
+
+-----------------------------------------
+
+time:2017-08-19 16:28:37,876 
+level:INFO 
+logger:Microsoft.AspNetCore.Hosting.Internal.WebHost
+file:? line? 
+content:Request finished in 306.8314ms 200 application/json; charset=utf-8
+
+-----------------------------------------
+
+time:2017-08-19 16:28:37,893 
+level:INFO 
+logger:Microsoft.AspNetCore.Hosting.Internal.WebHost
+file:? line? 
+content:Request starting HTTP/1.1 GET http://localhost:57942/favicon.ico  
+
+-----------------------------------------
+
+time:2017-08-19 16:28:37,897 
+level:INFO 
+logger:Microsoft.AspNetCore.Hosting.Internal.WebHost
+file:? line? 
+content:Request finished in 3.0999ms 404 
+
+-----------------------------------------
+
+time:2017-08-19 16:29:15,308 
+level:INFO 
+logger:Microsoft.AspNetCore.Hosting.Internal.WebHost
+file:? line? 
+content:Request starting HTTP/1.1 GET http://localhost:57942/api/values  
+
+-----------------------------------------
+
+time:2017-08-19 16:29:15,532 
+level:INFO 
+logger:Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker
+file:? line? 
+content:Executing action method NTCore.WebFront.Controllers.ValuesController.Get (NTCore.WebFront) with arguments ((null)) - ModelState is Valid
+
+-----------------------------------------
+
+time:2017-08-19 16:29:15,542 
+level:ERROR 
+logger:NTCore.WebFront.Controllers.ValuesController
+file:? line? 
+content:AAAAAAAAAAAAAA
+
+-----------------------------------------
+
+time:2017-08-19 16:29:15,550 
+level:INFO 
+logger:Microsoft.AspNetCore.Mvc.Internal.ObjectResultExecutor
+file:? line? 
+content:Executing ObjectResult, writing value Microsoft.AspNetCore.Mvc.ControllerContext.
+
+-----------------------------------------
+
+time:2017-08-19 16:29:15,615 
+level:INFO 
+logger:Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker
+file:? line? 
+content:Executed action NTCore.WebFront.Controllers.ValuesController.Get (NTCore.WebFront) in 115.9669ms
+
+-----------------------------------------
+
+time:2017-08-19 16:29:15,627 
+level:INFO 
+logger:Microsoft.AspNetCore.Hosting.Internal.WebHost
+file:? line? 
+content:Request finished in 322.2998ms 200 application/json; charset=utf-8
+
+-----------------------------------------
+
+time:2017-08-19 16:29:15,642 
+level:INFO 
+logger:Microsoft.AspNetCore.Hosting.Internal.WebHost
+file:? line? 
+content:Request starting HTTP/1.1 GET http://localhost:57942/favicon.ico  
+
+-----------------------------------------
+
+time:2017-08-19 16:29:15,651 
+level:INFO 
+logger:Microsoft.AspNetCore.Hosting.Internal.WebHost
+file:? line? 
+content:Request finished in 2.9908ms 404 

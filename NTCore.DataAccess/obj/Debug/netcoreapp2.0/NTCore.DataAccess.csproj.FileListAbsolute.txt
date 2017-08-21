@@ -1,0 +1,9 @@
+D:\Projects\NTPlatform\NTCore.DataAccess\bin\Debug\netcoreapp2.0\NTCore.DataAccess.deps.json
+D:\Projects\NTPlatform\NTCore.DataAccess\bin\Debug\netcoreapp2.0\NTCore.DataAccess.dll
+D:\Projects\NTPlatform\NTCore.DataAccess\obj\Debug\netcoreapp2.0\NTCore.DataAccess.csproj.CoreCompileInputs.cache
+D:\Projects\NTPlatform\NTCore.DataAccess\obj\Debug\netcoreapp2.0\NTCore.DataAccess.AssemblyInfoInputs.cache
+D:\Projects\NTPlatform\NTCore.DataAccess\obj\Debug\netcoreapp2.0\NTCore.DataAccess.AssemblyInfo.cs
+D:\Projects\NTPlatform\NTCore.DataAccess\bin\Debug\netcoreapp2.0\NTCore.DataAccess.pdb
+D:\Projects\NTPlatform\NTCore.DataAccess\obj\Debug\netcoreapp2.0\NTCore.DataAccess.csprojResolveAssemblyReference.cache
+D:\Projects\NTPlatform\NTCore.DataAccess\obj\Debug\netcoreapp2.0\NTCore.DataAccess.dll
+D:\Projects\NTPlatform\NTCore.DataAccess\obj\Debug\netcoreapp2.0\NTCore.DataAccess.pdb
