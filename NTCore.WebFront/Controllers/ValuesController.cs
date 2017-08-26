@@ -4,6 +4,7 @@ using System.Linq;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Logging;
+using NTCore.RedisAccess;
 
 namespace NTCore.WebFront.Controllers
 {
@@ -22,8 +23,8 @@ namespace NTCore.WebFront.Controllers
         [HttpGet]
         public IEnumerable<string> Get()
         {
-            logger.LogError("AAAAAAAAAAAAAA", new AggregateException());
-            return new string[] { "value1", "value2" };
+            logger.LogError("BBBBBBBBBBBBBBBBBBBB", new AggregateException());
+            return new string[] { "value1", "value2", RedisConfig.Get() };
         }
 
         // GET api/values/5

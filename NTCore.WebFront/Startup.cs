@@ -10,6 +10,7 @@ using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Logging;
 using Microsoft.Extensions.Options;
 using NTCore.DataAccess;
+using NTCore.Extensions.MvcFilter;
 
 namespace NTCore.WebFront
 {
@@ -27,8 +28,8 @@ namespace NTCore.WebFront
         {
             var connection = Configuration.GetConnectionString("SqlServer");
             services.AddEntityFrameworkSqlServer().AddDbContext<MainContext>(options => options.UseSqlServer(connection));
-
-            services.AddMvc();
+            //services.AddSingleton()
+            services.AddMvc(op => op.Filters.Add(typeof(ParameterValidationFilter)));
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
@@ -40,6 +41,7 @@ namespace NTCore.WebFront
             }
 
             app.UseMvc();
+            
 
             loggerFactory.AddLog4Net();
         }
