@@ -1,10 +1,13 @@
 ﻿using System;
 namespace NTCore.Extensions.MvcFilter
 {
-    public class ValidationArray
+    public class ValidationArray : Attribute
     {
-        public ValidationArray()
+        public string[] Names { get; set; }
+
+        public ValidationArray(params string[] names)
         {
+            this.Names = names;
         }
     }
 }
