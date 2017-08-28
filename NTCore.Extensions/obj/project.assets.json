@@ -2969,6 +2969,16 @@
         "runtime": {
           "lib/netstandard1.3/System.Xml.XPath.XDocument.dll": {}
         }
+      },
+      "NTCore.Utility/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v2.0",
+        "compile": {
+          "bin/placeholder/NTCore.Utility.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/NTCore.Utility.dll": {}
+        }
       }
     }
   },
@@ -8726,6 +8736,11 @@
         "system.xml.xpath.xdocument.4.3.0.nupkg.sha512",
         "system.xml.xpath.xdocument.nuspec"
       ]
+    },
+    "NTCore.Utility/1.0.0": {
+      "type": "project",
+      "path": "../NTCore.Utility/NTCore.Utility.csproj",
+      "msbuildProject": "../NTCore.Utility/NTCore.Utility.csproj"
     }
   },
   "projectFileDependencyGroups": {
@@ -8734,6 +8749,7 @@
       "Microsoft.Extensions.Configuration >= 2.0.0",
       "Microsoft.Extensions.Logging >= 2.0.0",
       "Microsoft.NETCore.App >= 2.0.0",
+      "NTCore.Utility >= 1.0.0",
       "log4net >= 2.0.8"
     ]
   },
@@ -8769,7 +8785,11 @@
       },
       "frameworks": {
         "netcoreapp2.0": {
-          "projectReferences": {}
+          "projectReferences": {
+            "D:\\Projects\\NTPlatform\\NTCore.Utility\\NTCore.Utility.csproj": {
+              "projectPath": "D:\\Projects\\NTPlatform\\NTCore.Utility\\NTCore.Utility.csproj"
+            }
+          }
         }
       },
       "warningProperties": {

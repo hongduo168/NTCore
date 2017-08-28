@@ -16,3 +16,5 @@ D:\Projects\NTPlatform\NTCore.Extensions\obj\Debug\netcoreapp2.0\NTCore.Extensio
 D:\Projects\NTPlatform\NTCore.Extensions\obj\Debug\netcoreapp2.0\NTCore.Extensions.dll
 D:\Projects\NTPlatform\NTCore.Extensions\obj\Debug\netcoreapp2.0\NTCore.Extensions.pdb
 D:\Projects\NTPlatform\NTCore.Extensions\obj\Debug\netcoreapp2.0\NTCore.Extensions.csprojResolveAssemblyReference.cache
+D:\Projects\NTPlatform\NTCore.Extensions\bin\Debug\netcoreapp2.0\NTCore.Utility.dll
+D:\Projects\NTPlatform\NTCore.Extensions\bin\Debug\netcoreapp2.0\NTCore.Utility.pdb

@@ -4041,6 +4041,7 @@
           "Microsoft.AspNetCore.Mvc": "2.0.0",
           "Microsoft.Extensions.Configuration": "2.0.0",
           "Microsoft.Extensions.Logging": "2.0.0",
+          "NTCore.Utility": "1.0.0",
           "log4net": "2.0.8"
         },
         "runtime": {
@@ -4059,6 +4060,14 @@
         },
         "compile": {
           "NTCore.RedisAccess.dll": {}
+        }
+      },
+      "NTCore.Utility/1.0.0": {
+        "runtime": {
+          "NTCore.Utility.dll": {}
+        },
+        "compile": {
+          "NTCore.Utility.dll": {}
         }
       },
       "Microsoft.NETCore.App/2.0.0": {
@@ -6319,6 +6328,11 @@
       "sha512": ""
     },
     "NTCore.RedisAccess/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "NTCore.Utility/1.0.0": {
       "type": "project",
       "serviceable": false,
       "sha512": ""

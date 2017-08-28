@@ -1,9 +1,13 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.ComponentModel.DataAnnotations;
 using System.Linq;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.AspNetCore.Mvc.ModelBinding.Metadata;
+using Microsoft.AspNetCore.Mvc.ModelBinding.Validation;
 using Microsoft.Extensions.Logging;
+using NTCore.Extensions.MvcFilter;
 using NTCore.RedisAccess;
 
 namespace NTCore.WebFront.Controllers
@@ -29,9 +33,10 @@ namespace NTCore.WebFront.Controllers
 
         // GET api/values/5
         [HttpGet("{id}")]
-        public string Get(int id)
+        [ValidationArray("name")]
+        public string Get(int id, User user)
         {
-            return "value";
+            return "value" + id;
         }
 
         // POST api/values
@@ -51,5 +56,11 @@ namespace NTCore.WebFront.Controllers
         public void Delete(int id)
         {
         }
+    }
+
+    public class User
+    {
+        [Required]
+        public string name { get; set; }
     }
 }

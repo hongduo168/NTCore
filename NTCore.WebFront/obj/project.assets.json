@@ -5024,6 +5024,7 @@
           "Microsoft.AspNetCore.Mvc": "2.0.0",
           "Microsoft.Extensions.Configuration": "2.0.0",
           "Microsoft.Extensions.Logging": "2.0.0",
+          "NTCore.Utility": "1.0.0",
           "log4net": "2.0.8"
         },
         "compile": {
@@ -5044,6 +5045,16 @@
         },
         "runtime": {
           "bin/placeholder/NTCore.RedisAccess.dll": {}
+        }
+      },
+      "NTCore.Utility/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v2.0",
+        "compile": {
+          "bin/placeholder/NTCore.Utility.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/NTCore.Utility.dll": {}
         }
       }
     }
@@ -13161,6 +13172,11 @@
       "type": "project",
       "path": "../NTCore.RedisAccess/NTCore.RedisAccess.csproj",
       "msbuildProject": "../NTCore.RedisAccess/NTCore.RedisAccess.csproj"
+    },
+    "NTCore.Utility/1.0.0": {
+      "type": "project",
+      "path": "../NTCore.Utility/NTCore.Utility.csproj",
+      "msbuildProject": "../NTCore.Utility/NTCore.Utility.csproj"
     }
   },
   "projectFileDependencyGroups": {

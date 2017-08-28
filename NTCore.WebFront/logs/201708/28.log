@@ -1,0 +1,3019 @@
+
+-----------------------------------------
+
+time:2017-08-28 10:54:58,184 
+level:INFO 
+logger:Microsoft.AspNetCore.Hosting.Internal.WebHost
+file:? line? 
+content:Request starting HTTP/1.1 GET http://localhost:57942/api/values  
+
+-----------------------------------------
+
+time:2017-08-28 10:54:58,528 
+level:INFO 
+logger:Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker
+file:? line? 
+content:Executing action method NTCore.WebFront.Controllers.ValuesController.Get (NTCore.WebFront) with arguments ((null)) - ModelState is Valid
+
+-----------------------------------------
+
+time:2017-08-28 10:54:58,582 
+level:ERROR 
+logger:NTCore.WebFront.Controllers.ValuesController
+file:? line? 
+content:BBBBBBBBBBBBBBBBBBBB
+
+-----------------------------------------
+
+time:2017-08-28 10:55:01,634 
+level:INFO 
+logger:Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker
+file:? line? 
+content:Executed action NTCore.WebFront.Controllers.ValuesController.Get (NTCore.WebFront) in 3176.0162ms
+
+-----------------------------------------
+
+time:2017-08-28 10:55:01,764 
+level:ERROR 
+logger:Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware
+file:? line? 
+content:An unhandled exception has occurred while executing the request
+StackExchange.Redis.RedisConnectionException: It was not possible to connect to the redis server(s); to create a disconnected multiplexer, disable AbortOnConnectFail. SocketFailure on PING
+   at StackExchange.Redis.ConnectionMultiplexer.ConnectImpl(Func`1 multiplexerFactory, TextWriter log) in c:\code\StackExchange.Redis\StackExchange.Redis\StackExchange\Redis\ConnectionMultiplexer.cs:line 890
+   at NTCore.RedisAccess.RedisConfig.Get() in D:\Projects\NTPlatform\NTCore.RedisAccess\RedisConfig.cs:line 10
+   at NTCore.WebFront.Controllers.ValuesController.Get() in D:\Projects\NTPlatform\NTCore.WebFront\Controllers\ValuesController.cs:line 29
+   at lambda_method(Closure , Object , Object[] )
+   at Microsoft.Extensions.Internal.ObjectMethodExecutor.Execute(Object target, Object[] parameters)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.<InvokeActionMethodAsync>d__12.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.<InvokeNextActionFilterAsync>d__10.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.Rethrow(ActionExecutedContext context)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.<InvokeInnerFilterAsync>d__14.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.<InvokeNextResourceFilter>d__22.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.Rethrow(ResourceExecutedContext context)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.<InvokeFilterPipelineAsync>d__17.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.<InvokeAsync>d__15.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Builder.RouterMiddleware.<Invoke>d__4.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.<Invoke>d__7.MoveNext()
+
+-----------------------------------------
+
+time:2017-08-28 10:55:01,961 
+level:INFO 
+logger:Microsoft.AspNetCore.Hosting.Internal.WebHost
+file:? line? 
+content:Request finished in 3784.3997ms 500 text/html; charset=utf-8
+
+-----------------------------------------
+
+time:2017-08-28 10:55:01,987 
+level:INFO 
+logger:Microsoft.AspNetCore.Hosting.Internal.WebHost
+file:? line? 
+content:Request starting HTTP/1.1 GET http://localhost:57942/favicon.ico  
+
+-----------------------------------------
+
+time:2017-08-28 10:55:01,994 
+level:INFO 
+logger:Microsoft.AspNetCore.Hosting.Internal.WebHost
+file:? line? 
+content:Request finished in 4.0539ms 404 
+
+-----------------------------------------
+
+time:2017-08-28 10:55:33,314 
+level:INFO 
+logger:Microsoft.AspNetCore.Hosting.Internal.WebHost
+file:? line? 
+content:Request starting HTTP/1.1 GET http://localhost:57942/api/values  
+
+-----------------------------------------
+
+time:2017-08-28 10:55:33,336 
+level:INFO 
+logger:Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker
+file:? line? 
+content:Executing action method NTCore.WebFront.Controllers.ValuesController.Get (NTCore.WebFront) with arguments ((null)) - ModelState is Valid
+
+-----------------------------------------
+
+time:2017-08-28 10:55:33,342 
+level:ERROR 
+logger:NTCore.WebFront.Controllers.ValuesController
+file:? line? 
+content:BBBBBBBBBBBBBBBBBBBB
+
+-----------------------------------------
+
+time:2017-08-28 10:55:33,514 
+level:INFO 
+logger:Microsoft.AspNetCore.Mvc.Internal.ObjectResultExecutor
+file:? line? 
+content:Executing ObjectResult, writing value Microsoft.AspNetCore.Mvc.ControllerContext.
+
+-----------------------------------------
+
+time:2017-08-28 10:55:33,558 
+level:INFO 
+logger:Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker
+file:? line? 
+content:Executed action NTCore.WebFront.Controllers.ValuesController.Get (NTCore.WebFront) in 240.5105ms
+
+-----------------------------------------
+
+time:2017-08-28 10:55:33,571 
+level:INFO 
+logger:Microsoft.AspNetCore.Hosting.Internal.WebHost
+file:? line? 
+content:Request finished in 247.9223ms 200 application/json; charset=utf-8
+
+-----------------------------------------
+
+time:2017-08-28 10:55:37,887 
+level:INFO 
+logger:Microsoft.AspNetCore.Hosting.Internal.WebHost
+file:? line? 
+content:Request starting HTTP/1.1 GET http://localhost:57942/api/values  
+
+-----------------------------------------
+
+time:2017-08-28 10:55:37,906 
+level:INFO 
+logger:Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker
+file:? line? 
+content:Executing action method NTCore.WebFront.Controllers.ValuesController.Get (NTCore.WebFront) with arguments ((null)) - ModelState is Valid
+
+-----------------------------------------
+
+time:2017-08-28 10:55:37,911 
+level:ERROR 
+logger:NTCore.WebFront.Controllers.ValuesController
+file:? line? 
+content:BBBBBBBBBBBBBBBBBBBB
+
+-----------------------------------------
+
+time:2017-08-28 10:55:37,941 
+level:INFO 
+logger:Microsoft.AspNetCore.Mvc.Internal.ObjectResultExecutor
+file:? line? 
+content:Executing ObjectResult, writing value Microsoft.AspNetCore.Mvc.ControllerContext.
+
+-----------------------------------------
+
+time:2017-08-28 10:55:37,944 
+level:INFO 
+logger:Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker
+file:? line? 
+content:Executed action NTCore.WebFront.Controllers.ValuesController.Get (NTCore.WebFront) in 54.4532ms
+
+-----------------------------------------
+
+time:2017-08-28 10:55:37,954 
+level:INFO 
+logger:Microsoft.AspNetCore.Hosting.Internal.WebHost
+file:? line? 
+content:Request finished in 60.2099ms 200 application/json; charset=utf-8
+
+-----------------------------------------
+
+time:2017-08-28 10:56:35,769 
+level:INFO 
+logger:Microsoft.AspNetCore.Hosting.Internal.WebHost
+file:? line? 
+content:Request starting HTTP/1.1 GET http://localhost:57942/api/values  
+
+-----------------------------------------
+
+time:2017-08-28 10:56:35,785 
+level:INFO 
+logger:Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker
+file:? line? 
+content:Executing action method NTCore.WebFront.Controllers.ValuesController.Get (NTCore.WebFront) with arguments ((null)) - ModelState is Valid
+
+-----------------------------------------
+
+time:2017-08-28 10:56:35,812 
+level:ERROR 
+logger:NTCore.WebFront.Controllers.ValuesController
+file:? line? 
+content:BBBBBBBBBBBBBBBBBBBB
+
+-----------------------------------------
+
+time:2017-08-28 10:56:35,875 
+level:INFO 
+logger:Microsoft.AspNetCore.Mvc.Internal.ObjectResultExecutor
+file:? line? 
+content:Executing ObjectResult, writing value Microsoft.AspNetCore.Mvc.ControllerContext.
+
+-----------------------------------------
+
+time:2017-08-28 10:56:35,879 
+level:INFO 
+logger:Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker
+file:? line? 
+content:Executed action NTCore.WebFront.Controllers.ValuesController.Get (NTCore.WebFront) in 106.0888ms
+
+-----------------------------------------
+
+time:2017-08-28 10:56:35,886 
+level:INFO 
+logger:Microsoft.AspNetCore.Hosting.Internal.WebHost
+file:? line? 
+content:Request finished in 113.3642ms 200 application/json; charset=utf-8
+
+-----------------------------------------
+
+time:2017-08-28 10:56:36,552 
+level:INFO 
+logger:Microsoft.AspNetCore.Hosting.Internal.WebHost
+file:? line? 
+content:Request starting HTTP/1.1 GET http://localhost:57942/api/values  
+
+-----------------------------------------
+
+time:2017-08-28 10:56:36,571 
+level:INFO 
+logger:Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker
+file:? line? 
+content:Executing action method NTCore.WebFront.Controllers.ValuesController.Get (NTCore.WebFront) with arguments ((null)) - ModelState is Valid
+
+-----------------------------------------
+
+time:2017-08-28 10:56:36,576 
+level:ERROR 
+logger:NTCore.WebFront.Controllers.ValuesController
+file:? line? 
+content:BBBBBBBBBBBBBBBBBBBB
+
+-----------------------------------------
+
+time:2017-08-28 10:56:36,605 
+level:INFO 
+logger:Microsoft.AspNetCore.Mvc.Internal.ObjectResultExecutor
+file:? line? 
+content:Executing ObjectResult, writing value Microsoft.AspNetCore.Mvc.ControllerContext.
+
+-----------------------------------------
+
+time:2017-08-28 10:56:36,610 
+level:INFO 
+logger:Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker
+file:? line? 
+content:Executed action NTCore.WebFront.Controllers.ValuesController.Get (NTCore.WebFront) in 52.6766ms
+
+-----------------------------------------
+
+time:2017-08-28 10:56:36,617 
+level:INFO 
+logger:Microsoft.AspNetCore.Hosting.Internal.WebHost
+file:? line? 
+content:Request finished in 60.3659ms 200 application/json; charset=utf-8
+
+-----------------------------------------
+
+time:2017-08-28 10:56:47,641 
+level:INFO 
+logger:Microsoft.AspNetCore.Hosting.Internal.WebHost
+file:? line? 
+content:Request starting HTTP/1.1 GET http://localhost:57942/api/values  
+
+-----------------------------------------
+
+time:2017-08-28 10:56:57,954 
+level:INFO 
+logger:Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker
+file:? line? 
+content:Executing action method NTCore.WebFront.Controllers.ValuesController.Get (NTCore.WebFront) with arguments ((null)) - ModelState is Valid
+
+-----------------------------------------
+
+time:2017-08-28 10:56:57,959 
+level:ERROR 
+logger:NTCore.WebFront.Controllers.ValuesController
+file:? line? 
+content:BBBBBBBBBBBBBBBBBBBB
+
+-----------------------------------------
+
+time:2017-08-28 10:56:58,018 
+level:INFO 
+logger:Microsoft.AspNetCore.Mvc.Internal.ObjectResultExecutor
+file:? line? 
+content:Executing ObjectResult, writing value Microsoft.AspNetCore.Mvc.ControllerContext.
+
+-----------------------------------------
+
+time:2017-08-28 10:56:58,021 
+level:INFO 
+logger:Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker
+file:? line? 
+content:Executed action NTCore.WebFront.Controllers.ValuesController.Get (NTCore.WebFront) in 10376.8047ms
+
+-----------------------------------------
+
+time:2017-08-28 10:56:58,032 
+level:INFO 
+logger:Microsoft.AspNetCore.Hosting.Internal.WebHost
+file:? line? 
+content:Request finished in 10383.8068ms 200 application/json; charset=utf-8
+
+-----------------------------------------
+
+time:2017-08-28 10:57:08,493 
+level:INFO 
+logger:Microsoft.AspNetCore.Hosting.Internal.WebHost
+file:? line? 
+content:Request starting HTTP/1.1 GET http://localhost:57942/api/values/1111  
+
+-----------------------------------------
+
+time:2017-08-28 10:57:45,114 
+level:INFO 
+logger:Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker
+file:? line? 
+content:Executing action method NTCore.WebFront.Controllers.ValuesController.Get (NTCore.WebFront) with arguments (1111) - ModelState is Valid
+
+-----------------------------------------
+
+time:2017-08-28 10:57:45,117 
+level:INFO 
+logger:Microsoft.AspNetCore.Mvc.Internal.ObjectResultExecutor
+file:? line? 
+content:Executing ObjectResult, writing value Microsoft.AspNetCore.Mvc.ControllerContext.
+
+-----------------------------------------
+
+time:2017-08-28 10:57:45,121 
+level:INFO 
+logger:Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker
+file:? line? 
+content:Executed action NTCore.WebFront.Controllers.ValuesController.Get (NTCore.WebFront) in 36603.2878ms
+
+-----------------------------------------
+
+time:2017-08-28 10:57:45,127 
+level:INFO 
+logger:Microsoft.AspNetCore.Hosting.Internal.WebHost
+file:? line? 
+content:Request finished in 36629.9279ms 200 text/plain; charset=utf-8
+
+-----------------------------------------
+
+time:2017-08-28 10:58:00,528 
+level:INFO 
+logger:Microsoft.AspNetCore.Hosting.Internal.WebHost
+file:? line? 
+content:Request starting HTTP/1.1 GET http://localhost:57942/api/values/1111  
+
+-----------------------------------------
+
+time:2017-08-28 10:58:19,055 
+level:INFO 
+logger:Microsoft.AspNetCore.Mvc.Internal.ObjectResultExecutor
+file:? line? 
+content:Executing ObjectResult, writing value Microsoft.AspNetCore.Mvc.ControllerContext.
+
+-----------------------------------------
+
+time:2017-08-28 10:58:19,138 
+level:INFO 
+logger:Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker
+file:? line? 
+content:Executed action NTCore.WebFront.Controllers.ValuesController.Get (NTCore.WebFront) in 18606.5196ms
+
+-----------------------------------------
+
+time:2017-08-28 10:58:19,272 
+level:INFO 
+logger:Microsoft.AspNetCore.Hosting.Internal.WebHost
+file:? line? 
+content:Request finished in 18743.5161ms 400 application/json; charset=utf-8
+
+-----------------------------------------
+
+time:2017-08-28 11:01:15,216 
+level:INFO 
+logger:Microsoft.AspNetCore.Hosting.Internal.WebHost
+file:? line? 
+content:Request starting HTTP/1.1 GET http://localhost:57942/api/values  
+
+-----------------------------------------
+
+time:2017-08-28 11:01:17,497 
+level:INFO 
+logger:Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker
+file:? line? 
+content:Executing action method NTCore.WebFront.Controllers.ValuesController.Get (NTCore.WebFront) with arguments ((null)) - ModelState is Valid
+
+-----------------------------------------
+
+time:2017-08-28 11:01:17,518 
+level:ERROR 
+logger:NTCore.WebFront.Controllers.ValuesController
+file:? line? 
+content:BBBBBBBBBBBBBBBBBBBB
+
+-----------------------------------------
+
+time:2017-08-28 11:01:17,750 
+level:INFO 
+logger:Microsoft.AspNetCore.Mvc.Internal.ObjectResultExecutor
+file:? line? 
+content:Executing ObjectResult, writing value Microsoft.AspNetCore.Mvc.ControllerContext.
+
+-----------------------------------------
+
+time:2017-08-28 11:01:17,801 
+level:INFO 
+logger:Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker
+file:? line? 
+content:Executed action NTCore.WebFront.Controllers.ValuesController.Get (NTCore.WebFront) in 2398.5823ms
+
+-----------------------------------------
+
+time:2017-08-28 11:01:17,806 
+level:INFO 
+logger:Microsoft.AspNetCore.Hosting.Internal.WebHost
+file:? line? 
+content:Request finished in 2599.3128ms 200 application/json; charset=utf-8
+
+-----------------------------------------
+
+time:2017-08-28 11:01:17,825 
+level:INFO 
+logger:Microsoft.AspNetCore.Hosting.Internal.WebHost
+file:? line? 
+content:Request starting HTTP/1.1 GET http://localhost:57942/favicon.ico  
+
+-----------------------------------------
+
+time:2017-08-28 11:01:17,830 
+level:INFO 
+logger:Microsoft.AspNetCore.Hosting.Internal.WebHost
+file:? line? 
+content:Request finished in 3.8746ms 404 
+
+-----------------------------------------
+
+time:2017-08-28 11:01:21,030 
+level:INFO 
+logger:Microsoft.AspNetCore.Hosting.Internal.WebHost
+file:? line? 
+content:Request starting HTTP/1.1 GET http://localhost:57942/api/values/1111  
+
+-----------------------------------------
+
+time:2017-08-28 11:03:12,953 
+level:INFO 
+logger:Microsoft.AspNetCore.Hosting.Internal.WebHost
+file:? line? 
+content:Request starting HTTP/1.1 GET http://localhost:57942/api/values  
+
+-----------------------------------------
+
+time:2017-08-28 11:03:13,778 
+level:INFO 
+logger:Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker
+file:? line? 
+content:Executing action method NTCore.WebFront.Controllers.ValuesController.Get (NTCore.WebFront) with arguments ((null)) - ModelState is Valid
+
+-----------------------------------------
+
+time:2017-08-28 11:03:13,796 
+level:ERROR 
+logger:NTCore.WebFront.Controllers.ValuesController
+file:? line? 
+content:BBBBBBBBBBBBBBBBBBBB
+
+-----------------------------------------
+
+time:2017-08-28 11:03:14,127 
+level:INFO 
+logger:Microsoft.AspNetCore.Mvc.Internal.ObjectResultExecutor
+file:? line? 
+content:Executing ObjectResult, writing value Microsoft.AspNetCore.Mvc.ControllerContext.
+
+-----------------------------------------
+
+time:2017-08-28 11:03:14,181 
+level:INFO 
+logger:Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker
+file:? line? 
+content:Executed action NTCore.WebFront.Controllers.ValuesController.Get (NTCore.WebFront) in 1046.4841ms
+
+-----------------------------------------
+
+time:2017-08-28 11:03:14,189 
+level:INFO 
+logger:Microsoft.AspNetCore.Hosting.Internal.WebHost
+file:? line? 
+content:Request finished in 1243.066ms 200 application/json; charset=utf-8
+
+-----------------------------------------
+
+time:2017-08-28 11:03:14,206 
+level:INFO 
+logger:Microsoft.AspNetCore.Hosting.Internal.WebHost
+file:? line? 
+content:Request starting HTTP/1.1 GET http://localhost:57942/favicon.ico  
+
+-----------------------------------------
+
+time:2017-08-28 11:03:14,212 
+level:INFO 
+logger:Microsoft.AspNetCore.Hosting.Internal.WebHost
+file:? line? 
+content:Request finished in 3.6317ms 404 
+
+-----------------------------------------
+
+time:2017-08-28 11:03:18,254 
+level:INFO 
+logger:Microsoft.AspNetCore.Hosting.Internal.WebHost
+file:? line? 
+content:Request starting HTTP/1.1 GET http://localhost:57942/api/values/1111  
+
+-----------------------------------------
+
+time:2017-08-28 11:14:14,348 
+level:INFO 
+logger:Microsoft.AspNetCore.Hosting.Internal.WebHost
+file:? line? 
+content:Request starting HTTP/1.1 GET http://localhost:57942/api/values  
+
+-----------------------------------------
+
+time:2017-08-28 11:14:23,240 
+level:INFO 
+logger:Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker
+file:? line? 
+content:Executing action method NTCore.WebFront.Controllers.ValuesController.Get (NTCore.WebFront) with arguments ((null)) - ModelState is Valid
+
+-----------------------------------------
+
+time:2017-08-28 11:14:23,260 
+level:ERROR 
+logger:NTCore.WebFront.Controllers.ValuesController
+file:? line? 
+content:BBBBBBBBBBBBBBBBBBBB
+
+-----------------------------------------
+
+time:2017-08-28 11:14:23,593 
+level:INFO 
+logger:Microsoft.AspNetCore.Mvc.Internal.ObjectResultExecutor
+file:? line? 
+content:Executing ObjectResult, writing value Microsoft.AspNetCore.Mvc.ControllerContext.
+
+-----------------------------------------
+
+time:2017-08-28 11:14:23,652 
+level:INFO 
+logger:Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker
+file:? line? 
+content:Executed action NTCore.WebFront.Controllers.ValuesController.Get (NTCore.WebFront) in 9088.2114ms
+
+-----------------------------------------
+
+time:2017-08-28 11:14:23,663 
+level:INFO 
+logger:Microsoft.AspNetCore.Hosting.Internal.WebHost
+file:? line? 
+content:Request finished in 9318.6068ms 200 application/json; charset=utf-8
+
+-----------------------------------------
+
+time:2017-08-28 11:14:23,679 
+level:INFO 
+logger:Microsoft.AspNetCore.Hosting.Internal.WebHost
+file:? line? 
+content:Request starting HTTP/1.1 GET http://localhost:57942/favicon.ico  
+
+-----------------------------------------
+
+time:2017-08-28 11:14:23,683 
+level:INFO 
+logger:Microsoft.AspNetCore.Hosting.Internal.WebHost
+file:? line? 
+content:Request finished in 3.6131ms 404 
+
+-----------------------------------------
+
+time:2017-08-28 11:14:27,640 
+level:INFO 
+logger:Microsoft.AspNetCore.Hosting.Internal.WebHost
+file:? line? 
+content:Request starting HTTP/1.1 GET http://localhost:57942/api/values/1111  
+
+-----------------------------------------
+
+time:2017-08-28 11:21:04,570 
+level:INFO 
+logger:Microsoft.AspNetCore.Hosting.Internal.WebHost
+file:? line? 
+content:Request starting HTTP/1.1 GET http://localhost:57942/api/values  
+
+-----------------------------------------
+
+time:2017-08-28 11:21:06,414 
+level:INFO 
+logger:Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker
+file:? line? 
+content:Executing action method NTCore.WebFront.Controllers.ValuesController.Get (NTCore.WebFront) with arguments ((null)) - ModelState is Valid
+
+-----------------------------------------
+
+time:2017-08-28 11:21:06,435 
+level:ERROR 
+logger:NTCore.WebFront.Controllers.ValuesController
+file:? line? 
+content:BBBBBBBBBBBBBBBBBBBB
+
+-----------------------------------------
+
+time:2017-08-28 11:21:06,771 
+level:INFO 
+logger:Microsoft.AspNetCore.Mvc.Internal.ObjectResultExecutor
+file:? line? 
+content:Executing ObjectResult, writing value Microsoft.AspNetCore.Mvc.ControllerContext.
+
+-----------------------------------------
+
+time:2017-08-28 11:21:06,836 
+level:INFO 
+logger:Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker
+file:? line? 
+content:Executed action NTCore.WebFront.Controllers.ValuesController.Get (NTCore.WebFront) in 2067.3975ms
+
+-----------------------------------------
+
+time:2017-08-28 11:21:06,847 
+level:INFO 
+logger:Microsoft.AspNetCore.Hosting.Internal.WebHost
+file:? line? 
+content:Request finished in 2281.984ms 200 application/json; charset=utf-8
+
+-----------------------------------------
+
+time:2017-08-28 11:21:06,861 
+level:INFO 
+logger:Microsoft.AspNetCore.Hosting.Internal.WebHost
+file:? line? 
+content:Request starting HTTP/1.1 GET http://localhost:57942/favicon.ico  
+
+-----------------------------------------
+
+time:2017-08-28 11:21:06,866 
+level:INFO 
+logger:Microsoft.AspNetCore.Hosting.Internal.WebHost
+file:? line? 
+content:Request finished in 3.1027ms 404 
+
+-----------------------------------------
+
+time:2017-08-28 11:21:10,455 
+level:INFO 
+logger:Microsoft.AspNetCore.Hosting.Internal.WebHost
+file:? line? 
+content:Request starting HTTP/1.1 GET http://localhost:57942/api/values/1111  
+
+-----------------------------------------
+
+time:2017-08-28 11:21:13,076 
+level:INFO 
+logger:Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker
+file:? line? 
+content:Executing action method NTCore.WebFront.Controllers.ValuesController.Get (NTCore.WebFront) with arguments (1111) - ModelState is Valid
+
+-----------------------------------------
+
+time:2017-08-28 11:21:18,832 
+level:INFO 
+logger:Microsoft.AspNetCore.Mvc.Internal.ObjectResultExecutor
+file:? line? 
+content:Executing ObjectResult, writing value Microsoft.AspNetCore.Mvc.ControllerContext.
+
+-----------------------------------------
+
+time:2017-08-28 11:21:18,835 
+level:INFO 
+logger:Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker
+file:? line? 
+content:Executed action NTCore.WebFront.Controllers.ValuesController.Get (NTCore.WebFront) in 8364.2652ms
+
+-----------------------------------------
+
+time:2017-08-28 11:21:18,846 
+level:INFO 
+logger:Microsoft.AspNetCore.Hosting.Internal.WebHost
+file:? line? 
+content:Request finished in 8382.8906ms 200 text/plain; charset=utf-8
+
+-----------------------------------------
+
+time:2017-08-28 11:37:51,710 
+level:INFO 
+logger:Microsoft.AspNetCore.Hosting.Internal.WebHost
+file:? line? 
+content:Request starting HTTP/1.1 GET http://localhost:57942/api/values  
+
+-----------------------------------------
+
+time:2017-08-28 11:37:51,932 
+level:INFO 
+logger:Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker
+file:? line? 
+content:Executing action method NTCore.WebFront.Controllers.ValuesController.Get (NTCore.WebFront) with arguments ((null)) - ModelState is Valid
+
+-----------------------------------------
+
+time:2017-08-28 11:37:51,953 
+level:ERROR 
+logger:NTCore.WebFront.Controllers.ValuesController
+file:? line? 
+content:BBBBBBBBBBBBBBBBBBBB
+
+-----------------------------------------
+
+time:2017-08-28 11:37:52,281 
+level:INFO 
+logger:Microsoft.AspNetCore.Mvc.Internal.ObjectResultExecutor
+file:? line? 
+content:Executing ObjectResult, writing value Microsoft.AspNetCore.Mvc.ControllerContext.
+
+-----------------------------------------
+
+time:2017-08-28 11:37:52,331 
+level:INFO 
+logger:Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker
+file:? line? 
+content:Executed action NTCore.WebFront.Controllers.ValuesController.Get (NTCore.WebFront) in 437.4757ms
+
+-----------------------------------------
+
+time:2017-08-28 11:37:52,338 
+level:INFO 
+logger:Microsoft.AspNetCore.Hosting.Internal.WebHost
+file:? line? 
+content:Request finished in 636.7443ms 200 application/json; charset=utf-8
+
+-----------------------------------------
+
+time:2017-08-28 11:37:52,357 
+level:INFO 
+logger:Microsoft.AspNetCore.Hosting.Internal.WebHost
+file:? line? 
+content:Request starting HTTP/1.1 GET http://localhost:57942/favicon.ico  
+
+-----------------------------------------
+
+time:2017-08-28 11:37:52,364 
+level:INFO 
+logger:Microsoft.AspNetCore.Hosting.Internal.WebHost
+file:? line? 
+content:Request finished in 5.8571ms 404 
+
+-----------------------------------------
+
+time:2017-08-28 11:38:02,553 
+level:INFO 
+logger:Microsoft.AspNetCore.Hosting.Internal.WebHost
+file:? line? 
+content:Request starting HTTP/1.1 GET http://localhost:57942/api/values  
+
+-----------------------------------------
+
+time:2017-08-28 11:38:02,572 
+level:INFO 
+logger:Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker
+file:? line? 
+content:Executing action method NTCore.WebFront.Controllers.ValuesController.Get (NTCore.WebFront) with arguments ((null)) - ModelState is Valid
+
+-----------------------------------------
+
+time:2017-08-28 11:38:02,579 
+level:ERROR 
+logger:NTCore.WebFront.Controllers.ValuesController
+file:? line? 
+content:BBBBBBBBBBBBBBBBBBBB
+
+-----------------------------------------
+
+time:2017-08-28 11:38:02,599 
+level:INFO 
+logger:Microsoft.AspNetCore.Mvc.Internal.ObjectResultExecutor
+file:? line? 
+content:Executing ObjectResult, writing value Microsoft.AspNetCore.Mvc.ControllerContext.
+
+-----------------------------------------
+
+time:2017-08-28 11:38:02,603 
+level:INFO 
+logger:Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker
+file:? line? 
+content:Executed action NTCore.WebFront.Controllers.ValuesController.Get (NTCore.WebFront) in 46.2894ms
+
+-----------------------------------------
+
+time:2017-08-28 11:38:02,615 
+level:INFO 
+logger:Microsoft.AspNetCore.Hosting.Internal.WebHost
+file:? line? 
+content:Request finished in 57.8399ms 200 application/json; charset=utf-8
+
+-----------------------------------------
+
+time:2017-08-28 11:38:04,176 
+level:INFO 
+logger:Microsoft.AspNetCore.Hosting.Internal.WebHost
+file:? line? 
+content:Request starting HTTP/1.1 GET http://localhost:57942/api/values  
+
+-----------------------------------------
+
+time:2017-08-28 11:38:04,196 
+level:INFO 
+logger:Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker
+file:? line? 
+content:Executing action method NTCore.WebFront.Controllers.ValuesController.Get (NTCore.WebFront) with arguments ((null)) - ModelState is Valid
+
+-----------------------------------------
+
+time:2017-08-28 11:38:04,202 
+level:ERROR 
+logger:NTCore.WebFront.Controllers.ValuesController
+file:? line? 
+content:BBBBBBBBBBBBBBBBBBBB
+
+-----------------------------------------
+
+time:2017-08-28 11:38:04,221 
+level:INFO 
+logger:Microsoft.AspNetCore.Mvc.Internal.ObjectResultExecutor
+file:? line? 
+content:Executing ObjectResult, writing value Microsoft.AspNetCore.Mvc.ControllerContext.
+
+-----------------------------------------
+
+time:2017-08-28 11:38:04,224 
+level:INFO 
+logger:Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker
+file:? line? 
+content:Executed action NTCore.WebFront.Controllers.ValuesController.Get (NTCore.WebFront) in 44.8535ms
+
+-----------------------------------------
+
+time:2017-08-28 11:38:04,231 
+level:INFO 
+logger:Microsoft.AspNetCore.Hosting.Internal.WebHost
+file:? line? 
+content:Request finished in 51.0822ms 200 application/json; charset=utf-8
+
+-----------------------------------------
+
+time:2017-08-28 11:38:05,587 
+level:INFO 
+logger:Microsoft.AspNetCore.Hosting.Internal.WebHost
+file:? line? 
+content:Request starting HTTP/1.1 GET http://localhost:57942/api/values/1111  
+
+-----------------------------------------
+
+time:2017-08-28 11:38:05,628 
+level:INFO 
+logger:Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker
+file:? line? 
+content:Executing action method NTCore.WebFront.Controllers.ValuesController.Get (NTCore.WebFront) with arguments (1111) - ModelState is Valid
+
+-----------------------------------------
+
+time:2017-08-28 11:39:13,493 
+level:INFO 
+logger:Microsoft.AspNetCore.Mvc.Internal.ObjectResultExecutor
+file:? line? 
+content:Executing ObjectResult, writing value Microsoft.AspNetCore.Mvc.ControllerContext.
+
+-----------------------------------------
+
+time:2017-08-28 11:39:13,506 
+level:INFO 
+logger:Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker
+file:? line? 
+content:Executed action NTCore.WebFront.Controllers.ValuesController.Get (NTCore.WebFront) in 67902.2225ms
+
+-----------------------------------------
+
+time:2017-08-28 11:39:13,509 
+level:INFO 
+logger:Microsoft.AspNetCore.Hosting.Internal.WebHost
+file:? line? 
+content:Request finished in 67922.2986ms 200 text/plain; charset=utf-8
+
+-----------------------------------------
+
+time:2017-08-28 12:40:01,076 
+level:INFO 
+logger:Microsoft.AspNetCore.Hosting.Internal.WebHost
+file:? line? 
+content:Request starting HTTP/1.1 GET http://localhost:57942/api/values  
+
+-----------------------------------------
+
+time:2017-08-28 12:40:01,397 
+level:INFO 
+logger:Microsoft.AspNetCore.Mvc.ViewFeatures.Internal.ValidateAntiforgeryTokenAuthorizationFilter
+file:? line? 
+content:Antiforgery token validation failed. The required antiforgery cookie ".AspNetCore.Antiforgery.-1L4z_vFaO8" is not present.
+Microsoft.AspNetCore.Antiforgery.AntiforgeryValidationException: The required antiforgery cookie ".AspNetCore.Antiforgery.-1L4z_vFaO8" is not present.
+   at Microsoft.AspNetCore.Antiforgery.Internal.DefaultAntiforgery.<ValidateRequestAsync>d__9.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Mvc.ViewFeatures.Internal.ValidateAntiforgeryTokenAuthorizationFilter.<OnAuthorizationAsync>d__3.MoveNext()
+
+-----------------------------------------
+
+time:2017-08-28 12:40:01,404 
+level:INFO 
+logger:Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker
+file:? line? 
+content:Authorization failed for the request at filter 'Microsoft.AspNetCore.Mvc.ViewFeatures.Internal.ValidateAntiforgeryTokenAuthorizationFilter'.
+
+-----------------------------------------
+
+time:2017-08-28 12:40:01,409 
+level:INFO 
+logger:Microsoft.AspNetCore.Mvc.StatusCodeResult
+file:? line? 
+content:Executing HttpStatusCodeResult, setting HTTP status code 400
+
+-----------------------------------------
+
+time:2017-08-28 12:40:01,415 
+level:INFO 
+logger:Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker
+file:? line? 
+content:Executed action NTCore.WebFront.Controllers.ValuesController.Get (NTCore.WebFront) in 138.1798ms
+
+-----------------------------------------
+
+time:2017-08-28 12:40:01,430 
+level:INFO 
+logger:Microsoft.AspNetCore.Hosting.Internal.WebHost
+file:? line? 
+content:Request finished in 353.5453ms 400 
+
+-----------------------------------------
+
+time:2017-08-28 12:40:01,441 
+level:INFO 
+logger:Microsoft.AspNetCore.Hosting.Internal.WebHost
+file:? line? 
+content:Request starting HTTP/1.1 GET http://localhost:57942/favicon.ico  
+
+-----------------------------------------
+
+time:2017-08-28 12:40:01,449 
+level:INFO 
+logger:Microsoft.AspNetCore.Hosting.Internal.WebHost
+file:? line? 
+content:Request finished in 3.207ms 404 
+
+-----------------------------------------
+
+time:2017-08-28 12:40:04,452 
+level:INFO 
+logger:Microsoft.AspNetCore.Hosting.Internal.WebHost
+file:? line? 
+content:Request starting HTTP/1.1 GET http://localhost:57942/api/values/1111  
+
+-----------------------------------------
+
+time:2017-08-28 12:40:04,526 
+level:INFO 
+logger:Microsoft.AspNetCore.Mvc.ViewFeatures.Internal.ValidateAntiforgeryTokenAuthorizationFilter
+file:? line? 
+content:Antiforgery token validation failed. The required antiforgery cookie ".AspNetCore.Antiforgery.-1L4z_vFaO8" is not present.
+Microsoft.AspNetCore.Antiforgery.AntiforgeryValidationException: The required antiforgery cookie ".AspNetCore.Antiforgery.-1L4z_vFaO8" is not present.
+   at Microsoft.AspNetCore.Antiforgery.Internal.DefaultAntiforgery.<ValidateRequestAsync>d__9.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Mvc.ViewFeatures.Internal.ValidateAntiforgeryTokenAuthorizationFilter.<OnAuthorizationAsync>d__3.MoveNext()
+
+-----------------------------------------
+
+time:2017-08-28 12:40:04,532 
+level:INFO 
+logger:Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker
+file:? line? 
+content:Authorization failed for the request at filter 'Microsoft.AspNetCore.Mvc.ViewFeatures.Internal.ValidateAntiforgeryTokenAuthorizationFilter'.
+
+-----------------------------------------
+
+time:2017-08-28 12:40:04,534 
+level:INFO 
+logger:Microsoft.AspNetCore.Mvc.StatusCodeResult
+file:? line? 
+content:Executing HttpStatusCodeResult, setting HTTP status code 400
+
+-----------------------------------------
+
+time:2017-08-28 12:40:04,537 
+level:INFO 
+logger:Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker
+file:? line? 
+content:Executed action NTCore.WebFront.Controllers.ValuesController.Get (NTCore.WebFront) in 69.8292ms
+
+-----------------------------------------
+
+time:2017-08-28 12:40:04,550 
+level:INFO 
+logger:Microsoft.AspNetCore.Hosting.Internal.WebHost
+file:? line? 
+content:Request finished in 89.9467ms 400 
+
+-----------------------------------------
+
+time:2017-08-28 12:40:13,072 
+level:INFO 
+logger:Microsoft.AspNetCore.Hosting.Internal.WebHost
+file:? line? 
+content:Request starting HTTP/1.1 GET http://localhost:57942/api/values/1111  
+
+-----------------------------------------
+
+time:2017-08-28 12:40:13,128 
+level:INFO 
+logger:Microsoft.AspNetCore.Mvc.ViewFeatures.Internal.ValidateAntiforgeryTokenAuthorizationFilter
+file:? line? 
+content:Antiforgery token validation failed. The required antiforgery cookie ".AspNetCore.Antiforgery.-1L4z_vFaO8" is not present.
+Microsoft.AspNetCore.Antiforgery.AntiforgeryValidationException: The required antiforgery cookie ".AspNetCore.Antiforgery.-1L4z_vFaO8" is not present.
+   at Microsoft.AspNetCore.Antiforgery.Internal.DefaultAntiforgery.<ValidateRequestAsync>d__9.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Mvc.ViewFeatures.Internal.ValidateAntiforgeryTokenAuthorizationFilter.<OnAuthorizationAsync>d__3.MoveNext()
+
+-----------------------------------------
+
+time:2017-08-28 12:40:13,132 
+level:INFO 
+logger:Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker
+file:? line? 
+content:Authorization failed for the request at filter 'Microsoft.AspNetCore.Mvc.ViewFeatures.Internal.ValidateAntiforgeryTokenAuthorizationFilter'.
+
+-----------------------------------------
+
+time:2017-08-28 12:40:13,135 
+level:INFO 
+logger:Microsoft.AspNetCore.Mvc.StatusCodeResult
+file:? line? 
+content:Executing HttpStatusCodeResult, setting HTTP status code 400
+
+-----------------------------------------
+
+time:2017-08-28 12:40:13,138 
+level:INFO 
+logger:Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker
+file:? line? 
+content:Executed action NTCore.WebFront.Controllers.ValuesController.Get (NTCore.WebFront) in 63.0888ms
+
+-----------------------------------------
+
+time:2017-08-28 12:40:13,144 
+level:INFO 
+logger:Microsoft.AspNetCore.Hosting.Internal.WebHost
+file:? line? 
+content:Request finished in 68.8896ms 400 
+
+-----------------------------------------
+
+time:2017-08-28 12:40:38,722 
+level:INFO 
+logger:Microsoft.AspNetCore.Hosting.Internal.WebHost
+file:? line? 
+content:Request starting HTTP/1.1 GET http://localhost:57942/api/values  
+
+-----------------------------------------
+
+time:2017-08-28 12:40:39,035 
+level:INFO 
+logger:Microsoft.AspNetCore.Mvc.ViewFeatures.Internal.ValidateAntiforgeryTokenAuthorizationFilter
+file:? line? 
+content:Antiforgery token validation failed. The required antiforgery cookie ".AspNetCore.Antiforgery.-1L4z_vFaO8" is not present.
+Microsoft.AspNetCore.Antiforgery.AntiforgeryValidationException: The required antiforgery cookie ".AspNetCore.Antiforgery.-1L4z_vFaO8" is not present.
+   at Microsoft.AspNetCore.Antiforgery.Internal.DefaultAntiforgery.<ValidateRequestAsync>d__9.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Mvc.ViewFeatures.Internal.ValidateAntiforgeryTokenAuthorizationFilter.<OnAuthorizationAsync>d__3.MoveNext()
+
+-----------------------------------------
+
+time:2017-08-28 12:40:39,040 
+level:INFO 
+logger:Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker
+file:? line? 
+content:Authorization failed for the request at filter 'Microsoft.AspNetCore.Mvc.ViewFeatures.Internal.ValidateAntiforgeryTokenAuthorizationFilter'.
+
+-----------------------------------------
+
+time:2017-08-28 12:40:39,045 
+level:INFO 
+logger:Microsoft.AspNetCore.Mvc.StatusCodeResult
+file:? line? 
+content:Executing HttpStatusCodeResult, setting HTTP status code 400
+
+-----------------------------------------
+
+time:2017-08-28 12:40:39,050 
+level:INFO 
+logger:Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker
+file:? line? 
+content:Executed action NTCore.WebFront.Controllers.ValuesController.Get (NTCore.WebFront) in 130.3314ms
+
+-----------------------------------------
+
+time:2017-08-28 12:40:39,059 
+level:INFO 
+logger:Microsoft.AspNetCore.Hosting.Internal.WebHost
+file:? line? 
+content:Request finished in 342.8741ms 400 
+
+-----------------------------------------
+
+time:2017-08-28 12:40:39,072 
+level:INFO 
+logger:Microsoft.AspNetCore.Hosting.Internal.WebHost
+file:? line? 
+content:Request starting HTTP/1.1 GET http://localhost:57942/favicon.ico  
+
+-----------------------------------------
+
+time:2017-08-28 12:40:39,077 
+level:INFO 
+logger:Microsoft.AspNetCore.Hosting.Internal.WebHost
+file:? line? 
+content:Request finished in 2.5997ms 404 
+
+-----------------------------------------
+
+time:2017-08-28 12:44:44,134 
+level:INFO 
+logger:Microsoft.AspNetCore.Hosting.Internal.WebHost
+file:? line? 
+content:Request starting HTTP/1.1 GET http://localhost:57942/api/values  
+
+-----------------------------------------
+
+time:2017-08-28 12:44:46,518 
+level:INFO 
+logger:Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker
+file:? line? 
+content:Executing action method NTCore.WebFront.Controllers.ValuesController.Get (NTCore.WebFront) with arguments ((null)) - ModelState is Valid
+
+-----------------------------------------
+
+time:2017-08-28 12:44:46,540 
+level:ERROR 
+logger:NTCore.WebFront.Controllers.ValuesController
+file:? line? 
+content:BBBBBBBBBBBBBBBBBBBB
+
+-----------------------------------------
+
+time:2017-08-28 12:44:46,884 
+level:INFO 
+logger:Microsoft.AspNetCore.Mvc.Internal.ObjectResultExecutor
+file:? line? 
+content:Executing ObjectResult, writing value Microsoft.AspNetCore.Mvc.ControllerContext.
+
+-----------------------------------------
+
+time:2017-08-28 12:44:46,944 
+level:INFO 
+logger:Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker
+file:? line? 
+content:Executed action NTCore.WebFront.Controllers.ValuesController.Get (NTCore.WebFront) in 2599.7529ms
+
+-----------------------------------------
+
+time:2017-08-28 12:44:46,958 
+level:INFO 
+logger:Microsoft.AspNetCore.Hosting.Internal.WebHost
+file:? line? 
+content:Request finished in 2825.377ms 200 application/json; charset=utf-8
+
+-----------------------------------------
+
+time:2017-08-28 12:44:46,971 
+level:INFO 
+logger:Microsoft.AspNetCore.Hosting.Internal.WebHost
+file:? line? 
+content:Request starting HTTP/1.1 GET http://localhost:57942/favicon.ico  
+
+-----------------------------------------
+
+time:2017-08-28 12:44:46,975 
+level:INFO 
+logger:Microsoft.AspNetCore.Hosting.Internal.WebHost
+file:? line? 
+content:Request finished in 3.812ms 404 
+
+-----------------------------------------
+
+time:2017-08-28 12:44:49,818 
+level:INFO 
+logger:Microsoft.AspNetCore.Hosting.Internal.WebHost
+file:? line? 
+content:Request starting HTTP/1.1 GET http://localhost:57942/api/values/1111  
+
+-----------------------------------------
+
+time:2017-08-28 12:44:49,960 
+level:INFO 
+logger:Microsoft.AspNetCore.Mvc.ViewFeatures.Internal.ValidateAntiforgeryTokenAuthorizationFilter
+file:? line? 
+content:Antiforgery token validation failed. The required antiforgery cookie ".AspNetCore.Antiforgery.-1L4z_vFaO8" is not present.
+Microsoft.AspNetCore.Antiforgery.AntiforgeryValidationException: The required antiforgery cookie ".AspNetCore.Antiforgery.-1L4z_vFaO8" is not present.
+   at Microsoft.AspNetCore.Antiforgery.Internal.DefaultAntiforgery.<ValidateRequestAsync>d__9.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Mvc.ViewFeatures.Internal.ValidateAntiforgeryTokenAuthorizationFilter.<OnAuthorizationAsync>d__3.MoveNext()
+
+-----------------------------------------
+
+time:2017-08-28 12:44:49,966 
+level:INFO 
+logger:Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker
+file:? line? 
+content:Authorization failed for the request at filter 'Microsoft.AspNetCore.Mvc.ViewFeatures.Internal.ValidateAntiforgeryTokenAuthorizationFilter'.
+
+-----------------------------------------
+
+time:2017-08-28 12:44:49,971 
+level:INFO 
+logger:Microsoft.AspNetCore.Mvc.StatusCodeResult
+file:? line? 
+content:Executing HttpStatusCodeResult, setting HTTP status code 400
+
+-----------------------------------------
+
+time:2017-08-28 12:44:49,974 
+level:INFO 
+logger:Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker
+file:? line? 
+content:Executed action NTCore.WebFront.Controllers.ValuesController.Get (NTCore.WebFront) in 134.0829ms
+
+-----------------------------------------
+
+time:2017-08-28 12:44:49,978 
+level:INFO 
+logger:Microsoft.AspNetCore.Hosting.Internal.WebHost
+file:? line? 
+content:Request finished in 159.2581ms 400 
+
+-----------------------------------------
+
+time:2017-08-28 12:45:06,153 
+level:INFO 
+logger:Microsoft.AspNetCore.Hosting.Internal.WebHost
+file:? line? 
+content:Request starting HTTP/1.1 GET http://localhost:57942/api/values/1111  
+
+-----------------------------------------
+
+time:2017-08-28 12:45:06,210 
+level:INFO 
+logger:Microsoft.AspNetCore.Mvc.ViewFeatures.Internal.ValidateAntiforgeryTokenAuthorizationFilter
+file:? line? 
+content:Antiforgery token validation failed. The required antiforgery cookie ".AspNetCore.Antiforgery.-1L4z_vFaO8" is not present.
+Microsoft.AspNetCore.Antiforgery.AntiforgeryValidationException: The required antiforgery cookie ".AspNetCore.Antiforgery.-1L4z_vFaO8" is not present.
+   at Microsoft.AspNetCore.Antiforgery.Internal.DefaultAntiforgery.<ValidateRequestAsync>d__9.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Mvc.ViewFeatures.Internal.ValidateAntiforgeryTokenAuthorizationFilter.<OnAuthorizationAsync>d__3.MoveNext()
+
+-----------------------------------------
+
+time:2017-08-28 12:45:06,213 
+level:INFO 
+logger:Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker
+file:? line? 
+content:Authorization failed for the request at filter 'Microsoft.AspNetCore.Mvc.ViewFeatures.Internal.ValidateAntiforgeryTokenAuthorizationFilter'.
+
+-----------------------------------------
+
+time:2017-08-28 12:45:06,216 
+level:INFO 
+logger:Microsoft.AspNetCore.Mvc.StatusCodeResult
+file:? line? 
+content:Executing HttpStatusCodeResult, setting HTTP status code 400
+
+-----------------------------------------
+
+time:2017-08-28 12:45:06,219 
+level:INFO 
+logger:Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker
+file:? line? 
+content:Executed action NTCore.WebFront.Controllers.ValuesController.Get (NTCore.WebFront) in 62.3497ms
+
+-----------------------------------------
+
+time:2017-08-28 12:45:06,223 
+level:INFO 
+logger:Microsoft.AspNetCore.Hosting.Internal.WebHost
+file:? line? 
+content:Request finished in 69.8885ms 400 
+
+-----------------------------------------
+
+time:2017-08-28 12:45:06,667 
+level:INFO 
+logger:Microsoft.AspNetCore.Hosting.Internal.WebHost
+file:? line? 
+content:Request starting HTTP/1.1 GET http://localhost:57942/api/values/1111  
+
+-----------------------------------------
+
+time:2017-08-28 12:45:06,725 
+level:INFO 
+logger:Microsoft.AspNetCore.Mvc.ViewFeatures.Internal.ValidateAntiforgeryTokenAuthorizationFilter
+file:? line? 
+content:Antiforgery token validation failed. The required antiforgery cookie ".AspNetCore.Antiforgery.-1L4z_vFaO8" is not present.
+Microsoft.AspNetCore.Antiforgery.AntiforgeryValidationException: The required antiforgery cookie ".AspNetCore.Antiforgery.-1L4z_vFaO8" is not present.
+   at Microsoft.AspNetCore.Antiforgery.Internal.DefaultAntiforgery.<ValidateRequestAsync>d__9.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Mvc.ViewFeatures.Internal.ValidateAntiforgeryTokenAuthorizationFilter.<OnAuthorizationAsync>d__3.MoveNext()
+
+-----------------------------------------
+
+time:2017-08-28 12:45:06,728 
+level:INFO 
+logger:Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker
+file:? line? 
+content:Authorization failed for the request at filter 'Microsoft.AspNetCore.Mvc.ViewFeatures.Internal.ValidateAntiforgeryTokenAuthorizationFilter'.
+
+-----------------------------------------
+
+time:2017-08-28 12:45:06,731 
+level:INFO 
+logger:Microsoft.AspNetCore.Mvc.StatusCodeResult
+file:? line? 
+content:Executing HttpStatusCodeResult, setting HTTP status code 400
+
+-----------------------------------------
+
+time:2017-08-28 12:45:06,733 
+level:INFO 
+logger:Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker
+file:? line? 
+content:Executed action NTCore.WebFront.Controllers.ValuesController.Get (NTCore.WebFront) in 64.0256ms
+
+-----------------------------------------
+
+time:2017-08-28 12:45:06,737 
+level:INFO 
+logger:Microsoft.AspNetCore.Hosting.Internal.WebHost
+file:? line? 
+content:Request finished in 68.3782ms 400 
+
+-----------------------------------------
+
+time:2017-08-28 12:45:07,114 
+level:INFO 
+logger:Microsoft.AspNetCore.Hosting.Internal.WebHost
+file:? line? 
+content:Request starting HTTP/1.1 GET http://localhost:57942/api/values/1111  
+
+-----------------------------------------
+
+time:2017-08-28 12:45:07,167 
+level:INFO 
+logger:Microsoft.AspNetCore.Mvc.ViewFeatures.Internal.ValidateAntiforgeryTokenAuthorizationFilter
+file:? line? 
+content:Antiforgery token validation failed. The required antiforgery cookie ".AspNetCore.Antiforgery.-1L4z_vFaO8" is not present.
+Microsoft.AspNetCore.Antiforgery.AntiforgeryValidationException: The required antiforgery cookie ".AspNetCore.Antiforgery.-1L4z_vFaO8" is not present.
+   at Microsoft.AspNetCore.Antiforgery.Internal.DefaultAntiforgery.<ValidateRequestAsync>d__9.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Mvc.ViewFeatures.Internal.ValidateAntiforgeryTokenAuthorizationFilter.<OnAuthorizationAsync>d__3.MoveNext()
+
+-----------------------------------------
+
+time:2017-08-28 12:45:07,171 
+level:INFO 
+logger:Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker
+file:? line? 
+content:Authorization failed for the request at filter 'Microsoft.AspNetCore.Mvc.ViewFeatures.Internal.ValidateAntiforgeryTokenAuthorizationFilter'.
+
+-----------------------------------------
+
+time:2017-08-28 12:45:07,174 
+level:INFO 
+logger:Microsoft.AspNetCore.Mvc.StatusCodeResult
+file:? line? 
+content:Executing HttpStatusCodeResult, setting HTTP status code 400
+
+-----------------------------------------
+
+time:2017-08-28 12:45:07,176 
+level:INFO 
+logger:Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker
+file:? line? 
+content:Executed action NTCore.WebFront.Controllers.ValuesController.Get (NTCore.WebFront) in 58.9312ms
+
+-----------------------------------------
+
+time:2017-08-28 12:45:07,181 
+level:INFO 
+logger:Microsoft.AspNetCore.Hosting.Internal.WebHost
+file:? line? 
+content:Request finished in 64.7936ms 400 
+
+-----------------------------------------
+
+time:2017-08-28 12:45:07,473 
+level:INFO 
+logger:Microsoft.AspNetCore.Hosting.Internal.WebHost
+file:? line? 
+content:Request starting HTTP/1.1 GET http://localhost:57942/api/values/1111  
+
+-----------------------------------------
+
+time:2017-08-28 12:45:07,530 
+level:INFO 
+logger:Microsoft.AspNetCore.Mvc.ViewFeatures.Internal.ValidateAntiforgeryTokenAuthorizationFilter
+file:? line? 
+content:Antiforgery token validation failed. The required antiforgery cookie ".AspNetCore.Antiforgery.-1L4z_vFaO8" is not present.
+Microsoft.AspNetCore.Antiforgery.AntiforgeryValidationException: The required antiforgery cookie ".AspNetCore.Antiforgery.-1L4z_vFaO8" is not present.
+   at Microsoft.AspNetCore.Antiforgery.Internal.DefaultAntiforgery.<ValidateRequestAsync>d__9.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Mvc.ViewFeatures.Internal.ValidateAntiforgeryTokenAuthorizationFilter.<OnAuthorizationAsync>d__3.MoveNext()
+
+-----------------------------------------
+
+time:2017-08-28 12:45:07,534 
+level:INFO 
+logger:Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker
+file:? line? 
+content:Authorization failed for the request at filter 'Microsoft.AspNetCore.Mvc.ViewFeatures.Internal.ValidateAntiforgeryTokenAuthorizationFilter'.
+
+-----------------------------------------
+
+time:2017-08-28 12:45:07,539 
+level:INFO 
+logger:Microsoft.AspNetCore.Mvc.StatusCodeResult
+file:? line? 
+content:Executing HttpStatusCodeResult, setting HTTP status code 400
+
+-----------------------------------------
+
+time:2017-08-28 12:45:07,541 
+level:INFO 
+logger:Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker
+file:? line? 
+content:Executed action NTCore.WebFront.Controllers.ValuesController.Get (NTCore.WebFront) in 65.1811ms
+
+-----------------------------------------
+
+time:2017-08-28 12:45:07,545 
+level:INFO 
+logger:Microsoft.AspNetCore.Hosting.Internal.WebHost
+file:? line? 
+content:Request finished in 72.2936ms 400 
+
+-----------------------------------------
+
+time:2017-08-28 12:45:07,688 
+level:INFO 
+logger:Microsoft.AspNetCore.Hosting.Internal.WebHost
+file:? line? 
+content:Request starting HTTP/1.1 GET http://localhost:57942/api/values/1111  
+
+-----------------------------------------
+
+time:2017-08-28 12:45:07,743 
+level:INFO 
+logger:Microsoft.AspNetCore.Mvc.ViewFeatures.Internal.ValidateAntiforgeryTokenAuthorizationFilter
+file:? line? 
+content:Antiforgery token validation failed. The required antiforgery cookie ".AspNetCore.Antiforgery.-1L4z_vFaO8" is not present.
+Microsoft.AspNetCore.Antiforgery.AntiforgeryValidationException: The required antiforgery cookie ".AspNetCore.Antiforgery.-1L4z_vFaO8" is not present.
+   at Microsoft.AspNetCore.Antiforgery.Internal.DefaultAntiforgery.<ValidateRequestAsync>d__9.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Mvc.ViewFeatures.Internal.ValidateAntiforgeryTokenAuthorizationFilter.<OnAuthorizationAsync>d__3.MoveNext()
+
+-----------------------------------------
+
+time:2017-08-28 12:45:07,747 
+level:INFO 
+logger:Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker
+file:? line? 
+content:Authorization failed for the request at filter 'Microsoft.AspNetCore.Mvc.ViewFeatures.Internal.ValidateAntiforgeryTokenAuthorizationFilter'.
+
+-----------------------------------------
+
+time:2017-08-28 12:45:07,750 
+level:INFO 
+logger:Microsoft.AspNetCore.Mvc.StatusCodeResult
+file:? line? 
+content:Executing HttpStatusCodeResult, setting HTTP status code 400
+
+-----------------------------------------
+
+time:2017-08-28 12:45:07,753 
+level:INFO 
+logger:Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker
+file:? line? 
+content:Executed action NTCore.WebFront.Controllers.ValuesController.Get (NTCore.WebFront) in 61.5981ms
+
+-----------------------------------------
+
+time:2017-08-28 12:45:07,762 
+level:INFO 
+logger:Microsoft.AspNetCore.Hosting.Internal.WebHost
+file:? line? 
+content:Request finished in 67.3821ms 400 
+
+-----------------------------------------
+
+time:2017-08-28 12:45:07,918 
+level:INFO 
+logger:Microsoft.AspNetCore.Hosting.Internal.WebHost
+file:? line? 
+content:Request starting HTTP/1.1 GET http://localhost:57942/api/values/1111  
+
+-----------------------------------------
+
+time:2017-08-28 12:45:07,975 
+level:INFO 
+logger:Microsoft.AspNetCore.Mvc.ViewFeatures.Internal.ValidateAntiforgeryTokenAuthorizationFilter
+file:? line? 
+content:Antiforgery token validation failed. The required antiforgery cookie ".AspNetCore.Antiforgery.-1L4z_vFaO8" is not present.
+Microsoft.AspNetCore.Antiforgery.AntiforgeryValidationException: The required antiforgery cookie ".AspNetCore.Antiforgery.-1L4z_vFaO8" is not present.
+   at Microsoft.AspNetCore.Antiforgery.Internal.DefaultAntiforgery.<ValidateRequestAsync>d__9.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Mvc.ViewFeatures.Internal.ValidateAntiforgeryTokenAuthorizationFilter.<OnAuthorizationAsync>d__3.MoveNext()
+
+-----------------------------------------
+
+time:2017-08-28 12:45:07,978 
+level:INFO 
+logger:Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker
+file:? line? 
+content:Authorization failed for the request at filter 'Microsoft.AspNetCore.Mvc.ViewFeatures.Internal.ValidateAntiforgeryTokenAuthorizationFilter'.
+
+-----------------------------------------
+
+time:2017-08-28 12:45:07,980 
+level:INFO 
+logger:Microsoft.AspNetCore.Mvc.StatusCodeResult
+file:? line? 
+content:Executing HttpStatusCodeResult, setting HTTP status code 400
+
+-----------------------------------------
+
+time:2017-08-28 12:45:07,983 
+level:INFO 
+logger:Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker
+file:? line? 
+content:Executed action NTCore.WebFront.Controllers.ValuesController.Get (NTCore.WebFront) in 62.3211ms
+
+-----------------------------------------
+
+time:2017-08-28 12:45:07,988 
+level:INFO 
+logger:Microsoft.AspNetCore.Hosting.Internal.WebHost
+file:? line? 
+content:Request finished in 67.2817ms 400 
+
+-----------------------------------------
+
+time:2017-08-28 12:45:08,127 
+level:INFO 
+logger:Microsoft.AspNetCore.Hosting.Internal.WebHost
+file:? line? 
+content:Request starting HTTP/1.1 GET http://localhost:57942/api/values/1111  
+
+-----------------------------------------
+
+time:2017-08-28 12:45:08,185 
+level:INFO 
+logger:Microsoft.AspNetCore.Mvc.ViewFeatures.Internal.ValidateAntiforgeryTokenAuthorizationFilter
+file:? line? 
+content:Antiforgery token validation failed. The required antiforgery cookie ".AspNetCore.Antiforgery.-1L4z_vFaO8" is not present.
+Microsoft.AspNetCore.Antiforgery.AntiforgeryValidationException: The required antiforgery cookie ".AspNetCore.Antiforgery.-1L4z_vFaO8" is not present.
+   at Microsoft.AspNetCore.Antiforgery.Internal.DefaultAntiforgery.<ValidateRequestAsync>d__9.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Mvc.ViewFeatures.Internal.ValidateAntiforgeryTokenAuthorizationFilter.<OnAuthorizationAsync>d__3.MoveNext()
+
+-----------------------------------------
+
+time:2017-08-28 12:45:08,189 
+level:INFO 
+logger:Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker
+file:? line? 
+content:Authorization failed for the request at filter 'Microsoft.AspNetCore.Mvc.ViewFeatures.Internal.ValidateAntiforgeryTokenAuthorizationFilter'.
+
+-----------------------------------------
+
+time:2017-08-28 12:45:08,192 
+level:INFO 
+logger:Microsoft.AspNetCore.Mvc.StatusCodeResult
+file:? line? 
+content:Executing HttpStatusCodeResult, setting HTTP status code 400
+
+-----------------------------------------
+
+time:2017-08-28 12:45:08,194 
+level:INFO 
+logger:Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker
+file:? line? 
+content:Executed action NTCore.WebFront.Controllers.ValuesController.Get (NTCore.WebFront) in 64.629ms
+
+-----------------------------------------
+
+time:2017-08-28 12:45:08,197 
+level:INFO 
+logger:Microsoft.AspNetCore.Hosting.Internal.WebHost
+file:? line? 
+content:Request finished in 69.2498ms 400 
+
+-----------------------------------------
+
+time:2017-08-28 12:45:08,286 
+level:INFO 
+logger:Microsoft.AspNetCore.Hosting.Internal.WebHost
+file:? line? 
+content:Request starting HTTP/1.1 GET http://localhost:57942/api/values/1111  
+
+-----------------------------------------
+
+time:2017-08-28 12:45:08,338 
+level:INFO 
+logger:Microsoft.AspNetCore.Mvc.ViewFeatures.Internal.ValidateAntiforgeryTokenAuthorizationFilter
+file:? line? 
+content:Antiforgery token validation failed. The required antiforgery cookie ".AspNetCore.Antiforgery.-1L4z_vFaO8" is not present.
+Microsoft.AspNetCore.Antiforgery.AntiforgeryValidationException: The required antiforgery cookie ".AspNetCore.Antiforgery.-1L4z_vFaO8" is not present.
+   at Microsoft.AspNetCore.Antiforgery.Internal.DefaultAntiforgery.<ValidateRequestAsync>d__9.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Mvc.ViewFeatures.Internal.ValidateAntiforgeryTokenAuthorizationFilter.<OnAuthorizationAsync>d__3.MoveNext()
+
+-----------------------------------------
+
+time:2017-08-28 12:45:08,345 
+level:INFO 
+logger:Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker
+file:? line? 
+content:Authorization failed for the request at filter 'Microsoft.AspNetCore.Mvc.ViewFeatures.Internal.ValidateAntiforgeryTokenAuthorizationFilter'.
+
+-----------------------------------------
+
+time:2017-08-28 12:45:08,347 
+level:INFO 
+logger:Microsoft.AspNetCore.Mvc.StatusCodeResult
+file:? line? 
+content:Executing HttpStatusCodeResult, setting HTTP status code 400
+
+-----------------------------------------
+
+time:2017-08-28 12:45:08,349 
+level:INFO 
+logger:Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker
+file:? line? 
+content:Executed action NTCore.WebFront.Controllers.ValuesController.Get (NTCore.WebFront) in 60.3023ms
+
+-----------------------------------------
+
+time:2017-08-28 12:45:08,372 
+level:INFO 
+logger:Microsoft.AspNetCore.Hosting.Internal.WebHost
+file:? line? 
+content:Request finished in 64.775ms 400 
+
+-----------------------------------------
+
+time:2017-08-28 13:57:38,596 
+level:INFO 
+logger:Microsoft.AspNetCore.Hosting.Internal.WebHost
+file:? line? 
+content:Request starting HTTP/1.1 GET http://localhost:57942/api/values/1111  
+
+-----------------------------------------
+
+time:2017-08-28 13:57:38,684 
+level:INFO 
+logger:Microsoft.AspNetCore.Mvc.ViewFeatures.Internal.ValidateAntiforgeryTokenAuthorizationFilter
+file:? line? 
+content:Antiforgery token validation failed. The required antiforgery cookie ".AspNetCore.Antiforgery.-1L4z_vFaO8" is not present.
+Microsoft.AspNetCore.Antiforgery.AntiforgeryValidationException: The required antiforgery cookie ".AspNetCore.Antiforgery.-1L4z_vFaO8" is not present.
+   at Microsoft.AspNetCore.Antiforgery.Internal.DefaultAntiforgery.<ValidateRequestAsync>d__9.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Mvc.ViewFeatures.Internal.ValidateAntiforgeryTokenAuthorizationFilter.<OnAuthorizationAsync>d__3.MoveNext()
+
+-----------------------------------------
+
+time:2017-08-28 13:57:38,689 
+level:INFO 
+logger:Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker
+file:? line? 
+content:Authorization failed for the request at filter 'Microsoft.AspNetCore.Mvc.ViewFeatures.Internal.ValidateAntiforgeryTokenAuthorizationFilter'.
+
+-----------------------------------------
+
+time:2017-08-28 13:57:38,692 
+level:INFO 
+logger:Microsoft.AspNetCore.Mvc.StatusCodeResult
+file:? line? 
+content:Executing HttpStatusCodeResult, setting HTTP status code 400
+
+-----------------------------------------
+
+time:2017-08-28 13:57:38,694 
+level:INFO 
+logger:Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker
+file:? line? 
+content:Executed action NTCore.WebFront.Controllers.ValuesController.Get (NTCore.WebFront) in 92.8355ms
+
+-----------------------------------------
+
+time:2017-08-28 13:57:38,704 
+level:INFO 
+logger:Microsoft.AspNetCore.Hosting.Internal.WebHost
+file:? line? 
+content:Request finished in 107.1221ms 400 
+
+-----------------------------------------
+
+time:2017-08-28 13:57:49,697 
+level:INFO 
+logger:Microsoft.AspNetCore.Hosting.Internal.WebHost
+file:? line? 
+content:Request starting HTTP/1.1 GET http://localhost:57942/api/values/1111  
+
+-----------------------------------------
+
+time:2017-08-28 13:57:49,760 
+level:INFO 
+logger:Microsoft.AspNetCore.Mvc.ViewFeatures.Internal.ValidateAntiforgeryTokenAuthorizationFilter
+file:? line? 
+content:Antiforgery token validation failed. The required antiforgery cookie ".AspNetCore.Antiforgery.-1L4z_vFaO8" is not present.
+Microsoft.AspNetCore.Antiforgery.AntiforgeryValidationException: The required antiforgery cookie ".AspNetCore.Antiforgery.-1L4z_vFaO8" is not present.
+   at Microsoft.AspNetCore.Antiforgery.Internal.DefaultAntiforgery.<ValidateRequestAsync>d__9.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Mvc.ViewFeatures.Internal.ValidateAntiforgeryTokenAuthorizationFilter.<OnAuthorizationAsync>d__3.MoveNext()
+
+-----------------------------------------
+
+time:2017-08-28 13:57:49,764 
+level:INFO 
+logger:Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker
+file:? line? 
+content:Authorization failed for the request at filter 'Microsoft.AspNetCore.Mvc.ViewFeatures.Internal.ValidateAntiforgeryTokenAuthorizationFilter'.
+
+-----------------------------------------
+
+time:2017-08-28 13:57:49,767 
+level:INFO 
+logger:Microsoft.AspNetCore.Mvc.StatusCodeResult
+file:? line? 
+content:Executing HttpStatusCodeResult, setting HTTP status code 400
+
+-----------------------------------------
+
+time:2017-08-28 13:57:49,770 
+level:INFO 
+logger:Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker
+file:? line? 
+content:Executed action NTCore.WebFront.Controllers.ValuesController.Get (NTCore.WebFront) in 69.6685ms
+
+-----------------------------------------
+
+time:2017-08-28 13:57:49,782 
+level:INFO 
+logger:Microsoft.AspNetCore.Hosting.Internal.WebHost
+file:? line? 
+content:Request finished in 76.1278ms 400 
+
+-----------------------------------------
+
+time:2017-08-28 13:58:07,205 
+level:INFO 
+logger:Microsoft.AspNetCore.Hosting.Internal.WebHost
+file:? line? 
+content:Request starting HTTP/1.1 GET http://localhost:57942/api/values/1111  
+
+-----------------------------------------
+
+time:2017-08-28 13:58:07,272 
+level:INFO 
+logger:Microsoft.AspNetCore.Mvc.ViewFeatures.Internal.ValidateAntiforgeryTokenAuthorizationFilter
+file:? line? 
+content:Antiforgery token validation failed. The required antiforgery cookie ".AspNetCore.Antiforgery.-1L4z_vFaO8" is not present.
+Microsoft.AspNetCore.Antiforgery.AntiforgeryValidationException: The required antiforgery cookie ".AspNetCore.Antiforgery.-1L4z_vFaO8" is not present.
+   at Microsoft.AspNetCore.Antiforgery.Internal.DefaultAntiforgery.<ValidateRequestAsync>d__9.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Mvc.ViewFeatures.Internal.ValidateAntiforgeryTokenAuthorizationFilter.<OnAuthorizationAsync>d__3.MoveNext()
+
+-----------------------------------------
+
+time:2017-08-28 13:58:07,275 
+level:INFO 
+logger:Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker
+file:? line? 
+content:Authorization failed for the request at filter 'Microsoft.AspNetCore.Mvc.ViewFeatures.Internal.ValidateAntiforgeryTokenAuthorizationFilter'.
+
+-----------------------------------------
+
+time:2017-08-28 13:58:07,278 
+level:INFO 
+logger:Microsoft.AspNetCore.Mvc.StatusCodeResult
+file:? line? 
+content:Executing HttpStatusCodeResult, setting HTTP status code 400
+
+-----------------------------------------
+
+time:2017-08-28 13:58:07,280 
+level:INFO 
+logger:Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker
+file:? line? 
+content:Executed action NTCore.WebFront.Controllers.ValuesController.Get (NTCore.WebFront) in 73.3724ms
+
+-----------------------------------------
+
+time:2017-08-28 13:58:07,289 
+level:INFO 
+logger:Microsoft.AspNetCore.Hosting.Internal.WebHost
+file:? line? 
+content:Request finished in 78.897ms 400 
+
+-----------------------------------------
+
+time:2017-08-28 13:58:07,893 
+level:INFO 
+logger:Microsoft.AspNetCore.Hosting.Internal.WebHost
+file:? line? 
+content:Request starting HTTP/1.1 GET http://localhost:57942/api/values/1111  
+
+-----------------------------------------
+
+time:2017-08-28 13:58:07,958 
+level:INFO 
+logger:Microsoft.AspNetCore.Mvc.ViewFeatures.Internal.ValidateAntiforgeryTokenAuthorizationFilter
+file:? line? 
+content:Antiforgery token validation failed. The required antiforgery cookie ".AspNetCore.Antiforgery.-1L4z_vFaO8" is not present.
+Microsoft.AspNetCore.Antiforgery.AntiforgeryValidationException: The required antiforgery cookie ".AspNetCore.Antiforgery.-1L4z_vFaO8" is not present.
+   at Microsoft.AspNetCore.Antiforgery.Internal.DefaultAntiforgery.<ValidateRequestAsync>d__9.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Mvc.ViewFeatures.Internal.ValidateAntiforgeryTokenAuthorizationFilter.<OnAuthorizationAsync>d__3.MoveNext()
+
+-----------------------------------------
+
+time:2017-08-28 13:58:07,962 
+level:INFO 
+logger:Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker
+file:? line? 
+content:Authorization failed for the request at filter 'Microsoft.AspNetCore.Mvc.ViewFeatures.Internal.ValidateAntiforgeryTokenAuthorizationFilter'.
+
+-----------------------------------------
+
+time:2017-08-28 13:58:07,964 
+level:INFO 
+logger:Microsoft.AspNetCore.Mvc.StatusCodeResult
+file:? line? 
+content:Executing HttpStatusCodeResult, setting HTTP status code 400
+
+-----------------------------------------
+
+time:2017-08-28 13:58:07,967 
+level:INFO 
+logger:Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker
+file:? line? 
+content:Executed action NTCore.WebFront.Controllers.ValuesController.Get (NTCore.WebFront) in 71.0242ms
+
+-----------------------------------------
+
+time:2017-08-28 13:58:07,972 
+level:INFO 
+logger:Microsoft.AspNetCore.Hosting.Internal.WebHost
+file:? line? 
+content:Request finished in 76.557ms 400 
+
+-----------------------------------------
+
+time:2017-08-28 14:04:27,779 
+level:INFO 
+logger:Microsoft.AspNetCore.Hosting.Internal.WebHost
+file:? line? 
+content:Request starting HTTP/1.1 GET http://localhost:57942/api/values  
+
+-----------------------------------------
+
+time:2017-08-28 14:04:37,268 
+level:WARN 
+logger:Microsoft.AspNetCore.Server.Kestrel
+file:? line? 
+content:Heartbeat took longer than "00:00:01" at "08/28/2017 06:04:34 +00:00".
+
+-----------------------------------------
+
+time:2017-08-28 14:05:20,651 
+level:INFO 
+logger:Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker
+file:? line? 
+content:Executing action method NTCore.WebFront.Controllers.ValuesController.Get (NTCore.WebFront) with arguments ((null)) - ModelState is Valid
+
+-----------------------------------------
+
+time:2017-08-28 14:05:20,666 
+level:ERROR 
+logger:NTCore.WebFront.Controllers.ValuesController
+file:? line? 
+content:BBBBBBBBBBBBBBBBBBBB
+
+-----------------------------------------
+
+time:2017-08-28 14:05:21,006 
+level:INFO 
+logger:Microsoft.AspNetCore.Mvc.Internal.ObjectResultExecutor
+file:? line? 
+content:Executing ObjectResult, writing value Microsoft.AspNetCore.Mvc.ControllerContext.
+
+-----------------------------------------
+
+time:2017-08-28 14:05:21,057 
+level:INFO 
+logger:Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker
+file:? line? 
+content:Executed action NTCore.WebFront.Controllers.ValuesController.Get (NTCore.WebFront) in 53062.6894ms
+
+-----------------------------------------
+
+time:2017-08-28 14:05:21,069 
+level:INFO 
+logger:Microsoft.AspNetCore.Hosting.Internal.WebHost
+file:? line? 
+content:Request finished in 53294.5319ms 200 application/json; charset=utf-8
+
+-----------------------------------------
+
+time:2017-08-28 14:05:21,084 
+level:INFO 
+logger:Microsoft.AspNetCore.Hosting.Internal.WebHost
+file:? line? 
+content:Request starting HTTP/1.1 GET http://localhost:57942/favicon.ico  
+
+-----------------------------------------
+
+time:2017-08-28 14:05:21,092 
+level:INFO 
+logger:Microsoft.AspNetCore.Hosting.Internal.WebHost
+file:? line? 
+content:Request finished in 5.2784ms 404 
+
+-----------------------------------------
+
+time:2017-08-28 14:05:24,262 
+level:INFO 
+logger:Microsoft.AspNetCore.Hosting.Internal.WebHost
+file:? line? 
+content:Request starting HTTP/1.1 GET http://localhost:57942/api/values/1111  
+
+-----------------------------------------
+
+time:2017-08-28 14:16:29,849 
+level:INFO 
+logger:Microsoft.AspNetCore.Hosting.Internal.WebHost
+file:? line? 
+content:Request starting HTTP/1.1 GET http://localhost:57942/api/values  
+
+-----------------------------------------
+
+time:2017-08-28 14:16:30,080 
+level:INFO 
+logger:Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker
+file:? line? 
+content:Executing action method NTCore.WebFront.Controllers.ValuesController.Get (NTCore.WebFront) with arguments ((null)) - ModelState is Valid
+
+-----------------------------------------
+
+time:2017-08-28 14:16:30,111 
+level:ERROR 
+logger:NTCore.WebFront.Controllers.ValuesController
+file:? line? 
+content:BBBBBBBBBBBBBBBBBBBB
+
+-----------------------------------------
+
+time:2017-08-28 14:16:30,479 
+level:INFO 
+logger:Microsoft.AspNetCore.Mvc.Internal.ObjectResultExecutor
+file:? line? 
+content:Executing ObjectResult, writing value Microsoft.AspNetCore.Mvc.ControllerContext.
+
+-----------------------------------------
+
+time:2017-08-28 14:16:30,548 
+level:INFO 
+logger:Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker
+file:? line? 
+content:Executed action NTCore.WebFront.Controllers.ValuesController.Get (NTCore.WebFront) in 515.0651ms
+
+-----------------------------------------
+
+time:2017-08-28 14:16:30,560 
+level:INFO 
+logger:Microsoft.AspNetCore.Hosting.Internal.WebHost
+file:? line? 
+content:Request finished in 716.4125ms 200 application/json; charset=utf-8
+
+-----------------------------------------
+
+time:2017-08-28 14:16:30,575 
+level:INFO 
+logger:Microsoft.AspNetCore.Hosting.Internal.WebHost
+file:? line? 
+content:Request starting HTTP/1.1 GET http://localhost:57942/favicon.ico  
+
+-----------------------------------------
+
+time:2017-08-28 14:16:30,581 
+level:INFO 
+logger:Microsoft.AspNetCore.Hosting.Internal.WebHost
+file:? line? 
+content:Request finished in 3.4816ms 404 
+
+-----------------------------------------
+
+time:2017-08-28 14:16:33,478 
+level:INFO 
+logger:Microsoft.AspNetCore.Hosting.Internal.WebHost
+file:? line? 
+content:Request starting HTTP/1.1 GET http://localhost:57942/api/values/1111  
+
+-----------------------------------------
+
+time:2017-08-28 14:16:33,628 
+level:INFO 
+logger:Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker
+file:? line? 
+content:Executing action method NTCore.WebFront.Controllers.ValuesController.Get (NTCore.WebFront) with arguments (1111, NTCore.WebFront.Controllers.User) - ModelState is Invalid
+
+-----------------------------------------
+
+time:2017-08-28 14:17:00,298 
+level:INFO 
+logger:Microsoft.AspNetCore.Mvc.Internal.ObjectResultExecutor
+file:? line? 
+content:Executing ObjectResult, writing value Microsoft.AspNetCore.Mvc.ControllerContext.
+
+-----------------------------------------
+
+time:2017-08-28 14:17:00,302 
+level:INFO 
+logger:Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker
+file:? line? 
+content:Executed action NTCore.WebFront.Controllers.ValuesController.Get (NTCore.WebFront) in 26783.9028ms
+
+-----------------------------------------
+
+time:2017-08-28 14:17:00,311 
+level:INFO 
+logger:Microsoft.AspNetCore.Hosting.Internal.WebHost
+file:? line? 
+content:Request finished in 26828.2943ms 200 text/plain; charset=utf-8
+
+-----------------------------------------
+
+time:2017-08-28 14:17:29,410 
+level:INFO 
+logger:Microsoft.AspNetCore.Hosting.Internal.WebHost
+file:? line? 
+content:Request starting HTTP/1.1 GET http://localhost:57942/api/values  
+
+-----------------------------------------
+
+time:2017-08-28 14:17:31,835 
+level:WARN 
+logger:Microsoft.AspNetCore.Server.Kestrel
+file:? line? 
+content:Heartbeat took longer than "00:00:01" at "08/28/2017 06:17:31 +00:00".
+
+-----------------------------------------
+
+time:2017-08-28 14:17:31,862 
+level:INFO 
+logger:Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker
+file:? line? 
+content:Executing action method NTCore.WebFront.Controllers.ValuesController.Get (NTCore.WebFront) with arguments ((null)) - ModelState is Valid
+
+-----------------------------------------
+
+time:2017-08-28 14:17:31,878 
+level:ERROR 
+logger:NTCore.WebFront.Controllers.ValuesController
+file:? line? 
+content:BBBBBBBBBBBBBBBBBBBB
+
+-----------------------------------------
+
+time:2017-08-28 14:17:32,225 
+level:INFO 
+logger:Microsoft.AspNetCore.Mvc.Internal.ObjectResultExecutor
+file:? line? 
+content:Executing ObjectResult, writing value Microsoft.AspNetCore.Mvc.ControllerContext.
+
+-----------------------------------------
+
+time:2017-08-28 14:17:32,279 
+level:INFO 
+logger:Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker
+file:? line? 
+content:Executed action NTCore.WebFront.Controllers.ValuesController.Get (NTCore.WebFront) in 2691.2356ms
+
+-----------------------------------------
+
+time:2017-08-28 14:17:32,296 
+level:INFO 
+logger:Microsoft.AspNetCore.Hosting.Internal.WebHost
+file:? line? 
+content:Request finished in 2884.3929ms 200 application/json; charset=utf-8
+
+-----------------------------------------
+
+time:2017-08-28 14:17:32,309 
+level:INFO 
+logger:Microsoft.AspNetCore.Hosting.Internal.WebHost
+file:? line? 
+content:Request starting HTTP/1.1 GET http://localhost:57942/favicon.ico  
+
+-----------------------------------------
+
+time:2017-08-28 14:17:32,314 
+level:INFO 
+logger:Microsoft.AspNetCore.Hosting.Internal.WebHost
+file:? line? 
+content:Request finished in 3.3032ms 404 
+
+-----------------------------------------
+
+time:2017-08-28 14:17:34,847 
+level:INFO 
+logger:Microsoft.AspNetCore.Hosting.Internal.WebHost
+file:? line? 
+content:Request starting HTTP/1.1 GET http://localhost:57942/api/values/1111  
+
+-----------------------------------------
+
+time:2017-08-28 14:17:40,850 
+level:INFO 
+logger:Microsoft.AspNetCore.Mvc.Internal.ObjectResultExecutor
+file:? line? 
+content:Executing ObjectResult, writing value Microsoft.AspNetCore.Mvc.ControllerContext.
+
+-----------------------------------------
+
+time:2017-08-28 14:17:40,860 
+level:INFO 
+logger:Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker
+file:? line? 
+content:Executed action NTCore.WebFront.Controllers.ValuesController.Get (NTCore.WebFront) in 5976.2032ms
+
+-----------------------------------------
+
+time:2017-08-28 14:17:40,874 
+level:INFO 
+logger:Microsoft.AspNetCore.Hosting.Internal.WebHost
+file:? line? 
+content:Request finished in 6016.7946ms 400 application/json; charset=utf-8
+
+-----------------------------------------
+
+time:2017-08-28 14:25:13,148 
+level:INFO 
+logger:Microsoft.AspNetCore.Hosting.Internal.WebHost
+file:? line? 
+content:Request starting HTTP/1.1 GET http://localhost:57942/api/values  
+
+-----------------------------------------
+
+time:2017-08-28 14:25:16,300 
+level:WARN 
+logger:Microsoft.AspNetCore.Server.Kestrel
+file:? line? 
+content:Heartbeat took longer than "00:00:01" at "08/28/2017 06:25:16 +00:00".
+
+-----------------------------------------
+
+time:2017-08-28 14:25:16,329 
+level:INFO 
+logger:Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker
+file:? line? 
+content:Executing action method NTCore.WebFront.Controllers.ValuesController.Get (NTCore.WebFront) with arguments ((null)) - ModelState is Valid
+
+-----------------------------------------
+
+time:2017-08-28 14:25:16,348 
+level:ERROR 
+logger:NTCore.WebFront.Controllers.ValuesController
+file:? line? 
+content:BBBBBBBBBBBBBBBBBBBB
+
+-----------------------------------------
+
+time:2017-08-28 14:25:16,703 
+level:INFO 
+logger:Microsoft.AspNetCore.Mvc.Internal.ObjectResultExecutor
+file:? line? 
+content:Executing ObjectResult, writing value Microsoft.AspNetCore.Mvc.ControllerContext.
+
+-----------------------------------------
+
+time:2017-08-28 14:25:16,767 
+level:INFO 
+logger:Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker
+file:? line? 
+content:Executed action NTCore.WebFront.Controllers.ValuesController.Get (NTCore.WebFront) in 3428.5449ms
+
+-----------------------------------------
+
+time:2017-08-28 14:25:16,778 
+level:INFO 
+logger:Microsoft.AspNetCore.Hosting.Internal.WebHost
+file:? line? 
+content:Request finished in 3633.7313ms 200 application/json; charset=utf-8
+
+-----------------------------------------
+
+time:2017-08-28 14:25:16,792 
+level:INFO 
+logger:Microsoft.AspNetCore.Hosting.Internal.WebHost
+file:? line? 
+content:Request starting HTTP/1.1 GET http://localhost:57942/favicon.ico  
+
+-----------------------------------------
+
+time:2017-08-28 14:25:16,798 
+level:INFO 
+logger:Microsoft.AspNetCore.Hosting.Internal.WebHost
+file:? line? 
+content:Request finished in 3.4069ms 404 
+
+-----------------------------------------
+
+time:2017-08-28 14:25:20,838 
+level:INFO 
+logger:Microsoft.AspNetCore.Hosting.Internal.WebHost
+file:? line? 
+content:Request starting HTTP/1.1 GET http://localhost:57942/api/values/1111  
+
+-----------------------------------------
+
+time:2017-08-28 14:25:26,340 
+level:INFO 
+logger:Microsoft.AspNetCore.Mvc.Internal.ObjectResultExecutor
+file:? line? 
+content:Executing ObjectResult, writing value Microsoft.AspNetCore.Mvc.ControllerContext.
+
+-----------------------------------------
+
+time:2017-08-28 14:25:26,377 
+level:INFO 
+logger:Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker
+file:? line? 
+content:Executed action NTCore.WebFront.Controllers.ValuesController.Get (NTCore.WebFront) in 5497.8474ms
+
+-----------------------------------------
+
+time:2017-08-28 14:25:26,384 
+level:INFO 
+logger:Microsoft.AspNetCore.Hosting.Internal.WebHost
+file:? line? 
+content:Request finished in 5543.56ms 400 application/json; charset=utf-8
+
+-----------------------------------------
+
+time:2017-08-28 14:28:11,581 
+level:INFO 
+logger:Microsoft.AspNetCore.Hosting.Internal.WebHost
+file:? line? 
+content:Request starting HTTP/1.1 GET http://localhost:57942/api/values  
+
+-----------------------------------------
+
+time:2017-08-28 14:28:14,525 
+level:WARN 
+logger:Microsoft.AspNetCore.Server.Kestrel
+file:? line? 
+content:Heartbeat took longer than "00:00:01" at "08/28/2017 06:28:14 +00:00".
+
+-----------------------------------------
+
+time:2017-08-28 14:28:14,530 
+level:INFO 
+logger:Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker
+file:? line? 
+content:Executing action method NTCore.WebFront.Controllers.ValuesController.Get (NTCore.WebFront) with arguments ((null)) - ModelState is Valid
+
+-----------------------------------------
+
+time:2017-08-28 14:28:14,549 
+level:ERROR 
+logger:NTCore.WebFront.Controllers.ValuesController
+file:? line? 
+content:BBBBBBBBBBBBBBBBBBBB
+
+-----------------------------------------
+
+time:2017-08-28 14:28:14,907 
+level:INFO 
+logger:Microsoft.AspNetCore.Mvc.Internal.ObjectResultExecutor
+file:? line? 
+content:Executing ObjectResult, writing value Microsoft.AspNetCore.Mvc.ControllerContext.
+
+-----------------------------------------
+
+time:2017-08-28 14:28:14,960 
+level:INFO 
+logger:Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker
+file:? line? 
+content:Executed action NTCore.WebFront.Controllers.ValuesController.Get (NTCore.WebFront) in 3178.5807ms
+
+-----------------------------------------
+
+time:2017-08-28 14:28:14,966 
+level:INFO 
+logger:Microsoft.AspNetCore.Hosting.Internal.WebHost
+file:? line? 
+content:Request finished in 3395.2771ms 200 application/json; charset=utf-8
+
+-----------------------------------------
+
+time:2017-08-28 14:28:14,986 
+level:INFO 
+logger:Microsoft.AspNetCore.Hosting.Internal.WebHost
+file:? line? 
+content:Request starting HTTP/1.1 GET http://localhost:57942/favicon.ico  
+
+-----------------------------------------
+
+time:2017-08-28 14:28:14,990 
+level:INFO 
+logger:Microsoft.AspNetCore.Hosting.Internal.WebHost
+file:? line? 
+content:Request finished in 3.3488ms 404 
+
+-----------------------------------------
+
+time:2017-08-28 14:28:18,369 
+level:INFO 
+logger:Microsoft.AspNetCore.Hosting.Internal.WebHost
+file:? line? 
+content:Request starting HTTP/1.1 GET http://localhost:57942/api/values/1111  
+
+-----------------------------------------
+
+time:2017-08-28 14:28:27,087 
+level:INFO 
+logger:Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker
+file:? line? 
+content:Executing action method NTCore.WebFront.Controllers.ValuesController.Get (NTCore.WebFront) with arguments (1111, ) - ModelState is Valid
+
+-----------------------------------------
+
+time:2017-08-28 14:28:37,209 
+level:INFO 
+logger:Microsoft.AspNetCore.Mvc.Internal.ObjectResultExecutor
+file:? line? 
+content:Executing ObjectResult, writing value Microsoft.AspNetCore.Mvc.ControllerContext.
+
+-----------------------------------------
+
+time:2017-08-28 14:28:37,213 
+level:INFO 
+logger:Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker
+file:? line? 
+content:Executed action NTCore.WebFront.Controllers.ValuesController.Get (NTCore.WebFront) in 18828.0743ms
+
+-----------------------------------------
+
+time:2017-08-28 14:28:37,228 
+level:INFO 
+logger:Microsoft.AspNetCore.Hosting.Internal.WebHost
+file:? line? 
+content:Request finished in 18846.8867ms 200 text/plain; charset=utf-8
+
+-----------------------------------------
+
+time:2017-08-28 14:28:38,897 
+level:INFO 
+logger:Microsoft.AspNetCore.Hosting.Internal.WebHost
+file:? line? 
+content:Request starting HTTP/1.1 GET http://localhost:57942/api/values/1111  
+
+-----------------------------------------
+
+time:2017-08-28 14:29:19,974 
+level:INFO 
+logger:Microsoft.AspNetCore.Hosting.Internal.WebHost
+file:? line? 
+content:Request starting HTTP/1.1 GET http://localhost:57942/api/values  
+
+-----------------------------------------
+
+time:2017-08-28 14:29:21,764 
+level:WARN 
+logger:Microsoft.AspNetCore.Server.Kestrel
+file:? line? 
+content:Heartbeat took longer than "00:00:01" at "08/28/2017 06:29:21 +00:00".
+
+-----------------------------------------
+
+time:2017-08-28 14:29:21,791 
+level:INFO 
+logger:Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker
+file:? line? 
+content:Executing action method NTCore.WebFront.Controllers.ValuesController.Get (NTCore.WebFront) with arguments ((null)) - ModelState is Valid
+
+-----------------------------------------
+
+time:2017-08-28 14:29:21,809 
+level:ERROR 
+logger:NTCore.WebFront.Controllers.ValuesController
+file:? line? 
+content:BBBBBBBBBBBBBBBBBBBB
+
+-----------------------------------------
+
+time:2017-08-28 14:29:22,143 
+level:INFO 
+logger:Microsoft.AspNetCore.Mvc.Internal.ObjectResultExecutor
+file:? line? 
+content:Executing ObjectResult, writing value Microsoft.AspNetCore.Mvc.ControllerContext.
+
+-----------------------------------------
+
+time:2017-08-28 14:29:22,201 
+level:INFO 
+logger:Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker
+file:? line? 
+content:Executed action NTCore.WebFront.Controllers.ValuesController.Get (NTCore.WebFront) in 2045.6763ms
+
+-----------------------------------------
+
+time:2017-08-28 14:29:22,210 
+level:INFO 
+logger:Microsoft.AspNetCore.Hosting.Internal.WebHost
+file:? line? 
+content:Request finished in 2241.6413ms 200 application/json; charset=utf-8
+
+-----------------------------------------
+
+time:2017-08-28 14:29:22,225 
+level:INFO 
+logger:Microsoft.AspNetCore.Hosting.Internal.WebHost
+file:? line? 
+content:Request starting HTTP/1.1 GET http://localhost:57942/favicon.ico  
+
+-----------------------------------------
+
+time:2017-08-28 14:29:22,230 
+level:INFO 
+logger:Microsoft.AspNetCore.Hosting.Internal.WebHost
+file:? line? 
+content:Request finished in 3.8271ms 404 
+
+-----------------------------------------
+
+time:2017-08-28 14:29:24,224 
+level:INFO 
+logger:Microsoft.AspNetCore.Hosting.Internal.WebHost
+file:? line? 
+content:Request starting HTTP/1.1 GET http://localhost:57942/api/values/1111  
+
+-----------------------------------------
+
+time:2017-08-28 14:29:31,424 
+level:INFO 
+logger:Microsoft.AspNetCore.Mvc.Internal.ObjectResultExecutor
+file:? line? 
+content:Executing ObjectResult, writing value Microsoft.AspNetCore.Mvc.ControllerContext.
+
+-----------------------------------------
+
+time:2017-08-28 14:29:31,459 
+level:INFO 
+logger:Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker
+file:? line? 
+content:Executed action NTCore.WebFront.Controllers.ValuesController.Get (NTCore.WebFront) in 7194ms
+
+-----------------------------------------
+
+time:2017-08-28 14:29:31,464 
+level:INFO 
+logger:Microsoft.AspNetCore.Hosting.Internal.WebHost
+file:? line? 
+content:Request finished in 7237.8026ms 400 application/json; charset=utf-8
+
+-----------------------------------------
+
+time:2017-08-28 14:29:41,296 
+level:INFO 
+logger:Microsoft.AspNetCore.Hosting.Internal.WebHost
+file:? line? 
+content:Request starting HTTP/1.1 GET http://localhost:57942/api/values/1111  
+
+-----------------------------------------
+
+time:2017-08-28 14:30:07,295 
+level:INFO 
+logger:Microsoft.AspNetCore.Hosting.Internal.WebHost
+file:? line? 
+content:Request starting HTTP/1.1 GET http://localhost:57942/api/values  
+
+-----------------------------------------
+
+time:2017-08-28 14:30:08,793 
+level:INFO 
+logger:Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker
+file:? line? 
+content:Executing action method NTCore.WebFront.Controllers.ValuesController.Get (NTCore.WebFront) with arguments ((null)) - ModelState is Valid
+
+-----------------------------------------
+
+time:2017-08-28 14:30:08,815 
+level:ERROR 
+logger:NTCore.WebFront.Controllers.ValuesController
+file:? line? 
+content:BBBBBBBBBBBBBBBBBBBB
+
+-----------------------------------------
+
+time:2017-08-28 14:30:09,160 
+level:INFO 
+logger:Microsoft.AspNetCore.Mvc.Internal.ObjectResultExecutor
+file:? line? 
+content:Executing ObjectResult, writing value Microsoft.AspNetCore.Mvc.ControllerContext.
+
+-----------------------------------------
+
+time:2017-08-28 14:30:09,221 
+level:INFO 
+logger:Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker
+file:? line? 
+content:Executed action NTCore.WebFront.Controllers.ValuesController.Get (NTCore.WebFront) in 1732.5161ms
+
+-----------------------------------------
+
+time:2017-08-28 14:30:09,226 
+level:INFO 
+logger:Microsoft.AspNetCore.Hosting.Internal.WebHost
+file:? line? 
+content:Request finished in 1940.941ms 200 application/json; charset=utf-8
+
+-----------------------------------------
+
+time:2017-08-28 14:30:09,246 
+level:INFO 
+logger:Microsoft.AspNetCore.Hosting.Internal.WebHost
+file:? line? 
+content:Request starting HTTP/1.1 GET http://localhost:57942/favicon.ico  
+
+-----------------------------------------
+
+time:2017-08-28 14:30:09,251 
+level:INFO 
+logger:Microsoft.AspNetCore.Hosting.Internal.WebHost
+file:? line? 
+content:Request finished in 3.2692ms 404 
+
+-----------------------------------------
+
+time:2017-08-28 14:30:12,085 
+level:INFO 
+logger:Microsoft.AspNetCore.Hosting.Internal.WebHost
+file:? line? 
+content:Request starting HTTP/1.1 GET http://localhost:57942/api/values/1111  
+
+-----------------------------------------
+
+time:2017-08-28 14:30:13,739 
+level:INFO 
+logger:Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker
+file:? line? 
+content:Executing action method NTCore.WebFront.Controllers.ValuesController.Get (NTCore.WebFront) with arguments (1111, NTCore.WebFront.Controllers.User) - ModelState is Invalid
+
+-----------------------------------------
+
+time:2017-08-28 14:30:14,372 
+level:INFO 
+logger:Microsoft.AspNetCore.Mvc.Internal.ObjectResultExecutor
+file:? line? 
+content:Executing ObjectResult, writing value Microsoft.AspNetCore.Mvc.ControllerContext.
+
+-----------------------------------------
+
+time:2017-08-28 14:30:14,376 
+level:INFO 
+logger:Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker
+file:? line? 
+content:Executed action NTCore.WebFront.Controllers.ValuesController.Get (NTCore.WebFront) in 2250.6972ms
+
+-----------------------------------------
+
+time:2017-08-28 14:30:14,395 
+level:INFO 
+logger:Microsoft.AspNetCore.Hosting.Internal.WebHost
+file:? line? 
+content:Request finished in 2293.7511ms 200 text/plain; charset=utf-8
+
+-----------------------------------------
+
+time:2017-08-28 14:30:41,278 
+level:INFO 
+logger:Microsoft.AspNetCore.Hosting.Internal.WebHost
+file:? line? 
+content:Request starting HTTP/1.1 GET http://localhost:57942/api/values  
+
+-----------------------------------------
+
+time:2017-08-28 14:30:42,956 
+level:INFO 
+logger:Microsoft.AspNetCore.Hosting.Internal.WebHost
+file:? line? 
+content:Request starting HTTP/1.1 GET http://localhost:57942/api/values  
+
+-----------------------------------------
+
+time:2017-08-28 14:30:44,290 
+level:INFO 
+logger:Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker
+file:? line? 
+content:Executing action method NTCore.WebFront.Controllers.ValuesController.Get (NTCore.WebFront) with arguments ((null)) - ModelState is Valid
+
+-----------------------------------------
+
+time:2017-08-28 14:30:44,291 
+level:INFO 
+logger:Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker
+file:? line? 
+content:Executing action method NTCore.WebFront.Controllers.ValuesController.Get (NTCore.WebFront) with arguments ((null)) - ModelState is Valid
+
+-----------------------------------------
+
+time:2017-08-28 14:30:44,354 
+level:ERROR 
+logger:NTCore.WebFront.Controllers.ValuesController
+file:? line? 
+content:BBBBBBBBBBBBBBBBBBBB
+
+-----------------------------------------
+
+time:2017-08-28 14:30:44,357 
+level:ERROR 
+logger:NTCore.WebFront.Controllers.ValuesController
+file:? line? 
+content:BBBBBBBBBBBBBBBBBBBB
+
+-----------------------------------------
+
+time:2017-08-28 14:30:44,786 
+level:INFO 
+logger:Microsoft.AspNetCore.Mvc.Internal.ObjectResultExecutor
+file:? line? 
+content:Executing ObjectResult, writing value Microsoft.AspNetCore.Mvc.ControllerContext.
+
+-----------------------------------------
+
+time:2017-08-28 14:30:44,787 
+level:INFO 
+logger:Microsoft.AspNetCore.Mvc.Internal.ObjectResultExecutor
+file:? line? 
+content:Executing ObjectResult, writing value Microsoft.AspNetCore.Mvc.ControllerContext.
+
+-----------------------------------------
+
+time:2017-08-28 14:30:44,847 
+level:INFO 
+logger:Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker
+file:? line? 
+content:Executed action NTCore.WebFront.Controllers.ValuesController.Get (NTCore.WebFront) in 3351.2143ms
+
+-----------------------------------------
+
+time:2017-08-28 14:30:44,853 
+level:INFO 
+logger:Microsoft.AspNetCore.Hosting.Internal.WebHost
+file:? line? 
+content:Request finished in 3584.6409ms 200 application/json; charset=utf-8
+
+-----------------------------------------
+
+time:2017-08-28 14:30:44,857 
+level:INFO 
+logger:Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker
+file:? line? 
+content:Executed action NTCore.WebFront.Controllers.ValuesController.Get (NTCore.WebFront) in 1875.6036ms
+
+-----------------------------------------
+
+time:2017-08-28 14:30:44,864 
+level:INFO 
+logger:Microsoft.AspNetCore.Hosting.Internal.WebHost
+file:? line? 
+content:Request finished in 1904.1001ms 200 application/json; charset=utf-8
+
+-----------------------------------------
+
+time:2017-08-28 14:30:44,896 
+level:INFO 
+logger:Microsoft.AspNetCore.Hosting.Internal.WebHost
+file:? line? 
+content:Request starting HTTP/1.1 GET http://localhost:57942/favicon.ico  
+
+-----------------------------------------
+
+time:2017-08-28 14:30:44,905 
+level:INFO 
+logger:Microsoft.AspNetCore.Hosting.Internal.WebHost
+file:? line? 
+content:Request finished in 2.9606ms 404 
+
+-----------------------------------------
+
+time:2017-08-28 14:30:48,029 
+level:INFO 
+logger:Microsoft.AspNetCore.Hosting.Internal.WebHost
+file:? line? 
+content:Request starting HTTP/1.1 GET http://localhost:57942/api/values/1111  
+
+-----------------------------------------
+
+time:2017-08-28 14:31:33,970 
+level:INFO 
+logger:Microsoft.AspNetCore.Mvc.Internal.ObjectResultExecutor
+file:? line? 
+content:Executing ObjectResult, writing value Microsoft.AspNetCore.Mvc.ControllerContext.
+
+-----------------------------------------
+
+time:2017-08-28 14:31:34,001 
+level:INFO 
+logger:Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker
+file:? line? 
+content:Executed action NTCore.WebFront.Controllers.ValuesController.Get (NTCore.WebFront) in 45929.3928ms
+
+-----------------------------------------
+
+time:2017-08-28 14:31:34,015 
+level:INFO 
+logger:Microsoft.AspNetCore.Hosting.Internal.WebHost
+file:? line? 
+content:Request finished in 45975.1484ms 400 application/json; charset=utf-8
+
+-----------------------------------------
+
+time:2017-08-28 14:34:57,793 
+level:INFO 
+logger:Microsoft.AspNetCore.Hosting.Internal.WebHost
+file:? line? 
+content:Request starting HTTP/1.1 GET http://localhost:57942/api/values  
+
+-----------------------------------------
+
+time:2017-08-28 14:35:02,591 
+level:WARN 
+logger:Microsoft.AspNetCore.Server.Kestrel
+file:? line? 
+content:Heartbeat took longer than "00:00:01" at "08/28/2017 06:34:59 +00:00".
+
+-----------------------------------------
+
+time:2017-08-28 14:35:02,622 
+level:INFO 
+logger:Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker
+file:? line? 
+content:Executing action method NTCore.WebFront.Controllers.ValuesController.Get (NTCore.WebFront) with arguments ((null)) - ModelState is Valid
+
+-----------------------------------------
+
+time:2017-08-28 14:35:02,640 
+level:ERROR 
+logger:NTCore.WebFront.Controllers.ValuesController
+file:? line? 
+content:BBBBBBBBBBBBBBBBBBBB
+
+-----------------------------------------
+
+time:2017-08-28 14:35:03,258 
+level:INFO 
+logger:Microsoft.AspNetCore.Mvc.Internal.ObjectResultExecutor
+file:? line? 
+content:Executing ObjectResult, writing value Microsoft.AspNetCore.Mvc.ControllerContext.
+
+-----------------------------------------
+
+time:2017-08-28 14:35:03,402 
+level:INFO 
+logger:Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker
+file:? line? 
+content:Executed action NTCore.WebFront.Controllers.ValuesController.Get (NTCore.WebFront) in 5419.6908ms
+
+-----------------------------------------
+
+time:2017-08-28 14:35:03,524 
+level:INFO 
+logger:Microsoft.AspNetCore.Hosting.Internal.WebHost
+file:? line? 
+content:Request finished in 5745.3876ms 200 application/json; charset=utf-8
+
+-----------------------------------------
+
+time:2017-08-28 14:35:03,545 
+level:INFO 
+logger:Microsoft.AspNetCore.Hosting.Internal.WebHost
+file:? line? 
+content:Request starting HTTP/1.1 GET http://localhost:57942/favicon.ico  
+
+-----------------------------------------
+
+time:2017-08-28 14:35:03,550 
+level:INFO 
+logger:Microsoft.AspNetCore.Hosting.Internal.WebHost
+file:? line? 
+content:Request finished in 5.4962ms 404 
+
+-----------------------------------------
+
+time:2017-08-28 14:35:06,956 
+level:INFO 
+logger:Microsoft.AspNetCore.Hosting.Internal.WebHost
+file:? line? 
+content:Request starting HTTP/1.1 GET http://localhost:57942/api/values/1111  
+
+-----------------------------------------
+
+time:2017-08-28 14:35:35,734 
+level:INFO 
+logger:Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker
+file:? line? 
+content:Executing action method NTCore.WebFront.Controllers.ValuesController.Get (NTCore.WebFront) with arguments (1111, ) - ModelState is Valid
+
+-----------------------------------------
+
+time:2017-08-28 14:35:45,550 
+level:INFO 
+logger:Microsoft.AspNetCore.Mvc.Internal.ObjectResultExecutor
+file:? line? 
+content:Executing ObjectResult, writing value Microsoft.AspNetCore.Mvc.ControllerContext.
+
+-----------------------------------------
+
+time:2017-08-28 14:35:45,554 
+level:INFO 
+logger:Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker
+file:? line? 
+content:Executed action NTCore.WebFront.Controllers.ValuesController.Get (NTCore.WebFront) in 38578.4401ms
+
+-----------------------------------------
+
+time:2017-08-28 14:35:45,559 
+level:INFO 
+logger:Microsoft.AspNetCore.Hosting.Internal.WebHost
+file:? line? 
+content:Request finished in 38600.8161ms 200 text/plain; charset=utf-8
+
+-----------------------------------------
+
+time:2017-08-28 14:36:02,228 
+level:INFO 
+logger:Microsoft.AspNetCore.Hosting.Internal.WebHost
+file:? line? 
+content:Request starting HTTP/1.1 GET http://localhost:57942/api/values  
+
+-----------------------------------------
+
+time:2017-08-28 14:36:04,896 
+level:INFO 
+logger:Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker
+file:? line? 
+content:Executing action method NTCore.WebFront.Controllers.ValuesController.Get (NTCore.WebFront) with arguments ((null)) - ModelState is Valid
+
+-----------------------------------------
+
+time:2017-08-28 14:36:04,917 
+level:ERROR 
+logger:NTCore.WebFront.Controllers.ValuesController
+file:? line? 
+content:BBBBBBBBBBBBBBBBBBBB
+
+-----------------------------------------
+
+time:2017-08-28 14:36:05,173 
+level:INFO 
+logger:Microsoft.AspNetCore.Mvc.Internal.ObjectResultExecutor
+file:? line? 
+content:Executing ObjectResult, writing value Microsoft.AspNetCore.Mvc.ControllerContext.
+
+-----------------------------------------
+
+time:2017-08-28 14:36:05,224 
+level:INFO 
+logger:Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker
+file:? line? 
+content:Executed action NTCore.WebFront.Controllers.ValuesController.Get (NTCore.WebFront) in 2807.891ms
+
+-----------------------------------------
+
+time:2017-08-28 14:36:05,233 
+level:INFO 
+logger:Microsoft.AspNetCore.Hosting.Internal.WebHost
+file:? line? 
+content:Request finished in 3011.0044ms 200 application/json; charset=utf-8
+
+-----------------------------------------
+
+time:2017-08-28 14:36:05,250 
+level:INFO 
+logger:Microsoft.AspNetCore.Hosting.Internal.WebHost
+file:? line? 
+content:Request starting HTTP/1.1 GET http://localhost:57942/favicon.ico  
+
+-----------------------------------------
+
+time:2017-08-28 14:36:05,255 
+level:INFO 
+logger:Microsoft.AspNetCore.Hosting.Internal.WebHost
+file:? line? 
+content:Request finished in 3.1807ms 404 
+
+-----------------------------------------
+
+time:2017-08-28 14:36:07,648 
+level:INFO 
+logger:Microsoft.AspNetCore.Hosting.Internal.WebHost
+file:? line? 
+content:Request starting HTTP/1.1 GET http://localhost:57942/api/values/1111  
+
+-----------------------------------------
+
+time:2017-08-28 14:36:49,752 
+level:INFO 
+logger:Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker
+file:? line? 
+content:Executing action method NTCore.WebFront.Controllers.ValuesController.Get (NTCore.WebFront) with arguments (1111, ) - ModelState is Valid
+
+-----------------------------------------
+
+time:2017-08-28 14:37:13,029 
+level:INFO 
+logger:Microsoft.AspNetCore.Hosting.Internal.WebHost
+file:? line? 
+content:Request starting HTTP/1.1 GET http://localhost:57942/api/values  
