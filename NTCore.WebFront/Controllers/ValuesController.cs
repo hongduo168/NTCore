@@ -2,13 +2,18 @@
 using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
 using System.Linq;
+using System.Security.Claims;
 using System.Threading.Tasks;
+using Microsoft.AspNetCore.Authentication;
+using Microsoft.AspNetCore.Authentication.Cookies;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.ModelBinding.Metadata;
 using Microsoft.AspNetCore.Mvc.ModelBinding.Validation;
 using Microsoft.Extensions.Logging;
 using NTCore.Extensions.MvcFilter;
 using NTCore.RedisAccess;
+using NTCore.Utility;
 
 namespace NTCore.WebFront.Controllers
 {
@@ -22,15 +27,27 @@ namespace NTCore.WebFront.Controllers
             this.logger = logger;
         }
 
-
+        [AllowAnonymous]
         // GET api/values
         [HttpGet]
-        public IEnumerable<string> Get()
+        public async Task<IEnumerable<string>> GetAsync()
         {
-            logger.LogError("BBBBBBBBBBBBBBBBBBBB", new AggregateException());
-            return new string[] { "value1", "value2", RedisConfig.Get() };
+            var user = new ClaimsPrincipal(new ClaimsIdentity(new[] { new Claim(ClaimTypes.Name, "bob"), new Claim(ClaimTypes.Name, "bob222") }, CookieKeys.AuthenticationScheme));
+            await HttpContext.SignInAsync(CookieKeys.AuthenticationScheme, user, new AuthenticationProperties
+            {
+                IsPersistent = true,
+                ExpiresUtc = DateTimeOffset.Now.Add(TimeSpan.FromDays(180)),
+            });
+
+            var nameValue = User.FindFirst(ClaimTypes.Name)?.Value;
+
+            var isAuth = User.Identity.IsAuthenticated;
+            var name = User.Identity.Name;
+
+            return new string[] { nameValue, isAuth.ToString(), RedisConfig.Get() };
         }
 
+        [Authorize]
         // GET api/values/5
         [HttpGet("{id}")]
         [ValidationArray("name")]

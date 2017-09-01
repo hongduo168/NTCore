@@ -15,4 +15,8 @@
     <ProjectReference Include="..\NTCore.Utility\NTCore.Utility.csproj" />
   </ItemGroup>
 
+  <ItemGroup>
+    <Folder Include="Validator\" />
+  </ItemGroup>
+
 </Project>

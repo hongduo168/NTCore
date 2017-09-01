@@ -1,0 +1,3608 @@
+
+-----------------------------------------
+
+time:2017-08-29 17:09:27,941 
+level:INFO 
+logger:Microsoft.AspNetCore.Hosting.Internal.WebHost
+file:? line? 
+content:Request starting HTTP/1.1 GET http://localhost:57942/api/values  
+
+-----------------------------------------
+
+time:2017-08-29 17:09:32,612 
+level:INFO 
+logger:Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker
+file:? line? 
+content:Executing action method NTCore.WebFront.Controllers.ValuesController.GetAsync (NTCore.WebFront) with arguments ((null)) - ModelState is Valid
+
+-----------------------------------------
+
+time:2017-08-29 17:09:32,671 
+level:INFO 
+logger:Microsoft.AspNetCore.Authentication.Cookies.CookieAuthenticationHandler
+file:? line? 
+content:AuthenticationScheme: CookieAuthenticationScheme signed in.
+
+-----------------------------------------
+
+time:2017-08-29 17:09:32,678 
+level:ERROR 
+logger:NTCore.WebFront.Controllers.ValuesController
+file:? line? 
+content:BBBBBBBBBBBBBBBBBBBB
+
+-----------------------------------------
+
+time:2017-08-29 17:09:35,564 
+level:INFO 
+logger:Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker
+file:? line? 
+content:Executed action NTCore.WebFront.Controllers.ValuesController.GetAsync (NTCore.WebFront) in 7437.9357ms
+
+-----------------------------------------
+
+time:2017-08-29 17:09:35,671 
+level:ERROR 
+logger:Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware
+file:? line? 
+content:An unhandled exception has occurred while executing the request
+StackExchange.Redis.RedisConnectionException: It was not possible to connect to the redis server(s); to create a disconnected multiplexer, disable AbortOnConnectFail. SocketFailure on PING
+   at StackExchange.Redis.ConnectionMultiplexer.ConnectImpl(Func`1 multiplexerFactory, TextWriter log) in c:\code\StackExchange.Redis\StackExchange.Redis\StackExchange\Redis\ConnectionMultiplexer.cs:line 890
+   at NTCore.RedisAccess.RedisConfig.Get() in D:\Projects\NTPlatform\NTCore.RedisAccess\RedisConfig.cs:line 10
+   at NTCore.WebFront.Controllers.ValuesController.<GetAsync>d__2.MoveNext() in D:\Projects\NTPlatform\NTCore.WebFront\Controllers\ValuesController.cs:line 36
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at lambda_method(Closure , Object )
+   at Microsoft.Extensions.Internal.ObjectMethodExecutorAwaitable.Awaiter.GetResult()
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.<InvokeActionMethodAsync>d__12.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.<InvokeNextActionFilterAsync>d__10.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.Rethrow(ActionExecutedContext context)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.<InvokeInnerFilterAsync>d__14.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.<InvokeNextResourceFilter>d__22.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.Rethrow(ResourceExecutedContext context)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.<InvokeFilterPipelineAsync>d__17.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.<InvokeAsync>d__15.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Builder.RouterMiddleware.<Invoke>d__4.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.<Invoke>d__7.MoveNext()
+
+-----------------------------------------
+
+time:2017-08-29 17:09:35,795 
+level:INFO 
+logger:Microsoft.AspNetCore.Hosting.Internal.WebHost
+file:? line? 
+content:Request finished in 7862.7363ms 500 text/html; charset=utf-8
+
+-----------------------------------------
+
+time:2017-08-29 17:09:35,840 
+level:INFO 
+logger:Microsoft.AspNetCore.Hosting.Internal.WebHost
+file:? line? 
+content:Request starting HTTP/1.1 GET http://localhost:57942/favicon.ico  
+
+-----------------------------------------
+
+time:2017-08-29 17:09:35,853 
+level:INFO 
+logger:Microsoft.AspNetCore.Hosting.Internal.WebHost
+file:? line? 
+content:Request finished in 7.4958ms 404 
+
+-----------------------------------------
+
+time:2017-08-29 17:10:00,537 
+level:INFO 
+logger:Microsoft.AspNetCore.Hosting.Internal.WebHost
+file:? line? 
+content:Request starting HTTP/1.1 GET http://localhost:57942/api/values  
+
+-----------------------------------------
+
+time:2017-08-29 17:10:02,019 
+level:INFO 
+logger:Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker
+file:? line? 
+content:Executing action method NTCore.WebFront.Controllers.ValuesController.GetAsync (NTCore.WebFront) with arguments ((null)) - ModelState is Valid
+
+-----------------------------------------
+
+time:2017-08-29 17:10:02,022 
+level:INFO 
+logger:Microsoft.AspNetCore.Authentication.Cookies.CookieAuthenticationHandler
+file:? line? 
+content:AuthenticationScheme: CookieAuthenticationScheme signed in.
+
+-----------------------------------------
+
+time:2017-08-29 17:10:02,046 
+level:ERROR 
+logger:NTCore.WebFront.Controllers.ValuesController
+file:? line? 
+content:BBBBBBBBBBBBBBBBBBBB
+
+-----------------------------------------
+
+time:2017-08-29 17:10:04,652 
+level:INFO 
+logger:Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker
+file:? line? 
+content:Executed action NTCore.WebFront.Controllers.ValuesController.GetAsync (NTCore.WebFront) in 4111.4032ms
+
+-----------------------------------------
+
+time:2017-08-29 17:10:04,717 
+level:ERROR 
+logger:Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware
+file:? line? 
+content:An unhandled exception has occurred while executing the request
+StackExchange.Redis.RedisConnectionException: It was not possible to connect to the redis server(s); to create a disconnected multiplexer, disable AbortOnConnectFail. SocketFailure on PING
+   at StackExchange.Redis.ConnectionMultiplexer.ConnectImpl(Func`1 multiplexerFactory, TextWriter log) in c:\code\StackExchange.Redis\StackExchange.Redis\StackExchange\Redis\ConnectionMultiplexer.cs:line 890
+   at NTCore.RedisAccess.RedisConfig.Get() in D:\Projects\NTPlatform\NTCore.RedisAccess\RedisConfig.cs:line 10
+   at NTCore.WebFront.Controllers.ValuesController.<GetAsync>d__2.MoveNext() in D:\Projects\NTPlatform\NTCore.WebFront\Controllers\ValuesController.cs:line 36
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at lambda_method(Closure , Object )
+   at Microsoft.Extensions.Internal.ObjectMethodExecutorAwaitable.Awaiter.GetResult()
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.<InvokeActionMethodAsync>d__12.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.<InvokeNextActionFilterAsync>d__10.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.Rethrow(ActionExecutedContext context)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.<InvokeInnerFilterAsync>d__14.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.<InvokeNextResourceFilter>d__22.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.Rethrow(ResourceExecutedContext context)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.<InvokeFilterPipelineAsync>d__17.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.<InvokeAsync>d__15.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Builder.RouterMiddleware.<Invoke>d__4.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.<Invoke>d__7.MoveNext()
+
+-----------------------------------------
+
+time:2017-08-29 17:10:04,766 
+level:INFO 
+logger:Microsoft.AspNetCore.Hosting.Internal.WebHost
+file:? line? 
+content:Request finished in 4225.6474ms 500 text/html; charset=utf-8
+
+-----------------------------------------
+
+time:2017-08-29 17:10:45,260 
+level:INFO 
+logger:Microsoft.AspNetCore.Hosting.Internal.WebHost
+file:? line? 
+content:Request starting HTTP/1.1 GET http://localhost:57942/api/values  
+
+-----------------------------------------
+
+time:2017-08-29 17:10:46,018 
+level:INFO 
+logger:Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker
+file:? line? 
+content:Executing action method NTCore.WebFront.Controllers.ValuesController.GetAsync (NTCore.WebFront) with arguments ((null)) - ModelState is Valid
+
+-----------------------------------------
+
+time:2017-08-29 17:10:46,022 
+level:INFO 
+logger:Microsoft.AspNetCore.Authentication.Cookies.CookieAuthenticationHandler
+file:? line? 
+content:AuthenticationScheme: CookieAuthenticationScheme signed in.
+
+-----------------------------------------
+
+time:2017-08-29 17:10:46,027 
+level:ERROR 
+logger:NTCore.WebFront.Controllers.ValuesController
+file:? line? 
+content:BBBBBBBBBBBBBBBBBBBB
+
+-----------------------------------------
+
+time:2017-08-29 17:10:46,141 
+level:INFO 
+logger:Microsoft.AspNetCore.Mvc.Internal.ObjectResultExecutor
+file:? line? 
+content:Executing ObjectResult, writing value Microsoft.AspNetCore.Mvc.ControllerContext.
+
+-----------------------------------------
+
+time:2017-08-29 17:10:46,181 
+level:INFO 
+logger:Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker
+file:? line? 
+content:Executed action NTCore.WebFront.Controllers.ValuesController.GetAsync (NTCore.WebFront) in 917.9379ms
+
+-----------------------------------------
+
+time:2017-08-29 17:10:46,183 
+level:INFO 
+logger:Microsoft.AspNetCore.Hosting.Internal.WebHost
+file:? line? 
+content:Request finished in 923.9205ms 200 application/json; charset=utf-8
+
+-----------------------------------------
+
+time:2017-08-29 17:11:11,427 
+level:INFO 
+logger:Microsoft.AspNetCore.Hosting.Internal.WebHost
+file:? line? 
+content:Request starting HTTP/1.1 GET http://localhost:57942/api/values  
+
+-----------------------------------------
+
+time:2017-08-29 17:11:12,763 
+level:INFO 
+logger:Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker
+file:? line? 
+content:Executing action method NTCore.WebFront.Controllers.ValuesController.GetAsync (NTCore.WebFront) with arguments ((null)) - ModelState is Valid
+
+-----------------------------------------
+
+time:2017-08-29 17:12:48,061 
+level:INFO 
+logger:Microsoft.AspNetCore.Authentication.Cookies.CookieAuthenticationHandler
+file:? line? 
+content:AuthenticationScheme: CookieAuthenticationScheme signed in.
+
+-----------------------------------------
+
+time:2017-08-29 17:12:48,066 
+level:ERROR 
+logger:NTCore.WebFront.Controllers.ValuesController
+file:? line? 
+content:BBBBBBBBBBBBBBBBBBBB
+
+-----------------------------------------
+
+time:2017-08-29 17:12:48,132 
+level:INFO 
+logger:Microsoft.AspNetCore.Mvc.Internal.ObjectResultExecutor
+file:? line? 
+content:Executing ObjectResult, writing value Microsoft.AspNetCore.Mvc.ControllerContext.
+
+-----------------------------------------
+
+time:2017-08-29 17:12:48,154 
+level:INFO 
+logger:Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker
+file:? line? 
+content:Executed action NTCore.WebFront.Controllers.ValuesController.GetAsync (NTCore.WebFront) in 96718.1782ms
+
+-----------------------------------------
+
+time:2017-08-29 17:12:48,168 
+level:INFO 
+logger:Microsoft.AspNetCore.Hosting.Internal.WebHost
+file:? line? 
+content:Request finished in 96729.3232ms 200 application/json; charset=utf-8
+
+-----------------------------------------
+
+time:2017-08-29 17:54:17,357 
+level:INFO 
+logger:Microsoft.AspNetCore.Hosting.Internal.WebHost
+file:? line? 
+content:Request starting HTTP/1.1 GET http://localhost:57942/api/values  
+
+-----------------------------------------
+
+time:2017-08-29 17:54:20,032 
+level:INFO 
+logger:Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker
+file:? line? 
+content:Executing action method NTCore.WebFront.Controllers.ValuesController.GetAsync (NTCore.WebFront) with arguments ((null)) - ModelState is Valid
+
+-----------------------------------------
+
+time:2017-08-29 17:54:20,285 
+level:INFO 
+logger:Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker
+file:? line? 
+content:Executed action NTCore.WebFront.Controllers.ValuesController.GetAsync (NTCore.WebFront) in 2776.0794ms
+
+-----------------------------------------
+
+time:2017-08-29 17:54:20,363 
+level:ERROR 
+logger:Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware
+file:? line? 
+content:An unhandled exception has occurred while executing the request
+System.InvalidOperationException: No IAuthenticationSignInHandler is configured to handle sign in for the scheme: IdeaCoreUser
+   at Microsoft.AspNetCore.Authentication.AuthenticationService.<SignInAsync>d__13.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at NTCore.WebFront.Controllers.ValuesController.<GetAsync>d__2.MoveNext() in D:\Projects\NTPlatform\NTCore.WebFront\Controllers\ValuesController.cs:line 38
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at lambda_method(Closure , Object )
+   at Microsoft.Extensions.Internal.ObjectMethodExecutorAwaitable.Awaiter.GetResult()
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.<InvokeActionMethodAsync>d__12.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.<InvokeNextActionFilterAsync>d__10.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.Rethrow(ActionExecutedContext context)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.<InvokeInnerFilterAsync>d__14.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.<InvokeNextResourceFilter>d__22.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.Rethrow(ResourceExecutedContext context)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.<InvokeFilterPipelineAsync>d__17.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.<InvokeAsync>d__15.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Builder.RouterMiddleware.<Invoke>d__4.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.<Invoke>d__7.MoveNext()
+
+-----------------------------------------
+
+time:2017-08-29 17:54:20,492 
+level:INFO 
+logger:Microsoft.AspNetCore.Hosting.Internal.WebHost
+file:? line? 
+content:Request finished in 3138.9815ms 500 text/html; charset=utf-8
+
+-----------------------------------------
+
+time:2017-08-29 17:54:20,525 
+level:INFO 
+logger:Microsoft.AspNetCore.Hosting.Internal.WebHost
+file:? line? 
+content:Request starting HTTP/1.1 GET http://localhost:57942/favicon.ico  
+
+-----------------------------------------
+
+time:2017-08-29 17:54:20,530 
+level:INFO 
+logger:Microsoft.AspNetCore.Hosting.Internal.WebHost
+file:? line? 
+content:Request finished in 4.7414ms 404 
+
+-----------------------------------------
+
+time:2017-08-29 17:54:45,401 
+level:INFO 
+logger:Microsoft.AspNetCore.Hosting.Internal.WebHost
+file:? line? 
+content:Request starting HTTP/1.1 GET http://localhost:57942/api/values  
+
+-----------------------------------------
+
+time:2017-08-29 17:54:46,962 
+level:INFO 
+logger:Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker
+file:? line? 
+content:Executing action method NTCore.WebFront.Controllers.ValuesController.GetAsync (NTCore.WebFront) with arguments ((null)) - ModelState is Valid
+
+-----------------------------------------
+
+time:2017-08-29 17:54:47,209 
+level:INFO 
+logger:Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker
+file:? line? 
+content:Executed action NTCore.WebFront.Controllers.ValuesController.GetAsync (NTCore.WebFront) in 1663.8873ms
+
+-----------------------------------------
+
+time:2017-08-29 17:54:47,286 
+level:ERROR 
+logger:Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware
+file:? line? 
+content:An unhandled exception has occurred while executing the request
+System.InvalidOperationException: No IAuthenticationSignInHandler is configured to handle sign in for the scheme: member
+   at Microsoft.AspNetCore.Authentication.AuthenticationService.<SignInAsync>d__13.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at NTCore.WebFront.Controllers.ValuesController.<GetAsync>d__2.MoveNext() in D:\Projects\NTPlatform\NTCore.WebFront\Controllers\ValuesController.cs:line 38
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at lambda_method(Closure , Object )
+   at Microsoft.Extensions.Internal.ObjectMethodExecutorAwaitable.Awaiter.GetResult()
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.<InvokeActionMethodAsync>d__12.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.<InvokeNextActionFilterAsync>d__10.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.Rethrow(ActionExecutedContext context)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.<InvokeInnerFilterAsync>d__14.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.<InvokeNextResourceFilter>d__22.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.Rethrow(ResourceExecutedContext context)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.<InvokeFilterPipelineAsync>d__17.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.<InvokeAsync>d__15.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Builder.RouterMiddleware.<Invoke>d__4.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.<Invoke>d__7.MoveNext()
+
+-----------------------------------------
+
+time:2017-08-29 17:54:47,431 
+level:INFO 
+logger:Microsoft.AspNetCore.Hosting.Internal.WebHost
+file:? line? 
+content:Request finished in 2036.2066ms 500 text/html; charset=utf-8
+
+-----------------------------------------
+
+time:2017-08-29 17:54:47,468 
+level:INFO 
+logger:Microsoft.AspNetCore.Hosting.Internal.WebHost
+file:? line? 
+content:Request starting HTTP/1.1 GET http://localhost:57942/favicon.ico  
+
+-----------------------------------------
+
+time:2017-08-29 17:54:47,473 
+level:INFO 
+logger:Microsoft.AspNetCore.Hosting.Internal.WebHost
+file:? line? 
+content:Request finished in 4.9672ms 404 
+
+-----------------------------------------
+
+time:2017-08-29 17:57:43,292 
+level:INFO 
+logger:Microsoft.AspNetCore.Hosting.Internal.WebHost
+file:? line? 
+content:Request starting HTTP/1.1 GET http://localhost:57942/api/values  
+
+-----------------------------------------
+
+time:2017-08-29 17:57:45,907 
+level:INFO 
+logger:Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker
+file:? line? 
+content:Executing action method NTCore.WebFront.Controllers.ValuesController.GetAsync (NTCore.WebFront) with arguments ((null)) - ModelState is Valid
+
+-----------------------------------------
+
+time:2017-08-29 17:57:46,145 
+level:INFO 
+logger:Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker
+file:? line? 
+content:Executed action NTCore.WebFront.Controllers.ValuesController.GetAsync (NTCore.WebFront) in 2850.5166ms
+
+-----------------------------------------
+
+time:2017-08-29 17:57:46,208 
+level:ERROR 
+logger:Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware
+file:? line? 
+content:An unhandled exception has occurred while executing the request
+System.InvalidOperationException: No IAuthenticationSignInHandler is configured to handle sign in for the scheme: member
+   at Microsoft.AspNetCore.Authentication.AuthenticationService.<SignInAsync>d__13.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at NTCore.WebFront.Controllers.ValuesController.<GetAsync>d__2.MoveNext() in D:\Projects\NTPlatform\NTCore.WebFront\Controllers\ValuesController.cs:line 38
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at lambda_method(Closure , Object )
+   at Microsoft.Extensions.Internal.ObjectMethodExecutorAwaitable.Awaiter.GetResult()
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.<InvokeActionMethodAsync>d__12.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.<InvokeNextActionFilterAsync>d__10.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.Rethrow(ActionExecutedContext context)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.<InvokeInnerFilterAsync>d__14.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.<InvokeNextResourceFilter>d__22.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.Rethrow(ResourceExecutedContext context)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.<InvokeFilterPipelineAsync>d__17.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.<InvokeAsync>d__15.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Builder.RouterMiddleware.<Invoke>d__4.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.<Invoke>d__7.MoveNext()
+
+-----------------------------------------
+
+time:2017-08-29 17:57:46,246 
+level:INFO 
+logger:Microsoft.AspNetCore.Hosting.Internal.WebHost
+file:? line? 
+content:Request finished in 2953.6954ms 500 text/html; charset=utf-8
+
+-----------------------------------------
+
+time:2017-08-29 18:08:22,411 
+level:INFO 
+logger:Microsoft.AspNetCore.Hosting.Internal.WebHost
+file:? line? 
+content:Request starting HTTP/1.1 GET http://localhost:57942/api/values  
+
+-----------------------------------------
+
+time:2017-08-29 18:08:23,405 
+level:INFO 
+logger:Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker
+file:? line? 
+content:Executing action method NTCore.WebFront.Controllers.ValuesController.GetAsync (NTCore.WebFront) with arguments ((null)) - ModelState is Valid
+
+-----------------------------------------
+
+time:2017-08-29 18:08:23,624 
+level:INFO 
+logger:Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker
+file:? line? 
+content:Executed action NTCore.WebFront.Controllers.ValuesController.GetAsync (NTCore.WebFront) in 1211.5411ms
+
+-----------------------------------------
+
+time:2017-08-29 18:08:23,682 
+level:ERROR 
+logger:Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware
+file:? line? 
+content:An unhandled exception has occurred while executing the request
+System.InvalidOperationException: No IAuthenticationSignInHandler is configured to handle sign in for the scheme: member
+   at Microsoft.AspNetCore.Authentication.AuthenticationService.<SignInAsync>d__13.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at NTCore.WebFront.Controllers.ValuesController.<GetAsync>d__2.MoveNext() in D:\Projects\NTPlatform\NTCore.WebFront\Controllers\ValuesController.cs:line 38
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at lambda_method(Closure , Object )
+   at Microsoft.Extensions.Internal.ObjectMethodExecutorAwaitable.Awaiter.GetResult()
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.<InvokeActionMethodAsync>d__12.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.<InvokeNextActionFilterAsync>d__10.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.Rethrow(ActionExecutedContext context)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.<InvokeInnerFilterAsync>d__14.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.<InvokeNextResourceFilter>d__22.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.Rethrow(ResourceExecutedContext context)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.<InvokeFilterPipelineAsync>d__17.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.<InvokeAsync>d__15.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Builder.RouterMiddleware.<Invoke>d__4.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.<Invoke>d__7.MoveNext()
+
+-----------------------------------------
+
+time:2017-08-29 18:08:23,719 
+level:INFO 
+logger:Microsoft.AspNetCore.Hosting.Internal.WebHost
+file:? line? 
+content:Request finished in 1307.6732ms 500 text/html; charset=utf-8
+
+-----------------------------------------
+
+time:2017-08-29 18:09:43,451 
+level:INFO 
+logger:Microsoft.AspNetCore.Hosting.Internal.WebHost
+file:? line? 
+content:Request starting HTTP/1.1 GET http://localhost:57942/api/values  
+
+-----------------------------------------
+
+time:2017-08-29 18:09:44,320 
+level:INFO 
+logger:Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker
+file:? line? 
+content:Executing action method NTCore.WebFront.Controllers.ValuesController.GetAsync (NTCore.WebFront) with arguments ((null)) - ModelState is Valid
+
+-----------------------------------------
+
+time:2017-08-29 18:09:44,552 
+level:INFO 
+logger:Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker
+file:? line? 
+content:Executed action NTCore.WebFront.Controllers.ValuesController.GetAsync (NTCore.WebFront) in 1099.0321ms
+
+-----------------------------------------
+
+time:2017-08-29 18:09:44,614 
+level:ERROR 
+logger:Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware
+file:? line? 
+content:An unhandled exception has occurred while executing the request
+System.InvalidOperationException: No IAuthenticationSignInHandler is configured to handle sign in for the scheme: member
+   at Microsoft.AspNetCore.Authentication.AuthenticationService.<SignInAsync>d__13.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at NTCore.WebFront.Controllers.ValuesController.<GetAsync>d__2.MoveNext() in D:\Projects\NTPlatform\NTCore.WebFront\Controllers\ValuesController.cs:line 38
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at lambda_method(Closure , Object )
+   at Microsoft.Extensions.Internal.ObjectMethodExecutorAwaitable.Awaiter.GetResult()
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.<InvokeActionMethodAsync>d__12.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.<InvokeNextActionFilterAsync>d__10.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.Rethrow(ActionExecutedContext context)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.<InvokeInnerFilterAsync>d__14.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.<InvokeNextResourceFilter>d__22.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.Rethrow(ResourceExecutedContext context)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.<InvokeFilterPipelineAsync>d__17.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.<InvokeAsync>d__15.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Builder.RouterMiddleware.<Invoke>d__4.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.<Invoke>d__7.MoveNext()
+
+-----------------------------------------
+
+time:2017-08-29 18:09:44,660 
+level:INFO 
+logger:Microsoft.AspNetCore.Hosting.Internal.WebHost
+file:? line? 
+content:Request finished in 1203.0514ms 500 text/html; charset=utf-8
+
+-----------------------------------------
+
+time:2017-08-29 18:10:39,905 
+level:INFO 
+logger:Microsoft.AspNetCore.Hosting.Internal.WebHost
+file:? line? 
+content:Request starting HTTP/1.1 GET http://localhost:57942/api/values  
+
+-----------------------------------------
+
+time:2017-08-29 18:10:40,535 
+level:INFO 
+logger:Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker
+file:? line? 
+content:Executing action method NTCore.WebFront.Controllers.ValuesController.GetAsync (NTCore.WebFront) with arguments ((null)) - ModelState is Valid
+
+-----------------------------------------
+
+time:2017-08-29 18:10:40,761 
+level:INFO 
+logger:Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker
+file:? line? 
+content:Executed action NTCore.WebFront.Controllers.ValuesController.GetAsync (NTCore.WebFront) in 854.4224ms
+
+-----------------------------------------
+
+time:2017-08-29 18:10:40,820 
+level:ERROR 
+logger:Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware
+file:? line? 
+content:An unhandled exception has occurred while executing the request
+System.InvalidOperationException: No IAuthenticationSignInHandler is configured to handle sign in for the scheme: member
+   at Microsoft.AspNetCore.Authentication.AuthenticationService.<SignInAsync>d__13.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at NTCore.WebFront.Controllers.ValuesController.<GetAsync>d__2.MoveNext() in D:\Projects\NTPlatform\NTCore.WebFront\Controllers\ValuesController.cs:line 38
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at lambda_method(Closure , Object )
+   at Microsoft.Extensions.Internal.ObjectMethodExecutorAwaitable.Awaiter.GetResult()
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.<InvokeActionMethodAsync>d__12.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.<InvokeNextActionFilterAsync>d__10.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.Rethrow(ActionExecutedContext context)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.<InvokeInnerFilterAsync>d__14.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.<InvokeNextResourceFilter>d__22.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.Rethrow(ResourceExecutedContext context)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.<InvokeFilterPipelineAsync>d__17.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.<InvokeAsync>d__15.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Builder.RouterMiddleware.<Invoke>d__4.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.<Invoke>d__7.MoveNext()
+
+-----------------------------------------
+
+time:2017-08-29 18:10:40,866 
+level:INFO 
+logger:Microsoft.AspNetCore.Hosting.Internal.WebHost
+file:? line? 
+content:Request finished in 956.6952ms 500 text/html; charset=utf-8
+
+-----------------------------------------
+
+time:2017-08-29 18:11:19,552 
+level:INFO 
+logger:Microsoft.AspNetCore.Hosting.Internal.WebHost
+file:? line? 
+content:Request starting HTTP/1.1 GET http://localhost:57942/api/values  
+
+-----------------------------------------
+
+time:2017-08-29 18:11:20,041 
+level:INFO 
+logger:Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker
+file:? line? 
+content:Executing action method NTCore.WebFront.Controllers.ValuesController.GetAsync (NTCore.WebFront) with arguments ((null)) - ModelState is Valid
+
+-----------------------------------------
+
+time:2017-08-29 18:11:20,278 
+level:INFO 
+logger:Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker
+file:? line? 
+content:Executed action NTCore.WebFront.Controllers.ValuesController.GetAsync (NTCore.WebFront) in 724.1749ms
+
+-----------------------------------------
+
+time:2017-08-29 18:11:20,336 
+level:ERROR 
+logger:Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware
+file:? line? 
+content:An unhandled exception has occurred while executing the request
+System.InvalidOperationException: No IAuthenticationSignInHandler is configured to handle sign in for the scheme: member
+   at Microsoft.AspNetCore.Authentication.AuthenticationService.<SignInAsync>d__13.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at NTCore.WebFront.Controllers.ValuesController.<GetAsync>d__2.MoveNext() in D:\Projects\NTPlatform\NTCore.WebFront\Controllers\ValuesController.cs:line 38
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at lambda_method(Closure , Object )
+   at Microsoft.Extensions.Internal.ObjectMethodExecutorAwaitable.Awaiter.GetResult()
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.<InvokeActionMethodAsync>d__12.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.<InvokeNextActionFilterAsync>d__10.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.Rethrow(ActionExecutedContext context)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.<InvokeInnerFilterAsync>d__14.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.<InvokeNextResourceFilter>d__22.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.Rethrow(ResourceExecutedContext context)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.<InvokeFilterPipelineAsync>d__17.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.<InvokeAsync>d__15.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Builder.RouterMiddleware.<Invoke>d__4.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.<Invoke>d__7.MoveNext()
+
+-----------------------------------------
+
+time:2017-08-29 18:11:20,376 
+level:INFO 
+logger:Microsoft.AspNetCore.Hosting.Internal.WebHost
+file:? line? 
+content:Request finished in 817.7611ms 500 text/html; charset=utf-8
+
+-----------------------------------------
+
+time:2017-08-29 18:12:33,368 
+level:INFO 
+logger:Microsoft.AspNetCore.Hosting.Internal.WebHost
+file:? line? 
+content:Request starting HTTP/1.1 GET http://localhost:57942/api/values  
+
+-----------------------------------------
+
+time:2017-08-29 18:12:33,979 
+level:INFO 
+logger:Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker
+file:? line? 
+content:Executing action method NTCore.WebFront.Controllers.ValuesController.GetAsync (NTCore.WebFront) with arguments ((null)) - ModelState is Valid
+
+-----------------------------------------
+
+time:2017-08-29 18:12:34,218 
+level:INFO 
+logger:Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker
+file:? line? 
+content:Executed action NTCore.WebFront.Controllers.ValuesController.GetAsync (NTCore.WebFront) in 847.247ms
+
+-----------------------------------------
+
+time:2017-08-29 18:12:34,282 
+level:ERROR 
+logger:Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware
+file:? line? 
+content:An unhandled exception has occurred while executing the request
+System.InvalidOperationException: No IAuthenticationSignInHandler is configured to handle sign in for the scheme: member
+   at Microsoft.AspNetCore.Authentication.AuthenticationService.<SignInAsync>d__13.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at NTCore.WebFront.Controllers.ValuesController.<GetAsync>d__2.MoveNext() in D:\Projects\NTPlatform\NTCore.WebFront\Controllers\ValuesController.cs:line 38
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at lambda_method(Closure , Object )
+   at Microsoft.Extensions.Internal.ObjectMethodExecutorAwaitable.Awaiter.GetResult()
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.<InvokeActionMethodAsync>d__12.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.<InvokeNextActionFilterAsync>d__10.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.Rethrow(ActionExecutedContext context)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.<InvokeInnerFilterAsync>d__14.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.<InvokeNextResourceFilter>d__22.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.Rethrow(ResourceExecutedContext context)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.<InvokeFilterPipelineAsync>d__17.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.<InvokeAsync>d__15.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Builder.RouterMiddleware.<Invoke>d__4.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.<Invoke>d__7.MoveNext()
+
+-----------------------------------------
+
+time:2017-08-29 18:12:34,324 
+level:INFO 
+logger:Microsoft.AspNetCore.Hosting.Internal.WebHost
+file:? line? 
+content:Request finished in 948.7823ms 500 text/html; charset=utf-8
+
+-----------------------------------------
+
+time:2017-08-29 18:12:47,677 
+level:INFO 
+logger:Microsoft.AspNetCore.Hosting.Internal.WebHost
+file:? line? 
+content:Request starting HTTP/1.1 GET http://localhost:57942/api/values  
+
+-----------------------------------------
+
+time:2017-08-29 18:12:49,534 
+level:INFO 
+logger:Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker
+file:? line? 
+content:Executing action method NTCore.WebFront.Controllers.ValuesController.GetAsync (NTCore.WebFront) with arguments ((null)) - ModelState is Valid
+
+-----------------------------------------
+
+time:2017-08-29 18:12:49,766 
+level:INFO 
+logger:Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker
+file:? line? 
+content:Executed action NTCore.WebFront.Controllers.ValuesController.GetAsync (NTCore.WebFront) in 2085.6678ms
+
+-----------------------------------------
+
+time:2017-08-29 18:12:49,831 
+level:ERROR 
+logger:Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware
+file:? line? 
+content:An unhandled exception has occurred while executing the request
+System.InvalidOperationException: No IAuthenticationSignInHandler is configured to handle sign in for the scheme: member
+   at Microsoft.AspNetCore.Authentication.AuthenticationService.<SignInAsync>d__13.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at NTCore.WebFront.Controllers.ValuesController.<GetAsync>d__2.MoveNext() in D:\Projects\NTPlatform\NTCore.WebFront\Controllers\ValuesController.cs:line 38
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at lambda_method(Closure , Object )
+   at Microsoft.Extensions.Internal.ObjectMethodExecutorAwaitable.Awaiter.GetResult()
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.<InvokeActionMethodAsync>d__12.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.<InvokeNextActionFilterAsync>d__10.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.Rethrow(ActionExecutedContext context)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.<InvokeInnerFilterAsync>d__14.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.<InvokeNextResourceFilter>d__22.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.Rethrow(ResourceExecutedContext context)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.<InvokeFilterPipelineAsync>d__17.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.<InvokeAsync>d__15.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Builder.RouterMiddleware.<Invoke>d__4.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.<Invoke>d__7.MoveNext()
+
+-----------------------------------------
+
+time:2017-08-29 18:12:49,877 
+level:INFO 
+logger:Microsoft.AspNetCore.Hosting.Internal.WebHost
+file:? line? 
+content:Request finished in 2191.8686ms 500 text/html; charset=utf-8
+
+-----------------------------------------
+
+time:2017-08-29 18:13:00,911 
+level:INFO 
+logger:Microsoft.AspNetCore.Hosting.Internal.WebHost
+file:? line? 
+content:Request starting HTTP/1.1 GET http://localhost:57942/api/values  
+
+-----------------------------------------
+
+time:2017-08-29 18:13:02,527 
+level:INFO 
+logger:Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker
+file:? line? 
+content:Executing action method NTCore.WebFront.Controllers.ValuesController.GetAsync (NTCore.WebFront) with arguments ((null)) - ModelState is Valid
+
+-----------------------------------------
+
+time:2017-08-29 18:13:02,757 
+level:INFO 
+logger:Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker
+file:? line? 
+content:Executed action NTCore.WebFront.Controllers.ValuesController.GetAsync (NTCore.WebFront) in 1843.9969ms
+
+-----------------------------------------
+
+time:2017-08-29 18:13:02,819 
+level:ERROR 
+logger:Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware
+file:? line? 
+content:An unhandled exception has occurred while executing the request
+System.InvalidOperationException: No IAuthenticationSignInHandler is configured to handle sign in for the scheme: member
+   at Microsoft.AspNetCore.Authentication.AuthenticationService.<SignInAsync>d__13.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at NTCore.WebFront.Controllers.ValuesController.<GetAsync>d__2.MoveNext() in D:\Projects\NTPlatform\NTCore.WebFront\Controllers\ValuesController.cs:line 38
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at lambda_method(Closure , Object )
+   at Microsoft.Extensions.Internal.ObjectMethodExecutorAwaitable.Awaiter.GetResult()
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.<InvokeActionMethodAsync>d__12.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.<InvokeNextActionFilterAsync>d__10.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.Rethrow(ActionExecutedContext context)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.<InvokeInnerFilterAsync>d__14.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.<InvokeNextResourceFilter>d__22.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.Rethrow(ResourceExecutedContext context)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.<InvokeFilterPipelineAsync>d__17.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.<InvokeAsync>d__15.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Builder.RouterMiddleware.<Invoke>d__4.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.<Invoke>d__7.MoveNext()
+
+-----------------------------------------
+
+time:2017-08-29 18:13:02,866 
+level:INFO 
+logger:Microsoft.AspNetCore.Hosting.Internal.WebHost
+file:? line? 
+content:Request finished in 1945.5214ms 500 text/html; charset=utf-8
+
+-----------------------------------------
+
+time:2017-08-29 18:13:14,857 
+level:INFO 
+logger:Microsoft.AspNetCore.Hosting.Internal.WebHost
+file:? line? 
+content:Request starting HTTP/1.1 GET http://localhost:57942/api/values  
+
+-----------------------------------------
+
+time:2017-08-29 18:13:16,714 
+level:INFO 
+logger:Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker
+file:? line? 
+content:Executing action method NTCore.WebFront.Controllers.ValuesController.GetAsync (NTCore.WebFront) with arguments ((null)) - ModelState is Valid
+
+-----------------------------------------
+
+time:2017-08-29 18:13:16,944 
+level:INFO 
+logger:Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker
+file:? line? 
+content:Executed action NTCore.WebFront.Controllers.ValuesController.GetAsync (NTCore.WebFront) in 2085.1494ms
+
+-----------------------------------------
+
+time:2017-08-29 18:13:17,008 
+level:ERROR 
+logger:Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware
+file:? line? 
+content:An unhandled exception has occurred while executing the request
+System.InvalidOperationException: No IAuthenticationSignInHandler is configured to handle sign in for the scheme: member
+   at Microsoft.AspNetCore.Authentication.AuthenticationService.<SignInAsync>d__13.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at NTCore.WebFront.Controllers.ValuesController.<GetAsync>d__2.MoveNext() in D:\Projects\NTPlatform\NTCore.WebFront\Controllers\ValuesController.cs:line 38
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at lambda_method(Closure , Object )
+   at Microsoft.Extensions.Internal.ObjectMethodExecutorAwaitable.Awaiter.GetResult()
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.<InvokeActionMethodAsync>d__12.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.<InvokeNextActionFilterAsync>d__10.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.Rethrow(ActionExecutedContext context)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.<InvokeInnerFilterAsync>d__14.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.<InvokeNextResourceFilter>d__22.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.Rethrow(ResourceExecutedContext context)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.<InvokeFilterPipelineAsync>d__17.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.<InvokeAsync>d__15.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Builder.RouterMiddleware.<Invoke>d__4.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.<Invoke>d__7.MoveNext()
+
+-----------------------------------------
+
+time:2017-08-29 18:13:17,053 
+level:INFO 
+logger:Microsoft.AspNetCore.Hosting.Internal.WebHost
+file:? line? 
+content:Request finished in 2192.6084ms 500 text/html; charset=utf-8
+
+-----------------------------------------
+
+time:2017-08-29 18:15:58,583 
+level:INFO 
+logger:Microsoft.AspNetCore.Hosting.Internal.WebHost
+file:? line? 
+content:Request starting HTTP/1.1 GET http://localhost:57942/api/values  
+
+-----------------------------------------
+
+time:2017-08-29 18:16:00,409 
+level:INFO 
+logger:Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker
+file:? line? 
+content:Executing action method NTCore.WebFront.Controllers.ValuesController.GetAsync (NTCore.WebFront) with arguments ((null)) - ModelState is Valid
+
+-----------------------------------------
+
+time:2017-08-29 18:16:03,402 
+level:INFO 
+logger:Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker
+file:? line? 
+content:Executed action NTCore.WebFront.Controllers.ValuesController.GetAsync (NTCore.WebFront) in 4666.8464ms
+
+-----------------------------------------
+
+time:2017-08-29 18:16:03,486 
+level:ERROR 
+logger:Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware
+file:? line? 
+content:An unhandled exception has occurred while executing the request
+System.InvalidOperationException: No IAuthenticationSignInHandler is configured to handle sign in for the scheme: member
+   at Microsoft.AspNetCore.Authentication.AuthenticationService.<SignInAsync>d__13.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at NTCore.WebFront.Controllers.ValuesController.<GetAsync>d__2.MoveNext() in D:\Projects\NTPlatform\NTCore.WebFront\Controllers\ValuesController.cs:line 39
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at lambda_method(Closure , Object )
+   at Microsoft.Extensions.Internal.ObjectMethodExecutorAwaitable.Awaiter.GetResult()
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.<InvokeActionMethodAsync>d__12.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.<InvokeNextActionFilterAsync>d__10.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.Rethrow(ActionExecutedContext context)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.<InvokeInnerFilterAsync>d__14.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.<InvokeNextResourceFilter>d__22.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.Rethrow(ResourceExecutedContext context)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.<InvokeFilterPipelineAsync>d__17.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.<InvokeAsync>d__15.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Builder.RouterMiddleware.<Invoke>d__4.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.<Invoke>d__7.MoveNext()
+
+-----------------------------------------
+
+time:2017-08-29 18:16:03,620 
+level:INFO 
+logger:Microsoft.AspNetCore.Hosting.Internal.WebHost
+file:? line? 
+content:Request finished in 5043.0172ms 500 text/html; charset=utf-8
+
+-----------------------------------------
+
+time:2017-08-29 18:16:03,656 
+level:INFO 
+logger:Microsoft.AspNetCore.Hosting.Internal.WebHost
+file:? line? 
+content:Request starting HTTP/1.1 GET http://localhost:57942/favicon.ico  
+
+-----------------------------------------
+
+time:2017-08-29 18:16:03,668 
+level:INFO 
+logger:Microsoft.AspNetCore.Hosting.Internal.WebHost
+file:? line? 
+content:Request finished in 4.6403ms 404 
+
+-----------------------------------------
+
+time:2017-08-29 18:22:10,320 
+level:INFO 
+logger:Microsoft.AspNetCore.Hosting.Internal.WebHost
+file:? line? 
+content:Request starting HTTP/1.1 GET http://localhost:57942/api/values  
+
+-----------------------------------------
+
+time:2017-08-29 18:22:12,039 
+level:INFO 
+logger:Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker
+file:? line? 
+content:Executing action method NTCore.WebFront.Controllers.ValuesController.GetAsync (NTCore.WebFront) with arguments ((null)) - ModelState is Valid
+
+-----------------------------------------
+
+time:2017-08-29 18:22:13,461 
+level:INFO 
+logger:Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker
+file:? line? 
+content:Executed action NTCore.WebFront.Controllers.ValuesController.GetAsync (NTCore.WebFront) in 3138.7493ms
+
+-----------------------------------------
+
+time:2017-08-29 18:22:13,527 
+level:ERROR 
+logger:Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware
+file:? line? 
+content:An unhandled exception has occurred while executing the request
+System.InvalidOperationException: No IAuthenticationSignInHandler is configured to handle sign in for the scheme: member
+   at Microsoft.AspNetCore.Authentication.AuthenticationService.<SignInAsync>d__13.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at NTCore.WebFront.Controllers.ValuesController.<GetAsync>d__2.MoveNext() in D:\Projects\NTPlatform\NTCore.WebFront\Controllers\ValuesController.cs:line 39
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at lambda_method(Closure , Object )
+   at Microsoft.Extensions.Internal.ObjectMethodExecutorAwaitable.Awaiter.GetResult()
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.<InvokeActionMethodAsync>d__12.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.<InvokeNextActionFilterAsync>d__10.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.Rethrow(ActionExecutedContext context)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.<InvokeInnerFilterAsync>d__14.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.<InvokeNextResourceFilter>d__22.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.Rethrow(ResourceExecutedContext context)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.<InvokeFilterPipelineAsync>d__17.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.<InvokeAsync>d__15.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Builder.RouterMiddleware.<Invoke>d__4.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.<Invoke>d__7.MoveNext()
+
+-----------------------------------------
+
+time:2017-08-29 18:22:13,571 
+level:INFO 
+logger:Microsoft.AspNetCore.Hosting.Internal.WebHost
+file:? line? 
+content:Request finished in 3250.36ms 500 text/html; charset=utf-8
+
+-----------------------------------------
+
+time:2017-08-29 18:22:52,646 
+level:INFO 
+logger:Microsoft.AspNetCore.Hosting.Internal.WebHost
+file:? line? 
+content:Request starting HTTP/1.1 GET http://localhost:57942/api/values  
+
+-----------------------------------------
+
+time:2017-08-29 18:22:54,403 
+level:INFO 
+logger:Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker
+file:? line? 
+content:Executing action method NTCore.WebFront.Controllers.ValuesController.GetAsync (NTCore.WebFront) with arguments ((null)) - ModelState is Valid
+
+-----------------------------------------
+
+time:2017-08-29 18:23:05,129 
+level:INFO 
+logger:Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker
+file:? line? 
+content:Executed action NTCore.WebFront.Controllers.ValuesController.GetAsync (NTCore.WebFront) in 12479.6002ms
+
+-----------------------------------------
+
+time:2017-08-29 18:23:05,196 
+level:ERROR 
+logger:Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware
+file:? line? 
+content:An unhandled exception has occurred while executing the request
+System.InvalidOperationException: No IAuthenticationSignInHandler is configured to handle sign in for the scheme: member
+   at Microsoft.AspNetCore.Authentication.AuthenticationService.<SignInAsync>d__13.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at NTCore.WebFront.Controllers.ValuesController.<GetAsync>d__2.MoveNext() in D:\Projects\NTPlatform\NTCore.WebFront\Controllers\ValuesController.cs:line 39
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at lambda_method(Closure , Object )
+   at Microsoft.Extensions.Internal.ObjectMethodExecutorAwaitable.Awaiter.GetResult()
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.<InvokeActionMethodAsync>d__12.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.<InvokeNextActionFilterAsync>d__10.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.Rethrow(ActionExecutedContext context)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.<InvokeInnerFilterAsync>d__14.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.<InvokeNextResourceFilter>d__22.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.Rethrow(ResourceExecutedContext context)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.<InvokeFilterPipelineAsync>d__17.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.<InvokeAsync>d__15.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Builder.RouterMiddleware.<Invoke>d__4.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.<Invoke>d__7.MoveNext()
+
+-----------------------------------------
+
+time:2017-08-29 18:23:05,244 
+level:INFO 
+logger:Microsoft.AspNetCore.Hosting.Internal.WebHost
+file:? line? 
+content:Request finished in 12590.4016ms 500 text/html; charset=utf-8
+
+-----------------------------------------
+
+time:2017-08-29 18:24:39,551 
+level:INFO 
+logger:Microsoft.AspNetCore.Hosting.Internal.WebHost
+file:? line? 
+content:Request starting HTTP/1.1 GET http://localhost:57942/api/values  
+
+-----------------------------------------
+
+time:2017-08-29 18:24:41,483 
+level:INFO 
+logger:Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker
+file:? line? 
+content:Executing action method NTCore.WebFront.Controllers.ValuesController.GetAsync (NTCore.WebFront) with arguments ((null)) - ModelState is Valid
+
+-----------------------------------------
+
+time:2017-08-29 18:24:52,203 
+level:INFO 
+logger:Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker
+file:? line? 
+content:Executed action NTCore.WebFront.Controllers.ValuesController.GetAsync (NTCore.WebFront) in 12650.2272ms
+
+-----------------------------------------
+
+time:2017-08-29 18:24:52,351 
+level:ERROR 
+logger:Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware
+file:? line? 
+content:An unhandled exception has occurred while executing the request
+System.InvalidOperationException: No IAuthenticationSignInHandler is configured to handle sign in for the scheme: member
+   at Microsoft.AspNetCore.Authentication.AuthenticationService.<SignInAsync>d__13.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at NTCore.WebFront.Controllers.ValuesController.<GetAsync>d__2.MoveNext() in D:\Projects\NTPlatform\NTCore.WebFront\Controllers\ValuesController.cs:line 39
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at lambda_method(Closure , Object )
+   at Microsoft.Extensions.Internal.ObjectMethodExecutorAwaitable.Awaiter.GetResult()
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.<InvokeActionMethodAsync>d__12.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.<InvokeNextActionFilterAsync>d__10.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.Rethrow(ActionExecutedContext context)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.<InvokeInnerFilterAsync>d__14.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.<InvokeNextResourceFilter>d__22.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.Rethrow(ResourceExecutedContext context)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.<InvokeFilterPipelineAsync>d__17.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.<InvokeAsync>d__15.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Builder.RouterMiddleware.<Invoke>d__4.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.<Invoke>d__7.MoveNext()
+
+-----------------------------------------
+
+time:2017-08-29 18:24:52,474 
+level:INFO 
+logger:Microsoft.AspNetCore.Hosting.Internal.WebHost
+file:? line? 
+content:Request finished in 12919.6645ms 500 text/html; charset=utf-8
+
+-----------------------------------------
+
+time:2017-08-29 18:25:18,079 
+level:INFO 
+logger:Microsoft.AspNetCore.Hosting.Internal.WebHost
+file:? line? 
+content:Request starting HTTP/1.1 GET http://localhost:57942/api/values  
+
+-----------------------------------------
+
+time:2017-08-29 18:25:19,682 
+level:INFO 
+logger:Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker
+file:? line? 
+content:Executing action method NTCore.WebFront.Controllers.ValuesController.GetAsync (NTCore.WebFront) with arguments ((null)) - ModelState is Valid
+
+-----------------------------------------
+
+time:2017-08-29 18:25:21,826 
+level:INFO 
+logger:Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker
+file:? line? 
+content:Executed action NTCore.WebFront.Controllers.ValuesController.GetAsync (NTCore.WebFront) in 3576.7223ms
+
+-----------------------------------------
+
+time:2017-08-29 18:25:21,921 
+level:ERROR 
+logger:Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware
+file:? line? 
+content:An unhandled exception has occurred while executing the request
+System.ArgumentException: The path in 'value' must start with '/'.
+Parameter name: value
+   at Microsoft.AspNetCore.Http.PathString..ctor(String value)
+   at Microsoft.AspNetCore.Http.PathString.op_Implicit(String s)
+   at NTCore.WebFront.Startup.<>c.<ConfigureServices>b__4_2(CookieAuthenticationOptions options) in D:\Projects\NTPlatform\NTCore.WebFront\Startup.cs:line 41
+   at Microsoft.Extensions.Options.ConfigureNamedOptions`1.Configure(String name, TOptions options)
+   at Microsoft.Extensions.Options.OptionsFactory`1.Create(String name)
+   at Microsoft.Extensions.Options.OptionsMonitor`1.<>c__DisplayClass10_0.<Get>b__0()
+   at System.Lazy`1.ViaFactory(LazyThreadSafetyMode mode)
+   at System.Lazy`1.ExecutionAndPublication(LazyHelper executionAndPublication, Boolean useDefaultConstructor)
+   at System.Lazy`1.CreateValue()
+   at Microsoft.Extensions.Options.OptionsCache`1.GetOrAdd(String name, Func`1 createOptions)
+   at Microsoft.Extensions.Options.OptionsMonitor`1.Get(String name)
+   at Microsoft.AspNetCore.Authentication.AuthenticationHandler`1.<InitializeAsync>d__42.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Authentication.AuthenticationHandlerProvider.<GetHandlerAsync>d__5.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter`1.GetResult()
+   at Microsoft.AspNetCore.Authentication.AuthenticationService.<SignInAsync>d__13.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at NTCore.WebFront.Controllers.ValuesController.<GetAsync>d__2.MoveNext() in D:\Projects\NTPlatform\NTCore.WebFront\Controllers\ValuesController.cs:line 41
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at lambda_method(Closure , Object )
+   at Microsoft.Extensions.Internal.ObjectMethodExecutorAwaitable.Awaiter.GetResult()
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.<InvokeActionMethodAsync>d__12.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.<InvokeNextActionFilterAsync>d__10.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.Rethrow(ActionExecutedContext context)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.<InvokeInnerFilterAsync>d__14.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.<InvokeNextResourceFilter>d__22.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.Rethrow(ResourceExecutedContext context)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.<InvokeFilterPipelineAsync>d__17.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.<InvokeAsync>d__15.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Builder.RouterMiddleware.<Invoke>d__4.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.<Invoke>d__7.MoveNext()
+
+-----------------------------------------
+
+time:2017-08-29 18:25:22,068 
+level:INFO 
+logger:Microsoft.AspNetCore.Hosting.Internal.WebHost
+file:? line? 
+content:Request finished in 3994.6974ms 500 text/html; charset=utf-8
+
+-----------------------------------------
+
+time:2017-08-29 18:25:22,109 
+level:INFO 
+logger:Microsoft.AspNetCore.Hosting.Internal.WebHost
+file:? line? 
+content:Request starting HTTP/1.1 GET http://localhost:57942/favicon.ico  
+
+-----------------------------------------
+
+time:2017-08-29 18:25:22,302 
+level:ERROR 
+logger:Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware
+file:? line? 
+content:An unhandled exception has occurred while executing the request
+System.ArgumentException: The path in 'value' must start with '/'.
+Parameter name: value
+   at Microsoft.AspNetCore.Http.PathString..ctor(String value)
+   at Microsoft.AspNetCore.Http.PathString.op_Implicit(String s)
+   at NTCore.WebFront.Startup.<>c.<ConfigureServices>b__4_2(CookieAuthenticationOptions options) in D:\Projects\NTPlatform\NTCore.WebFront\Startup.cs:line 41
+   at Microsoft.Extensions.Options.ConfigureNamedOptions`1.Configure(String name, TOptions options)
+   at Microsoft.Extensions.Options.OptionsFactory`1.Create(String name)
+   at Microsoft.Extensions.Options.OptionsMonitor`1.<>c__DisplayClass10_0.<Get>b__0()
+   at System.Lazy`1.ViaFactory(LazyThreadSafetyMode mode)
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Lazy`1.CreateValue()
+   at Microsoft.Extensions.Options.OptionsCache`1.GetOrAdd(String name, Func`1 createOptions)
+   at Microsoft.Extensions.Options.OptionsMonitor`1.Get(String name)
+   at Microsoft.AspNetCore.Authentication.AuthenticationHandler`1.<InitializeAsync>d__42.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Authentication.AuthenticationHandlerProvider.<GetHandlerAsync>d__5.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter`1.GetResult()
+   at Microsoft.AspNetCore.Authentication.AuthenticationService.<AuthenticateAsync>d__10.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter`1.GetResult()
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.<Invoke>d__6.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Builder.RouterMiddleware.<Invoke>d__4.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.<Invoke>d__7.MoveNext()
+
+-----------------------------------------
+
+time:2017-08-29 18:25:22,335 
+level:INFO 
+logger:Microsoft.AspNetCore.Hosting.Internal.WebHost
+file:? line? 
+content:Request finished in 226.4122ms 500 text/html; charset=utf-8
+
+-----------------------------------------
+
+time:2017-08-29 18:25:32,628 
+level:INFO 
+logger:Microsoft.AspNetCore.Hosting.Internal.WebHost
+file:? line? 
+content:Request starting HTTP/1.1 GET http://localhost:57942/api/values  
+
+-----------------------------------------
+
+time:2017-08-29 18:25:35,470 
+level:INFO 
+logger:Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker
+file:? line? 
+content:Executing action method NTCore.WebFront.Controllers.ValuesController.GetAsync (NTCore.WebFront) with arguments ((null)) - ModelState is Valid
+
+-----------------------------------------
+
+time:2017-08-29 18:25:41,038 
+level:INFO 
+logger:Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker
+file:? line? 
+content:Executed action NTCore.WebFront.Controllers.ValuesController.GetAsync (NTCore.WebFront) in 8406.8279ms
+
+-----------------------------------------
+
+time:2017-08-29 18:25:41,118 
+level:ERROR 
+logger:Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware
+file:? line? 
+content:An unhandled exception has occurred while executing the request
+System.ArgumentException: The path in 'value' must start with '/'.
+Parameter name: value
+   at Microsoft.AspNetCore.Http.PathString..ctor(String value)
+   at Microsoft.AspNetCore.Http.PathString.op_Implicit(String s)
+   at NTCore.WebFront.Startup.<>c.<ConfigureServices>b__4_2(CookieAuthenticationOptions options) in D:\Projects\NTPlatform\NTCore.WebFront\Startup.cs:line 41
+   at Microsoft.Extensions.Options.ConfigureNamedOptions`1.Configure(String name, TOptions options)
+   at Microsoft.Extensions.Options.OptionsFactory`1.Create(String name)
+   at Microsoft.Extensions.Options.OptionsMonitor`1.<>c__DisplayClass10_0.<Get>b__0()
+   at System.Lazy`1.ViaFactory(LazyThreadSafetyMode mode)
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Lazy`1.CreateValue()
+   at Microsoft.Extensions.Options.OptionsCache`1.GetOrAdd(String name, Func`1 createOptions)
+   at Microsoft.Extensions.Options.OptionsMonitor`1.Get(String name)
+   at Microsoft.AspNetCore.Authentication.AuthenticationHandler`1.<InitializeAsync>d__42.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Authentication.AuthenticationHandlerProvider.<GetHandlerAsync>d__5.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter`1.GetResult()
+   at Microsoft.AspNetCore.Authentication.AuthenticationService.<SignInAsync>d__13.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at NTCore.WebFront.Controllers.ValuesController.<GetAsync>d__2.MoveNext() in D:\Projects\NTPlatform\NTCore.WebFront\Controllers\ValuesController.cs:line 41
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at lambda_method(Closure , Object )
+   at Microsoft.Extensions.Internal.ObjectMethodExecutorAwaitable.Awaiter.GetResult()
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.<InvokeActionMethodAsync>d__12.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.<InvokeNextActionFilterAsync>d__10.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.Rethrow(ActionExecutedContext context)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.<InvokeInnerFilterAsync>d__14.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.<InvokeNextResourceFilter>d__22.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.Rethrow(ResourceExecutedContext context)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.<InvokeFilterPipelineAsync>d__17.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.<InvokeAsync>d__15.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Builder.RouterMiddleware.<Invoke>d__4.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.<Invoke>d__7.MoveNext()
+
+-----------------------------------------
+
+time:2017-08-29 18:25:41,174 
+level:INFO 
+logger:Microsoft.AspNetCore.Hosting.Internal.WebHost
+file:? line? 
+content:Request finished in 8544.4262ms 500 text/html; charset=utf-8
+
+-----------------------------------------
+
+time:2017-08-29 18:25:41,188 
+level:INFO 
+logger:Microsoft.AspNetCore.Hosting.Internal.WebHost
+file:? line? 
+content:Request starting HTTP/1.1 GET http://localhost:57942/favicon.ico  
+
+-----------------------------------------
+
+time:2017-08-29 18:25:41,362 
+level:ERROR 
+logger:Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware
+file:? line? 
+content:An unhandled exception has occurred while executing the request
+System.ArgumentException: The path in 'value' must start with '/'.
+Parameter name: value
+   at Microsoft.AspNetCore.Http.PathString..ctor(String value)
+   at Microsoft.AspNetCore.Http.PathString.op_Implicit(String s)
+   at NTCore.WebFront.Startup.<>c.<ConfigureServices>b__4_2(CookieAuthenticationOptions options) in D:\Projects\NTPlatform\NTCore.WebFront\Startup.cs:line 41
+   at Microsoft.Extensions.Options.ConfigureNamedOptions`1.Configure(String name, TOptions options)
+   at Microsoft.Extensions.Options.OptionsFactory`1.Create(String name)
+   at Microsoft.Extensions.Options.OptionsMonitor`1.<>c__DisplayClass10_0.<Get>b__0()
+   at System.Lazy`1.ViaFactory(LazyThreadSafetyMode mode)
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Lazy`1.CreateValue()
+   at Microsoft.Extensions.Options.OptionsCache`1.GetOrAdd(String name, Func`1 createOptions)
+   at Microsoft.Extensions.Options.OptionsMonitor`1.Get(String name)
+   at Microsoft.AspNetCore.Authentication.AuthenticationHandler`1.<InitializeAsync>d__42.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Authentication.AuthenticationHandlerProvider.<GetHandlerAsync>d__5.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter`1.GetResult()
+   at Microsoft.AspNetCore.Authentication.AuthenticationService.<AuthenticateAsync>d__10.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter`1.GetResult()
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.<Invoke>d__6.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Builder.RouterMiddleware.<Invoke>d__4.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.<Invoke>d__7.MoveNext()
+
+-----------------------------------------
+
+time:2017-08-29 18:25:41,402 
+level:INFO 
+logger:Microsoft.AspNetCore.Hosting.Internal.WebHost
+file:? line? 
+content:Request finished in 213.8143ms 500 text/html; charset=utf-8
+
+-----------------------------------------
+
+time:2017-08-29 18:25:55,335 
+level:INFO 
+logger:Microsoft.AspNetCore.Hosting.Internal.WebHost
+file:? line? 
+content:Request starting HTTP/1.1 GET http://localhost:57942/api/values  
+
+-----------------------------------------
+
+time:2017-08-29 18:25:55,533 
+level:INFO 
+logger:Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker
+file:? line? 
+content:Executing action method NTCore.WebFront.Controllers.ValuesController.GetAsync (NTCore.WebFront) with arguments ((null)) - ModelState is Valid
+
+-----------------------------------------
+
+time:2017-08-29 18:25:57,258 
+level:INFO 
+logger:Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker
+file:? line? 
+content:Executed action NTCore.WebFront.Controllers.ValuesController.GetAsync (NTCore.WebFront) in 1768.2582ms
+
+-----------------------------------------
+
+time:2017-08-29 18:25:57,351 
+level:ERROR 
+logger:Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware
+file:? line? 
+content:An unhandled exception has occurred while executing the request
+System.ArgumentException: The path in 'value' must start with '/'.
+Parameter name: value
+   at Microsoft.AspNetCore.Http.PathString..ctor(String value)
+   at Microsoft.AspNetCore.Http.PathString.op_Implicit(String s)
+   at NTCore.WebFront.Startup.<>c.<ConfigureServices>b__4_2(CookieAuthenticationOptions options) in D:\Projects\NTPlatform\NTCore.WebFront\Startup.cs:line 41
+   at Microsoft.Extensions.Options.ConfigureNamedOptions`1.Configure(String name, TOptions options)
+   at Microsoft.Extensions.Options.OptionsFactory`1.Create(String name)
+   at Microsoft.Extensions.Options.OptionsMonitor`1.<>c__DisplayClass10_0.<Get>b__0()
+   at System.Lazy`1.ViaFactory(LazyThreadSafetyMode mode)
+   at System.Lazy`1.ExecutionAndPublication(LazyHelper executionAndPublication, Boolean useDefaultConstructor)
+   at System.Lazy`1.CreateValue()
+   at Microsoft.Extensions.Options.OptionsCache`1.GetOrAdd(String name, Func`1 createOptions)
+   at Microsoft.Extensions.Options.OptionsMonitor`1.Get(String name)
+   at Microsoft.AspNetCore.Authentication.AuthenticationHandler`1.<InitializeAsync>d__42.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Authentication.AuthenticationHandlerProvider.<GetHandlerAsync>d__5.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter`1.GetResult()
+   at Microsoft.AspNetCore.Authentication.AuthenticationService.<SignInAsync>d__13.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at NTCore.WebFront.Controllers.ValuesController.<GetAsync>d__2.MoveNext() in D:\Projects\NTPlatform\NTCore.WebFront\Controllers\ValuesController.cs:line 41
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at lambda_method(Closure , Object )
+   at Microsoft.Extensions.Internal.ObjectMethodExecutorAwaitable.Awaiter.GetResult()
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.<InvokeActionMethodAsync>d__12.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.<InvokeNextActionFilterAsync>d__10.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.Rethrow(ActionExecutedContext context)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.<InvokeInnerFilterAsync>d__14.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.<InvokeNextResourceFilter>d__22.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.Rethrow(ResourceExecutedContext context)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.<InvokeFilterPipelineAsync>d__17.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.<InvokeAsync>d__15.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Builder.RouterMiddleware.<Invoke>d__4.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.<Invoke>d__7.MoveNext()
+
+-----------------------------------------
+
+time:2017-08-29 18:25:57,492 
+level:INFO 
+logger:Microsoft.AspNetCore.Hosting.Internal.WebHost
+file:? line? 
+content:Request finished in 2163.8228ms 500 text/html; charset=utf-8
+
+-----------------------------------------
+
+time:2017-08-29 18:25:57,535 
+level:INFO 
+logger:Microsoft.AspNetCore.Hosting.Internal.WebHost
+file:? line? 
+content:Request starting HTTP/1.1 GET http://localhost:57942/favicon.ico  
+
+-----------------------------------------
+
+time:2017-08-29 18:25:57,726 
+level:ERROR 
+logger:Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware
+file:? line? 
+content:An unhandled exception has occurred while executing the request
+System.ArgumentException: The path in 'value' must start with '/'.
+Parameter name: value
+   at Microsoft.AspNetCore.Http.PathString..ctor(String value)
+   at Microsoft.AspNetCore.Http.PathString.op_Implicit(String s)
+   at NTCore.WebFront.Startup.<>c.<ConfigureServices>b__4_2(CookieAuthenticationOptions options) in D:\Projects\NTPlatform\NTCore.WebFront\Startup.cs:line 41
+   at Microsoft.Extensions.Options.ConfigureNamedOptions`1.Configure(String name, TOptions options)
+   at Microsoft.Extensions.Options.OptionsFactory`1.Create(String name)
+   at Microsoft.Extensions.Options.OptionsMonitor`1.<>c__DisplayClass10_0.<Get>b__0()
+   at System.Lazy`1.ViaFactory(LazyThreadSafetyMode mode)
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Lazy`1.CreateValue()
+   at Microsoft.Extensions.Options.OptionsCache`1.GetOrAdd(String name, Func`1 createOptions)
+   at Microsoft.Extensions.Options.OptionsMonitor`1.Get(String name)
+   at Microsoft.AspNetCore.Authentication.AuthenticationHandler`1.<InitializeAsync>d__42.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Authentication.AuthenticationHandlerProvider.<GetHandlerAsync>d__5.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter`1.GetResult()
+   at Microsoft.AspNetCore.Authentication.AuthenticationService.<AuthenticateAsync>d__10.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter`1.GetResult()
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.<Invoke>d__6.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Builder.RouterMiddleware.<Invoke>d__4.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.<Invoke>d__7.MoveNext()
+
+-----------------------------------------
+
+time:2017-08-29 18:25:57,772 
+level:INFO 
+logger:Microsoft.AspNetCore.Hosting.Internal.WebHost
+file:? line? 
+content:Request finished in 235.5522ms 500 text/html; charset=utf-8
+
+-----------------------------------------
+
+time:2017-08-29 18:26:11,116 
+level:INFO 
+logger:Microsoft.AspNetCore.Hosting.Internal.WebHost
+file:? line? 
+content:Request starting HTTP/1.1 GET http://localhost:57942/api/values  
+
+-----------------------------------------
+
+time:2017-08-29 18:26:11,133 
+level:INFO 
+logger:Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker
+file:? line? 
+content:Executing action method NTCore.WebFront.Controllers.ValuesController.GetAsync (NTCore.WebFront) with arguments ((null)) - ModelState is Valid
+
+-----------------------------------------
+
+time:2017-08-29 18:26:13,137 
+level:INFO 
+logger:Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker
+file:? line? 
+content:Executed action NTCore.WebFront.Controllers.ValuesController.GetAsync (NTCore.WebFront) in 2018.3784ms
+
+-----------------------------------------
+
+time:2017-08-29 18:26:13,211 
+level:ERROR 
+logger:Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware
+file:? line? 
+content:An unhandled exception has occurred while executing the request
+System.ArgumentException: The path in 'value' must start with '/'.
+Parameter name: value
+   at Microsoft.AspNetCore.Http.PathString..ctor(String value)
+   at Microsoft.AspNetCore.Http.PathString.op_Implicit(String s)
+   at NTCore.WebFront.Startup.<>c.<ConfigureServices>b__4_2(CookieAuthenticationOptions options) in D:\Projects\NTPlatform\NTCore.WebFront\Startup.cs:line 41
+   at Microsoft.Extensions.Options.ConfigureNamedOptions`1.Configure(String name, TOptions options)
+   at Microsoft.Extensions.Options.OptionsFactory`1.Create(String name)
+   at Microsoft.Extensions.Options.OptionsMonitor`1.<>c__DisplayClass10_0.<Get>b__0()
+   at System.Lazy`1.ViaFactory(LazyThreadSafetyMode mode)
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Lazy`1.CreateValue()
+   at Microsoft.Extensions.Options.OptionsCache`1.GetOrAdd(String name, Func`1 createOptions)
+   at Microsoft.Extensions.Options.OptionsMonitor`1.Get(String name)
+   at Microsoft.AspNetCore.Authentication.AuthenticationHandler`1.<InitializeAsync>d__42.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Authentication.AuthenticationHandlerProvider.<GetHandlerAsync>d__5.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter`1.GetResult()
+   at Microsoft.AspNetCore.Authentication.AuthenticationService.<SignInAsync>d__13.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at NTCore.WebFront.Controllers.ValuesController.<GetAsync>d__2.MoveNext() in D:\Projects\NTPlatform\NTCore.WebFront\Controllers\ValuesController.cs:line 41
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at lambda_method(Closure , Object )
+   at Microsoft.Extensions.Internal.ObjectMethodExecutorAwaitable.Awaiter.GetResult()
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.<InvokeActionMethodAsync>d__12.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.<InvokeNextActionFilterAsync>d__10.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.Rethrow(ActionExecutedContext context)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.<InvokeInnerFilterAsync>d__14.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.<InvokeNextResourceFilter>d__22.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.Rethrow(ResourceExecutedContext context)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.<InvokeFilterPipelineAsync>d__17.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.<InvokeAsync>d__15.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Builder.RouterMiddleware.<Invoke>d__4.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.<Invoke>d__7.MoveNext()
+
+-----------------------------------------
+
+time:2017-08-29 18:26:13,277 
+level:INFO 
+logger:Microsoft.AspNetCore.Hosting.Internal.WebHost
+file:? line? 
+content:Request finished in 2155.6927ms 500 text/html; charset=utf-8
+
+-----------------------------------------
+
+time:2017-08-29 18:26:13,285 
+level:INFO 
+logger:Microsoft.AspNetCore.Hosting.Internal.WebHost
+file:? line? 
+content:Request starting HTTP/1.1 GET http://localhost:57942/favicon.ico  
+
+-----------------------------------------
+
+time:2017-08-29 18:26:13,500 
+level:ERROR 
+logger:Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware
+file:? line? 
+content:An unhandled exception has occurred while executing the request
+System.ArgumentException: The path in 'value' must start with '/'.
+Parameter name: value
+   at Microsoft.AspNetCore.Http.PathString..ctor(String value)
+   at Microsoft.AspNetCore.Http.PathString.op_Implicit(String s)
+   at NTCore.WebFront.Startup.<>c.<ConfigureServices>b__4_2(CookieAuthenticationOptions options) in D:\Projects\NTPlatform\NTCore.WebFront\Startup.cs:line 41
+   at Microsoft.Extensions.Options.ConfigureNamedOptions`1.Configure(String name, TOptions options)
+   at Microsoft.Extensions.Options.OptionsFactory`1.Create(String name)
+   at Microsoft.Extensions.Options.OptionsMonitor`1.<>c__DisplayClass10_0.<Get>b__0()
+   at System.Lazy`1.ViaFactory(LazyThreadSafetyMode mode)
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Lazy`1.CreateValue()
+   at Microsoft.Extensions.Options.OptionsCache`1.GetOrAdd(String name, Func`1 createOptions)
+   at Microsoft.Extensions.Options.OptionsMonitor`1.Get(String name)
+   at Microsoft.AspNetCore.Authentication.AuthenticationHandler`1.<InitializeAsync>d__42.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Authentication.AuthenticationHandlerProvider.<GetHandlerAsync>d__5.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter`1.GetResult()
+   at Microsoft.AspNetCore.Authentication.AuthenticationService.<AuthenticateAsync>d__10.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter`1.GetResult()
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.<Invoke>d__6.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Builder.RouterMiddleware.<Invoke>d__4.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.<Invoke>d__7.MoveNext()
+
+-----------------------------------------
+
+time:2017-08-29 18:26:13,537 
+level:INFO 
+logger:Microsoft.AspNetCore.Hosting.Internal.WebHost
+file:? line? 
+content:Request finished in 251.3552ms 500 text/html; charset=utf-8
+
+-----------------------------------------
+
+time:2017-08-29 18:26:29,195 
+level:INFO 
+logger:Microsoft.AspNetCore.Hosting.Internal.WebHost
+file:? line? 
+content:Request starting HTTP/1.1 GET http://localhost:57942/api/values  
+
+-----------------------------------------
+
+time:2017-08-29 18:26:29,391 
+level:INFO 
+logger:Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker
+file:? line? 
+content:Executing action method NTCore.WebFront.Controllers.ValuesController.GetAsync (NTCore.WebFront) with arguments ((null)) - ModelState is Valid
+
+-----------------------------------------
+
+time:2017-08-29 18:26:30,683 
+level:INFO 
+logger:Microsoft.AspNetCore.Authentication.Cookies.CookieAuthenticationHandler
+file:? line? 
+content:AuthenticationScheme: CookieAuthenticationScheme signed in.
+
+-----------------------------------------
+
+time:2017-08-29 18:26:30,691 
+level:ERROR 
+logger:NTCore.WebFront.Controllers.ValuesController
+file:? line? 
+content:BBBBBBBBBBBBBBBBBBBB
+
+-----------------------------------------
+
+time:2017-08-29 18:26:30,996 
+level:INFO 
+logger:Microsoft.AspNetCore.Mvc.Internal.ObjectResultExecutor
+file:? line? 
+content:Executing ObjectResult, writing value Microsoft.AspNetCore.Mvc.ControllerContext.
+
+-----------------------------------------
+
+time:2017-08-29 18:26:31,038 
+level:INFO 
+logger:Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker
+file:? line? 
+content:Executed action NTCore.WebFront.Controllers.ValuesController.GetAsync (NTCore.WebFront) in 1693.8005ms
+
+-----------------------------------------
+
+time:2017-08-29 18:26:31,044 
+level:INFO 
+logger:Microsoft.AspNetCore.Hosting.Internal.WebHost
+file:? line? 
+content:Request finished in 1856.9474ms 200 application/json; charset=utf-8
+
+-----------------------------------------
+
+time:2017-08-29 18:26:31,061 
+level:INFO 
+logger:Microsoft.AspNetCore.Hosting.Internal.WebHost
+file:? line? 
+content:Request starting HTTP/1.1 GET http://localhost:57942/favicon.ico  
+
+-----------------------------------------
+
+time:2017-08-29 18:26:31,067 
+level:INFO 
+logger:Microsoft.AspNetCore.Authentication.Cookies.CookieAuthenticationHandler
+file:? line? 
+content:AuthenticationScheme: CookieAuthenticationScheme was successfully authenticated.
+
+-----------------------------------------
+
+time:2017-08-29 18:26:31,073 
+level:INFO 
+logger:Microsoft.AspNetCore.Hosting.Internal.WebHost
+file:? line? 
+content:Request finished in 11.416ms 404 
+
+-----------------------------------------
+
+time:2017-08-29 18:26:45,258 
+level:INFO 
+logger:Microsoft.AspNetCore.Hosting.Internal.WebHost
+file:? line? 
+content:Request starting HTTP/1.1 GET http://localhost:57942/api/values/1111  
+
+-----------------------------------------
+
+time:2017-08-29 18:26:45,413 
+level:INFO 
+logger:Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker
+file:? line? 
+content:Executed action NTCore.WebFront.Controllers.ValuesController.Get (NTCore.WebFront) in 116.0519ms
+
+-----------------------------------------
+
+time:2017-08-29 18:26:45,480 
+level:ERROR 
+logger:Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware
+file:? line? 
+content:An unhandled exception has occurred while executing the request
+System.InvalidOperationException: No authentication handler is configured to authenticate for the scheme: member
+   at Microsoft.AspNetCore.Authentication.AuthenticationService.<AuthenticateAsync>d__10.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter`1.GetResult()
+   at Microsoft.AspNetCore.Authorization.Policy.PolicyEvaluator.<AuthenticateAsync>d__2.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter`1.GetResult()
+   at Microsoft.AspNetCore.Mvc.Authorization.AuthorizeFilter.<OnAuthorizationAsync>d__15.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.<InvokeFilterPipelineAsync>d__17.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.<InvokeAsync>d__15.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Builder.RouterMiddleware.<Invoke>d__4.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.<Invoke>d__7.MoveNext()
+
+-----------------------------------------
+
+time:2017-08-29 18:26:45,572 
+level:INFO 
+logger:Microsoft.AspNetCore.Hosting.Internal.WebHost
+file:? line? 
+content:Request finished in 310.939ms 500 text/html; charset=utf-8
+
+-----------------------------------------
+
+time:2017-08-29 18:27:05,203 
+level:INFO 
+logger:Microsoft.AspNetCore.Hosting.Internal.WebHost
+file:? line? 
+content:Request starting HTTP/1.1 GET http://localhost:57942/api/values  
+
+-----------------------------------------
+
+time:2017-08-29 18:27:05,395 
+level:INFO 
+logger:Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker
+file:? line? 
+content:Executing action method NTCore.WebFront.Controllers.ValuesController.GetAsync (NTCore.WebFront) with arguments ((null)) - ModelState is Valid
+
+-----------------------------------------
+
+time:2017-08-29 18:27:07,029 
+level:INFO 
+logger:Microsoft.AspNetCore.Authentication.Cookies.CookieAuthenticationHandler
+file:? line? 
+content:AuthenticationScheme: CookieAuthenticationScheme signed in.
+
+-----------------------------------------
+
+time:2017-08-29 18:27:07,037 
+level:ERROR 
+logger:NTCore.WebFront.Controllers.ValuesController
+file:? line? 
+content:BBBBBBBBBBBBBBBBBBBB
+
+-----------------------------------------
+
+time:2017-08-29 18:27:07,277 
+level:INFO 
+logger:Microsoft.AspNetCore.Mvc.Internal.ObjectResultExecutor
+file:? line? 
+content:Executing ObjectResult, writing value Microsoft.AspNetCore.Mvc.ControllerContext.
+
+-----------------------------------------
+
+time:2017-08-29 18:27:07,318 
+level:INFO 
+logger:Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker
+file:? line? 
+content:Executed action NTCore.WebFront.Controllers.ValuesController.GetAsync (NTCore.WebFront) in 1966.1066ms
+
+-----------------------------------------
+
+time:2017-08-29 18:27:07,324 
+level:INFO 
+logger:Microsoft.AspNetCore.Hosting.Internal.WebHost
+file:? line? 
+content:Request finished in 2131.1588ms 200 application/json; charset=utf-8
+
+-----------------------------------------
+
+time:2017-08-29 18:27:07,339 
+level:INFO 
+logger:Microsoft.AspNetCore.Hosting.Internal.WebHost
+file:? line? 
+content:Request starting HTTP/1.1 GET http://localhost:57942/favicon.ico  
+
+-----------------------------------------
+
+time:2017-08-29 18:27:07,346 
+level:INFO 
+logger:Microsoft.AspNetCore.Authentication.Cookies.CookieAuthenticationHandler
+file:? line? 
+content:AuthenticationScheme: CookieAuthenticationScheme was successfully authenticated.
+
+-----------------------------------------
+
+time:2017-08-29 18:27:07,351 
+level:INFO 
+logger:Microsoft.AspNetCore.Hosting.Internal.WebHost
+file:? line? 
+content:Request finished in 10.8491ms 404 
+
+-----------------------------------------
+
+time:2017-08-29 18:27:10,611 
+level:INFO 
+logger:Microsoft.AspNetCore.Hosting.Internal.WebHost
+file:? line? 
+content:Request starting HTTP/1.1 GET http://localhost:57942/api/values/1111  
+
+-----------------------------------------
+
+time:2017-08-29 18:27:10,646 
+level:INFO 
+logger:Microsoft.AspNetCore.Authentication.Cookies.CookieAuthenticationHandler
+file:? line? 
+content:AuthenticationScheme: CookieAuthenticationScheme was successfully authenticated.
+
+-----------------------------------------
+
+time:2017-08-29 18:27:10,653 
+level:INFO 
+logger:Microsoft.AspNetCore.Authorization.DefaultAuthorizationService
+file:? line? 
+content:Authorization failed for user: (null).
+
+-----------------------------------------
+
+time:2017-08-29 18:27:10,655 
+level:INFO 
+logger:Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker
+file:? line? 
+content:Authorization failed for the request at filter 'Microsoft.AspNetCore.Mvc.Authorization.AuthorizeFilter'.
+
+-----------------------------------------
+
+time:2017-08-29 18:27:10,658 
+level:INFO 
+logger:Microsoft.AspNetCore.Mvc.ForbidResult
+file:? line? 
+content:Executing ForbidResult with authentication schemes (CookieAuthenticationScheme).
+
+-----------------------------------------
+
+time:2017-08-29 18:27:10,663 
+level:INFO 
+logger:Microsoft.AspNetCore.Authentication.Cookies.CookieAuthenticationHandler
+file:? line? 
+content:AuthenticationScheme: CookieAuthenticationScheme was forbidden.
+
+-----------------------------------------
+
+time:2017-08-29 18:27:10,665 
+level:INFO 
+logger:Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker
+file:? line? 
+content:Executed action NTCore.WebFront.Controllers.ValuesController.Get (NTCore.WebFront) in 21.3493ms
+
+-----------------------------------------
+
+time:2017-08-29 18:27:10,668 
+level:INFO 
+logger:Microsoft.AspNetCore.Hosting.Internal.WebHost
+file:? line? 
+content:Request finished in 56.6282ms 302 
+
+-----------------------------------------
+
+time:2017-08-29 18:27:10,672 
+level:INFO 
+logger:Microsoft.AspNetCore.Hosting.Internal.WebHost
+file:? line? 
+content:Request starting HTTP/1.1 GET http://localhost:57942/passport/forbidden?ReturnUrl=%2Fapi%2Fvalues%2F1111  
+
+-----------------------------------------
+
+time:2017-08-29 18:27:10,675 
+level:INFO 
+logger:Microsoft.AspNetCore.Authentication.Cookies.CookieAuthenticationHandler
+file:? line? 
+content:AuthenticationScheme: CookieAuthenticationScheme was successfully authenticated.
+
+-----------------------------------------
+
+time:2017-08-29 18:27:10,681 
+level:INFO 
+logger:Microsoft.AspNetCore.Hosting.Internal.WebHost
+file:? line? 
+content:Request finished in 4.7671ms 404 
+
+-----------------------------------------
+
+time:2017-08-29 18:27:27,511 
+level:INFO 
+logger:Microsoft.AspNetCore.Hosting.Internal.WebHost
+file:? line? 
+content:Request starting HTTP/1.1 GET http://localhost:57942/api/values  
+
+-----------------------------------------
+
+time:2017-08-29 18:27:27,529 
+level:INFO 
+logger:Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker
+file:? line? 
+content:Executing action method NTCore.WebFront.Controllers.ValuesController.GetAsync (NTCore.WebFront) with arguments ((null)) - ModelState is Valid
+
+-----------------------------------------
+
+time:2017-08-29 18:27:29,223 
+level:INFO 
+logger:Microsoft.AspNetCore.Authentication.Cookies.CookieAuthenticationHandler
+file:? line? 
+content:AuthenticationScheme: CookieAuthenticationScheme signed in.
+
+-----------------------------------------
+
+time:2017-08-29 18:27:29,230 
+level:ERROR 
+logger:NTCore.WebFront.Controllers.ValuesController
+file:? line? 
+content:BBBBBBBBBBBBBBBBBBBB
+
+-----------------------------------------
+
+time:2017-08-29 18:27:29,260 
+level:INFO 
+logger:Microsoft.AspNetCore.Mvc.Internal.ObjectResultExecutor
+file:? line? 
+content:Executing ObjectResult, writing value Microsoft.AspNetCore.Mvc.ControllerContext.
+
+-----------------------------------------
+
+time:2017-08-29 18:27:29,264 
+level:INFO 
+logger:Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker
+file:? line? 
+content:Executed action NTCore.WebFront.Controllers.ValuesController.GetAsync (NTCore.WebFront) in 1749.7852ms
+
+-----------------------------------------
+
+time:2017-08-29 18:27:29,267 
+level:INFO 
+logger:Microsoft.AspNetCore.Hosting.Internal.WebHost
+file:? line? 
+content:Request finished in 1754.8397ms 200 application/json; charset=utf-8
+
+-----------------------------------------
+
+time:2017-08-29 18:27:52,527 
+level:INFO 
+logger:Microsoft.AspNetCore.Hosting.Internal.WebHost
+file:? line? 
+content:Request starting HTTP/1.1 GET http://localhost:57942/api/values  
+
+-----------------------------------------
+
+time:2017-08-29 18:27:52,543 
+level:INFO 
+logger:Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker
+file:? line? 
+content:Executing action method NTCore.WebFront.Controllers.ValuesController.GetAsync (NTCore.WebFront) with arguments ((null)) - ModelState is Valid
+
+-----------------------------------------
+
+time:2017-08-29 18:28:31,503 
+level:INFO 
+logger:Microsoft.AspNetCore.Authentication.Cookies.CookieAuthenticationHandler
+file:? line? 
+content:AuthenticationScheme: CookieAuthenticationScheme signed in.
+
+-----------------------------------------
+
+time:2017-08-29 18:29:16,568 
+level:INFO 
+logger:Microsoft.AspNetCore.Hosting.Internal.WebHost
+file:? line? 
+content:Request starting HTTP/1.1 GET http://localhost:57942/api/values  
+
+-----------------------------------------
+
+time:2017-08-29 18:29:16,783 
+level:INFO 
+logger:Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker
+file:? line? 
+content:Executing action method NTCore.WebFront.Controllers.ValuesController.GetAsync (NTCore.WebFront) with arguments ((null)) - ModelState is Valid
+
+-----------------------------------------
+
+time:2017-08-29 18:29:18,359 
+level:INFO 
+logger:Microsoft.AspNetCore.Authentication.Cookies.CookieAuthenticationHandler
+file:? line? 
+content:AuthenticationScheme: CookieAuthenticationScheme signed in.
+
+-----------------------------------------
+
+time:2017-08-29 18:29:18,669 
+level:INFO 
+logger:Microsoft.AspNetCore.Mvc.Internal.ObjectResultExecutor
+file:? line? 
+content:Executing ObjectResult, writing value Microsoft.AspNetCore.Mvc.ControllerContext.
+
+-----------------------------------------
+
+time:2017-08-29 18:29:18,709 
+level:INFO 
+logger:Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker
+file:? line? 
+content:Executed action NTCore.WebFront.Controllers.ValuesController.GetAsync (NTCore.WebFront) in 1981.7194ms
+
+-----------------------------------------
+
+time:2017-08-29 18:29:18,715 
+level:INFO 
+logger:Microsoft.AspNetCore.Hosting.Internal.WebHost
+file:? line? 
+content:Request finished in 2158.2309ms 200 application/json; charset=utf-8
+
+-----------------------------------------
+
+time:2017-08-29 18:29:18,728 
+level:INFO 
+logger:Microsoft.AspNetCore.Hosting.Internal.WebHost
+file:? line? 
+content:Request starting HTTP/1.1 GET http://localhost:57942/favicon.ico  
+
+-----------------------------------------
+
+time:2017-08-29 18:29:18,736 
+level:INFO 
+logger:Microsoft.AspNetCore.Authentication.Cookies.CookieAuthenticationHandler
+file:? line? 
+content:AuthenticationScheme: CookieAuthenticationScheme was successfully authenticated.
+
+-----------------------------------------
+
+time:2017-08-29 18:29:18,739 
+level:INFO 
+logger:Microsoft.AspNetCore.Hosting.Internal.WebHost
+file:? line? 
+content:Request finished in 10.7956ms 404 
+
+-----------------------------------------
+
+time:2017-08-29 18:29:21,538 
+level:INFO 
+logger:Microsoft.AspNetCore.Hosting.Internal.WebHost
+file:? line? 
+content:Request starting HTTP/1.1 GET http://localhost:57942/api/values  
+
+-----------------------------------------
+
+time:2017-08-29 18:29:21,555 
+level:INFO 
+logger:Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker
+file:? line? 
+content:Executing action method NTCore.WebFront.Controllers.ValuesController.GetAsync (NTCore.WebFront) with arguments ((null)) - ModelState is Valid
+
+-----------------------------------------
+
+time:2017-08-29 18:31:07,210 
+level:INFO 
+logger:Microsoft.AspNetCore.Hosting.Internal.WebHost
+file:? line? 
+content:Request starting HTTP/1.1 GET http://localhost:57942/api/values  
+
+-----------------------------------------
+
+time:2017-08-29 18:31:07,406 
+level:INFO 
+logger:Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker
+file:? line? 
+content:Executing action method NTCore.WebFront.Controllers.ValuesController.GetAsync (NTCore.WebFront) with arguments ((null)) - ModelState is Valid
+
+-----------------------------------------
+
+time:2017-08-29 18:31:09,187 
+level:INFO 
+logger:Microsoft.AspNetCore.Authentication.Cookies.CookieAuthenticationHandler
+file:? line? 
+content:AuthenticationScheme: CookieAuthenticationScheme signed in.
+
+-----------------------------------------
+
+time:2017-08-29 18:31:09,501 
+level:INFO 
+logger:Microsoft.AspNetCore.Mvc.Internal.ObjectResultExecutor
+file:? line? 
+content:Executing ObjectResult, writing value Microsoft.AspNetCore.Mvc.ControllerContext.
+
+-----------------------------------------
+
+time:2017-08-29 18:31:09,542 
+level:INFO 
+logger:Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker
+file:? line? 
+content:Executed action NTCore.WebFront.Controllers.ValuesController.GetAsync (NTCore.WebFront) in 2180.4634ms
+
+-----------------------------------------
+
+time:2017-08-29 18:31:09,548 
+level:INFO 
+logger:Microsoft.AspNetCore.Hosting.Internal.WebHost
+file:? line? 
+content:Request finished in 2344.9116ms 200 application/json; charset=utf-8
+
+-----------------------------------------
+
+time:2017-08-29 18:31:09,563 
+level:INFO 
+logger:Microsoft.AspNetCore.Hosting.Internal.WebHost
+file:? line? 
+content:Request starting HTTP/1.1 GET http://localhost:57942/favicon.ico  
+
+-----------------------------------------
+
+time:2017-08-29 18:31:09,570 
+level:INFO 
+logger:Microsoft.AspNetCore.Authentication.Cookies.CookieAuthenticationHandler
+file:? line? 
+content:AuthenticationScheme: CookieAuthenticationScheme was successfully authenticated.
+
+-----------------------------------------
+
+time:2017-08-29 18:31:09,574 
+level:INFO 
+logger:Microsoft.AspNetCore.Hosting.Internal.WebHost
+file:? line? 
+content:Request finished in 10.9168ms 404 
+
+-----------------------------------------
+
+time:2017-08-29 18:31:13,057 
+level:INFO 
+logger:Microsoft.AspNetCore.Hosting.Internal.WebHost
+file:? line? 
+content:Request starting HTTP/1.1 GET http://localhost:57942/api/values  
+
+-----------------------------------------
+
+time:2017-08-29 18:31:13,074 
+level:INFO 
+logger:Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker
+file:? line? 
+content:Executing action method NTCore.WebFront.Controllers.ValuesController.GetAsync (NTCore.WebFront) with arguments ((null)) - ModelState is Valid
+
+-----------------------------------------
+
+time:2017-08-29 18:35:19,026 
+level:INFO 
+logger:Microsoft.AspNetCore.Hosting.Internal.WebHost
+file:? line? 
+content:Request starting HTTP/1.1 GET http://localhost:57942/api/values  
+
+-----------------------------------------
+
+time:2017-08-29 18:35:19,225 
+level:INFO 
+logger:Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker
+file:? line? 
+content:Executing action method NTCore.WebFront.Controllers.ValuesController.GetAsync (NTCore.WebFront) with arguments ((null)) - ModelState is Valid
+
+-----------------------------------------
+
+time:2017-08-29 18:35:21,173 
+level:INFO 
+logger:Microsoft.AspNetCore.Authentication.Cookies.CookieAuthenticationHandler
+file:? line? 
+content:AuthenticationScheme: CookieAuthenticationScheme signed in.
+
+-----------------------------------------
+
+time:2017-08-29 18:35:21,487 
+level:INFO 
+logger:Microsoft.AspNetCore.Mvc.Internal.ObjectResultExecutor
+file:? line? 
+content:Executing ObjectResult, writing value Microsoft.AspNetCore.Mvc.ControllerContext.
+
+-----------------------------------------
+
+time:2017-08-29 18:35:21,528 
+level:INFO 
+logger:Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker
+file:? line? 
+content:Executed action NTCore.WebFront.Controllers.ValuesController.GetAsync (NTCore.WebFront) in 2347.2974ms
+
+-----------------------------------------
+
+time:2017-08-29 18:35:21,535 
+level:INFO 
+logger:Microsoft.AspNetCore.Hosting.Internal.WebHost
+file:? line? 
+content:Request finished in 2515.8508ms 200 application/json; charset=utf-8
+
+-----------------------------------------
+
+time:2017-08-29 18:35:21,551 
+level:INFO 
+logger:Microsoft.AspNetCore.Hosting.Internal.WebHost
+file:? line? 
+content:Request starting HTTP/1.1 GET http://localhost:57942/favicon.ico  
+
+-----------------------------------------
+
+time:2017-08-29 18:35:21,561 
+level:INFO 
+logger:Microsoft.AspNetCore.Hosting.Internal.WebHost
+file:? line? 
+content:Request finished in 6.2254ms 404 
+
+-----------------------------------------
+
+time:2017-08-29 18:35:28,337 
+level:INFO 
+logger:Microsoft.AspNetCore.Hosting.Internal.WebHost
+file:? line? 
+content:Request starting HTTP/1.1 GET http://localhost:57942/api/values  
+
+-----------------------------------------
+
+time:2017-08-29 18:35:28,354 
+level:INFO 
+logger:Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker
+file:? line? 
+content:Executing action method NTCore.WebFront.Controllers.ValuesController.GetAsync (NTCore.WebFront) with arguments ((null)) - ModelState is Valid
+
+-----------------------------------------
+
+time:2017-08-29 18:35:36,024 
+level:INFO 
+logger:Microsoft.AspNetCore.Authentication.Cookies.CookieAuthenticationHandler
+file:? line? 
+content:AuthenticationScheme: CookieAuthenticationScheme signed in.
+
+-----------------------------------------
+
+time:2017-08-29 18:35:36,052 
+level:INFO 
+logger:Microsoft.AspNetCore.Mvc.Internal.ObjectResultExecutor
+file:? line? 
+content:Executing ObjectResult, writing value Microsoft.AspNetCore.Mvc.ControllerContext.
+
+-----------------------------------------
+
+time:2017-08-29 18:35:36,055 
+level:INFO 
+logger:Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker
+file:? line? 
+content:Executed action NTCore.WebFront.Controllers.ValuesController.GetAsync (NTCore.WebFront) in 7714.5143ms
+
+-----------------------------------------
+
+time:2017-08-29 18:35:36,060 
+level:INFO 
+logger:Microsoft.AspNetCore.Hosting.Internal.WebHost
+file:? line? 
+content:Request finished in 7721.0731ms 200 application/json; charset=utf-8
+
+-----------------------------------------
+
+time:2017-08-29 18:36:03,402 
+level:INFO 
+logger:Microsoft.AspNetCore.Hosting.Internal.WebHost
+file:? line? 
+content:Request starting HTTP/1.1 GET http://localhost:57942/api/values  
+
+-----------------------------------------
+
+time:2017-08-29 18:36:03,601 
+level:INFO 
+logger:Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker
+file:? line? 
+content:Executing action method NTCore.WebFront.Controllers.ValuesController.GetAsync (NTCore.WebFront) with arguments ((null)) - ModelState is Valid
+
+-----------------------------------------
+
+time:2017-08-29 18:36:04,829 
+level:INFO 
+logger:Microsoft.AspNetCore.Authentication.Cookies.CookieAuthenticationHandler
+file:? line? 
+content:AuthenticationScheme: CookieAuthenticationScheme signed in.
+
+-----------------------------------------
+
+time:2017-08-29 18:36:05,055 
+level:INFO 
+logger:Microsoft.AspNetCore.Mvc.Internal.ObjectResultExecutor
+file:? line? 
+content:Executing ObjectResult, writing value Microsoft.AspNetCore.Mvc.ControllerContext.
+
+-----------------------------------------
+
+time:2017-08-29 18:36:05,100 
+level:INFO 
+logger:Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker
+file:? line? 
+content:Executed action NTCore.WebFront.Controllers.ValuesController.GetAsync (NTCore.WebFront) in 1542.6634ms
+
+-----------------------------------------
+
+time:2017-08-29 18:36:05,106 
+level:INFO 
+logger:Microsoft.AspNetCore.Hosting.Internal.WebHost
+file:? line? 
+content:Request finished in 1712.2985ms 200 application/json; charset=utf-8
+
+-----------------------------------------
+
+time:2017-08-29 18:36:05,120 
+level:INFO 
+logger:Microsoft.AspNetCore.Hosting.Internal.WebHost
+file:? line? 
+content:Request starting HTTP/1.1 GET http://localhost:57942/favicon.ico  
+
+-----------------------------------------
+
+time:2017-08-29 18:36:05,128 
+level:INFO 
+logger:Microsoft.AspNetCore.Authentication.Cookies.CookieAuthenticationHandler
+file:? line? 
+content:AuthenticationScheme: CookieAuthenticationScheme was successfully authenticated.
+
+-----------------------------------------
+
+time:2017-08-29 18:36:05,132 
+level:INFO 
+logger:Microsoft.AspNetCore.Hosting.Internal.WebHost
+file:? line? 
+content:Request finished in 10.9672ms 404 
+
+-----------------------------------------
+
+time:2017-08-29 18:36:19,679 
+level:INFO 
+logger:Microsoft.AspNetCore.Hosting.Internal.WebHost
+file:? line? 
+content:Request starting HTTP/1.1 GET http://localhost:57942/api/values  
+
+-----------------------------------------
+
+time:2017-08-29 18:36:19,696 
+level:INFO 
+logger:Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker
+file:? line? 
+content:Executing action method NTCore.WebFront.Controllers.ValuesController.GetAsync (NTCore.WebFront) with arguments ((null)) - ModelState is Valid
+
+-----------------------------------------
+
+time:2017-08-29 18:37:38,033 
+level:INFO 
+logger:Microsoft.AspNetCore.Hosting.Internal.WebHost
+file:? line? 
+content:Request starting HTTP/1.1 GET http://localhost:57942/api/values  
+
+-----------------------------------------
+
+time:2017-08-29 18:37:38,230 
+level:INFO 
+logger:Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker
+file:? line? 
+content:Executing action method NTCore.WebFront.Controllers.ValuesController.GetAsync (NTCore.WebFront) with arguments ((null)) - ModelState is Valid
+
+-----------------------------------------
+
+time:2017-08-29 18:37:40,429 
+level:INFO 
+logger:Microsoft.AspNetCore.Authentication.Cookies.CookieAuthenticationHandler
+file:? line? 
+content:AuthenticationScheme: CookieAuthenticationScheme signed in.
+
+-----------------------------------------
+
+time:2017-08-29 18:37:40,750 
+level:INFO 
+logger:Microsoft.AspNetCore.Mvc.Internal.ObjectResultExecutor
+file:? line? 
+content:Executing ObjectResult, writing value Microsoft.AspNetCore.Mvc.ControllerContext.
+
+-----------------------------------------
+
+time:2017-08-29 18:37:40,791 
+level:INFO 
+logger:Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker
+file:? line? 
+content:Executed action NTCore.WebFront.Controllers.ValuesController.GetAsync (NTCore.WebFront) in 2606.7002ms
+
+-----------------------------------------
+
+time:2017-08-29 18:37:40,795 
+level:INFO 
+logger:Microsoft.AspNetCore.Hosting.Internal.WebHost
+file:? line? 
+content:Request finished in 2770.296ms 200 application/json; charset=utf-8
+
+-----------------------------------------
+
+time:2017-08-29 18:37:40,813 
+level:INFO 
+logger:Microsoft.AspNetCore.Hosting.Internal.WebHost
+file:? line? 
+content:Request starting HTTP/1.1 GET http://localhost:57942/favicon.ico  
+
+-----------------------------------------
+
+time:2017-08-29 18:37:40,821 
+level:INFO 
+logger:Microsoft.AspNetCore.Authentication.Cookies.CookieAuthenticationHandler
+file:? line? 
+content:AuthenticationScheme: CookieAuthenticationScheme was successfully authenticated.
+
+-----------------------------------------
+
+time:2017-08-29 18:37:40,824 
+level:INFO 
+logger:Microsoft.AspNetCore.Hosting.Internal.WebHost
+file:? line? 
+content:Request finished in 12.4057ms 404 
+
+-----------------------------------------
+
+time:2017-08-29 18:39:14,237 
+level:INFO 
+logger:Microsoft.AspNetCore.Hosting.Internal.WebHost
+file:? line? 
+content:Request starting HTTP/1.1 GET http://localhost:57942/api/values  
+
+-----------------------------------------
+
+time:2017-08-29 18:39:14,446 
+level:INFO 
+logger:Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker
+file:? line? 
+content:Executing action method NTCore.WebFront.Controllers.ValuesController.GetAsync (NTCore.WebFront) with arguments ((null)) - ModelState is Valid
+
+-----------------------------------------
+
+time:2017-08-29 18:39:16,131 
+level:INFO 
+logger:Microsoft.AspNetCore.Authentication.Cookies.CookieAuthenticationHandler
+file:? line? 
+content:AuthenticationScheme: CookieAuthenticationScheme signed in.
+
+-----------------------------------------
+
+time:2017-08-29 18:39:16,380 
+level:INFO 
+logger:Microsoft.AspNetCore.Mvc.Internal.ObjectResultExecutor
+file:? line? 
+content:Executing ObjectResult, writing value Microsoft.AspNetCore.Mvc.ControllerContext.
+
+-----------------------------------------
+
+time:2017-08-29 18:39:16,423 
+level:INFO 
+logger:Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker
+file:? line? 
+content:Executed action NTCore.WebFront.Controllers.ValuesController.GetAsync (NTCore.WebFront) in 2029.7078ms
+
+-----------------------------------------
+
+time:2017-08-29 18:39:16,436 
+level:INFO 
+logger:Microsoft.AspNetCore.Hosting.Internal.WebHost
+file:? line? 
+content:Request finished in 2202.5978ms 200 application/json; charset=utf-8
+
+-----------------------------------------
+
+time:2017-08-29 18:39:16,447 
+level:INFO 
+logger:Microsoft.AspNetCore.Hosting.Internal.WebHost
+file:? line? 
+content:Request starting HTTP/1.1 GET http://localhost:57942/favicon.ico  
+
+-----------------------------------------
+
+time:2017-08-29 18:39:16,454 
+level:INFO 
+logger:Microsoft.AspNetCore.Authentication.Cookies.CookieAuthenticationHandler
+file:? line? 
+content:AuthenticationScheme: CookieAuthenticationScheme was successfully authenticated.
+
+-----------------------------------------
+
+time:2017-08-29 18:39:16,459 
+level:INFO 
+logger:Microsoft.AspNetCore.Hosting.Internal.WebHost
+file:? line? 
+content:Request finished in 10.4632ms 404 
+
+-----------------------------------------
+
+time:2017-08-29 18:42:33,270 
+level:INFO 
+logger:Microsoft.AspNetCore.Hosting.Internal.WebHost
+file:? line? 
+content:Request starting HTTP/1.1 GET http://localhost:57942/api/values  
+
+-----------------------------------------
+
+time:2017-08-29 18:42:33,479 
+level:INFO 
+logger:Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker
+file:? line? 
+content:Executing action method NTCore.WebFront.Controllers.ValuesController.GetAsync (NTCore.WebFront) with arguments ((null)) - ModelState is Valid
+
+-----------------------------------------
+
+time:2017-08-29 18:42:35,348 
+level:INFO 
+logger:Microsoft.AspNetCore.Authentication.Cookies.CookieAuthenticationHandler
+file:? line? 
+content:AuthenticationScheme: CookieAuthenticationScheme signed in.
+
+-----------------------------------------
+
+time:2017-08-29 18:42:35,669 
+level:INFO 
+logger:Microsoft.AspNetCore.Mvc.Internal.ObjectResultExecutor
+file:? line? 
+content:Executing ObjectResult, writing value Microsoft.AspNetCore.Mvc.ControllerContext.
+
+-----------------------------------------
+
+time:2017-08-29 18:42:35,712 
+level:INFO 
+logger:Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker
+file:? line? 
+content:Executed action NTCore.WebFront.Controllers.ValuesController.GetAsync (NTCore.WebFront) in 2283.8639ms
+
+-----------------------------------------
+
+time:2017-08-29 18:42:35,718 
+level:INFO 
+logger:Microsoft.AspNetCore.Hosting.Internal.WebHost
+file:? line? 
+content:Request finished in 2456.2224ms 200 application/json; charset=utf-8
+
+-----------------------------------------
+
+time:2017-08-29 18:42:35,737 
+level:INFO 
+logger:Microsoft.AspNetCore.Hosting.Internal.WebHost
+file:? line? 
+content:Request starting HTTP/1.1 GET http://localhost:57942/favicon.ico  
+
+-----------------------------------------
+
+time:2017-08-29 18:42:35,745 
+level:INFO 
+logger:Microsoft.AspNetCore.Authentication.Cookies.CookieAuthenticationHandler
+file:? line? 
+content:AuthenticationScheme: CookieAuthenticationScheme was successfully authenticated.
+
+-----------------------------------------
+
+time:2017-08-29 18:42:35,748 
+level:INFO 
+logger:Microsoft.AspNetCore.Hosting.Internal.WebHost
+file:? line? 
+content:Request finished in 12.014ms 404 
+
+-----------------------------------------
+
+time:2017-08-29 18:42:39,202 
+level:INFO 
+logger:Microsoft.AspNetCore.Hosting.Internal.WebHost
+file:? line? 
+content:Request starting HTTP/1.1 GET http://localhost:57942/api/values  
+
+-----------------------------------------
+
+time:2017-08-29 18:42:39,221 
+level:INFO 
+logger:Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker
+file:? line? 
+content:Executing action method NTCore.WebFront.Controllers.ValuesController.GetAsync (NTCore.WebFront) with arguments ((null)) - ModelState is Valid
+
+-----------------------------------------
+
+time:2017-08-29 18:47:27,260 
+level:INFO 
+logger:Microsoft.AspNetCore.Authentication.Cookies.CookieAuthenticationHandler
+file:? line? 
+content:AuthenticationScheme: CookieAuthenticationScheme signed in.
+
+-----------------------------------------
+
+time:2017-08-29 18:47:27,371 
+level:INFO 
+logger:Microsoft.AspNetCore.Mvc.Internal.ObjectResultExecutor
+file:? line? 
+content:Executing ObjectResult, writing value Microsoft.AspNetCore.Mvc.ControllerContext.
+
+-----------------------------------------
+
+time:2017-08-29 18:47:27,374 
+level:INFO 
+logger:Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker
+file:? line? 
+content:Executed action NTCore.WebFront.Controllers.ValuesController.GetAsync (NTCore.WebFront) in 288168.3269ms
+
+-----------------------------------------
+
+time:2017-08-29 18:47:27,376 
+level:INFO 
+logger:Microsoft.AspNetCore.Hosting.Internal.WebHost
+file:? line? 
+content:Request finished in 288173.7147ms 200 application/json; charset=utf-8
+
+-----------------------------------------
+
+time:2017-08-29 18:47:40,391 
+level:INFO 
+logger:Microsoft.AspNetCore.Hosting.Internal.WebHost
+file:? line? 
+content:Request starting HTTP/1.1 GET http://localhost:57942/api/values  
+
+-----------------------------------------
+
+time:2017-08-29 18:47:40,588 
+level:INFO 
+logger:Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker
+file:? line? 
+content:Executing action method NTCore.WebFront.Controllers.ValuesController.GetAsync (NTCore.WebFront) with arguments ((null)) - ModelState is Valid
+
+-----------------------------------------
+
+time:2017-08-29 18:47:41,978 
+level:INFO 
+logger:Microsoft.AspNetCore.Authentication.Cookies.CookieAuthenticationHandler
+file:? line? 
+content:AuthenticationScheme: CookieAuthenticationScheme signed in.
+
+-----------------------------------------
+
+time:2017-08-29 18:47:42,172 
+level:INFO 
+logger:Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker
+file:? line? 
+content:Executed action NTCore.WebFront.Controllers.ValuesController.GetAsync (NTCore.WebFront) in 1632.6726ms
+
+-----------------------------------------
+
+time:2017-08-29 18:47:42,252 
+level:ERROR 
+logger:Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware
+file:? line? 
+content:An unhandled exception has occurred while executing the request
+System.NullReferenceException: Object reference not set to an instance of an object.
+   at NTCore.WebFront.Controllers.ValuesController.<GetAsync>d__2.MoveNext() in D:\Projects\NTPlatform\NTCore.WebFront\Controllers\ValuesController.cs:line 48
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at lambda_method(Closure , Object )
+   at Microsoft.Extensions.Internal.ObjectMethodExecutorAwaitable.Awaiter.GetResult()
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.<InvokeActionMethodAsync>d__12.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.<InvokeNextActionFilterAsync>d__10.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.Rethrow(ActionExecutedContext context)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.<InvokeInnerFilterAsync>d__14.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.<InvokeNextResourceFilter>d__22.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.Rethrow(ResourceExecutedContext context)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.<InvokeFilterPipelineAsync>d__17.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.<InvokeAsync>d__15.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Builder.RouterMiddleware.<Invoke>d__4.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.<Invoke>d__7.MoveNext()
+
+-----------------------------------------
+
+time:2017-08-29 18:47:42,366 
+level:INFO 
+logger:Microsoft.AspNetCore.Hosting.Internal.WebHost
+file:? line? 
+content:Request finished in 1987.7267ms 500 text/html; charset=utf-8
+
+-----------------------------------------
+
+time:2017-08-29 18:47:42,420 
+level:INFO 
+logger:Microsoft.AspNetCore.Hosting.Internal.WebHost
+file:? line? 
+content:Request starting HTTP/1.1 GET http://localhost:57942/favicon.ico  
+
+-----------------------------------------
+
+time:2017-08-29 18:47:42,439 
+level:INFO 
+logger:Microsoft.AspNetCore.Hosting.Internal.WebHost
+file:? line? 
+content:Request finished in 9.7924ms 404 
+
+-----------------------------------------
+
+time:2017-08-29 18:48:00,807 
+level:INFO 
+logger:Microsoft.AspNetCore.Hosting.Internal.WebHost
+file:? line? 
+content:Request starting HTTP/1.1 GET http://localhost:57942/api/values  
+
+-----------------------------------------
+
+time:2017-08-29 18:48:00,825 
+level:INFO 
+logger:Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker
+file:? line? 
+content:Executing action method NTCore.WebFront.Controllers.ValuesController.GetAsync (NTCore.WebFront) with arguments ((null)) - ModelState is Valid
+
+-----------------------------------------
+
+time:2017-08-29 18:48:03,811 
+level:INFO 
+logger:Microsoft.AspNetCore.Authentication.Cookies.CookieAuthenticationHandler
+file:? line? 
+content:AuthenticationScheme: CookieAuthenticationScheme signed in.
+
+-----------------------------------------
+
+time:2017-08-29 18:48:04,011 
+level:INFO 
+logger:Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker
+file:? line? 
+content:Executed action NTCore.WebFront.Controllers.ValuesController.GetAsync (NTCore.WebFront) in 3201.3887ms
+
+-----------------------------------------
+
+time:2017-08-29 18:48:04,072 
+level:ERROR 
+logger:Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware
+file:? line? 
+content:An unhandled exception has occurred while executing the request
+System.NullReferenceException: Object reference not set to an instance of an object.
+   at NTCore.WebFront.Controllers.ValuesController.<GetAsync>d__2.MoveNext() in D:\Projects\NTPlatform\NTCore.WebFront\Controllers\ValuesController.cs:line 48
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at lambda_method(Closure , Object )
+   at Microsoft.Extensions.Internal.ObjectMethodExecutorAwaitable.Awaiter.GetResult()
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.<InvokeActionMethodAsync>d__12.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.<InvokeNextActionFilterAsync>d__10.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.Rethrow(ActionExecutedContext context)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.<InvokeInnerFilterAsync>d__14.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.<InvokeNextResourceFilter>d__22.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.Rethrow(ResourceExecutedContext context)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.<InvokeFilterPipelineAsync>d__17.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.<InvokeAsync>d__15.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Builder.RouterMiddleware.<Invoke>d__4.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.<Invoke>d__7.MoveNext()
+
+-----------------------------------------
+
+time:2017-08-29 18:48:04,113 
+level:INFO 
+logger:Microsoft.AspNetCore.Hosting.Internal.WebHost
+file:? line? 
+content:Request finished in 3300.5222ms 500 text/html; charset=utf-8
+
+-----------------------------------------
+
+time:2017-08-29 18:48:07,284 
+level:INFO 
+logger:Microsoft.AspNetCore.Hosting.Internal.WebHost
+file:? line? 
+content:Request starting HTTP/1.1 GET http://localhost:57942/api/values  
+
+-----------------------------------------
+
+time:2017-08-29 18:48:07,301 
+level:INFO 
+logger:Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker
+file:? line? 
+content:Executing action method NTCore.WebFront.Controllers.ValuesController.GetAsync (NTCore.WebFront) with arguments ((null)) - ModelState is Valid
+
+-----------------------------------------
+
+time:2017-08-29 18:48:26,804 
+level:INFO 
+logger:Microsoft.AspNetCore.Hosting.Internal.WebHost
+file:? line? 
+content:Request starting HTTP/1.1 GET http://localhost:57942/api/values  
+
+-----------------------------------------
+
+time:2017-08-29 18:48:27,006 
+level:INFO 
+logger:Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker
+file:? line? 
+content:Executing action method NTCore.WebFront.Controllers.ValuesController.GetAsync (NTCore.WebFront) with arguments ((null)) - ModelState is Valid
+
+-----------------------------------------
+
+time:2017-08-29 18:48:28,938 
+level:INFO 
+logger:Microsoft.AspNetCore.Authentication.Cookies.CookieAuthenticationHandler
+file:? line? 
+content:AuthenticationScheme: CookieAuthenticationScheme signed in.
+
+-----------------------------------------
+
+time:2017-08-29 18:48:29,152 
+level:INFO 
+logger:Microsoft.AspNetCore.Mvc.Internal.ObjectResultExecutor
+file:? line? 
+content:Executing ObjectResult, writing value Microsoft.AspNetCore.Mvc.ControllerContext.
+
+-----------------------------------------
+
+time:2017-08-29 18:48:29,197 
+level:INFO 
+logger:Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker
+file:? line? 
+content:Executed action NTCore.WebFront.Controllers.ValuesController.GetAsync (NTCore.WebFront) in 2238.7031ms
+
+-----------------------------------------
+
+time:2017-08-29 18:48:29,202 
+level:INFO 
+logger:Microsoft.AspNetCore.Hosting.Internal.WebHost
+file:? line? 
+content:Request finished in 2405.5591ms 200 application/json; charset=utf-8
+
+-----------------------------------------
+
+time:2017-08-29 18:48:29,215 
+level:INFO 
+logger:Microsoft.AspNetCore.Hosting.Internal.WebHost
+file:? line? 
+content:Request starting HTTP/1.1 GET http://localhost:57942/favicon.ico  
+
+-----------------------------------------
+
+time:2017-08-29 18:48:29,221 
+level:INFO 
+logger:Microsoft.AspNetCore.Authentication.Cookies.CookieAuthenticationHandler
+file:? line? 
+content:AuthenticationScheme: CookieAuthenticationScheme was successfully authenticated.
+
+-----------------------------------------
+
+time:2017-08-29 18:48:29,228 
+level:INFO 
+logger:Microsoft.AspNetCore.Hosting.Internal.WebHost
+file:? line? 
+content:Request finished in 9.7202ms 404 
+
+-----------------------------------------
+
+time:2017-08-29 18:48:32,939 
+level:INFO 
+logger:Microsoft.AspNetCore.Hosting.Internal.WebHost
+file:? line? 
+content:Request starting HTTP/1.1 GET http://localhost:57942/api/values  
+
+-----------------------------------------
+
+time:2017-08-29 18:48:32,958 
+level:INFO 
+logger:Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker
+file:? line? 
+content:Executing action method NTCore.WebFront.Controllers.ValuesController.GetAsync (NTCore.WebFront) with arguments ((null)) - ModelState is Valid
+
+-----------------------------------------
+
+time:2017-08-29 18:48:39,135 
+level:INFO 
+logger:Microsoft.AspNetCore.Authentication.Cookies.CookieAuthenticationHandler
+file:? line? 
+content:AuthenticationScheme: CookieAuthenticationScheme signed in.
+
+-----------------------------------------
+
+time:2017-08-29 18:48:43,557 
+level:INFO 
+logger:Microsoft.AspNetCore.Mvc.Internal.ObjectResultExecutor
+file:? line? 
+content:Executing ObjectResult, writing value Microsoft.AspNetCore.Mvc.ControllerContext.
+
+-----------------------------------------
+
+time:2017-08-29 18:48:43,560 
+level:INFO 
+logger:Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker
+file:? line? 
+content:Executed action NTCore.WebFront.Controllers.ValuesController.GetAsync (NTCore.WebFront) in 10617.4833ms
+
+-----------------------------------------
+
+time:2017-08-29 18:48:43,566 
+level:INFO 
+logger:Microsoft.AspNetCore.Hosting.Internal.WebHost
+file:? line? 
+content:Request finished in 10623.7848ms 200 application/json; charset=utf-8
