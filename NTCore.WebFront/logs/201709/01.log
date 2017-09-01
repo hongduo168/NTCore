@@ -3274,3 +3274,27 @@ level:INFO
 logger:Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker
 file:? line? 
 content:Executing action method NTCore.WebFront.Controllers.ValuesController.GetAsync (NTCore.WebFront) with arguments ((null)) - ModelState is Valid
+
+-----------------------------------------
+
+time:2017-09-01 18:31:48,568 
+level:INFO 
+logger:Microsoft.AspNetCore.Hosting.Internal.WebHost
+file:? line? 
+content:Request starting HTTP/1.1 GET http://localhost:57942/api/values  
+
+-----------------------------------------
+
+time:2017-09-01 18:31:48,647 
+level:INFO 
+logger:Microsoft.AspNetCore.Authentication.Cookies.CookieAuthenticationHandler
+file:? line? 
+content:AuthenticationScheme: AuthenticationScheme was successfully authenticated.
+
+-----------------------------------------
+
+time:2017-09-01 18:31:48,833 
+level:INFO 
+logger:Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker
+file:? line? 
+content:Executing action method NTCore.WebFront.Controllers.ValuesController.GetAsync (NTCore.WebFront) with arguments ((null)) - ModelState is Valid

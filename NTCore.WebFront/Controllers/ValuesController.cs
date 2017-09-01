@@ -32,6 +32,9 @@ namespace NTCore.WebFront.Controllers
         [HttpGet]
         public async Task<IEnumerable<string>> GetAsync()
         {
+            IdWorker id = new IdWorker(1);
+            var a = id.NextId();
+
             var user = new ClaimsPrincipal(new ClaimsIdentity(new[] { new Claim(ClaimTypes.Name, "bob"), new Claim(ClaimTypes.Name, "bob222") }, CookieKeys.AuthenticationScheme));
             await HttpContext.SignInAsync(CookieKeys.AuthenticationScheme, user, new AuthenticationProperties
             {
