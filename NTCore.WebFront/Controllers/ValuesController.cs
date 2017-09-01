@@ -44,7 +44,7 @@ namespace NTCore.WebFront.Controllers
             var isAuth = User.Identity.IsAuthenticated;
             var name = User.Identity.Name;
 
-            return new string[] { nameValue, isAuth.ToString(), RedisConfig.Get() };
+            return new string[] { nameValue, isAuth.ToString(), RedisManager.Manager.GetDatabase(0).StringGet("aa") };
         }
 
         [Authorize]

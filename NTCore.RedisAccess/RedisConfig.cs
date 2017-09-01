@@ -5,12 +5,9 @@ namespace NTCore.RedisAccess
 {
     public class RedisConfig
     {
-        public static string Get()
+        public static string ConnectionString
         {
-            using (var redis = ConnectionMultiplexer.Connect("127.0.0.1,password=hongduo"))
-            {
-                return redis.GetDatabase(0).HashGet("aa", "aa");
-            }
+            get { return "127.0.0.1,password=hongduo"; }
         }
 
     }

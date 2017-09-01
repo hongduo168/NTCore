@@ -16,6 +16,7 @@ using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Logging;
 using Microsoft.Extensions.Options;
 using NTCore.DataAccess;
+using NTCore.Extensions.HttpContext;
 using NTCore.Extensions.MvcFilter;
 using NTCore.Utility;
 
@@ -59,7 +60,7 @@ namespace NTCore.WebFront
 
 
             //services.AddSingleton()
-
+            services.AddHttpContextAccessor();
             services.AddMvc(options =>
             {
                 options.Filters.Add(typeof(ValidationFilter));
@@ -82,6 +83,7 @@ namespace NTCore.WebFront
 
             app.UseStaticFiles();
             app.UseAuthentication();
+            app.UseStaticHttpContext();
             app.UseMvc();
 
 
