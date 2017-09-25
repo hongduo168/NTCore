@@ -11,6 +11,7 @@ using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.ModelBinding.Metadata;
 using Microsoft.AspNetCore.Mvc.ModelBinding.Validation;
 using Microsoft.Extensions.Logging;
+using NTCore.DataAccess;
 using NTCore.Extensions.MvcFilter;
 using NTCore.RedisAccess;
 using NTCore.Utility;
@@ -21,10 +22,12 @@ namespace NTCore.WebFront.Controllers
     public class ValuesController : Controller
     {
         private ILogger<ValuesController> logger;
+        private MainContext dbContext;
 
-        public ValuesController(ILogger<ValuesController> logger)
+        public ValuesController(ILogger<ValuesController> logger, MainContext dbContext)
         {
             this.logger = logger;
+            this.dbContext = dbContext;
         }
 
         [AllowAnonymous]
@@ -32,8 +35,7 @@ namespace NTCore.WebFront.Controllers
         [HttpGet]
         public async Task<IEnumerable<string>> GetAsync()
         {
-            IdWorker id = new IdWorker(1);
-            var a = id.NextId();
+            var firstOrDefault = this.dbContext.User.FirstOrDefault();
 
             var user = new ClaimsPrincipal(new ClaimsIdentity(new[] { new Claim(ClaimTypes.Name, "bob"), new Claim(ClaimTypes.Name, "bob222") }, CookieKeys.AuthenticationScheme));
             await HttpContext.SignInAsync(CookieKeys.AuthenticationScheme, user, new AuthenticationProperties

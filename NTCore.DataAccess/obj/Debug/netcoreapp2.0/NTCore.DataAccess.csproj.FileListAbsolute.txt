@@ -16,3 +16,5 @@ D:\Projects\NTPlatform\NTCore.DataAccess\obj\Debug\netcoreapp2.0\NTCore.DataAcce
 D:\Projects\NTPlatform\NTCore.DataAccess\obj\Debug\netcoreapp2.0\NTCore.DataAccess.AssemblyInfo.cs
 D:\Projects\NTPlatform\NTCore.DataAccess\obj\Debug\netcoreapp2.0\NTCore.DataAccess.dll
 D:\Projects\NTPlatform\NTCore.DataAccess\obj\Debug\netcoreapp2.0\NTCore.DataAccess.pdb
+D:\Projects\NTPlatform\NTCore.DataAccess\bin\Debug\netcoreapp2.0\NTCore.DataModel.dll
+D:\Projects\NTPlatform\NTCore.DataAccess\bin\Debug\netcoreapp2.0\NTCore.DataModel.pdb

@@ -19,6 +19,7 @@ using NTCore.DataAccess;
 using NTCore.Extensions.HttpContext;
 using NTCore.Extensions.MvcFilter;
 using NTCore.Utility;
+using MySQL.Data.EntityFrameworkCore.Extensions;
 
 namespace NTCore.WebFront
 {
@@ -35,7 +36,10 @@ namespace NTCore.WebFront
         public void ConfigureServices(IServiceCollection services)
         {
             var connection = Configuration.GetConnectionString("SqlServer");
-            services.AddEntityFrameworkSqlServer().AddDbContext<MainContext>(options => options.UseSqlServer(connection));
+            services.AddEntityFrameworkSqlServer().AddDbContext<MainContext>(options => options.UseSqlServer(connection, b => b.MigrationsAssembly("NTCore.WebFront")));
+
+            //var connection = Configuration.GetConnectionString("MySQL");
+            //services.AddEntityFrameworkSqlServer().AddDbContext<MainContext>(options => options.UseMySQL(connection, b => b.MigrationsAssembly("NTCore.WebFront")));
 
             services.AddAuthentication(options =>
                 {

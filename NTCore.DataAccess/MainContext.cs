@@ -1,5 +1,6 @@
 ﻿using System;
 using Microsoft.EntityFrameworkCore;
+using NTCore.DataModel;
 
 namespace NTCore.DataAccess
 {
@@ -9,5 +10,10 @@ namespace NTCore.DataAccess
         {
             
         }
+
+        public DbSet<UserInfo> User { get; set; }
+
+
+
     }
 }
