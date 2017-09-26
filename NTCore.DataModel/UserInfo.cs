@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.ComponentModel;
 using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
 using System.Runtime.Serialization;
@@ -10,25 +11,25 @@ namespace NTCore.DataModel
     [Table("user")]
     public class UserInfo : HotelEntity
     {
-        [Column("username"), MaxLength(50)]
+        [Required(AllowEmptyStrings = true), DefaultValue(""), Column("username", TypeName = "varchar(50)"), MaxLength(50)]
         public string Username { get; set; }
 
-        [Column("password"), StringLength(50)]
+        [Required(AllowEmptyStrings = true), DefaultValue(""), Column("password", TypeName = "varchar(50)"), MaxLength(50)]
         public string Password { get; set; }
 
-        [Column("nickname"), StringLength(50)]
+        [Required(AllowEmptyStrings = true), DefaultValue(""), Column("nickname"), MaxLength(50)]
         public string Nickname { get; set; }
 
-        [Column("avatar"), StringLength(255)]
+        [Required(AllowEmptyStrings = true), DefaultValue(""), Column("avatar", TypeName = "varchar(255)"), MaxLength(255)]
         public string Avatar { get; set; }
 
-        [Column("mobile_number"), StringLength(50)]
+        [Required(AllowEmptyStrings = true), DefaultValue(""), Column("mobile_number", TypeName = "varchar(50)"), MaxLength(50)]
         public string MobileNumber { get; set; }
 
-        [Column("email"), StringLength(50)]
+        [Required(AllowEmptyStrings = true), DefaultValue(""), Column("email", TypeName = "varchar(100)"), MaxLength(100)]
         public string Email { get; set; }
 
-        [Column("confirmed"), StringLength(50)]
+        [DefaultValue(false), Column("confirmed")]
         public bool Confirmed { get; set; }
 
     }

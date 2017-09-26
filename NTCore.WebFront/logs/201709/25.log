@@ -1,0 +1,101 @@
+
+-----------------------------------------
+
+time:2017-09-25 18:15:17,292 
+level:INFO 
+logger:Microsoft.EntityFrameworkCore.Infrastructure
+file:? line? 
+content:Entity Framework Core 2.0.0-rtm-26452 initialized 'MainContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: MigrationsAssembly=NTCore.WebFront 
+
+-----------------------------------------
+
+time:2017-09-25 18:16:13,161 
+level:INFO 
+logger:Microsoft.EntityFrameworkCore.Infrastructure
+file:? line? 
+content:Entity Framework Core 2.0.0-rtm-26452 initialized 'MainContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: MigrationsAssembly=NTCore.WebFront 
+
+-----------------------------------------
+
+time:2017-09-25 18:16:13,364 
+level:INFO 
+logger:Microsoft.EntityFrameworkCore.Database.Command
+file:? line? 
+content:Executed DbCommand (8ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT OBJECT_ID(N'__EFMigrationsHistory');
+
+-----------------------------------------
+
+time:2017-09-25 18:16:13,388 
+level:INFO 
+logger:Microsoft.EntityFrameworkCore.Database.Command
+file:? line? 
+content:Executed DbCommand (4ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+CREATE TABLE [__EFMigrationsHistory] (
+    [MigrationId] nvarchar(150) NOT NULL,
+    [ProductVersion] nvarchar(32) NOT NULL,
+    CONSTRAINT [PK___EFMigrationsHistory] PRIMARY KEY ([MigrationId])
+);
+
+-----------------------------------------
+
+time:2017-09-25 18:16:13,389 
+level:INFO 
+logger:Microsoft.EntityFrameworkCore.Database.Command
+file:? line? 
+content:Executed DbCommand (1ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT OBJECT_ID(N'__EFMigrationsHistory');
+
+-----------------------------------------
+
+time:2017-09-25 18:16:13,392 
+level:INFO 
+logger:Microsoft.EntityFrameworkCore.Database.Command
+file:? line? 
+content:Executed DbCommand (2ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [MigrationId], [ProductVersion]
+FROM [__EFMigrationsHistory]
+ORDER BY [MigrationId];
+
+-----------------------------------------
+
+time:2017-09-25 18:16:13,395 
+level:INFO 
+logger:Microsoft.EntityFrameworkCore.Migrations
+file:? line? 
+content:Applying migration '20170925101517_init'.
+
+-----------------------------------------
+
+time:2017-09-25 18:16:13,414 
+level:INFO 
+logger:Microsoft.EntityFrameworkCore.Database.Command
+file:? line? 
+content:Executed DbCommand (3ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+CREATE TABLE [user] (
+    [id] bigint NOT NULL IDENTITY,
+    [avatar] nvarchar(255) NULL,
+    [confirmed] bit NOT NULL,
+    [create_time] datetime2 NOT NULL,
+    [creator_id] int NOT NULL,
+    [data_state] int NOT NULL,
+    [email] nvarchar(50) NULL,
+    [hotel_id] int NOT NULL,
+    [mobile_number] nvarchar(50) NULL,
+    [nickname] nvarchar(50) NULL,
+    [password] nvarchar(50) NULL,
+    [update_time] datetime2 NOT NULL,
+    [updater_id] int NOT NULL,
+    [username] nvarchar(50) NULL,
+    CONSTRAINT [PK_user] PRIMARY KEY ([id])
+);
+
+-----------------------------------------
+
+time:2017-09-25 18:16:13,417 
+level:INFO 
+logger:Microsoft.EntityFrameworkCore.Database.Command
+file:? line? 
+content:Executed DbCommand (2ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+INSERT INTO [__EFMigrationsHistory] ([MigrationId], [ProductVersion])
+VALUES (N'20170925101517_init', N'2.0.0-rtm-26452');
