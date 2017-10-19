@@ -32,13 +32,13 @@ namespace NTCore.DataModel
         [Required(AllowEmptyStrings = true), DefaultValue(""), Column("employee_number", TypeName = "varchar(30)"), MaxLength(30)]
         public string EmployeeNumber { get; set; }
 
-        [DefaultValue(false), Column("confirmed")]
+        [Required, DefaultValue(false), Column("confirmed")]
         public bool Confirmed { get; set; }
 
         /// <summary>
         /// 授权渠道
         /// </summary>
-        [DefaultValue(0), Column("auth_type", TypeName = "tinyint")]
+        [Required, DefaultValue(0), Column("auth_type", TypeName = "tinyint")]
         public byte AuthType { get; set; }
 
     }

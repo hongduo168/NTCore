@@ -16,7 +16,7 @@ namespace NTCore.DataModel
         /// <summary>
         /// 日志类型
         /// </summary>
-        [Required(AllowEmptyStrings = true), DefaultValue(0), Column("data_type")]
+        [Required, DefaultValue(0), Column("data_type")]
         public int DataType { get; set; }
 
         /// <summary>
@@ -28,7 +28,7 @@ namespace NTCore.DataModel
         /// <summary>
         /// 日志内容
         /// </summary>
-        [Required(AllowEmptyStrings = true), DefaultValue(""), Column("text_content", TypeName = "nvarchar(2000)"), MaxLength(2000)]
+        [Required(AllowEmptyStrings = true), DefaultValue(""), Column("content_text", TypeName = "nvarchar(2000)"), MaxLength(2000)]
         public string Text { get; set; }
     }
 }

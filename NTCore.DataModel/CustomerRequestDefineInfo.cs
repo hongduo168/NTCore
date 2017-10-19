@@ -10,7 +10,7 @@ namespace NTCore.DataModel
     [Table("customer_request_define")]
     public class CustomerRequestDefineInfo : HotelEntity
     {
-        [Required(AllowEmptyStrings = true), DefaultValue(0), Column("data_type")]
+        [Required, DefaultValue(0), Column("data_type")]
         public int DataType { get; set; }
 
         [Required(AllowEmptyStrings = true), DefaultValue(""), Column("data_code", TypeName = "varchar(30)"), MaxLength(30)]
@@ -19,10 +19,10 @@ namespace NTCore.DataModel
         [Required(AllowEmptyStrings = true), DefaultValue(""), Column("data_name", TypeName = "nvarchar(30)"), MaxLength(30)]
         public string DataName { get; set; }
 
-        [Required(AllowEmptyStrings = true), DefaultValue(""), Column("data_note", TypeName = "nvarchar(255)"), MaxLength(30)]
+        [Required(AllowEmptyStrings = true), DefaultValue(""), Column("data_note", TypeName = "nvarchar(2000)"), MaxLength(2000)]
         public string DataNote { get; set; }
 
-        [Required(AllowEmptyStrings = true), DefaultValue(0), Column("data_sort")]
+        [Required, DefaultValue(0), Column("data_sort")]
         public int DataSort { get; set; }
     }
 }

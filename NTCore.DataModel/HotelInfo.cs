@@ -13,16 +13,22 @@ namespace NTCore.DataModel
         [Required(AllowEmptyStrings = true), DefaultValue(""), Column("hotel_code", TypeName = "varchar(50)"), MaxLength(50)]
         public string HotelCode { get; set; }
 
-        [Required(AllowEmptyStrings = true), DefaultValue(""), Column("hotel_name"), MaxLength(50)]
+        [Required(AllowEmptyStrings = true), DefaultValue(""), Column("hotel_name", TypeName = "nvarchar(50)"), MaxLength(50)]
         public string HotelName { get; set; }
 
         [Required, DefaultValue(0), Column("product_id")]
         public int ProductId { get; set; }
 
-        [Required(AllowEmptyStrings = true), DefaultValue(""), Column("pms_api", TypeName = "varchar(255)"), MaxLength(255)]
-        public string PmsApi { get; set; }
+        [Required(AllowEmptyStrings = true), DefaultValue(""), Column("interface_url", TypeName = "varchar(255)"), MaxLength(255)]
+        public string InterfaceUrl { get; set; }
 
-        [Required(AllowEmptyStrings = true), DefaultValue(""), Column("background_image", TypeName = "varchar(255)"), MaxLength(255)]
-        public string BackgroundImage { get; set; }
+        [Required(AllowEmptyStrings = true), DefaultValue(""), Column("background", TypeName = "varchar(255)"), MaxLength(255)]
+        public string Background { get; set; }
+
+        [Required(AllowEmptyStrings = true), DefaultValue(""), Column("appid", TypeName = "varchar(50)"), MaxLength(50)]
+        public string Appid { get; set; }
+
+        [Required(AllowEmptyStrings = true), DefaultValue(""), Column("appkey", TypeName = "varchar(50)"), MaxLength(50)]
+        public string Appkey { get; set; }
     }
 }
