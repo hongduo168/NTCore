@@ -8,7 +8,7 @@ using System.Text;
 namespace NTCore.DataModel
 {
     [Table("room_product_package")]
-    public class RoomProductPackageInfo
+    public class RoomProductPackageInfo : HotelEntity
     {
         [Required(AllowEmptyStrings = true), DefaultValue(""), Column("package_code", TypeName = "varchar(30)"), MaxLength(30)]
         public string PackageCode { get; set; }
