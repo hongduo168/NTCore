@@ -1,0 +1,1538 @@
+
+-----------------------------------------
+
+time:2017-10-20 09:47:15,746 
+level:INFO 
+logger:Microsoft.AspNetCore.Hosting.Internal.WebHost
+file:? line? 
+content:Request starting HTTP/1.1 GET http://localhost:57942/api/values  
+
+-----------------------------------------
+
+time:2017-10-20 09:47:15,904 
+level:INFO 
+logger:Microsoft.AspNetCore.Authentication.Cookies.CookieAuthenticationHandler
+file:? line? 
+content:AuthenticationScheme: AuthenticationScheme was successfully authenticated.
+
+-----------------------------------------
+
+time:2017-10-20 09:47:16,456 
+level:INFO 
+logger:Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker
+file:? line? 
+content:Executing action method NTCore.WebFront.Controllers.ValuesController.GetAsync (NTCore.WebFront) with arguments ((null)) - ModelState is Valid
+
+-----------------------------------------
+
+time:2017-10-20 09:47:19,621 
+level:INFO 
+logger:Microsoft.EntityFrameworkCore.Infrastructure
+file:? line? 
+content:Entity Framework Core 2.0.0-rtm-26452 initialized 'MainContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: MigrationsAssembly=NTCore.WebFront 
+
+-----------------------------------------
+
+time:2017-10-20 09:47:19,689 
+level:WARN 
+logger:Microsoft.EntityFrameworkCore.Query
+file:? line? 
+content:Query: '(from UserInfo <generated>_1 in DbSet<UserInfo> select [<generated>_1]).FirstOrDefault()' uses First/FirstOrDefault operation without OrderBy and filter which may lead to unpredictable results.
+
+-----------------------------------------
+
+time:2017-10-20 09:47:20,054 
+level:INFO 
+logger:Microsoft.EntityFrameworkCore.Database.Command
+file:? line? 
+content:Executed DbCommand (30ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT TOP(1) [u].[id], [u].[auth_type], [u].[avatar], [u].[confirmed], [u].[create_time], [u].[creator_id], [u].[data_state], [u].[email], [u].[employee_number], [u].[hotel_id], [u].[mobile_number], [u].[nickname], [u].[password], [u].[update_time], [u].[updater_id], [u].[username]
+FROM [user] AS [u]
+WHERE [u].[data_state] = 1
+
+-----------------------------------------
+
+time:2017-10-20 09:47:20,095 
+level:INFO 
+logger:Microsoft.AspNetCore.Authentication.Cookies.CookieAuthenticationHandler
+file:? line? 
+content:AuthenticationScheme: AuthenticationScheme signed in.
+
+-----------------------------------------
+
+time:2017-10-20 09:47:22,957 
+level:INFO 
+logger:Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker
+file:? line? 
+content:Executed action NTCore.WebFront.Controllers.ValuesController.GetAsync (NTCore.WebFront) in 6866.0591ms
+
+-----------------------------------------
+
+time:2017-10-20 09:47:23,156 
+level:ERROR 
+logger:Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware
+file:? line? 
+content:An unhandled exception has occurred while executing the request
+StackExchange.Redis.RedisConnectionException: It was not possible to connect to the redis server(s); to create a disconnected multiplexer, disable AbortOnConnectFail. SocketFailure on PING
+   at StackExchange.Redis.ConnectionMultiplexer.ConnectImpl(Func`1 multiplexerFactory, TextWriter log) in c:\code\StackExchange.Redis\StackExchange.Redis\StackExchange\Redis\ConnectionMultiplexer.cs:line 890
+   at NTCore.RedisAccess.RedisManager.GetManager(String connectionString) in D:\Projects\NTPlatform\NTCore.RedisAccess\RedisManager.cs:line 40
+   at NTCore.RedisAccess.RedisManager.get_Manager() in D:\Projects\NTPlatform\NTCore.RedisAccess\RedisManager.cs:line 23
+   at NTCore.WebFront.Controllers.ValuesController.<GetAsync>d__3.MoveNext() in D:\Projects\NTPlatform\NTCore.WebFront\Controllers\ValuesController.cs:line 52
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at lambda_method(Closure , Object )
+   at Microsoft.Extensions.Internal.ObjectMethodExecutorAwaitable.Awaiter.GetResult()
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.<InvokeActionMethodAsync>d__12.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.<InvokeNextActionFilterAsync>d__10.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.Rethrow(ActionExecutedContext context)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.<InvokeInnerFilterAsync>d__14.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.<InvokeNextResourceFilter>d__22.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.Rethrow(ResourceExecutedContext context)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.<InvokeFilterPipelineAsync>d__17.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.<InvokeAsync>d__15.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Builder.RouterMiddleware.<Invoke>d__4.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.<Invoke>d__6.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.<Invoke>d__7.MoveNext()
+
+-----------------------------------------
+
+time:2017-10-20 09:47:23,319 
+level:INFO 
+logger:Microsoft.AspNetCore.Hosting.Internal.WebHost
+file:? line? 
+content:Request finished in 7579.5853ms 500 text/html; charset=utf-8
+
+-----------------------------------------
+
+time:2017-10-20 09:47:23,352 
+level:INFO 
+logger:Microsoft.AspNetCore.Hosting.Internal.WebHost
+file:? line? 
+content:Request starting HTTP/1.1 GET http://localhost:57942/favicon.ico  
+
+-----------------------------------------
+
+time:2017-10-20 09:47:23,357 
+level:INFO 
+logger:Microsoft.AspNetCore.Authentication.Cookies.CookieAuthenticationHandler
+file:? line? 
+content:AuthenticationScheme: AuthenticationScheme was successfully authenticated.
+
+-----------------------------------------
+
+time:2017-10-20 09:47:23,368 
+level:INFO 
+logger:Microsoft.AspNetCore.Hosting.Internal.WebHost
+file:? line? 
+content:Request finished in 10.0388ms 404 
+
+-----------------------------------------
+
+time:2017-10-20 09:47:47,586 
+level:INFO 
+logger:Microsoft.AspNetCore.Hosting.Internal.WebHost
+file:? line? 
+content:Request starting HTTP/1.1 POST http://localhost:57942/api/rowhouse application/json 48
+
+-----------------------------------------
+
+time:2017-10-20 09:47:47,588 
+level:INFO 
+logger:Microsoft.AspNetCore.Authentication.Cookies.CookieAuthenticationHandler
+file:? line? 
+content:AuthenticationScheme: AuthenticationScheme was successfully authenticated.
+
+-----------------------------------------
+
+time:2017-10-20 09:47:47,610 
+level:INFO 
+logger:Microsoft.AspNetCore.Authorization.DefaultAuthorizationService
+file:? line? 
+content:Authorization was successful for user: bob.
+
+-----------------------------------------
+
+time:2017-10-20 09:47:47,786 
+level:INFO 
+logger:Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker
+file:? line? 
+content:Executing action method NTCore.WebFront.Controllers.RowhouseController.Post (NTCore.WebFront) with arguments (0, ) - ModelState is Invalid
+
+-----------------------------------------
+
+time:2017-10-20 09:48:49,774 
+level:INFO 
+logger:Microsoft.AspNetCore.Hosting.Internal.WebHost
+file:? line? 
+content:Request starting HTTP/1.1 GET http://localhost:57942/api/values  
+
+-----------------------------------------
+
+time:2017-10-20 09:48:49,844 
+level:INFO 
+logger:Microsoft.AspNetCore.Authentication.Cookies.CookieAuthenticationHandler
+file:? line? 
+content:AuthenticationScheme: AuthenticationScheme was successfully authenticated.
+
+-----------------------------------------
+
+time:2017-10-20 09:48:50,126 
+level:INFO 
+logger:Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker
+file:? line? 
+content:Executing action method NTCore.WebFront.Controllers.ValuesController.GetAsync (NTCore.WebFront) with arguments ((null)) - ModelState is Valid
+
+-----------------------------------------
+
+time:2017-10-20 09:48:52,384 
+level:INFO 
+logger:Microsoft.EntityFrameworkCore.Infrastructure
+file:? line? 
+content:Entity Framework Core 2.0.0-rtm-26452 initialized 'MainContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: MigrationsAssembly=NTCore.WebFront 
+
+-----------------------------------------
+
+time:2017-10-20 09:48:52,444 
+level:WARN 
+logger:Microsoft.EntityFrameworkCore.Query
+file:? line? 
+content:Query: '(from UserInfo <generated>_1 in DbSet<UserInfo> select [<generated>_1]).FirstOrDefault()' uses First/FirstOrDefault operation without OrderBy and filter which may lead to unpredictable results.
+
+-----------------------------------------
+
+time:2017-10-20 09:48:52,744 
+level:INFO 
+logger:Microsoft.EntityFrameworkCore.Database.Command
+file:? line? 
+content:Executed DbCommand (26ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT TOP(1) [u].[id], [u].[auth_type], [u].[avatar], [u].[confirmed], [u].[create_time], [u].[creator_id], [u].[data_state], [u].[email], [u].[employee_number], [u].[hotel_id], [u].[mobile_number], [u].[nickname], [u].[password], [u].[update_time], [u].[updater_id], [u].[username]
+FROM [user] AS [u]
+WHERE [u].[data_state] = 1
+
+-----------------------------------------
+
+time:2017-10-20 09:48:52,778 
+level:INFO 
+logger:Microsoft.AspNetCore.Authentication.Cookies.CookieAuthenticationHandler
+file:? line? 
+content:AuthenticationScheme: AuthenticationScheme signed in.
+
+-----------------------------------------
+
+time:2017-10-20 09:48:56,379 
+level:INFO 
+logger:Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker
+file:? line? 
+content:Executed action NTCore.WebFront.Controllers.ValuesController.GetAsync (NTCore.WebFront) in 6395.1791ms
+
+-----------------------------------------
+
+time:2017-10-20 09:48:56,533 
+level:ERROR 
+logger:Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware
+file:? line? 
+content:An unhandled exception has occurred while executing the request
+StackExchange.Redis.RedisConnectionException: It was not possible to connect to the redis server(s); to create a disconnected multiplexer, disable AbortOnConnectFail. SocketFailure on PING
+   at StackExchange.Redis.ConnectionMultiplexer.ConnectImpl(Func`1 multiplexerFactory, TextWriter log) in c:\code\StackExchange.Redis\StackExchange.Redis\StackExchange\Redis\ConnectionMultiplexer.cs:line 890
+   at NTCore.RedisAccess.RedisManager.GetManager(String connectionString) in D:\Projects\NTPlatform\NTCore.RedisAccess\RedisManager.cs:line 40
+   at NTCore.RedisAccess.RedisManager.get_Manager() in D:\Projects\NTPlatform\NTCore.RedisAccess\RedisManager.cs:line 23
+   at NTCore.WebFront.Controllers.ValuesController.<GetAsync>d__3.MoveNext() in D:\Projects\NTPlatform\NTCore.WebFront\Controllers\ValuesController.cs:line 52
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at lambda_method(Closure , Object )
+   at Microsoft.Extensions.Internal.ObjectMethodExecutorAwaitable.Awaiter.GetResult()
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.<InvokeActionMethodAsync>d__12.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.<InvokeNextActionFilterAsync>d__10.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.Rethrow(ActionExecutedContext context)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.<InvokeInnerFilterAsync>d__14.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.<InvokeNextResourceFilter>d__22.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.Rethrow(ResourceExecutedContext context)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.<InvokeFilterPipelineAsync>d__17.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.<InvokeAsync>d__15.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Builder.RouterMiddleware.<Invoke>d__4.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.<Invoke>d__6.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.<Invoke>d__7.MoveNext()
+
+-----------------------------------------
+
+time:2017-10-20 09:48:56,660 
+level:INFO 
+logger:Microsoft.AspNetCore.Hosting.Internal.WebHost
+file:? line? 
+content:Request finished in 6888.3561ms 500 text/html; charset=utf-8
+
+-----------------------------------------
+
+time:2017-10-20 09:48:56,760 
+level:INFO 
+logger:Microsoft.AspNetCore.Hosting.Internal.WebHost
+file:? line? 
+content:Request starting HTTP/1.1 GET http://localhost:57942/favicon.ico  
+
+-----------------------------------------
+
+time:2017-10-20 09:48:56,763 
+level:INFO 
+logger:Microsoft.AspNetCore.Authentication.Cookies.CookieAuthenticationHandler
+file:? line? 
+content:AuthenticationScheme: AuthenticationScheme was successfully authenticated.
+
+-----------------------------------------
+
+time:2017-10-20 09:48:56,767 
+level:INFO 
+logger:Microsoft.AspNetCore.Hosting.Internal.WebHost
+file:? line? 
+content:Request finished in 5.9374ms 404 
+
+-----------------------------------------
+
+time:2017-10-20 09:49:09,905 
+level:INFO 
+logger:Microsoft.AspNetCore.Hosting.Internal.WebHost
+file:? line? 
+content:Request starting HTTP/1.1 POST http://localhost:57942/api/rowhouse application/json 48
+
+-----------------------------------------
+
+time:2017-10-20 09:49:09,908 
+level:INFO 
+logger:Microsoft.AspNetCore.Authentication.Cookies.CookieAuthenticationHandler
+file:? line? 
+content:AuthenticationScheme: AuthenticationScheme was successfully authenticated.
+
+-----------------------------------------
+
+time:2017-10-20 09:49:09,928 
+level:INFO 
+logger:Microsoft.AspNetCore.Authorization.DefaultAuthorizationService
+file:? line? 
+content:Authorization was successful for user: bob.
+
+-----------------------------------------
+
+time:2017-10-20 09:49:09,965 
+level:INFO 
+logger:Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker
+file:? line? 
+content:Executing action method NTCore.WebFront.Controllers.RowhouseController.Post (NTCore.WebFront) with arguments (0, System.Collections.Generic.List`1[System.String]) - ModelState is Valid
+
+-----------------------------------------
+
+time:2017-10-20 09:54:40,668 
+level:INFO 
+logger:Microsoft.EntityFrameworkCore.Infrastructure
+file:? line? 
+content:Entity Framework Core 2.0.0-rtm-26452 initialized 'MainContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: MigrationsAssembly=NTCore.WebFront 
+
+-----------------------------------------
+
+time:2017-10-20 09:54:40,729 
+level:INFO 
+logger:Microsoft.AspNetCore.Mvc.Formatters.Json.Internal.JsonResultExecutor
+file:? line? 
+content:Executing JsonResult, writing value NTCore.WebFront.Model.BaseReturn`1[System.Object].
+
+-----------------------------------------
+
+time:2017-10-20 09:54:40,778 
+level:INFO 
+logger:Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker
+file:? line? 
+content:Executed action NTCore.WebFront.Controllers.RowhouseController.Post (NTCore.WebFront) in 330857.1453ms
+
+-----------------------------------------
+
+time:2017-10-20 09:54:40,780 
+level:INFO 
+logger:Microsoft.AspNetCore.Hosting.Internal.WebHost
+file:? line? 
+content:Request finished in 330879.4388ms 200 application/json; charset=utf-8
+
+-----------------------------------------
+
+time:2017-10-20 09:55:34,462 
+level:INFO 
+logger:Microsoft.AspNetCore.Hosting.Internal.WebHost
+file:? line? 
+content:Request starting HTTP/1.1 POST http://localhost:57942/api/rowhouse application/json 48
+
+-----------------------------------------
+
+time:2017-10-20 09:55:34,464 
+level:INFO 
+logger:Microsoft.AspNetCore.Authentication.Cookies.CookieAuthenticationHandler
+file:? line? 
+content:AuthenticationScheme: AuthenticationScheme was successfully authenticated.
+
+-----------------------------------------
+
+time:2017-10-20 09:55:34,467 
+level:INFO 
+logger:Microsoft.AspNetCore.Authorization.DefaultAuthorizationService
+file:? line? 
+content:Authorization was successful for user: bob.
+
+-----------------------------------------
+
+time:2017-10-20 09:55:34,485 
+level:INFO 
+logger:Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker
+file:? line? 
+content:Executing action method NTCore.WebFront.Controllers.RowhouseController.Post (NTCore.WebFront) with arguments (0, System.Collections.Generic.List`1[System.String]) - ModelState is Valid
+
+-----------------------------------------
+
+time:2017-10-20 09:55:46,067 
+level:INFO 
+logger:Microsoft.EntityFrameworkCore.Infrastructure
+file:? line? 
+content:Entity Framework Core 2.0.0-rtm-26452 initialized 'MainContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: MigrationsAssembly=NTCore.WebFront 
+
+-----------------------------------------
+
+time:2017-10-20 09:56:27,326 
+level:INFO 
+logger:Microsoft.AspNetCore.Mvc.Formatters.Json.Internal.JsonResultExecutor
+file:? line? 
+content:Executing JsonResult, writing value NTCore.WebFront.Model.BaseReturn`1[System.Object].
+
+-----------------------------------------
+
+time:2017-10-20 09:56:27,329 
+level:INFO 
+logger:Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker
+file:? line? 
+content:Executed action NTCore.WebFront.Controllers.RowhouseController.Post (NTCore.WebFront) in 52862.0895ms
+
+-----------------------------------------
+
+time:2017-10-20 09:56:27,388 
+level:INFO 
+logger:Microsoft.AspNetCore.Hosting.Internal.WebHost
+file:? line? 
+content:Request finished in 52926.9405ms 200 application/json; charset=utf-8
+
+-----------------------------------------
+
+time:2017-10-20 09:57:04,051 
+level:INFO 
+logger:Microsoft.AspNetCore.Hosting.Internal.WebHost
+file:? line? 
+content:Request starting HTTP/1.1 POST http://localhost:57942/api/rowhouse?userid=1 application/json 37
+
+-----------------------------------------
+
+time:2017-10-20 09:57:04,054 
+level:INFO 
+logger:Microsoft.AspNetCore.Authentication.Cookies.CookieAuthenticationHandler
+file:? line? 
+content:AuthenticationScheme: AuthenticationScheme was successfully authenticated.
+
+-----------------------------------------
+
+time:2017-10-20 09:57:04,056 
+level:INFO 
+logger:Microsoft.AspNetCore.Authorization.DefaultAuthorizationService
+file:? line? 
+content:Authorization was successful for user: bob.
+
+-----------------------------------------
+
+time:2017-10-20 09:57:04,078 
+level:INFO 
+logger:Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker
+file:? line? 
+content:Executing action method NTCore.WebFront.Controllers.RowhouseController.Post (NTCore.WebFront) with arguments (1, System.Collections.Generic.List`1[System.String]) - ModelState is Valid
+
+-----------------------------------------
+
+time:2017-10-20 10:00:11,174 
+level:INFO 
+logger:Microsoft.AspNetCore.Hosting.Internal.WebHost
+file:? line? 
+content:Request starting HTTP/1.1 GET http://localhost:57942/api/values  
+
+-----------------------------------------
+
+time:2017-10-20 10:00:11,277 
+level:INFO 
+logger:Microsoft.AspNetCore.Authentication.Cookies.CookieAuthenticationHandler
+file:? line? 
+content:AuthenticationScheme: AuthenticationScheme was successfully authenticated.
+
+-----------------------------------------
+
+time:2017-10-20 10:00:11,604 
+level:INFO 
+logger:Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker
+file:? line? 
+content:Executing action method NTCore.WebFront.Controllers.ValuesController.GetAsync (NTCore.WebFront) with arguments ((null)) - ModelState is Valid
+
+-----------------------------------------
+
+time:2017-10-20 10:00:16,066 
+level:INFO 
+logger:Microsoft.EntityFrameworkCore.Infrastructure
+file:? line? 
+content:Entity Framework Core 2.0.0-rtm-26452 initialized 'MainContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: MigrationsAssembly=NTCore.WebFront 
+
+-----------------------------------------
+
+time:2017-10-20 10:00:16,112 
+level:WARN 
+logger:Microsoft.EntityFrameworkCore.Query
+file:? line? 
+content:Query: '(from UserInfo <generated>_1 in DbSet<UserInfo> select [<generated>_1]).FirstOrDefault()' uses First/FirstOrDefault operation without OrderBy and filter which may lead to unpredictable results.
+
+-----------------------------------------
+
+time:2017-10-20 10:00:16,443 
+level:INFO 
+logger:Microsoft.EntityFrameworkCore.Database.Command
+file:? line? 
+content:Executed DbCommand (32ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT TOP(1) [u].[id], [u].[auth_type], [u].[avatar], [u].[confirmed], [u].[create_time], [u].[creator_id], [u].[data_state], [u].[email], [u].[employee_number], [u].[hotel_id], [u].[mobile_number], [u].[nickname], [u].[password], [u].[update_time], [u].[updater_id], [u].[username]
+FROM [user] AS [u]
+WHERE [u].[data_state] = 1
+
+-----------------------------------------
+
+time:2017-10-20 10:00:16,484 
+level:INFO 
+logger:Microsoft.AspNetCore.Authentication.Cookies.CookieAuthenticationHandler
+file:? line? 
+content:AuthenticationScheme: AuthenticationScheme signed in.
+
+-----------------------------------------
+
+time:2017-10-20 10:00:19,291 
+level:INFO 
+logger:Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker
+file:? line? 
+content:Executed action NTCore.WebFront.Controllers.ValuesController.GetAsync (NTCore.WebFront) in 7857.3169ms
+
+-----------------------------------------
+
+time:2017-10-20 10:00:19,449 
+level:ERROR 
+logger:Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware
+file:? line? 
+content:An unhandled exception has occurred while executing the request
+StackExchange.Redis.RedisConnectionException: It was not possible to connect to the redis server(s); to create a disconnected multiplexer, disable AbortOnConnectFail. SocketFailure on PING
+   at StackExchange.Redis.ConnectionMultiplexer.ConnectImpl(Func`1 multiplexerFactory, TextWriter log) in c:\code\StackExchange.Redis\StackExchange.Redis\StackExchange\Redis\ConnectionMultiplexer.cs:line 890
+   at NTCore.RedisAccess.RedisManager.GetManager(String connectionString) in D:\Projects\NTPlatform\NTCore.RedisAccess\RedisManager.cs:line 40
+   at NTCore.RedisAccess.RedisManager.get_Manager() in D:\Projects\NTPlatform\NTCore.RedisAccess\RedisManager.cs:line 23
+   at NTCore.WebFront.Controllers.ValuesController.<GetAsync>d__3.MoveNext() in D:\Projects\NTPlatform\NTCore.WebFront\Controllers\ValuesController.cs:line 52
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at lambda_method(Closure , Object )
+   at Microsoft.Extensions.Internal.ObjectMethodExecutorAwaitable.Awaiter.GetResult()
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.<InvokeActionMethodAsync>d__12.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.<InvokeNextActionFilterAsync>d__10.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.Rethrow(ActionExecutedContext context)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.<InvokeInnerFilterAsync>d__14.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.<InvokeNextResourceFilter>d__22.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.Rethrow(ResourceExecutedContext context)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.<InvokeFilterPipelineAsync>d__17.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.<InvokeAsync>d__15.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Builder.RouterMiddleware.<Invoke>d__4.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.<Invoke>d__6.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.<Invoke>d__7.MoveNext()
+
+-----------------------------------------
+
+time:2017-10-20 10:00:19,592 
+level:INFO 
+logger:Microsoft.AspNetCore.Hosting.Internal.WebHost
+file:? line? 
+content:Request finished in 8429.1125ms 500 text/html; charset=utf-8
+
+-----------------------------------------
+
+time:2017-10-20 10:00:19,634 
+level:INFO 
+logger:Microsoft.AspNetCore.Hosting.Internal.WebHost
+file:? line? 
+content:Request starting HTTP/1.1 GET http://localhost:57942/favicon.ico  
+
+-----------------------------------------
+
+time:2017-10-20 10:00:19,638 
+level:INFO 
+logger:Microsoft.AspNetCore.Authentication.Cookies.CookieAuthenticationHandler
+file:? line? 
+content:AuthenticationScheme: AuthenticationScheme was successfully authenticated.
+
+-----------------------------------------
+
+time:2017-10-20 10:00:19,642 
+level:INFO 
+logger:Microsoft.AspNetCore.Hosting.Internal.WebHost
+file:? line? 
+content:Request finished in 7.3521ms 404 
+
+-----------------------------------------
+
+time:2017-10-20 10:00:22,562 
+level:INFO 
+logger:Microsoft.AspNetCore.Hosting.Internal.WebHost
+file:? line? 
+content:Request starting HTTP/1.1 POST http://localhost:57942/api/rowhouse?userid=1 application/json 37
+
+-----------------------------------------
+
+time:2017-10-20 10:00:22,566 
+level:INFO 
+logger:Microsoft.AspNetCore.Authentication.Cookies.CookieAuthenticationHandler
+file:? line? 
+content:AuthenticationScheme: AuthenticationScheme was successfully authenticated.
+
+-----------------------------------------
+
+time:2017-10-20 10:00:22,588 
+level:INFO 
+logger:Microsoft.AspNetCore.Authorization.DefaultAuthorizationService
+file:? line? 
+content:Authorization was successful for user: bob.
+
+-----------------------------------------
+
+time:2017-10-20 10:00:22,621 
+level:INFO 
+logger:Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker
+file:? line? 
+content:Executing action method NTCore.WebFront.Controllers.RowhouseController.Post (NTCore.WebFront) with arguments (1, System.Collections.Generic.List`1[System.String]) - ModelState is Valid
+
+-----------------------------------------
+
+time:2017-10-20 10:03:01,656 
+level:INFO 
+logger:Microsoft.AspNetCore.Hosting.Internal.WebHost
+file:? line? 
+content:Request starting HTTP/1.1 GET http://localhost:57942/api/values  
+
+-----------------------------------------
+
+time:2017-10-20 10:03:01,736 
+level:INFO 
+logger:Microsoft.AspNetCore.Authentication.Cookies.CookieAuthenticationHandler
+file:? line? 
+content:AuthenticationScheme: AuthenticationScheme was successfully authenticated.
+
+-----------------------------------------
+
+time:2017-10-20 10:03:02,067 
+level:INFO 
+logger:Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker
+file:? line? 
+content:Executing action method NTCore.WebFront.Controllers.ValuesController.GetAsync (NTCore.WebFront) with arguments ((null)) - ModelState is Valid
+
+-----------------------------------------
+
+time:2017-10-20 10:03:06,713 
+level:INFO 
+logger:Microsoft.EntityFrameworkCore.Infrastructure
+file:? line? 
+content:Entity Framework Core 2.0.0-rtm-26452 initialized 'MainContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: MigrationsAssembly=NTCore.WebFront 
+
+-----------------------------------------
+
+time:2017-10-20 10:03:06,754 
+level:WARN 
+logger:Microsoft.EntityFrameworkCore.Query
+file:? line? 
+content:Query: '(from UserInfo <generated>_1 in DbSet<UserInfo> select [<generated>_1]).FirstOrDefault()' uses First/FirstOrDefault operation without OrderBy and filter which may lead to unpredictable results.
+
+-----------------------------------------
+
+time:2017-10-20 10:03:07,066 
+level:INFO 
+logger:Microsoft.EntityFrameworkCore.Database.Command
+file:? line? 
+content:Executed DbCommand (29ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT TOP(1) [u].[id], [u].[auth_type], [u].[avatar], [u].[confirmed], [u].[create_time], [u].[creator_id], [u].[data_state], [u].[email], [u].[employee_number], [u].[hotel_id], [u].[mobile_number], [u].[nickname], [u].[password], [u].[update_time], [u].[updater_id], [u].[username]
+FROM [user] AS [u]
+WHERE [u].[data_state] = 1
+
+-----------------------------------------
+
+time:2017-10-20 10:03:07,105 
+level:INFO 
+logger:Microsoft.AspNetCore.Authentication.Cookies.CookieAuthenticationHandler
+file:? line? 
+content:AuthenticationScheme: AuthenticationScheme signed in.
+
+-----------------------------------------
+
+time:2017-10-20 10:03:10,757 
+level:INFO 
+logger:Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker
+file:? line? 
+content:Executed action NTCore.WebFront.Controllers.ValuesController.GetAsync (NTCore.WebFront) in 8849.4326ms
+
+-----------------------------------------
+
+time:2017-10-20 10:03:10,926 
+level:ERROR 
+logger:Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware
+file:? line? 
+content:An unhandled exception has occurred while executing the request
+StackExchange.Redis.RedisConnectionException: It was not possible to connect to the redis server(s); to create a disconnected multiplexer, disable AbortOnConnectFail. SocketFailure on PING
+   at StackExchange.Redis.ConnectionMultiplexer.ConnectImpl(Func`1 multiplexerFactory, TextWriter log) in c:\code\StackExchange.Redis\StackExchange.Redis\StackExchange\Redis\ConnectionMultiplexer.cs:line 890
+   at NTCore.RedisAccess.RedisManager.GetManager(String connectionString) in D:\Projects\NTPlatform\NTCore.RedisAccess\RedisManager.cs:line 40
+   at NTCore.RedisAccess.RedisManager.get_Manager() in D:\Projects\NTPlatform\NTCore.RedisAccess\RedisManager.cs:line 23
+   at NTCore.WebFront.Controllers.ValuesController.<GetAsync>d__3.MoveNext() in D:\Projects\NTPlatform\NTCore.WebFront\Controllers\ValuesController.cs:line 52
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at lambda_method(Closure , Object )
+   at Microsoft.Extensions.Internal.ObjectMethodExecutorAwaitable.Awaiter.GetResult()
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.<InvokeActionMethodAsync>d__12.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.<InvokeNextActionFilterAsync>d__10.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.Rethrow(ActionExecutedContext context)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.<InvokeInnerFilterAsync>d__14.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.<InvokeNextResourceFilter>d__22.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.Rethrow(ResourceExecutedContext context)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.<InvokeFilterPipelineAsync>d__17.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.<InvokeAsync>d__15.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Builder.RouterMiddleware.<Invoke>d__4.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.<Invoke>d__6.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.<Invoke>d__7.MoveNext()
+
+-----------------------------------------
+
+time:2017-10-20 10:03:11,077 
+level:INFO 
+logger:Microsoft.AspNetCore.Hosting.Internal.WebHost
+file:? line? 
+content:Request finished in 9425.6588ms 500 text/html; charset=utf-8
+
+-----------------------------------------
+
+time:2017-10-20 10:03:11,114 
+level:INFO 
+logger:Microsoft.AspNetCore.Hosting.Internal.WebHost
+file:? line? 
+content:Request starting HTTP/1.1 GET http://localhost:57942/favicon.ico  
+
+-----------------------------------------
+
+time:2017-10-20 10:03:11,118 
+level:INFO 
+logger:Microsoft.AspNetCore.Authentication.Cookies.CookieAuthenticationHandler
+file:? line? 
+content:AuthenticationScheme: AuthenticationScheme was successfully authenticated.
+
+-----------------------------------------
+
+time:2017-10-20 10:03:11,131 
+level:INFO 
+logger:Microsoft.AspNetCore.Hosting.Internal.WebHost
+file:? line? 
+content:Request finished in 12.1121ms 404 
+
+-----------------------------------------
+
+time:2017-10-20 10:12:27,774 
+level:INFO 
+logger:Microsoft.AspNetCore.Hosting.Internal.WebHost
+file:? line? 
+content:Request starting HTTP/1.1 GET http://localhost:57942/api/values  
+
+-----------------------------------------
+
+time:2017-10-20 10:12:27,869 
+level:INFO 
+logger:Microsoft.AspNetCore.Authentication.Cookies.CookieAuthenticationHandler
+file:? line? 
+content:AuthenticationScheme: AuthenticationScheme was successfully authenticated.
+
+-----------------------------------------
+
+time:2017-10-20 10:12:28,169 
+level:INFO 
+logger:Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker
+file:? line? 
+content:Executing action method NTCore.WebFront.Controllers.ValuesController.GetAsync (NTCore.WebFront) with arguments ((null)) - ModelState is Valid
+
+-----------------------------------------
+
+time:2017-10-20 10:12:30,523 
+level:INFO 
+logger:Microsoft.EntityFrameworkCore.Infrastructure
+file:? line? 
+content:Entity Framework Core 2.0.0-rtm-26452 initialized 'MainContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: MigrationsAssembly=NTCore.WebFront 
+
+-----------------------------------------
+
+time:2017-10-20 10:12:30,563 
+level:WARN 
+logger:Microsoft.EntityFrameworkCore.Query
+file:? line? 
+content:Query: '(from UserInfo <generated>_1 in DbSet<UserInfo> select [<generated>_1]).FirstOrDefault()' uses First/FirstOrDefault operation without OrderBy and filter which may lead to unpredictable results.
+
+-----------------------------------------
+
+time:2017-10-20 10:12:30,864 
+level:INFO 
+logger:Microsoft.EntityFrameworkCore.Database.Command
+file:? line? 
+content:Executed DbCommand (26ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT TOP(1) [u].[id], [u].[auth_type], [u].[avatar], [u].[confirmed], [u].[create_time], [u].[creator_id], [u].[data_state], [u].[email], [u].[employee_number], [u].[hotel_id], [u].[mobile_number], [u].[nickname], [u].[password], [u].[update_time], [u].[updater_id], [u].[username]
+FROM [user] AS [u]
+WHERE [u].[data_state] = 1
+
+-----------------------------------------
+
+time:2017-10-20 10:12:30,901 
+level:INFO 
+logger:Microsoft.AspNetCore.Authentication.Cookies.CookieAuthenticationHandler
+file:? line? 
+content:AuthenticationScheme: AuthenticationScheme signed in.
+
+-----------------------------------------
+
+time:2017-10-20 10:12:32,752 
+level:INFO 
+logger:Microsoft.AspNetCore.Hosting.Internal.WebHost
+file:? line? 
+content:Request starting HTTP/1.1 POST http://localhost:57942/api/rowhouse?userid=1 application/json 37
+
+-----------------------------------------
+
+time:2017-10-20 10:12:32,755 
+level:INFO 
+logger:Microsoft.AspNetCore.Authentication.Cookies.CookieAuthenticationHandler
+file:? line? 
+content:AuthenticationScheme: AuthenticationScheme was successfully authenticated.
+
+-----------------------------------------
+
+time:2017-10-20 10:12:32,784 
+level:INFO 
+logger:Microsoft.AspNetCore.Authorization.DefaultAuthorizationService
+file:? line? 
+content:Authorization was successful for user: bob.
+
+-----------------------------------------
+
+time:2017-10-20 10:12:32,821 
+level:INFO 
+logger:Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker
+file:? line? 
+content:Executing action method NTCore.WebFront.Controllers.RowhouseController.Post (NTCore.WebFront) with arguments (NTCore.WebFront.Controllers.RowhouseController+PostInfo) - ModelState is Valid
+
+-----------------------------------------
+
+time:2017-10-20 10:12:48,862 
+level:INFO 
+logger:Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker
+file:? line? 
+content:Executed action NTCore.WebFront.Controllers.ValuesController.GetAsync (NTCore.WebFront) in 20828.8567ms
+
+-----------------------------------------
+
+time:2017-10-20 10:12:48,863 
+level:INFO 
+logger:Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker
+file:? line? 
+content:Executed action NTCore.WebFront.Controllers.RowhouseController.Post (NTCore.WebFront) in 15944.4971ms
+
+-----------------------------------------
+
+time:2017-10-20 10:12:49,074 
+level:ERROR 
+logger:Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware
+file:? line? 
+content:An unhandled exception has occurred while executing the request
+System.NullReferenceException: Object reference not set to an instance of an object.
+   at NTCore.WebFront.Controllers.RowhouseController.Post(PostInfo info) in D:\Projects\NTPlatform\NTCore.WebFront\Controllers\Api\RowhouseController.cs:line 35
+   at lambda_method(Closure , Object , Object[] )
+   at Microsoft.Extensions.Internal.ObjectMethodExecutor.Execute(Object target, Object[] parameters)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.<InvokeActionMethodAsync>d__12.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.<InvokeNextActionFilterAsync>d__10.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.Rethrow(ActionExecutedContext context)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.<InvokeInnerFilterAsync>d__14.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.<InvokeNextResourceFilter>d__22.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.Rethrow(ResourceExecutedContext context)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.<InvokeFilterPipelineAsync>d__17.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.<InvokeAsync>d__15.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Builder.RouterMiddleware.<Invoke>d__4.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.<Invoke>d__6.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.<Invoke>d__7.MoveNext()
+
+-----------------------------------------
+
+time:2017-10-20 10:12:49,090 
+level:ERROR 
+logger:Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware
+file:? line? 
+content:An unhandled exception has occurred while executing the request
+StackExchange.Redis.RedisConnectionException: It was not possible to connect to the redis server(s); to create a disconnected multiplexer, disable AbortOnConnectFail. ConnectTimeout
+   at StackExchange.Redis.ConnectionMultiplexer.ConnectImpl(Func`1 multiplexerFactory, TextWriter log) in c:\code\StackExchange.Redis\StackExchange.Redis\StackExchange\Redis\ConnectionMultiplexer.cs:line 890
+   at NTCore.RedisAccess.RedisManager.GetManager(String connectionString) in D:\Projects\NTPlatform\NTCore.RedisAccess\RedisManager.cs:line 40
+   at NTCore.RedisAccess.RedisManager.get_Manager() in D:\Projects\NTPlatform\NTCore.RedisAccess\RedisManager.cs:line 23
+   at NTCore.WebFront.Controllers.ValuesController.<GetAsync>d__3.MoveNext() in D:\Projects\NTPlatform\NTCore.WebFront\Controllers\ValuesController.cs:line 52
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at lambda_method(Closure , Object )
+   at Microsoft.Extensions.Internal.ObjectMethodExecutorAwaitable.Awaiter.GetResult()
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.<InvokeActionMethodAsync>d__12.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.<InvokeNextActionFilterAsync>d__10.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.Rethrow(ActionExecutedContext context)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.<InvokeInnerFilterAsync>d__14.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.<InvokeNextResourceFilter>d__22.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.Rethrow(ResourceExecutedContext context)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.<InvokeFilterPipelineAsync>d__17.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.<InvokeAsync>d__15.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Builder.RouterMiddleware.<Invoke>d__4.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.<Invoke>d__6.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.<Invoke>d__7.MoveNext()
+
+-----------------------------------------
+
+time:2017-10-20 10:12:49,242 
+level:INFO 
+logger:Microsoft.AspNetCore.Hosting.Internal.WebHost
+file:? line? 
+content:Request finished in 16475.666ms 500 text/html; charset=utf-8
+
+-----------------------------------------
+
+time:2017-10-20 10:12:49,247 
+level:INFO 
+logger:Microsoft.AspNetCore.Hosting.Internal.WebHost
+file:? line? 
+content:Request finished in 21481.9194ms 500 text/html; charset=utf-8
+
+-----------------------------------------
+
+time:2017-10-20 10:12:49,335 
+level:INFO 
+logger:Microsoft.AspNetCore.Hosting.Internal.WebHost
+file:? line? 
+content:Request starting HTTP/1.1 GET http://localhost:57942/favicon.ico  
+
+-----------------------------------------
+
+time:2017-10-20 10:12:49,337 
+level:INFO 
+logger:Microsoft.AspNetCore.Authentication.Cookies.CookieAuthenticationHandler
+file:? line? 
+content:AuthenticationScheme: AuthenticationScheme was successfully authenticated.
+
+-----------------------------------------
+
+time:2017-10-20 10:12:49,350 
+level:INFO 
+logger:Microsoft.AspNetCore.Hosting.Internal.WebHost
+file:? line? 
+content:Request finished in 5.2261ms 404 
+
+-----------------------------------------
+
+time:2017-10-20 10:12:54,414 
+level:INFO 
+logger:Microsoft.AspNetCore.Hosting.Internal.WebHost
+file:? line? 
+content:Request starting HTTP/1.1 POST http://localhost:57942/api/rowhouse?userid=1  37
+
+-----------------------------------------
+
+time:2017-10-20 10:12:54,416 
+level:INFO 
+logger:Microsoft.AspNetCore.Authentication.Cookies.CookieAuthenticationHandler
+file:? line? 
+content:AuthenticationScheme: AuthenticationScheme was successfully authenticated.
+
+-----------------------------------------
+
+time:2017-10-20 10:12:54,418 
+level:INFO 
+logger:Microsoft.AspNetCore.Authorization.DefaultAuthorizationService
+file:? line? 
+content:Authorization was successful for user: bob.
+
+-----------------------------------------
+
+time:2017-10-20 10:12:54,435 
+level:INFO 
+logger:Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker
+file:? line? 
+content:Executing action method NTCore.WebFront.Controllers.RowhouseController.Post (NTCore.WebFront) with arguments (NTCore.WebFront.Controllers.RowhouseController+PostInfo) - ModelState is Valid
+
+-----------------------------------------
+
+time:2017-10-20 10:13:45,830 
+level:INFO 
+logger:Microsoft.AspNetCore.Hosting.Internal.WebHost
+file:? line? 
+content:Request starting HTTP/1.1 GET http://localhost:57942/api/values  
+
+-----------------------------------------
+
+time:2017-10-20 10:13:45,903 
+level:INFO 
+logger:Microsoft.AspNetCore.Authentication.Cookies.CookieAuthenticationHandler
+file:? line? 
+content:AuthenticationScheme: AuthenticationScheme was successfully authenticated.
+
+-----------------------------------------
+
+time:2017-10-20 10:13:46,181 
+level:INFO 
+logger:Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker
+file:? line? 
+content:Executing action method NTCore.WebFront.Controllers.ValuesController.GetAsync (NTCore.WebFront) with arguments ((null)) - ModelState is Valid
+
+-----------------------------------------
+
+time:2017-10-20 10:13:48,086 
+level:INFO 
+logger:Microsoft.EntityFrameworkCore.Infrastructure
+file:? line? 
+content:Entity Framework Core 2.0.0-rtm-26452 initialized 'MainContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: MigrationsAssembly=NTCore.WebFront 
+
+-----------------------------------------
+
+time:2017-10-20 10:13:48,122 
+level:WARN 
+logger:Microsoft.EntityFrameworkCore.Query
+file:? line? 
+content:Query: '(from UserInfo <generated>_1 in DbSet<UserInfo> select [<generated>_1]).FirstOrDefault()' uses First/FirstOrDefault operation without OrderBy and filter which may lead to unpredictable results.
+
+-----------------------------------------
+
+time:2017-10-20 10:13:48,432 
+level:INFO 
+logger:Microsoft.EntityFrameworkCore.Database.Command
+file:? line? 
+content:Executed DbCommand (27ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT TOP(1) [u].[id], [u].[auth_type], [u].[avatar], [u].[confirmed], [u].[create_time], [u].[creator_id], [u].[data_state], [u].[email], [u].[employee_number], [u].[hotel_id], [u].[mobile_number], [u].[nickname], [u].[password], [u].[update_time], [u].[updater_id], [u].[username]
+FROM [user] AS [u]
+WHERE [u].[data_state] = 1
+
+-----------------------------------------
+
+time:2017-10-20 10:13:48,465 
+level:INFO 
+logger:Microsoft.AspNetCore.Authentication.Cookies.CookieAuthenticationHandler
+file:? line? 
+content:AuthenticationScheme: AuthenticationScheme signed in.
+
+-----------------------------------------
+
+time:2017-10-20 10:13:50,354 
+level:INFO 
+logger:Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker
+file:? line? 
+content:Executed action NTCore.WebFront.Controllers.ValuesController.GetAsync (NTCore.WebFront) in 4315.8371ms
+
+-----------------------------------------
+
+time:2017-10-20 10:13:50,505 
+level:ERROR 
+logger:Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware
+file:? line? 
+content:An unhandled exception has occurred while executing the request
+StackExchange.Redis.RedisConnectionException: It was not possible to connect to the redis server(s); to create a disconnected multiplexer, disable AbortOnConnectFail. SocketFailure on PING
+   at StackExchange.Redis.ConnectionMultiplexer.ConnectImpl(Func`1 multiplexerFactory, TextWriter log) in c:\code\StackExchange.Redis\StackExchange.Redis\StackExchange\Redis\ConnectionMultiplexer.cs:line 890
+   at NTCore.RedisAccess.RedisManager.GetManager(String connectionString) in D:\Projects\NTPlatform\NTCore.RedisAccess\RedisManager.cs:line 40
+   at NTCore.RedisAccess.RedisManager.get_Manager() in D:\Projects\NTPlatform\NTCore.RedisAccess\RedisManager.cs:line 23
+   at NTCore.WebFront.Controllers.ValuesController.<GetAsync>d__3.MoveNext() in D:\Projects\NTPlatform\NTCore.WebFront\Controllers\ValuesController.cs:line 52
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at lambda_method(Closure , Object )
+   at Microsoft.Extensions.Internal.ObjectMethodExecutorAwaitable.Awaiter.GetResult()
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.<InvokeActionMethodAsync>d__12.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.<InvokeNextActionFilterAsync>d__10.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.Rethrow(ActionExecutedContext context)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.<InvokeInnerFilterAsync>d__14.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.<InvokeNextResourceFilter>d__22.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.Rethrow(ResourceExecutedContext context)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.<InvokeFilterPipelineAsync>d__17.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.<InvokeAsync>d__15.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Builder.RouterMiddleware.<Invoke>d__4.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.<Invoke>d__6.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.<Invoke>d__7.MoveNext()
+
+-----------------------------------------
+
+time:2017-10-20 10:13:50,620 
+level:INFO 
+logger:Microsoft.AspNetCore.Hosting.Internal.WebHost
+file:? line? 
+content:Request finished in 4801.1034ms 500 text/html; charset=utf-8
+
+-----------------------------------------
+
+time:2017-10-20 10:13:50,685 
+level:INFO 
+logger:Microsoft.AspNetCore.Hosting.Internal.WebHost
+file:? line? 
+content:Request starting HTTP/1.1 GET http://localhost:57942/favicon.ico  
+
+-----------------------------------------
+
+time:2017-10-20 10:13:50,690 
+level:INFO 
+logger:Microsoft.AspNetCore.Authentication.Cookies.CookieAuthenticationHandler
+file:? line? 
+content:AuthenticationScheme: AuthenticationScheme was successfully authenticated.
+
+-----------------------------------------
+
+time:2017-10-20 10:13:50,695 
+level:INFO 
+logger:Microsoft.AspNetCore.Hosting.Internal.WebHost
+file:? line? 
+content:Request finished in 7.7239ms 404 
+
+-----------------------------------------
+
+time:2017-10-20 10:14:01,724 
+level:INFO 
+logger:Microsoft.AspNetCore.Hosting.Internal.WebHost
+file:? line? 
+content:Request starting HTTP/1.1 POST http://localhost:57942/api/rowhouse?userid=1  37
+
+-----------------------------------------
+
+time:2017-10-20 10:14:01,727 
+level:INFO 
+logger:Microsoft.AspNetCore.Authentication.Cookies.CookieAuthenticationHandler
+file:? line? 
+content:AuthenticationScheme: AuthenticationScheme was successfully authenticated.
+
+-----------------------------------------
+
+time:2017-10-20 10:14:01,746 
+level:INFO 
+logger:Microsoft.AspNetCore.Authorization.DefaultAuthorizationService
+file:? line? 
+content:Authorization was successful for user: bob.
+
+-----------------------------------------
+
+time:2017-10-20 10:14:01,829 
+level:INFO 
+logger:Microsoft.AspNetCore.Mvc.StatusCodeResult
+file:? line? 
+content:Executing HttpStatusCodeResult, setting HTTP status code 415
+
+-----------------------------------------
+
+time:2017-10-20 10:14:01,832 
+level:INFO 
+logger:Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker
+file:? line? 
+content:Executed action NTCore.WebFront.Controllers.RowhouseController.Post (NTCore.WebFront) in 89.3494ms
+
+-----------------------------------------
+
+time:2017-10-20 10:14:01,836 
+level:INFO 
+logger:Microsoft.AspNetCore.Hosting.Internal.WebHost
+file:? line? 
+content:Request finished in 111.9774ms 415 
+
+-----------------------------------------
+
+time:2017-10-20 10:14:10,028 
+level:INFO 
+logger:Microsoft.AspNetCore.Hosting.Internal.WebHost
+file:? line? 
+content:Request starting HTTP/1.1 POST http://localhost:57942/api/rowhouse?userid=1  37
+
+-----------------------------------------
+
+time:2017-10-20 10:14:10,031 
+level:INFO 
+logger:Microsoft.AspNetCore.Authentication.Cookies.CookieAuthenticationHandler
+file:? line? 
+content:AuthenticationScheme: AuthenticationScheme was successfully authenticated.
+
+-----------------------------------------
+
+time:2017-10-20 10:14:10,034 
+level:INFO 
+logger:Microsoft.AspNetCore.Authorization.DefaultAuthorizationService
+file:? line? 
+content:Authorization was successful for user: bob.
+
+-----------------------------------------
+
+time:2017-10-20 10:14:10,037 
+level:INFO 
+logger:Microsoft.AspNetCore.Mvc.StatusCodeResult
+file:? line? 
+content:Executing HttpStatusCodeResult, setting HTTP status code 415
+
+-----------------------------------------
+
+time:2017-10-20 10:14:10,039 
+level:INFO 
+logger:Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker
+file:? line? 
+content:Executed action NTCore.WebFront.Controllers.RowhouseController.Post (NTCore.WebFront) in 5.5941ms
+
+-----------------------------------------
+
+time:2017-10-20 10:14:10,041 
+level:INFO 
+logger:Microsoft.AspNetCore.Hosting.Internal.WebHost
+file:? line? 
+content:Request finished in 13.2577ms 415 
+
+-----------------------------------------
+
+time:2017-10-20 10:14:42,996 
+level:INFO 
+logger:Microsoft.AspNetCore.Hosting.Internal.WebHost
+file:? line? 
+content:Request starting HTTP/1.1 POST http://localhost:57942/api/rowhouse  48
+
+-----------------------------------------
+
+time:2017-10-20 10:14:42,998 
+level:INFO 
+logger:Microsoft.AspNetCore.Authentication.Cookies.CookieAuthenticationHandler
+file:? line? 
+content:AuthenticationScheme: AuthenticationScheme was successfully authenticated.
+
+-----------------------------------------
+
+time:2017-10-20 10:14:43,000 
+level:INFO 
+logger:Microsoft.AspNetCore.Authorization.DefaultAuthorizationService
+file:? line? 
+content:Authorization was successful for user: bob.
+
+-----------------------------------------
+
+time:2017-10-20 10:14:43,002 
+level:INFO 
+logger:Microsoft.AspNetCore.Mvc.StatusCodeResult
+file:? line? 
+content:Executing HttpStatusCodeResult, setting HTTP status code 415
+
+-----------------------------------------
+
+time:2017-10-20 10:14:43,004 
+level:INFO 
+logger:Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker
+file:? line? 
+content:Executed action NTCore.WebFront.Controllers.RowhouseController.Post (NTCore.WebFront) in 4.4848ms
+
+-----------------------------------------
+
+time:2017-10-20 10:14:43,012 
+level:INFO 
+logger:Microsoft.AspNetCore.Hosting.Internal.WebHost
+file:? line? 
+content:Request finished in 13.0723ms 415 
+
+-----------------------------------------
+
+time:2017-10-20 10:15:04,812 
+level:INFO 
+logger:Microsoft.AspNetCore.Hosting.Internal.WebHost
+file:? line? 
+content:Request starting HTTP/1.1 POST http://localhost:57942/api/rowhouse application/json 48
+
+-----------------------------------------
+
+time:2017-10-20 10:15:04,814 
+level:INFO 
+logger:Microsoft.AspNetCore.Authentication.Cookies.CookieAuthenticationHandler
+file:? line? 
+content:AuthenticationScheme: AuthenticationScheme was successfully authenticated.
+
+-----------------------------------------
+
+time:2017-10-20 10:15:04,817 
+level:INFO 
+logger:Microsoft.AspNetCore.Authorization.DefaultAuthorizationService
+file:? line? 
+content:Authorization was successful for user: bob.
+
+-----------------------------------------
+
+time:2017-10-20 10:15:04,889 
+level:INFO 
+logger:Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker
+file:? line? 
+content:Executing action method NTCore.WebFront.Controllers.RowhouseController.Post (NTCore.WebFront) with arguments (NTCore.WebFront.Controllers.RowhouseController+PostInfo) - ModelState is Valid
+
+-----------------------------------------
+
+time:2017-10-20 10:15:36,662 
+level:INFO 
+logger:Microsoft.EntityFrameworkCore.Infrastructure
+file:? line? 
+content:Entity Framework Core 2.0.0-rtm-26452 initialized 'MainContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: MigrationsAssembly=NTCore.WebFront 
+
+-----------------------------------------
+
+time:2017-10-20 10:15:41,866 
+level:INFO 
+logger:Microsoft.EntityFrameworkCore.Database.Command
+file:? line? 
+content:Executed DbCommand (46ms) [Parameters=[@__name_0='?' (Size = 50)], CommandType='Text', CommandTimeout='30']
+SELECT TOP(1) [u].[id], [u].[auth_type], [u].[avatar], [u].[confirmed], [u].[create_time], [u].[creator_id], [u].[data_state], [u].[email], [u].[employee_number], [u].[hotel_id], [u].[mobile_number], [u].[nickname], [u].[password], [u].[update_time], [u].[updater_id], [u].[username]
+FROM [user] AS [u]
+WHERE ([u].[data_state] = 1) AND (([u].[username] = @__name_0) AND ([u].[confirmed] = 1))
+
+-----------------------------------------
+
+time:2017-10-20 10:15:45,278 
+level:INFO 
+logger:Microsoft.EntityFrameworkCore.Database.Command
+file:? line? 
+content:Executed DbCommand (24ms) [Parameters=[@__item_0='?' (Size = 30), @__UserInfo_HotelId_1='?'], CommandType='Text', CommandTimeout='30']
+SELECT TOP(1) [r].[id], [r].[assign_time], [r].[coeffcient], [r].[create_time], [r].[creator_id], [r].[data_state], [r].[hotel_id], [r].[room_number], [r].[room_status], [r].[update_time], [r].[updater_id], [r].[userid]
+FROM [rowhouse] AS [r]
+WHERE ([r].[data_state] = 1) AND (([r].[room_number] = @__item_0) AND ([r].[hotel_id] = @__UserInfo_HotelId_1))
+
+-----------------------------------------
+
+time:2017-10-20 10:15:49,925 
+level:INFO 
+logger:Microsoft.EntityFrameworkCore.Database.Command
+file:? line? 
+content:Executed DbCommand (17ms) [Parameters=[@__item_0='?' (Size = 30), @__UserInfo_HotelId_1='?'], CommandType='Text', CommandTimeout='30']
+SELECT TOP(1) [r].[id], [r].[assign_time], [r].[coeffcient], [r].[create_time], [r].[creator_id], [r].[data_state], [r].[hotel_id], [r].[room_number], [r].[room_status], [r].[update_time], [r].[updater_id], [r].[userid]
+FROM [rowhouse] AS [r]
+WHERE ([r].[data_state] = 1) AND (([r].[room_number] = @__item_0) AND ([r].[hotel_id] = @__UserInfo_HotelId_1))
+
+-----------------------------------------
+
+time:2017-10-20 10:15:49,948 
+level:INFO 
+logger:Microsoft.EntityFrameworkCore.Database.Command
+file:? line? 
+content:Executed DbCommand (18ms) [Parameters=[@__item_0='?' (Size = 30), @__UserInfo_HotelId_1='?'], CommandType='Text', CommandTimeout='30']
+SELECT TOP(1) [r].[id], [r].[assign_time], [r].[coeffcient], [r].[create_time], [r].[creator_id], [r].[data_state], [r].[hotel_id], [r].[room_number], [r].[room_status], [r].[update_time], [r].[updater_id], [r].[userid]
+FROM [rowhouse] AS [r]
+WHERE ([r].[data_state] = 1) AND (([r].[room_number] = @__item_0) AND ([r].[hotel_id] = @__UserInfo_HotelId_1))
+
+-----------------------------------------
+
+time:2017-10-20 10:15:50,150 
+level:INFO 
+logger:Microsoft.EntityFrameworkCore.Database.Command
+file:? line? 
+content:Executed DbCommand (164ms) [Parameters=[@p0='?', @p1='?', @p2='?', @p3='?', @p4='?', @p5='?', @p6='?' (Size = 30), @p7='?' (Size = 30), @p8='?', @p9='?', @p10='?', @p11='?', @p12='?', @p13='?', @p14='?', @p15='?', @p16='?', @p17='?' (Size = 30), @p18='?' (Size = 30), @p19='?', @p20='?', @p21='?', @p22='?', @p23='?', @p24='?', @p25='?', @p26='?', @p27='?', @p28='?' (Size = 30), @p29='?' (Size = 30), @p30='?', @p31='?', @p32='?'], CommandType='Text', CommandTimeout='30']
+SET NOCOUNT ON;
+DECLARE @inserted0 TABLE ([id] int, [_Position] [int]);
+MERGE [rowhouse] USING (
+VALUES (@p0, @p1, @p2, @p3, @p4, @p5, @p6, @p7, @p8, @p9, @p10, 0),
+(@p11, @p12, @p13, @p14, @p15, @p16, @p17, @p18, @p19, @p20, @p21, 1),
+(@p22, @p23, @p24, @p25, @p26, @p27, @p28, @p29, @p30, @p31, @p32, 2)) AS i ([assign_time], [coeffcient], [create_time], [creator_id], [data_state], [hotel_id], [room_number], [room_status], [update_time], [updater_id], [userid], _Position) ON 1=0
+WHEN NOT MATCHED THEN
+INSERT ([assign_time], [coeffcient], [create_time], [creator_id], [data_state], [hotel_id], [room_number], [room_status], [update_time], [updater_id], [userid])
+VALUES (i.[assign_time], i.[coeffcient], i.[create_time], i.[creator_id], i.[data_state], i.[hotel_id], i.[room_number], i.[room_status], i.[update_time], i.[updater_id], i.[userid])
+OUTPUT INSERTED.[id], i._Position
+INTO @inserted0;
+
+SELECT [t].[id] FROM [rowhouse] t
+INNER JOIN @inserted0 i ON ([t].[id] = [i].[id])
+ORDER BY [i].[_Position];
+
+-----------------------------------------
+
+time:2017-10-20 10:15:50,161 
+level:INFO 
+logger:Microsoft.AspNetCore.Mvc.Formatters.Json.Internal.JsonResultExecutor
+file:? line? 
+content:Executing JsonResult, writing value NTCore.WebFront.Model.BaseReturn`1[System.Object].
+
+-----------------------------------------
+
+time:2017-10-20 10:15:50,170 
+level:INFO 
+logger:Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker
+file:? line? 
+content:Executed action NTCore.WebFront.Controllers.RowhouseController.Post (NTCore.WebFront) in 45353.1024ms
+
+-----------------------------------------
+
+time:2017-10-20 10:15:50,175 
+level:INFO 
+logger:Microsoft.AspNetCore.Hosting.Internal.WebHost
+file:? line? 
+content:Request finished in 45361.7929ms 200 application/json; charset=utf-8

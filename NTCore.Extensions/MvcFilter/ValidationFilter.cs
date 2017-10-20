@@ -37,7 +37,7 @@ namespace NTCore.Extensions.MvcFilter
 
                 if (!context.ModelState.IsValid)
                 {
-                    var model = new ReturnValue<ModelStateDictionary>(context.ModelState);
+                    var model = new ReturnValue<ModelStateDictionary>(false, string.Empty, context.ModelState);
                     context.Result = new BadRequestObjectResult(model);
                 }
             }

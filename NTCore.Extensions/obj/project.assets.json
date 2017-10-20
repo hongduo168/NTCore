@@ -8759,6 +8759,9 @@
   },
   "project": {
     "version": "1.0.0",
+    "restoreSettings": {
+      "hideWarningsAndErrors": true
+    },
     "restore": {
       "projectUniqueName": "D:\\Projects\\NTPlatform\\NTCore.Extensions\\NTCore.Extensions.csproj",
       "projectName": "NTCore.Extensions",
@@ -8798,21 +8801,21 @@
     "frameworks": {
       "netcoreapp2.0": {
         "dependencies": {
+          "Microsoft.Extensions.Configuration": {
+            "target": "Package",
+            "version": "2.0.0"
+          },
+          "log4net": {
+            "target": "Package",
+            "version": "2.0.8"
+          },
           "Microsoft.NETCore.App": {
             "suppressParent": "All",
             "target": "Package",
             "version": "2.0.0",
             "autoReferenced": true
           },
-          "log4net": {
-            "target": "Package",
-            "version": "2.0.8"
-          },
           "Microsoft.AspNetCore.Mvc": {
-            "target": "Package",
-            "version": "2.0.0"
-          },
-          "Microsoft.Extensions.Configuration": {
             "target": "Package",
             "version": "2.0.0"
           },

@@ -23,7 +23,7 @@ namespace NTCore.DataModel
         [Required(AllowEmptyStrings = true), DefaultValue(""), Column("avatar", TypeName = "varchar(255)"), MaxLength(255)]
         public string Avatar { get; set; }
 
-        [Required(AllowEmptyStrings = true), DefaultValue(""), Column("mobile_number", TypeName = "varchar(50)"), MaxLength(50)]
+        [Required(AllowEmptyStrings = true), DefaultValue(""), Column("mobile_number", TypeName = "varchar(30)"), MaxLength(30)]
         public string MobileNumber { get; set; }
 
         [Required(AllowEmptyStrings = true), DefaultValue(""), Column("email", TypeName = "varchar(100)"), MaxLength(100)]

@@ -10,7 +10,7 @@ namespace NTCore.DataModel
     [Table("hotel_room")]
     public class HotelRoomInfo : HotelEntity
     {
-        [Required(AllowEmptyStrings = true), DefaultValue(""), Column("room_number", TypeName = "nvarchar(30)"), MaxLength(30)]
+        [Required(AllowEmptyStrings = true), DefaultValue(""), Column("room_number", TypeName = "varchar(30)"), MaxLength(30)]
         public string RoomNumber { get; set; }
 
         [Required(AllowEmptyStrings = true), DefaultValue(""), Column("pms_room_number", TypeName = "varchar(30)"), MaxLength(30)]

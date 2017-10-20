@@ -4651,6 +4651,9 @@
   },
   "project": {
     "version": "1.0.0",
+    "restoreSettings": {
+      "hideWarningsAndErrors": true
+    },
     "restore": {
       "projectUniqueName": "D:\\Projects\\NTPlatform\\NTCore.RedisAccess\\NTCore.RedisAccess.csproj",
       "projectName": "NTCore.RedisAccess",
@@ -4686,15 +4689,15 @@
     "frameworks": {
       "netcoreapp2.0": {
         "dependencies": {
+          "StackExchange.Redis": {
+            "target": "Package",
+            "version": "1.2.6"
+          },
           "Microsoft.NETCore.App": {
             "suppressParent": "All",
             "target": "Package",
             "version": "2.0.0",
             "autoReferenced": true
-          },
-          "StackExchange.Redis": {
-            "target": "Package",
-            "version": "1.2.6"
           }
         },
         "imports": [

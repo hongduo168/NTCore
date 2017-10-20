@@ -4,6 +4,9 @@
     <DockerComposeProjectPath>..\docker-compose.dcproj</DockerComposeProjectPath>
   </PropertyGroup>
   <ItemGroup>
+    <Folder Include="logs\" />
+    <Folder Include="Model\View\" />
+    <Folder Include="Views\Passport\" />
     <Folder Include="wwwroot\" />
   </ItemGroup>
   <ItemGroup>

@@ -10,7 +10,7 @@ namespace NTCore.DataModel
     [Table("pms_product_define")]
     public class PmsProductDefineInfo : BaseEntity
     {
-        [Required(AllowEmptyStrings = true), DefaultValue(""), Column("product_name", TypeName = "nvarchar(30)"), MaxLength(30)]
+        [Required(AllowEmptyStrings = true), DefaultValue(""), Column("product_name", TypeName = "nvarchar(50)"), MaxLength(50)]
         public string ProductName { get; set; }
 
         [Required(AllowEmptyStrings = true), DefaultValue(""), Column("appid", TypeName = "varchar(50)"), MaxLength(50)]

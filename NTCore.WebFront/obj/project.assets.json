@@ -13744,6 +13744,9 @@
   },
   "project": {
     "version": "1.0.0",
+    "restoreSettings": {
+      "hideWarningsAndErrors": true
+    },
     "restore": {
       "projectUniqueName": "D:\\Projects\\NTPlatform\\NTCore.WebFront\\NTCore.WebFront.csproj",
       "projectName": "NTCore.WebFront",
@@ -13768,11 +13771,11 @@
       "frameworks": {
         "netcoreapp2.0": {
           "projectReferences": {
-            "D:\\Projects\\NTPlatform\\NTCore.DataAccess\\NTCore.DataAccess.csproj": {
-              "projectPath": "D:\\Projects\\NTPlatform\\NTCore.DataAccess\\NTCore.DataAccess.csproj"
-            },
             "D:\\Projects\\NTPlatform\\NTCore.DataModel\\NTCore.DataModel.csproj": {
               "projectPath": "D:\\Projects\\NTPlatform\\NTCore.DataModel\\NTCore.DataModel.csproj"
+            },
+            "D:\\Projects\\NTPlatform\\NTCore.DataAccess\\NTCore.DataAccess.csproj": {
+              "projectPath": "D:\\Projects\\NTPlatform\\NTCore.DataAccess\\NTCore.DataAccess.csproj"
             },
             "D:\\Projects\\NTPlatform\\NTCore.Extensions\\NTCore.Extensions.csproj": {
               "projectPath": "D:\\Projects\\NTPlatform\\NTCore.Extensions\\NTCore.Extensions.csproj"
@@ -13792,6 +13795,18 @@
     "frameworks": {
       "netcoreapp2.0": {
         "dependencies": {
+          "MySql.Data.EntityFrameworkCore": {
+            "target": "Package",
+            "version": "8.0.8-dmr"
+          },
+          "MySql.Data": {
+            "target": "Package",
+            "version": "8.0.8-dmr"
+          },
+          "StackExchange.Redis": {
+            "target": "Package",
+            "version": "1.2.6"
+          },
           "Microsoft.NETCore.App": {
             "target": "Package",
             "version": "2.0.0",
@@ -13800,18 +13815,6 @@
           "Microsoft.AspNetCore.All": {
             "target": "Package",
             "version": "2.0.0"
-          },
-          "MySql.Data": {
-            "target": "Package",
-            "version": "8.0.8-dmr"
-          },
-          "MySql.Data.EntityFrameworkCore": {
-            "target": "Package",
-            "version": "8.0.8-dmr"
-          },
-          "StackExchange.Redis": {
-            "target": "Package",
-            "version": "1.2.6"
           }
         },
         "imports": [
