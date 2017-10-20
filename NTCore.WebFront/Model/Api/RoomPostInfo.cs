@@ -5,10 +5,10 @@ using System.Threading.Tasks;
 
 namespace NTCore.WebFront.Model.Api
 {
-    public class RowhousePostInfo
+    public class RoomPostInfo
     {
-        public int UserId { get; set; }
+        public int Id { get; set; }
 
-        public string[] RoomNumber { get; set; }
+        public string RoomStatus { get; set; }
     }
 }

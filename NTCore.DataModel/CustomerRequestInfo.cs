@@ -10,6 +10,10 @@ namespace NTCore.DataModel
     [Table("customer_request")]
     public class CustomerRequestInfo : HotelEntity
     {
+
+        [Required, DefaultValue(0), Column("data_type")]
+        public CustomerRequestDefineType DataType { get; set; }
+
         [Required(AllowEmptyStrings = true), DefaultValue(""), Column("room_number", TypeName = "varchar(30)"), MaxLength(30)]
         public string RoomNumber { get; set; }
 
@@ -17,7 +21,7 @@ namespace NTCore.DataModel
         public string MessageText { get; set; }
 
         [Required, DefaultValue(0), Column("finish_status")]
-        public int FinishStatus { get; set; }
+        public CustomerRequestFinishStatus FinishStatus { get; set; }
 
         [Required, DefaultValue(0), Column("assign_userid")]
         public int AssignUserId { get; set; }

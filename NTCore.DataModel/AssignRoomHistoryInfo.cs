@@ -7,11 +7,8 @@ using System.Text;
 
 namespace NTCore.DataModel
 {
-    /// <summary>
-    /// 排房
-    /// </summary>
-    [Table("rowhouse")]
-    public class RowhouseInfo : HotelEntity
+    [Table("assign_room_history")]
+    public class AssignRoomHistoryInfo : HotelEntity
     {
         [Required(AllowEmptyStrings = true), DefaultValue(""), Column("room_number", TypeName = "varchar(30)"), MaxLength(30)]
         public string RoomNumber { get; set; }
@@ -19,14 +16,13 @@ namespace NTCore.DataModel
         [Required, DefaultValue(0), Column("userid")]
         public int UserId { get; set; }
 
-        [Required, DefaultValue(1.0), Column("coeffcient", TypeName = "decimal(10,2)")]
+        [Required, DefaultValue(1.0), Column("coefficient", TypeName = "decimal(10,2)")]
         public decimal Coeffcient { get; set; }
 
+        [Required, DefaultValue("getdate"), Column("fromtime")]
+        public DateTime FromTime { get; set; }
 
-        [Required(AllowEmptyStrings = true), DefaultValue(""), Column("room_status", TypeName = "varchar(30)"), MaxLength(30)]
-        public string RoomStatus { get; set; }
-
-        [Required, DefaultValue("getdate()"), Column("assign_time")]
-        public DateTime AssignTime { get; set; }
+        [Required, DefaultValue("getdate()"), Column("deadline")]
+        public DateTime Deadline { get; set; }
     }
 }

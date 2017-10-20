@@ -15,3 +15,4 @@ D:\Projects\NTPlatform\NTCore.DataModel\obj\Debug\netcoreapp2.0\NTCore.DataModel
 D:\Projects\NTPlatform\NTCore.DataModel\obj\Debug\netcoreapp2.0\NTCore.DataModel.AssemblyInfo.cs
 D:\Projects\NTPlatform\NTCore.DataModel\obj\Debug\netcoreapp2.0\NTCore.DataModel.dll
 D:\Projects\NTPlatform\NTCore.DataModel\obj\Debug\netcoreapp2.0\NTCore.DataModel.pdb
+D:\Projects\NTPlatform\NTCore.DataModel\obj\Debug\netcoreapp2.0\NTCore.DataModel.csprojResolveAssemblyReference.cache

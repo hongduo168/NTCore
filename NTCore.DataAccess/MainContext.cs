@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Security.Cryptography.X509Certificates;
 using Microsoft.EntityFrameworkCore;
+using Microsoft.EntityFrameworkCore.ChangeTracking;
 using NTCore.DataModel;
 
 namespace NTCore.DataAccess
@@ -9,8 +10,27 @@ namespace NTCore.DataAccess
     {
         public MainContext(DbContextOptions options) : base(options)
         {
-            
+            //this.ChangeTracker.TrackGraph(this.HotelRoom, TrackAction);
         }
+
+        //private void TrackAction(EntityEntryGraphNode obj)
+        //{
+        //    switch (obj.Entry.State)
+        //    {
+        //        case EntityState.Added:
+        //            break;
+
+        //        case EntityState.Modified:
+        //            break;
+
+        //        case EntityState.Deleted:
+        //            break;;
+
+        //        case EntityState.Unchanged:
+        //            break;
+        //    }
+        //}
+
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
@@ -30,8 +50,8 @@ namespace NTCore.DataAccess
             modelBuilder.Entity<PmsProductDefineInfo>().HasQueryFilter(x => x.DataState == EnumState.Normal);
             modelBuilder.Entity<RoomMinibarInfo>().HasQueryFilter(x => x.DataState == EnumState.Normal);
             modelBuilder.Entity<RoomProductPackageInfo>().HasQueryFilter(x => x.DataState == EnumState.Normal);
-            modelBuilder.Entity<RowhouseHistoryInfo>().HasQueryFilter(x => x.DataState == EnumState.Normal);
-            modelBuilder.Entity<RowhouseInfo>().HasQueryFilter(x => x.DataState == EnumState.Normal);
+            modelBuilder.Entity<AssignRoomHistoryInfo>().HasQueryFilter(x => x.DataState == EnumState.Normal);
+            modelBuilder.Entity<AssignRoomInfo>().HasQueryFilter(x => x.DataState == EnumState.Normal);
             modelBuilder.Entity<UserGroupInfo>().HasQueryFilter(x => x.DataState == EnumState.Normal);
             modelBuilder.Entity<UserGroupMemberInfo>().HasQueryFilter(x => x.DataState == EnumState.Normal);
             modelBuilder.Entity<VerificationCodeInfo>().HasQueryFilter(x => x.DataState == EnumState.Normal);
@@ -57,8 +77,8 @@ namespace NTCore.DataAccess
         public virtual DbSet<PmsProductDefineInfo> PmsProductDefine { get; set; }
         public virtual DbSet<RoomMinibarInfo> RoomMinibar { get; set; }
         public virtual DbSet<RoomProductPackageInfo> RoomProductPackage { get; set; }
-        public virtual DbSet<RowhouseHistoryInfo> RowhouseHistory { get; set; }
-        public virtual DbSet<RowhouseInfo> Rowhouse { get; set; }
+        public virtual DbSet<AssignRoomHistoryInfo> AssignRoomHistory { get; set; }
+        public virtual DbSet<AssignRoomInfo> AssignRoom { get; set; }
         public virtual DbSet<UserGroupInfo> UserGroup { get; set; }
         public virtual DbSet<UserGroupMemberInfo> UserGroupMember { get; set; }
         public virtual DbSet<VerificationCodeInfo> VerificationCode { get; set; }

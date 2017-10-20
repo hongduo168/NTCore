@@ -58,7 +58,7 @@ namespace NTCore.DataModel
         Feedback = 30,
     }
 
-    public enum WorkType
+    public enum WorkloadType
     {
         [Description("赶房")]
         RushRoom = 0x07,
@@ -111,5 +111,30 @@ namespace NTCore.DataModel
         [Description("DK")]
         DK = 9 //差异房
 
+    }
+
+    public enum MinibarConsumeFinishStatus
+    {
+        [Description("已创建")]
+        Created = 1,
+
+        [Description("已送达")]
+        Served = 2,
+
+        [Description("已确定")]
+        Confirmed = 3,
+
+        [Description("已撤销")]
+        Revoked = 4,
+
+    }
+
+    public enum VerificationCodeSendStatus
+    {
+        [Description("已发送")]
+        Send = 1,
+
+        [Description("已成功")]
+        Success = 2,
     }
 }

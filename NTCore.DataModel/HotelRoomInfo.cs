@@ -31,5 +31,8 @@ namespace NTCore.DataModel
         [Required, DefaultValue(false), Column("is_due_in", TypeName = "bit"), MaxLength(30)]
         public bool IsDueIn { get; set; }
 
+        [Required, DefaultValue(false), Column("is_rush", TypeName = "bit"), MaxLength(30)]
+        public bool IsRush { get; set; }
+
     }
 }
