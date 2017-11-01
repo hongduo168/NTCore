@@ -19,8 +19,8 @@ namespace NTCore.DataModel
         [Required, DefaultValue(0), Column("userid")]
         public int UserId { get; set; }
 
-        [Required, DefaultValue(1.0), Column("coeffcient", TypeName = "decimal(10,2)")]
-        public decimal Coeffcient { get; set; }
+        [Required, DefaultValue(1.0), Column("coefficient", TypeName = "decimal(10,2)")]
+        public decimal Coefficient { get; set; }
 
 
         [Required(AllowEmptyStrings = true), DefaultValue(""), Column("room_status", TypeName = "varchar(30)"), MaxLength(30)]

@@ -1,0 +1,2681 @@
+
+-----------------------------------------
+
+time:2017-10-31 18:48:32,650 
+level:INFO 
+logger:Microsoft.AspNetCore.Hosting.Internal.WebHost
+file:? line? 
+content:Request starting HTTP/1.1 GET http://localhost:57942/api/values  
+
+-----------------------------------------
+
+time:2017-10-31 18:48:32,834 
+level:INFO 
+logger:Microsoft.AspNetCore.Authentication.Cookies.CookieAuthenticationHandler
+file:? line? 
+content:AuthenticationScheme: AuthenticationScheme was successfully authenticated.
+
+-----------------------------------------
+
+time:2017-10-31 18:48:33,195 
+level:ERROR 
+logger:Microsoft.AspNetCore.Mvc.Internal.ActionSelector
+file:? line? 
+content:Request matched multiple actions resulting in ambiguity. Matching actions: NTCore.WebFront.Controllers.ValuesController.GetAsync (NTCore.WebFront)
+NTCore.WebFront.Controllers.Api.RoomController.Get (NTCore.WebFront)
+NTCore.WebFront.Controllers.Api.SweepController.Get (NTCore.WebFront)
+
+-----------------------------------------
+
+time:2017-10-31 18:48:33,478 
+level:ERROR 
+logger:Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware
+file:? line? 
+content:An unhandled exception has occurred while executing the request
+Microsoft.AspNetCore.Mvc.Internal.AmbiguousActionException: Multiple actions matched. The following actions matched route data and had all constraints satisfied:
+
+NTCore.WebFront.Controllers.ValuesController.GetAsync (NTCore.WebFront)
+NTCore.WebFront.Controllers.Api.RoomController.Get (NTCore.WebFront)
+NTCore.WebFront.Controllers.Api.SweepController.Get (NTCore.WebFront)
+   at Microsoft.AspNetCore.Mvc.Internal.ActionSelector.SelectBestCandidate(RouteContext context, IReadOnlyList`1 candidates)
+   at Microsoft.AspNetCore.Mvc.Internal.MvcAttributeRouteHandler.RouteAsync(RouteContext context)
+   at Microsoft.AspNetCore.Routing.Tree.TreeRouter.<RouteAsync>d__13.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Routing.RouteCollection.<RouteAsync>d__9.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Builder.RouterMiddleware.<Invoke>d__4.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.<Invoke>d__6.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.<Invoke>d__7.MoveNext()
+
+-----------------------------------------
+
+time:2017-10-31 18:48:33,641 
+level:INFO 
+logger:Microsoft.AspNetCore.Hosting.Internal.WebHost
+file:? line? 
+content:Request finished in 981.9853ms 500 text/html; charset=utf-8
+
+-----------------------------------------
+
+time:2017-10-31 18:48:33,655 
+level:INFO 
+logger:Microsoft.AspNetCore.Hosting.Internal.WebHost
+file:? line? 
+content:Request starting HTTP/1.1 GET http://localhost:57942/favicon.ico  
+
+-----------------------------------------
+
+time:2017-10-31 18:48:33,675 
+level:INFO 
+logger:Microsoft.AspNetCore.Authentication.Cookies.CookieAuthenticationHandler
+file:? line? 
+content:AuthenticationScheme: AuthenticationScheme was successfully authenticated.
+
+-----------------------------------------
+
+time:2017-10-31 18:48:33,695 
+level:INFO 
+logger:Microsoft.AspNetCore.Hosting.Internal.WebHost
+file:? line? 
+content:Request finished in 25.7681ms 404 
+
+-----------------------------------------
+
+time:2017-10-31 18:48:46,482 
+level:INFO 
+logger:Microsoft.AspNetCore.Hosting.Internal.WebHost
+file:? line? 
+content:Request starting HTTP/1.1 GET http://localhost:57942/api/1.0/room-assign  
+
+-----------------------------------------
+
+time:2017-10-31 18:48:46,485 
+level:INFO 
+logger:Microsoft.AspNetCore.Authentication.Cookies.CookieAuthenticationHandler
+file:? line? 
+content:AuthenticationScheme: AuthenticationScheme was successfully authenticated.
+
+-----------------------------------------
+
+time:2017-10-31 18:48:46,491 
+level:INFO 
+logger:Microsoft.AspNetCore.Hosting.Internal.WebHost
+file:? line? 
+content:Request finished in 4.9939ms 404 
+
+-----------------------------------------
+
+time:2017-10-31 18:48:58,066 
+level:INFO 
+logger:Microsoft.AspNetCore.Hosting.Internal.WebHost
+file:? line? 
+content:Request starting HTTP/1.1 GET http://localhost:57942/api/v1.0/room-assign  
+
+-----------------------------------------
+
+time:2017-10-31 18:48:58,069 
+level:INFO 
+logger:Microsoft.AspNetCore.Authentication.Cookies.CookieAuthenticationHandler
+file:? line? 
+content:AuthenticationScheme: AuthenticationScheme was successfully authenticated.
+
+-----------------------------------------
+
+time:2017-10-31 18:48:58,074 
+level:ERROR 
+logger:Microsoft.AspNetCore.Mvc.Internal.ActionSelector
+file:? line? 
+content:Request matched multiple actions resulting in ambiguity. Matching actions: NTCore.WebFront.Controllers.ValuesController.Get (NTCore.WebFront)
+NTCore.WebFront.Controllers.Api.RoomController.Get (NTCore.WebFront)
+NTCore.WebFront.Controllers.Api.SweepController.Get (NTCore.WebFront)
+
+-----------------------------------------
+
+time:2017-10-31 18:48:58,094 
+level:ERROR 
+logger:Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware
+file:? line? 
+content:An unhandled exception has occurred while executing the request
+Microsoft.AspNetCore.Mvc.Internal.AmbiguousActionException: Multiple actions matched. The following actions matched route data and had all constraints satisfied:
+
+NTCore.WebFront.Controllers.ValuesController.Get (NTCore.WebFront)
+NTCore.WebFront.Controllers.Api.RoomController.Get (NTCore.WebFront)
+NTCore.WebFront.Controllers.Api.SweepController.Get (NTCore.WebFront)
+   at Microsoft.AspNetCore.Mvc.Internal.ActionSelector.SelectBestCandidate(RouteContext context, IReadOnlyList`1 candidates)
+   at Microsoft.AspNetCore.Mvc.Internal.MvcAttributeRouteHandler.RouteAsync(RouteContext context)
+   at Microsoft.AspNetCore.Routing.Tree.TreeRouter.<RouteAsync>d__13.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Routing.RouteCollection.<RouteAsync>d__9.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Builder.RouterMiddleware.<Invoke>d__4.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.<Invoke>d__6.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.<Invoke>d__7.MoveNext()
+
+-----------------------------------------
+
+time:2017-10-31 18:48:58,158 
+level:INFO 
+logger:Microsoft.AspNetCore.Hosting.Internal.WebHost
+file:? line? 
+content:Request finished in 65.9736ms 500 text/html; charset=utf-8
+
+-----------------------------------------
+
+time:2017-10-31 18:49:38,027 
+level:INFO 
+logger:Microsoft.AspNetCore.Hosting.Internal.WebHost
+file:? line? 
+content:Request starting HTTP/1.1 GET http://localhost:57942/api/v1.0/assign-room  
+
+-----------------------------------------
+
+time:2017-10-31 18:49:38,031 
+level:INFO 
+logger:Microsoft.AspNetCore.Authentication.Cookies.CookieAuthenticationHandler
+file:? line? 
+content:AuthenticationScheme: AuthenticationScheme was successfully authenticated.
+
+-----------------------------------------
+
+time:2017-10-31 18:49:38,086 
+level:INFO 
+logger:Microsoft.AspNetCore.Authorization.DefaultAuthorizationService
+file:? line? 
+content:Authorization was successful for user: bob.
+
+-----------------------------------------
+
+time:2017-10-31 18:49:44,482 
+level:INFO 
+logger:Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker
+file:? line? 
+content:Executing action method NTCore.WebFront.Controllers.AssignRoomController.Get (NTCore.WebFront) with arguments ((null)) - ModelState is Valid
+
+-----------------------------------------
+
+time:2017-10-31 18:49:48,582 
+level:INFO 
+logger:Microsoft.EntityFrameworkCore.Infrastructure
+file:? line? 
+content:Entity Framework Core 2.0.0-rtm-26452 initialized 'MainContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None
+
+-----------------------------------------
+
+time:2017-10-31 18:49:50,997 
+level:INFO 
+logger:Microsoft.EntityFrameworkCore.Database.Command
+file:? line? 
+content:Executed DbCommand (82ms) [Parameters=[@__name_0='?' (Size = 50)], CommandType='Text', CommandTimeout='30']
+SELECT TOP(1) [u].[id], [u].[auth_type], [u].[avatar], [u].[confirmed], [u].[create_time], [u].[creator_id], [u].[data_state], [u].[email], [u].[employee_number], [u].[hotel_id], [u].[mobile_number], [u].[nickname], [u].[password], [u].[update_time], [u].[updater_id], [u].[username]
+FROM [user] AS [u]
+WHERE ([u].[data_state] = 1) AND (([u].[username] = @__name_0) AND ([u].[confirmed] = 1))
+
+-----------------------------------------
+
+time:2017-10-31 18:49:51,075 
+level:INFO 
+logger:Microsoft.EntityFrameworkCore.Database.Command
+file:? line? 
+content:Executed DbCommand (25ms) [Parameters=[@__UserInfo_HotelId_0='?'], CommandType='Text', CommandTimeout='30']
+SELECT [a].[id], [a].[assign_time], [a].[coeffcient], [a].[create_time], [a].[creator_id], [a].[data_state], [a].[hotel_id], [a].[room_number], [a].[room_status], [a].[update_time], [a].[updater_id], [a].[userid]
+FROM [assign_room] AS [a]
+WHERE ([a].[data_state] = 1) AND ([a].[hotel_id] = @__UserInfo_HotelId_0)
+
+-----------------------------------------
+
+time:2017-10-31 18:49:51,089 
+level:INFO 
+logger:Microsoft.AspNetCore.Mvc.Formatters.Json.Internal.JsonResultExecutor
+file:? line? 
+content:Executing JsonResult, writing value NTCore.WebFront.Model.BaseReturn.
+
+-----------------------------------------
+
+time:2017-10-31 18:49:51,170 
+level:INFO 
+logger:Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker
+file:? line? 
+content:Executed action NTCore.WebFront.Controllers.AssignRoomController.Get (NTCore.WebFront) in 13080.8739ms
+
+-----------------------------------------
+
+time:2017-10-31 18:49:51,184 
+level:INFO 
+logger:Microsoft.AspNetCore.Hosting.Internal.WebHost
+file:? line? 
+content:Request finished in 13145.8306ms 200 application/json; charset=utf-8
+
+-----------------------------------------
+
+time:2017-10-31 18:53:55,918 
+level:INFO 
+logger:Microsoft.AspNetCore.Hosting.Internal.WebHost
+file:? line? 
+content:Request starting HTTP/1.1 GET http://localhost:57942/api/values  
+
+-----------------------------------------
+
+time:2017-10-31 18:53:56,035 
+level:INFO 
+logger:Microsoft.AspNetCore.Authentication.Cookies.CookieAuthenticationHandler
+file:? line? 
+content:AuthenticationScheme: AuthenticationScheme was successfully authenticated.
+
+-----------------------------------------
+
+time:2017-10-31 19:04:23,844 
+level:INFO 
+logger:Microsoft.AspNetCore.Hosting.Internal.WebHost
+file:? line? 
+content:Request starting HTTP/1.1 GET http://localhost:57942/api/values  
+
+-----------------------------------------
+
+time:2017-10-31 19:04:23,958 
+level:INFO 
+logger:Microsoft.AspNetCore.Authentication.Cookies.CookieAuthenticationHandler
+file:? line? 
+content:AuthenticationScheme: AuthenticationScheme was successfully authenticated.
+
+-----------------------------------------
+
+time:2017-10-31 19:04:26,522 
+level:INFO 
+logger:Microsoft.AspNetCore.Hosting.Internal.WebHost
+file:? line? 
+content:Request finished in 2682.4599ms 404 
+
+-----------------------------------------
+
+time:2017-10-31 19:04:26,538 
+level:INFO 
+logger:Microsoft.AspNetCore.Hosting.Internal.WebHost
+file:? line? 
+content:Request starting HTTP/1.1 GET http://localhost:57942/favicon.ico  
+
+-----------------------------------------
+
+time:2017-10-31 19:04:26,543 
+level:INFO 
+logger:Microsoft.AspNetCore.Authentication.Cookies.CookieAuthenticationHandler
+file:? line? 
+content:AuthenticationScheme: AuthenticationScheme was successfully authenticated.
+
+-----------------------------------------
+
+time:2017-10-31 19:04:26,631 
+level:INFO 
+logger:Microsoft.AspNetCore.Authorization.DefaultAuthorizationService
+file:? line? 
+content:Authorization was successful for user: bob.
+
+-----------------------------------------
+
+time:2017-10-31 19:04:26,634 
+level:INFO 
+logger:Microsoft.AspNetCore.Authorization.DefaultAuthorizationService
+file:? line? 
+content:Authorization was successful for user: bob.
+
+-----------------------------------------
+
+time:2017-10-31 19:04:26,779 
+level:INFO 
+logger:Microsoft.AspNetCore.Mvc.Internal.ObjectResultExecutor
+file:? line? 
+content:Executing ObjectResult, writing value Microsoft.AspNetCore.Mvc.ControllerContext.
+
+-----------------------------------------
+
+time:2017-10-31 19:04:26,855 
+level:INFO 
+logger:Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker
+file:? line? 
+content:Executed action NTCore.WebFront.Controllers.ValuesController.Get (NTCore.WebFront) in 227.588ms
+
+-----------------------------------------
+
+time:2017-10-31 19:04:26,860 
+level:INFO 
+logger:Microsoft.AspNetCore.Hosting.Internal.WebHost
+file:? line? 
+content:Request finished in 319.6059ms 400 application/json; charset=utf-8
+
+-----------------------------------------
+
+time:2017-10-31 19:07:07,869 
+level:INFO 
+logger:Microsoft.AspNetCore.Hosting.Internal.WebHost
+file:? line? 
+content:Request starting HTTP/1.1 GET http://localhost:57942/api/values  
+
+-----------------------------------------
+
+time:2017-10-31 19:07:08,027 
+level:INFO 
+logger:Microsoft.AspNetCore.Authentication.Cookies.CookieAuthenticationHandler
+file:? line? 
+content:AuthenticationScheme: AuthenticationScheme was successfully authenticated.
+
+-----------------------------------------
+
+time:2017-10-31 19:07:09,934 
+level:INFO 
+logger:Microsoft.AspNetCore.Hosting.Internal.WebHost
+file:? line? 
+content:Request finished in 2069.8511ms 404 
+
+-----------------------------------------
+
+time:2017-10-31 19:07:09,948 
+level:INFO 
+logger:Microsoft.AspNetCore.Hosting.Internal.WebHost
+file:? line? 
+content:Request starting HTTP/1.1 GET http://localhost:57942/favicon.ico  
+
+-----------------------------------------
+
+time:2017-10-31 19:07:09,953 
+level:INFO 
+logger:Microsoft.AspNetCore.Authentication.Cookies.CookieAuthenticationHandler
+file:? line? 
+content:AuthenticationScheme: AuthenticationScheme was successfully authenticated.
+
+-----------------------------------------
+
+time:2017-10-31 19:07:10,054 
+level:INFO 
+logger:Microsoft.AspNetCore.Authorization.DefaultAuthorizationService
+file:? line? 
+content:Authorization was successful for user: bob.
+
+-----------------------------------------
+
+time:2017-10-31 19:07:10,059 
+level:INFO 
+logger:Microsoft.AspNetCore.Authorization.DefaultAuthorizationService
+file:? line? 
+content:Authorization was successful for user: bob.
+
+-----------------------------------------
+
+time:2017-10-31 19:07:10,195 
+level:INFO 
+logger:Microsoft.AspNetCore.Mvc.Internal.ObjectResultExecutor
+file:? line? 
+content:Executing ObjectResult, writing value Microsoft.AspNetCore.Mvc.ControllerContext.
+
+-----------------------------------------
+
+time:2017-10-31 19:07:10,270 
+level:INFO 
+logger:Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker
+file:? line? 
+content:Executed action NTCore.WebFront.Controllers.ValuesController.Get (NTCore.WebFront) in 216.9348ms
+
+-----------------------------------------
+
+time:2017-10-31 19:07:10,277 
+level:INFO 
+logger:Microsoft.AspNetCore.Hosting.Internal.WebHost
+file:? line? 
+content:Request finished in 325.483ms 400 application/json; charset=utf-8
+
+-----------------------------------------
+
+time:2017-10-31 19:07:29,416 
+level:INFO 
+logger:Microsoft.AspNetCore.Hosting.Internal.WebHost
+file:? line? 
+content:Request starting HTTP/1.1 GET http://localhost:57942/values  
+
+-----------------------------------------
+
+time:2017-10-31 19:07:29,419 
+level:INFO 
+logger:Microsoft.AspNetCore.Authentication.Cookies.CookieAuthenticationHandler
+file:? line? 
+content:AuthenticationScheme: AuthenticationScheme was successfully authenticated.
+
+-----------------------------------------
+
+time:2017-10-31 19:07:29,422 
+level:INFO 
+logger:Microsoft.AspNetCore.Authorization.DefaultAuthorizationService
+file:? line? 
+content:Authorization was successful for user: bob.
+
+-----------------------------------------
+
+time:2017-10-31 19:07:29,424 
+level:INFO 
+logger:Microsoft.AspNetCore.Authorization.DefaultAuthorizationService
+file:? line? 
+content:Authorization was successful for user: bob.
+
+-----------------------------------------
+
+time:2017-10-31 19:07:29,428 
+level:INFO 
+logger:Microsoft.AspNetCore.Mvc.Internal.ObjectResultExecutor
+file:? line? 
+content:Executing ObjectResult, writing value Microsoft.AspNetCore.Mvc.ControllerContext.
+
+-----------------------------------------
+
+time:2017-10-31 19:07:29,437 
+level:INFO 
+logger:Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker
+file:? line? 
+content:Executed action NTCore.WebFront.Controllers.ValuesController.Get (NTCore.WebFront) in 10.0465ms
+
+-----------------------------------------
+
+time:2017-10-31 19:07:29,457 
+level:INFO 
+logger:Microsoft.AspNetCore.Hosting.Internal.WebHost
+file:? line? 
+content:Request finished in 25.5493ms 400 application/json; charset=utf-8
+
+-----------------------------------------
+
+time:2017-10-31 19:07:29,462 
+level:INFO 
+logger:Microsoft.AspNetCore.Hosting.Internal.WebHost
+file:? line? 
+content:Request starting HTTP/1.1 GET http://localhost:57942/favicon.ico  
+
+-----------------------------------------
+
+time:2017-10-31 19:07:29,465 
+level:INFO 
+logger:Microsoft.AspNetCore.Authentication.Cookies.CookieAuthenticationHandler
+file:? line? 
+content:AuthenticationScheme: AuthenticationScheme was successfully authenticated.
+
+-----------------------------------------
+
+time:2017-10-31 19:07:29,467 
+level:INFO 
+logger:Microsoft.AspNetCore.Authorization.DefaultAuthorizationService
+file:? line? 
+content:Authorization was successful for user: bob.
+
+-----------------------------------------
+
+time:2017-10-31 19:07:29,471 
+level:INFO 
+logger:Microsoft.AspNetCore.Authorization.DefaultAuthorizationService
+file:? line? 
+content:Authorization was successful for user: bob.
+
+-----------------------------------------
+
+time:2017-10-31 19:07:29,474 
+level:INFO 
+logger:Microsoft.AspNetCore.Mvc.Internal.ObjectResultExecutor
+file:? line? 
+content:Executing ObjectResult, writing value Microsoft.AspNetCore.Mvc.ControllerContext.
+
+-----------------------------------------
+
+time:2017-10-31 19:07:29,478 
+level:INFO 
+logger:Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker
+file:? line? 
+content:Executed action NTCore.WebFront.Controllers.ValuesController.Get (NTCore.WebFront) in 9.4601ms
+
+-----------------------------------------
+
+time:2017-10-31 19:07:29,487 
+level:INFO 
+logger:Microsoft.AspNetCore.Hosting.Internal.WebHost
+file:? line? 
+content:Request finished in 19.9952ms 400 application/json; charset=utf-8
+
+-----------------------------------------
+
+time:2017-10-31 19:08:00,156 
+level:INFO 
+logger:Microsoft.AspNetCore.Hosting.Internal.WebHost
+file:? line? 
+content:Request starting HTTP/1.1 GET http://localhost:57942/values  
+
+-----------------------------------------
+
+time:2017-10-31 19:08:00,158 
+level:INFO 
+logger:Microsoft.AspNetCore.Authentication.Cookies.CookieAuthenticationHandler
+file:? line? 
+content:AuthenticationScheme: AuthenticationScheme was successfully authenticated.
+
+-----------------------------------------
+
+time:2017-10-31 19:08:00,160 
+level:INFO 
+logger:Microsoft.AspNetCore.Authorization.DefaultAuthorizationService
+file:? line? 
+content:Authorization was successful for user: bob.
+
+-----------------------------------------
+
+time:2017-10-31 19:08:00,162 
+level:INFO 
+logger:Microsoft.AspNetCore.Authorization.DefaultAuthorizationService
+file:? line? 
+content:Authorization was successful for user: bob.
+
+-----------------------------------------
+
+time:2017-10-31 19:08:03,298 
+level:INFO 
+logger:Microsoft.AspNetCore.Mvc.Internal.ObjectResultExecutor
+file:? line? 
+content:Executing ObjectResult, writing value Microsoft.AspNetCore.Mvc.ControllerContext.
+
+-----------------------------------------
+
+time:2017-10-31 19:08:03,341 
+level:INFO 
+logger:Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker
+file:? line? 
+content:Executed action NTCore.WebFront.Controllers.ValuesController.Get (NTCore.WebFront) in 3141.4667ms
+
+-----------------------------------------
+
+time:2017-10-31 19:08:03,356 
+level:INFO 
+logger:Microsoft.AspNetCore.Hosting.Internal.WebHost
+file:? line? 
+content:Request finished in 3192.8576ms 400 application/json; charset=utf-8
+
+-----------------------------------------
+
+time:2017-10-31 19:08:03,374 
+level:INFO 
+logger:Microsoft.AspNetCore.Hosting.Internal.WebHost
+file:? line? 
+content:Request starting HTTP/1.1 GET http://localhost:57942/favicon.ico  
+
+-----------------------------------------
+
+time:2017-10-31 19:08:03,376 
+level:INFO 
+logger:Microsoft.AspNetCore.Authentication.Cookies.CookieAuthenticationHandler
+file:? line? 
+content:AuthenticationScheme: AuthenticationScheme was successfully authenticated.
+
+-----------------------------------------
+
+time:2017-10-31 19:08:03,378 
+level:INFO 
+logger:Microsoft.AspNetCore.Authorization.DefaultAuthorizationService
+file:? line? 
+content:Authorization was successful for user: bob.
+
+-----------------------------------------
+
+time:2017-10-31 19:08:03,381 
+level:INFO 
+logger:Microsoft.AspNetCore.Authorization.DefaultAuthorizationService
+file:? line? 
+content:Authorization was successful for user: bob.
+
+-----------------------------------------
+
+time:2017-10-31 19:08:04,561 
+level:INFO 
+logger:Microsoft.AspNetCore.Mvc.Internal.ObjectResultExecutor
+file:? line? 
+content:Executing ObjectResult, writing value Microsoft.AspNetCore.Mvc.ControllerContext.
+
+-----------------------------------------
+
+time:2017-10-31 19:08:04,567 
+level:INFO 
+logger:Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker
+file:? line? 
+content:Executed action NTCore.WebFront.Controllers.ValuesController.Get (NTCore.WebFront) in 1184.9623ms
+
+-----------------------------------------
+
+time:2017-10-31 19:08:04,577 
+level:INFO 
+logger:Microsoft.AspNetCore.Hosting.Internal.WebHost
+file:? line? 
+content:Request finished in 1200.5642ms 400 application/json; charset=utf-8
+
+-----------------------------------------
+
+time:2017-10-31 19:08:30,491 
+level:INFO 
+logger:Microsoft.AspNetCore.Hosting.Internal.WebHost
+file:? line? 
+content:Request starting HTTP/1.1 GET http://localhost:57942/values/1  
+
+-----------------------------------------
+
+time:2017-10-31 19:08:30,495 
+level:INFO 
+logger:Microsoft.AspNetCore.Authentication.Cookies.CookieAuthenticationHandler
+file:? line? 
+content:AuthenticationScheme: AuthenticationScheme was successfully authenticated.
+
+-----------------------------------------
+
+time:2017-10-31 19:08:30,508 
+level:INFO 
+logger:Microsoft.AspNetCore.Hosting.Internal.WebHost
+file:? line? 
+content:Request finished in 6.2238ms 404 
+
+-----------------------------------------
+
+time:2017-10-31 19:08:30,513 
+level:INFO 
+logger:Microsoft.AspNetCore.Hosting.Internal.WebHost
+file:? line? 
+content:Request starting HTTP/1.1 GET http://localhost:57942/favicon.ico  
+
+-----------------------------------------
+
+time:2017-10-31 19:08:30,515 
+level:INFO 
+logger:Microsoft.AspNetCore.Authentication.Cookies.CookieAuthenticationHandler
+file:? line? 
+content:AuthenticationScheme: AuthenticationScheme was successfully authenticated.
+
+-----------------------------------------
+
+time:2017-10-31 19:08:30,519 
+level:INFO 
+logger:Microsoft.AspNetCore.Authorization.DefaultAuthorizationService
+file:? line? 
+content:Authorization was successful for user: bob.
+
+-----------------------------------------
+
+time:2017-10-31 19:08:30,521 
+level:INFO 
+logger:Microsoft.AspNetCore.Authorization.DefaultAuthorizationService
+file:? line? 
+content:Authorization was successful for user: bob.
+
+-----------------------------------------
+
+time:2017-10-31 19:08:32,389 
+level:INFO 
+logger:Microsoft.AspNetCore.Mvc.Internal.ObjectResultExecutor
+file:? line? 
+content:Executing ObjectResult, writing value Microsoft.AspNetCore.Mvc.ControllerContext.
+
+-----------------------------------------
+
+time:2017-10-31 19:08:32,395 
+level:INFO 
+logger:Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker
+file:? line? 
+content:Executed action NTCore.WebFront.Controllers.ValuesController.Get (NTCore.WebFront) in 1874.0604ms
+
+-----------------------------------------
+
+time:2017-10-31 19:08:32,401 
+level:INFO 
+logger:Microsoft.AspNetCore.Hosting.Internal.WebHost
+file:? line? 
+content:Request finished in 1884.6244ms 400 application/json; charset=utf-8
+
+-----------------------------------------
+
+time:2017-10-31 19:08:41,664 
+level:INFO 
+logger:Microsoft.AspNetCore.Hosting.Internal.WebHost
+file:? line? 
+content:Request starting HTTP/1.1 GET http://localhost:57942/values/1?name=111  
+
+-----------------------------------------
+
+time:2017-10-31 19:08:41,668 
+level:INFO 
+logger:Microsoft.AspNetCore.Authentication.Cookies.CookieAuthenticationHandler
+file:? line? 
+content:AuthenticationScheme: AuthenticationScheme was successfully authenticated.
+
+-----------------------------------------
+
+time:2017-10-31 19:08:41,681 
+level:INFO 
+logger:Microsoft.AspNetCore.Hosting.Internal.WebHost
+file:? line? 
+content:Request finished in 5.8411ms 404 
+
+-----------------------------------------
+
+time:2017-10-31 19:08:41,692 
+level:INFO 
+logger:Microsoft.AspNetCore.Hosting.Internal.WebHost
+file:? line? 
+content:Request starting HTTP/1.1 GET http://localhost:57942/favicon.ico  
+
+-----------------------------------------
+
+time:2017-10-31 19:08:41,695 
+level:INFO 
+logger:Microsoft.AspNetCore.Authentication.Cookies.CookieAuthenticationHandler
+file:? line? 
+content:AuthenticationScheme: AuthenticationScheme was successfully authenticated.
+
+-----------------------------------------
+
+time:2017-10-31 19:08:41,697 
+level:INFO 
+logger:Microsoft.AspNetCore.Authorization.DefaultAuthorizationService
+file:? line? 
+content:Authorization was successful for user: bob.
+
+-----------------------------------------
+
+time:2017-10-31 19:08:41,700 
+level:INFO 
+logger:Microsoft.AspNetCore.Authorization.DefaultAuthorizationService
+file:? line? 
+content:Authorization was successful for user: bob.
+
+-----------------------------------------
+
+time:2017-10-31 19:08:43,259 
+level:INFO 
+logger:Microsoft.AspNetCore.Mvc.Internal.ObjectResultExecutor
+file:? line? 
+content:Executing ObjectResult, writing value Microsoft.AspNetCore.Mvc.ControllerContext.
+
+-----------------------------------------
+
+time:2017-10-31 19:08:43,267 
+level:INFO 
+logger:Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker
+file:? line? 
+content:Executed action NTCore.WebFront.Controllers.ValuesController.Get (NTCore.WebFront) in 1564.0884ms
+
+-----------------------------------------
+
+time:2017-10-31 19:08:43,278 
+level:INFO 
+logger:Microsoft.AspNetCore.Hosting.Internal.WebHost
+file:? line? 
+content:Request finished in 1578.2152ms 400 application/json; charset=utf-8
+
+-----------------------------------------
+
+time:2017-10-31 19:09:02,804 
+level:INFO 
+logger:Microsoft.AspNetCore.Hosting.Internal.WebHost
+file:? line? 
+content:Request starting HTTP/1.1 GET http://localhost:57942/values/1?name=111  
+
+-----------------------------------------
+
+time:2017-10-31 19:09:02,807 
+level:INFO 
+logger:Microsoft.AspNetCore.Authentication.Cookies.CookieAuthenticationHandler
+file:? line? 
+content:AuthenticationScheme: AuthenticationScheme was successfully authenticated.
+
+-----------------------------------------
+
+time:2017-10-31 19:09:02,820 
+level:INFO 
+logger:Microsoft.AspNetCore.Hosting.Internal.WebHost
+file:? line? 
+content:Request finished in 10.093ms 404 
+
+-----------------------------------------
+
+time:2017-10-31 19:09:02,826 
+level:INFO 
+logger:Microsoft.AspNetCore.Hosting.Internal.WebHost
+file:? line? 
+content:Request starting HTTP/1.1 GET http://localhost:57942/favicon.ico  
+
+-----------------------------------------
+
+time:2017-10-31 19:09:02,828 
+level:INFO 
+logger:Microsoft.AspNetCore.Authentication.Cookies.CookieAuthenticationHandler
+file:? line? 
+content:AuthenticationScheme: AuthenticationScheme was successfully authenticated.
+
+-----------------------------------------
+
+time:2017-10-31 19:09:02,833 
+level:INFO 
+logger:Microsoft.AspNetCore.Authorization.DefaultAuthorizationService
+file:? line? 
+content:Authorization was successful for user: bob.
+
+-----------------------------------------
+
+time:2017-10-31 19:09:02,837 
+level:INFO 
+logger:Microsoft.AspNetCore.Authorization.DefaultAuthorizationService
+file:? line? 
+content:Authorization was successful for user: bob.
+
+-----------------------------------------
+
+time:2017-10-31 19:09:05,358 
+level:INFO 
+logger:Microsoft.AspNetCore.Mvc.Internal.ObjectResultExecutor
+file:? line? 
+content:Executing ObjectResult, writing value Microsoft.AspNetCore.Mvc.ControllerContext.
+
+-----------------------------------------
+
+time:2017-10-31 19:09:05,367 
+level:INFO 
+logger:Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker
+file:? line? 
+content:Executed action NTCore.WebFront.Controllers.ValuesController.Get (NTCore.WebFront) in 2529.9919ms
+
+-----------------------------------------
+
+time:2017-10-31 19:09:05,374 
+level:INFO 
+logger:Microsoft.AspNetCore.Hosting.Internal.WebHost
+file:? line? 
+content:Request finished in 2544.5987ms 400 application/json; charset=utf-8
+
+-----------------------------------------
+
+time:2017-10-31 19:09:17,535 
+level:INFO 
+logger:Microsoft.AspNetCore.Hosting.Internal.WebHost
+file:? line? 
+content:Request starting HTTP/1.1 GET http://localhost:57942/values/1  
+
+-----------------------------------------
+
+time:2017-10-31 19:09:17,538 
+level:INFO 
+logger:Microsoft.AspNetCore.Authentication.Cookies.CookieAuthenticationHandler
+file:? line? 
+content:AuthenticationScheme: AuthenticationScheme was successfully authenticated.
+
+-----------------------------------------
+
+time:2017-10-31 19:09:17,551 
+level:INFO 
+logger:Microsoft.AspNetCore.Hosting.Internal.WebHost
+file:? line? 
+content:Request finished in 4.591ms 404 
+
+-----------------------------------------
+
+time:2017-10-31 19:09:17,556 
+level:INFO 
+logger:Microsoft.AspNetCore.Hosting.Internal.WebHost
+file:? line? 
+content:Request starting HTTP/1.1 GET http://localhost:57942/favicon.ico  
+
+-----------------------------------------
+
+time:2017-10-31 19:09:17,558 
+level:INFO 
+logger:Microsoft.AspNetCore.Authentication.Cookies.CookieAuthenticationHandler
+file:? line? 
+content:AuthenticationScheme: AuthenticationScheme was successfully authenticated.
+
+-----------------------------------------
+
+time:2017-10-31 19:09:17,560 
+level:INFO 
+logger:Microsoft.AspNetCore.Authorization.DefaultAuthorizationService
+file:? line? 
+content:Authorization was successful for user: bob.
+
+-----------------------------------------
+
+time:2017-10-31 19:09:17,562 
+level:INFO 
+logger:Microsoft.AspNetCore.Authorization.DefaultAuthorizationService
+file:? line? 
+content:Authorization was successful for user: bob.
+
+-----------------------------------------
+
+time:2017-10-31 19:09:17,566 
+level:INFO 
+logger:Microsoft.AspNetCore.Mvc.Internal.ObjectResultExecutor
+file:? line? 
+content:Executing ObjectResult, writing value Microsoft.AspNetCore.Mvc.ControllerContext.
+
+-----------------------------------------
+
+time:2017-10-31 19:09:17,570 
+level:INFO 
+logger:Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker
+file:? line? 
+content:Executed action NTCore.WebFront.Controllers.ValuesController.Get (NTCore.WebFront) in 8.3071ms
+
+-----------------------------------------
+
+time:2017-10-31 19:09:17,573 
+level:INFO 
+logger:Microsoft.AspNetCore.Hosting.Internal.WebHost
+file:? line? 
+content:Request finished in 16.1203ms 400 application/json; charset=utf-8
+
+-----------------------------------------
+
+time:2017-10-31 19:09:19,934 
+level:INFO 
+logger:Microsoft.AspNetCore.Hosting.Internal.WebHost
+file:? line? 
+content:Request starting HTTP/1.1 GET http://localhost:57942/values  
+
+-----------------------------------------
+
+time:2017-10-31 19:09:19,937 
+level:INFO 
+logger:Microsoft.AspNetCore.Authentication.Cookies.CookieAuthenticationHandler
+file:? line? 
+content:AuthenticationScheme: AuthenticationScheme was successfully authenticated.
+
+-----------------------------------------
+
+time:2017-10-31 19:09:19,939 
+level:INFO 
+logger:Microsoft.AspNetCore.Authorization.DefaultAuthorizationService
+file:? line? 
+content:Authorization was successful for user: bob.
+
+-----------------------------------------
+
+time:2017-10-31 19:09:19,941 
+level:INFO 
+logger:Microsoft.AspNetCore.Authorization.DefaultAuthorizationService
+file:? line? 
+content:Authorization was successful for user: bob.
+
+-----------------------------------------
+
+time:2017-10-31 19:09:19,944 
+level:INFO 
+logger:Microsoft.AspNetCore.Mvc.Internal.ObjectResultExecutor
+file:? line? 
+content:Executing ObjectResult, writing value Microsoft.AspNetCore.Mvc.ControllerContext.
+
+-----------------------------------------
+
+time:2017-10-31 19:09:19,950 
+level:INFO 
+logger:Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker
+file:? line? 
+content:Executed action NTCore.WebFront.Controllers.ValuesController.Get (NTCore.WebFront) in 7.5125ms
+
+-----------------------------------------
+
+time:2017-10-31 19:09:19,958 
+level:INFO 
+logger:Microsoft.AspNetCore.Hosting.Internal.WebHost
+file:? line? 
+content:Request finished in 19.5221ms 400 application/json; charset=utf-8
+
+-----------------------------------------
+
+time:2017-10-31 19:09:19,963 
+level:INFO 
+logger:Microsoft.AspNetCore.Hosting.Internal.WebHost
+file:? line? 
+content:Request starting HTTP/1.1 GET http://localhost:57942/favicon.ico  
+
+-----------------------------------------
+
+time:2017-10-31 19:09:19,972 
+level:INFO 
+logger:Microsoft.AspNetCore.Authentication.Cookies.CookieAuthenticationHandler
+file:? line? 
+content:AuthenticationScheme: AuthenticationScheme was successfully authenticated.
+
+-----------------------------------------
+
+time:2017-10-31 19:09:19,975 
+level:INFO 
+logger:Microsoft.AspNetCore.Authorization.DefaultAuthorizationService
+file:? line? 
+content:Authorization was successful for user: bob.
+
+-----------------------------------------
+
+time:2017-10-31 19:09:19,978 
+level:INFO 
+logger:Microsoft.AspNetCore.Authorization.DefaultAuthorizationService
+file:? line? 
+content:Authorization was successful for user: bob.
+
+-----------------------------------------
+
+time:2017-10-31 19:09:19,983 
+level:INFO 
+logger:Microsoft.AspNetCore.Mvc.Internal.ObjectResultExecutor
+file:? line? 
+content:Executing ObjectResult, writing value Microsoft.AspNetCore.Mvc.ControllerContext.
+
+-----------------------------------------
+
+time:2017-10-31 19:09:19,990 
+level:INFO 
+logger:Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker
+file:? line? 
+content:Executed action NTCore.WebFront.Controllers.ValuesController.Get (NTCore.WebFront) in 15.06ms
+
+-----------------------------------------
+
+time:2017-10-31 19:09:19,999 
+level:INFO 
+logger:Microsoft.AspNetCore.Hosting.Internal.WebHost
+file:? line? 
+content:Request finished in 28.9071ms 400 application/json; charset=utf-8
+
+-----------------------------------------
+
+time:2017-10-31 19:09:24,875 
+level:INFO 
+logger:Microsoft.AspNetCore.Hosting.Internal.WebHost
+file:? line? 
+content:Request starting HTTP/1.1 GET http://localhost:57942/values?name=111  
+
+-----------------------------------------
+
+time:2017-10-31 19:09:24,878 
+level:INFO 
+logger:Microsoft.AspNetCore.Authentication.Cookies.CookieAuthenticationHandler
+file:? line? 
+content:AuthenticationScheme: AuthenticationScheme was successfully authenticated.
+
+-----------------------------------------
+
+time:2017-10-31 19:09:24,881 
+level:INFO 
+logger:Microsoft.AspNetCore.Authorization.DefaultAuthorizationService
+file:? line? 
+content:Authorization was successful for user: bob.
+
+-----------------------------------------
+
+time:2017-10-31 19:09:24,883 
+level:INFO 
+logger:Microsoft.AspNetCore.Authorization.DefaultAuthorizationService
+file:? line? 
+content:Authorization was successful for user: bob.
+
+-----------------------------------------
+
+time:2017-10-31 19:09:24,942 
+level:INFO 
+logger:Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker
+file:? line? 
+content:Executing action method NTCore.WebFront.Controllers.ValuesController.Get (NTCore.WebFront) with arguments (0, NTCore.WebFront.Controllers.User) - ModelState is Valid
+
+-----------------------------------------
+
+time:2017-10-31 19:09:29,737 
+level:INFO 
+logger:Microsoft.AspNetCore.Mvc.Internal.ObjectResultExecutor
+file:? line? 
+content:Executing ObjectResult, writing value Microsoft.AspNetCore.Mvc.ControllerContext.
+
+-----------------------------------------
+
+time:2017-10-31 19:09:29,743 
+level:INFO 
+logger:Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker
+file:? line? 
+content:Executed action NTCore.WebFront.Controllers.ValuesController.Get (NTCore.WebFront) in 4859.5514ms
+
+-----------------------------------------
+
+time:2017-10-31 19:09:29,766 
+level:INFO 
+logger:Microsoft.AspNetCore.Hosting.Internal.WebHost
+file:? line? 
+content:Request finished in 4871.8751ms 200 text/plain; charset=utf-8
+
+-----------------------------------------
+
+time:2017-10-31 19:09:29,770 
+level:INFO 
+logger:Microsoft.AspNetCore.Hosting.Internal.WebHost
+file:? line? 
+content:Request starting HTTP/1.1 GET http://localhost:57942/favicon.ico  
+
+-----------------------------------------
+
+time:2017-10-31 19:09:29,773 
+level:INFO 
+logger:Microsoft.AspNetCore.Authentication.Cookies.CookieAuthenticationHandler
+file:? line? 
+content:AuthenticationScheme: AuthenticationScheme was successfully authenticated.
+
+-----------------------------------------
+
+time:2017-10-31 19:09:29,775 
+level:INFO 
+logger:Microsoft.AspNetCore.Authorization.DefaultAuthorizationService
+file:? line? 
+content:Authorization was successful for user: bob.
+
+-----------------------------------------
+
+time:2017-10-31 19:09:29,778 
+level:INFO 
+logger:Microsoft.AspNetCore.Authorization.DefaultAuthorizationService
+file:? line? 
+content:Authorization was successful for user: bob.
+
+-----------------------------------------
+
+time:2017-10-31 19:09:29,783 
+level:INFO 
+logger:Microsoft.AspNetCore.Mvc.Internal.ObjectResultExecutor
+file:? line? 
+content:Executing ObjectResult, writing value Microsoft.AspNetCore.Mvc.ControllerContext.
+
+-----------------------------------------
+
+time:2017-10-31 19:09:29,788 
+level:INFO 
+logger:Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker
+file:? line? 
+content:Executed action NTCore.WebFront.Controllers.ValuesController.Get (NTCore.WebFront) in 10.9031ms
+
+-----------------------------------------
+
+time:2017-10-31 19:09:29,801 
+level:INFO 
+logger:Microsoft.AspNetCore.Hosting.Internal.WebHost
+file:? line? 
+content:Request finished in 19.9712ms 400 application/json; charset=utf-8
+
+-----------------------------------------
+
+time:2017-10-31 19:09:35,687 
+level:INFO 
+logger:Microsoft.AspNetCore.Hosting.Internal.WebHost
+file:? line? 
+content:Request starting HTTP/1.1 GET http://localhost:57942/values/1?name=111  
+
+-----------------------------------------
+
+time:2017-10-31 19:09:35,689 
+level:INFO 
+logger:Microsoft.AspNetCore.Authentication.Cookies.CookieAuthenticationHandler
+file:? line? 
+content:AuthenticationScheme: AuthenticationScheme was successfully authenticated.
+
+-----------------------------------------
+
+time:2017-10-31 19:09:35,701 
+level:INFO 
+logger:Microsoft.AspNetCore.Hosting.Internal.WebHost
+file:? line? 
+content:Request finished in 4.3548ms 404 
+
+-----------------------------------------
+
+time:2017-10-31 19:09:35,706 
+level:INFO 
+logger:Microsoft.AspNetCore.Hosting.Internal.WebHost
+file:? line? 
+content:Request starting HTTP/1.1 GET http://localhost:57942/favicon.ico  
+
+-----------------------------------------
+
+time:2017-10-31 19:09:35,709 
+level:INFO 
+logger:Microsoft.AspNetCore.Authentication.Cookies.CookieAuthenticationHandler
+file:? line? 
+content:AuthenticationScheme: AuthenticationScheme was successfully authenticated.
+
+-----------------------------------------
+
+time:2017-10-31 19:09:35,711 
+level:INFO 
+logger:Microsoft.AspNetCore.Authorization.DefaultAuthorizationService
+file:? line? 
+content:Authorization was successful for user: bob.
+
+-----------------------------------------
+
+time:2017-10-31 19:09:35,714 
+level:INFO 
+logger:Microsoft.AspNetCore.Authorization.DefaultAuthorizationService
+file:? line? 
+content:Authorization was successful for user: bob.
+
+-----------------------------------------
+
+time:2017-10-31 19:09:35,717 
+level:INFO 
+logger:Microsoft.AspNetCore.Mvc.Internal.ObjectResultExecutor
+file:? line? 
+content:Executing ObjectResult, writing value Microsoft.AspNetCore.Mvc.ControllerContext.
+
+-----------------------------------------
+
+time:2017-10-31 19:09:35,720 
+level:INFO 
+logger:Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker
+file:? line? 
+content:Executed action NTCore.WebFront.Controllers.ValuesController.Get (NTCore.WebFront) in 8.9192ms
+
+-----------------------------------------
+
+time:2017-10-31 19:09:35,726 
+level:INFO 
+logger:Microsoft.AspNetCore.Hosting.Internal.WebHost
+file:? line? 
+content:Request finished in 16.6756ms 400 application/json; charset=utf-8
+
+-----------------------------------------
+
+time:2017-10-31 19:09:44,560 
+level:INFO 
+logger:Microsoft.AspNetCore.Hosting.Internal.WebHost
+file:? line? 
+content:Request starting HTTP/1.1 GET http://localhost:57942/values?id=1&name=111  
+
+-----------------------------------------
+
+time:2017-10-31 19:09:44,566 
+level:INFO 
+logger:Microsoft.AspNetCore.Authentication.Cookies.CookieAuthenticationHandler
+file:? line? 
+content:AuthenticationScheme: AuthenticationScheme was successfully authenticated.
+
+-----------------------------------------
+
+time:2017-10-31 19:09:44,568 
+level:INFO 
+logger:Microsoft.AspNetCore.Authorization.DefaultAuthorizationService
+file:? line? 
+content:Authorization was successful for user: bob.
+
+-----------------------------------------
+
+time:2017-10-31 19:09:44,571 
+level:INFO 
+logger:Microsoft.AspNetCore.Authorization.DefaultAuthorizationService
+file:? line? 
+content:Authorization was successful for user: bob.
+
+-----------------------------------------
+
+time:2017-10-31 19:09:44,593 
+level:INFO 
+logger:Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker
+file:? line? 
+content:Executing action method NTCore.WebFront.Controllers.ValuesController.Get (NTCore.WebFront) with arguments (0, NTCore.WebFront.Controllers.User) - ModelState is Valid
+
+-----------------------------------------
+
+time:2017-10-31 19:09:47,111 
+level:INFO 
+logger:Microsoft.AspNetCore.Mvc.Internal.ObjectResultExecutor
+file:? line? 
+content:Executing ObjectResult, writing value Microsoft.AspNetCore.Mvc.ControllerContext.
+
+-----------------------------------------
+
+time:2017-10-31 19:09:47,125 
+level:INFO 
+logger:Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker
+file:? line? 
+content:Executed action NTCore.WebFront.Controllers.ValuesController.Get (NTCore.WebFront) in 2545.0449ms
+
+-----------------------------------------
+
+time:2017-10-31 19:09:47,147 
+level:INFO 
+logger:Microsoft.AspNetCore.Hosting.Internal.WebHost
+file:? line? 
+content:Request finished in 2567.4898ms 200 text/plain; charset=utf-8
+
+-----------------------------------------
+
+time:2017-10-31 19:09:47,158 
+level:INFO 
+logger:Microsoft.AspNetCore.Hosting.Internal.WebHost
+file:? line? 
+content:Request starting HTTP/1.1 GET http://localhost:57942/favicon.ico  
+
+-----------------------------------------
+
+time:2017-10-31 19:09:47,160 
+level:INFO 
+logger:Microsoft.AspNetCore.Authentication.Cookies.CookieAuthenticationHandler
+file:? line? 
+content:AuthenticationScheme: AuthenticationScheme was successfully authenticated.
+
+-----------------------------------------
+
+time:2017-10-31 19:09:47,163 
+level:INFO 
+logger:Microsoft.AspNetCore.Authorization.DefaultAuthorizationService
+file:? line? 
+content:Authorization was successful for user: bob.
+
+-----------------------------------------
+
+time:2017-10-31 19:09:47,165 
+level:INFO 
+logger:Microsoft.AspNetCore.Authorization.DefaultAuthorizationService
+file:? line? 
+content:Authorization was successful for user: bob.
+
+-----------------------------------------
+
+time:2017-10-31 19:09:47,169 
+level:INFO 
+logger:Microsoft.AspNetCore.Mvc.Internal.ObjectResultExecutor
+file:? line? 
+content:Executing ObjectResult, writing value Microsoft.AspNetCore.Mvc.ControllerContext.
+
+-----------------------------------------
+
+time:2017-10-31 19:09:47,172 
+level:INFO 
+logger:Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker
+file:? line? 
+content:Executed action NTCore.WebFront.Controllers.ValuesController.Get (NTCore.WebFront) in 8.8236ms
+
+-----------------------------------------
+
+time:2017-10-31 19:09:47,176 
+level:INFO 
+logger:Microsoft.AspNetCore.Hosting.Internal.WebHost
+file:? line? 
+content:Request finished in 17.6162ms 400 application/json; charset=utf-8
+
+-----------------------------------------
+
+time:2017-10-31 19:09:57,262 
+level:INFO 
+logger:Microsoft.AspNetCore.Hosting.Internal.WebHost
+file:? line? 
+content:Request starting HTTP/1.1 GET http://localhost:57942/values?id=11&name=111  
+
+-----------------------------------------
+
+time:2017-10-31 19:09:57,265 
+level:INFO 
+logger:Microsoft.AspNetCore.Authentication.Cookies.CookieAuthenticationHandler
+file:? line? 
+content:AuthenticationScheme: AuthenticationScheme was successfully authenticated.
+
+-----------------------------------------
+
+time:2017-10-31 19:09:57,267 
+level:INFO 
+logger:Microsoft.AspNetCore.Authorization.DefaultAuthorizationService
+file:? line? 
+content:Authorization was successful for user: bob.
+
+-----------------------------------------
+
+time:2017-10-31 19:09:57,269 
+level:INFO 
+logger:Microsoft.AspNetCore.Authorization.DefaultAuthorizationService
+file:? line? 
+content:Authorization was successful for user: bob.
+
+-----------------------------------------
+
+time:2017-10-31 19:09:57,290 
+level:INFO 
+logger:Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker
+file:? line? 
+content:Executing action method NTCore.WebFront.Controllers.ValuesController.Get (NTCore.WebFront) with arguments (0, NTCore.WebFront.Controllers.User) - ModelState is Valid
+
+-----------------------------------------
+
+time:2017-10-31 19:10:00,220 
+level:INFO 
+logger:Microsoft.AspNetCore.Mvc.Internal.ObjectResultExecutor
+file:? line? 
+content:Executing ObjectResult, writing value Microsoft.AspNetCore.Mvc.ControllerContext.
+
+-----------------------------------------
+
+time:2017-10-31 19:10:00,227 
+level:INFO 
+logger:Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker
+file:? line? 
+content:Executed action NTCore.WebFront.Controllers.ValuesController.Get (NTCore.WebFront) in 2955.2394ms
+
+-----------------------------------------
+
+time:2017-10-31 19:10:00,245 
+level:INFO 
+logger:Microsoft.AspNetCore.Hosting.Internal.WebHost
+file:? line? 
+content:Request finished in 2966.5323ms 200 text/plain; charset=utf-8
+
+-----------------------------------------
+
+time:2017-10-31 19:10:00,251 
+level:INFO 
+logger:Microsoft.AspNetCore.Hosting.Internal.WebHost
+file:? line? 
+content:Request starting HTTP/1.1 GET http://localhost:57942/favicon.ico  
+
+-----------------------------------------
+
+time:2017-10-31 19:10:00,254 
+level:INFO 
+logger:Microsoft.AspNetCore.Authentication.Cookies.CookieAuthenticationHandler
+file:? line? 
+content:AuthenticationScheme: AuthenticationScheme was successfully authenticated.
+
+-----------------------------------------
+
+time:2017-10-31 19:10:00,256 
+level:INFO 
+logger:Microsoft.AspNetCore.Authorization.DefaultAuthorizationService
+file:? line? 
+content:Authorization was successful for user: bob.
+
+-----------------------------------------
+
+time:2017-10-31 19:10:00,259 
+level:INFO 
+logger:Microsoft.AspNetCore.Authorization.DefaultAuthorizationService
+file:? line? 
+content:Authorization was successful for user: bob.
+
+-----------------------------------------
+
+time:2017-10-31 19:10:00,262 
+level:INFO 
+logger:Microsoft.AspNetCore.Mvc.Internal.ObjectResultExecutor
+file:? line? 
+content:Executing ObjectResult, writing value Microsoft.AspNetCore.Mvc.ControllerContext.
+
+-----------------------------------------
+
+time:2017-10-31 19:10:00,268 
+level:INFO 
+logger:Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker
+file:? line? 
+content:Executed action NTCore.WebFront.Controllers.ValuesController.Get (NTCore.WebFront) in 9.2843ms
+
+-----------------------------------------
+
+time:2017-10-31 19:10:00,274 
+level:INFO 
+logger:Microsoft.AspNetCore.Hosting.Internal.WebHost
+file:? line? 
+content:Request finished in 19.2417ms 400 application/json; charset=utf-8
+
+-----------------------------------------
+
+time:2017-10-31 19:10:29,915 
+level:INFO 
+logger:Microsoft.AspNetCore.Hosting.Internal.WebHost
+file:? line? 
+content:Request starting HTTP/1.1 GET http://localhost:57942/values?id=11&name=111  
+
+-----------------------------------------
+
+time:2017-10-31 19:10:29,918 
+level:INFO 
+logger:Microsoft.AspNetCore.Authentication.Cookies.CookieAuthenticationHandler
+file:? line? 
+content:AuthenticationScheme: AuthenticationScheme was successfully authenticated.
+
+-----------------------------------------
+
+time:2017-10-31 19:10:29,920 
+level:INFO 
+logger:Microsoft.AspNetCore.Authorization.DefaultAuthorizationService
+file:? line? 
+content:Authorization was successful for user: bob.
+
+-----------------------------------------
+
+time:2017-10-31 19:10:29,923 
+level:INFO 
+logger:Microsoft.AspNetCore.Authorization.DefaultAuthorizationService
+file:? line? 
+content:Authorization was successful for user: bob.
+
+-----------------------------------------
+
+time:2017-10-31 19:10:29,945 
+level:INFO 
+logger:Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker
+file:? line? 
+content:Executing action method NTCore.WebFront.Controllers.ValuesController.Get (NTCore.WebFront) with arguments (0, NTCore.WebFront.Controllers.User) - ModelState is Valid
+
+-----------------------------------------
+
+time:2017-10-31 19:10:31,300 
+level:INFO 
+logger:Microsoft.AspNetCore.Mvc.Internal.ObjectResultExecutor
+file:? line? 
+content:Executing ObjectResult, writing value Microsoft.AspNetCore.Mvc.ControllerContext.
+
+-----------------------------------------
+
+time:2017-10-31 19:10:31,317 
+level:INFO 
+logger:Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker
+file:? line? 
+content:Executed action NTCore.WebFront.Controllers.ValuesController.Get (NTCore.WebFront) in 1381.335ms
+
+-----------------------------------------
+
+time:2017-10-31 19:10:31,346 
+level:INFO 
+logger:Microsoft.AspNetCore.Hosting.Internal.WebHost
+file:? line? 
+content:Request finished in 1405.5386ms 200 text/plain; charset=utf-8
+
+-----------------------------------------
+
+time:2017-10-31 19:10:31,352 
+level:INFO 
+logger:Microsoft.AspNetCore.Hosting.Internal.WebHost
+file:? line? 
+content:Request starting HTTP/1.1 GET http://localhost:57942/favicon.ico  
+
+-----------------------------------------
+
+time:2017-10-31 19:10:31,355 
+level:INFO 
+logger:Microsoft.AspNetCore.Authentication.Cookies.CookieAuthenticationHandler
+file:? line? 
+content:AuthenticationScheme: AuthenticationScheme was successfully authenticated.
+
+-----------------------------------------
+
+time:2017-10-31 19:10:31,358 
+level:INFO 
+logger:Microsoft.AspNetCore.Authorization.DefaultAuthorizationService
+file:? line? 
+content:Authorization was successful for user: bob.
+
+-----------------------------------------
+
+time:2017-10-31 19:10:31,361 
+level:INFO 
+logger:Microsoft.AspNetCore.Authorization.DefaultAuthorizationService
+file:? line? 
+content:Authorization was successful for user: bob.
+
+-----------------------------------------
+
+time:2017-10-31 19:10:31,364 
+level:INFO 
+logger:Microsoft.AspNetCore.Mvc.Internal.ObjectResultExecutor
+file:? line? 
+content:Executing ObjectResult, writing value Microsoft.AspNetCore.Mvc.ControllerContext.
+
+-----------------------------------------
+
+time:2017-10-31 19:10:31,369 
+level:INFO 
+logger:Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker
+file:? line? 
+content:Executed action NTCore.WebFront.Controllers.ValuesController.Get (NTCore.WebFront) in 9.5451ms
+
+-----------------------------------------
+
+time:2017-10-31 19:10:31,378 
+level:INFO 
+logger:Microsoft.AspNetCore.Hosting.Internal.WebHost
+file:? line? 
+content:Request finished in 20.0658ms 400 application/json; charset=utf-8
+
+-----------------------------------------
+
+time:2017-10-31 19:10:36,414 
+level:INFO 
+logger:Microsoft.AspNetCore.Hosting.Internal.WebHost
+file:? line? 
+content:Request starting HTTP/1.1 GET http://localhost:57942/values/1?id=11&name=111  
+
+-----------------------------------------
+
+time:2017-10-31 19:10:36,416 
+level:INFO 
+logger:Microsoft.AspNetCore.Authentication.Cookies.CookieAuthenticationHandler
+file:? line? 
+content:AuthenticationScheme: AuthenticationScheme was successfully authenticated.
+
+-----------------------------------------
+
+time:2017-10-31 19:10:36,425 
+level:INFO 
+logger:Microsoft.AspNetCore.Hosting.Internal.WebHost
+file:? line? 
+content:Request finished in 4.0709ms 404 
+
+-----------------------------------------
+
+time:2017-10-31 19:10:36,434 
+level:INFO 
+logger:Microsoft.AspNetCore.Hosting.Internal.WebHost
+file:? line? 
+content:Request starting HTTP/1.1 GET http://localhost:57942/favicon.ico  
+
+-----------------------------------------
+
+time:2017-10-31 19:10:36,437 
+level:INFO 
+logger:Microsoft.AspNetCore.Authentication.Cookies.CookieAuthenticationHandler
+file:? line? 
+content:AuthenticationScheme: AuthenticationScheme was successfully authenticated.
+
+-----------------------------------------
+
+time:2017-10-31 19:10:36,439 
+level:INFO 
+logger:Microsoft.AspNetCore.Authorization.DefaultAuthorizationService
+file:? line? 
+content:Authorization was successful for user: bob.
+
+-----------------------------------------
+
+time:2017-10-31 19:10:36,441 
+level:INFO 
+logger:Microsoft.AspNetCore.Authorization.DefaultAuthorizationService
+file:? line? 
+content:Authorization was successful for user: bob.
+
+-----------------------------------------
+
+time:2017-10-31 19:10:36,445 
+level:INFO 
+logger:Microsoft.AspNetCore.Mvc.Internal.ObjectResultExecutor
+file:? line? 
+content:Executing ObjectResult, writing value Microsoft.AspNetCore.Mvc.ControllerContext.
+
+-----------------------------------------
+
+time:2017-10-31 19:10:36,448 
+level:INFO 
+logger:Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker
+file:? line? 
+content:Executed action NTCore.WebFront.Controllers.ValuesController.Get (NTCore.WebFront) in 8.3549ms
+
+-----------------------------------------
+
+time:2017-10-31 19:10:36,459 
+level:INFO 
+logger:Microsoft.AspNetCore.Hosting.Internal.WebHost
+file:? line? 
+content:Request finished in 23.7181ms 400 application/json; charset=utf-8
+
+-----------------------------------------
+
+time:2017-10-31 19:10:41,569 
+level:INFO 
+logger:Microsoft.AspNetCore.Hosting.Internal.WebHost
+file:? line? 
+content:Request starting HTTP/1.1 GET http://localhost:57942/values/11?id=11&name=111  
+
+-----------------------------------------
+
+time:2017-10-31 19:10:41,572 
+level:INFO 
+logger:Microsoft.AspNetCore.Authentication.Cookies.CookieAuthenticationHandler
+file:? line? 
+content:AuthenticationScheme: AuthenticationScheme was successfully authenticated.
+
+-----------------------------------------
+
+time:2017-10-31 19:10:41,585 
+level:INFO 
+logger:Microsoft.AspNetCore.Hosting.Internal.WebHost
+file:? line? 
+content:Request finished in 11.9056ms 404 
+
+-----------------------------------------
+
+time:2017-10-31 19:10:41,590 
+level:INFO 
+logger:Microsoft.AspNetCore.Hosting.Internal.WebHost
+file:? line? 
+content:Request starting HTTP/1.1 GET http://localhost:57942/favicon.ico  
+
+-----------------------------------------
+
+time:2017-10-31 19:10:41,593 
+level:INFO 
+logger:Microsoft.AspNetCore.Authentication.Cookies.CookieAuthenticationHandler
+file:? line? 
+content:AuthenticationScheme: AuthenticationScheme was successfully authenticated.
+
+-----------------------------------------
+
+time:2017-10-31 19:10:41,596 
+level:INFO 
+logger:Microsoft.AspNetCore.Authorization.DefaultAuthorizationService
+file:? line? 
+content:Authorization was successful for user: bob.
+
+-----------------------------------------
+
+time:2017-10-31 19:10:41,598 
+level:INFO 
+logger:Microsoft.AspNetCore.Authorization.DefaultAuthorizationService
+file:? line? 
+content:Authorization was successful for user: bob.
+
+-----------------------------------------
+
+time:2017-10-31 19:10:41,601 
+level:INFO 
+logger:Microsoft.AspNetCore.Mvc.Internal.ObjectResultExecutor
+file:? line? 
+content:Executing ObjectResult, writing value Microsoft.AspNetCore.Mvc.ControllerContext.
+
+-----------------------------------------
+
+time:2017-10-31 19:10:41,604 
+level:INFO 
+logger:Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker
+file:? line? 
+content:Executed action NTCore.WebFront.Controllers.ValuesController.Get (NTCore.WebFront) in 8.1685ms
+
+-----------------------------------------
+
+time:2017-10-31 19:10:41,609 
+level:INFO 
+logger:Microsoft.AspNetCore.Hosting.Internal.WebHost
+file:? line? 
+content:Request finished in 17.5389ms 400 application/json; charset=utf-8
+
+-----------------------------------------
+
+time:2017-10-31 19:32:08,340 
+level:INFO 
+logger:Microsoft.AspNetCore.Hosting.Internal.WebHost
+file:? line? 
+content:Request starting HTTP/1.1 GET http://localhost:57942/api/values  
+
+-----------------------------------------
+
+time:2017-10-31 19:32:08,463 
+level:INFO 
+logger:Microsoft.AspNetCore.Authentication.Cookies.CookieAuthenticationHandler
+file:? line? 
+content:AuthenticationScheme: AuthenticationScheme was successfully authenticated.
+
+-----------------------------------------
+
+time:2017-10-31 19:32:12,969 
+level:WARN 
+logger:Microsoft.AspNetCore.Server.Kestrel
+file:? line? 
+content:Heartbeat took longer than "00:00:01" at "10/31/2017 11:32:12 +00:00".
+
+-----------------------------------------
+
+time:2017-10-31 19:32:12,997 
+level:INFO 
+logger:Microsoft.AspNetCore.Hosting.Internal.WebHost
+file:? line? 
+content:Request finished in 4669.2512ms 404 
+
+-----------------------------------------
+
+time:2017-10-31 19:32:13,025 
+level:INFO 
+logger:Microsoft.AspNetCore.Hosting.Internal.WebHost
+file:? line? 
+content:Request starting HTTP/1.1 GET http://localhost:57942/favicon.ico  
+
+-----------------------------------------
+
+time:2017-10-31 19:32:13,035 
+level:INFO 
+logger:Microsoft.AspNetCore.Authentication.Cookies.CookieAuthenticationHandler
+file:? line? 
+content:AuthenticationScheme: AuthenticationScheme was successfully authenticated.
+
+-----------------------------------------
+
+time:2017-10-31 19:32:13,046 
+level:INFO 
+logger:Microsoft.AspNetCore.Hosting.Internal.WebHost
+file:? line? 
+content:Request finished in 16.3686ms 404 
+
+-----------------------------------------
+
+time:2017-10-31 19:32:44,894 
+level:INFO 
+logger:Microsoft.AspNetCore.Hosting.Internal.WebHost
+file:? line? 
+content:Request starting HTTP/1.1 GET http://localhost:57942/passport/auto-login  
+
+-----------------------------------------
+
+time:2017-10-31 19:32:44,898 
+level:INFO 
+logger:Microsoft.AspNetCore.Authentication.Cookies.CookieAuthenticationHandler
+file:? line? 
+content:AuthenticationScheme: AuthenticationScheme was successfully authenticated.
+
+-----------------------------------------
+
+time:2017-10-31 19:32:44,910 
+level:INFO 
+logger:Microsoft.AspNetCore.Hosting.Internal.WebHost
+file:? line? 
+content:Request finished in 9.4941ms 404 
+
+-----------------------------------------
+
+time:2017-10-31 19:32:55,515 
+level:INFO 
+logger:Microsoft.AspNetCore.Hosting.Internal.WebHost
+file:? line? 
+content:Request starting HTTP/1.1 GET http://localhost:57942/passport/auto-login  
+
+-----------------------------------------
+
+time:2017-10-31 19:32:55,517 
+level:INFO 
+logger:Microsoft.AspNetCore.Authentication.Cookies.CookieAuthenticationHandler
+file:? line? 
+content:AuthenticationScheme: AuthenticationScheme was successfully authenticated.
+
+-----------------------------------------
+
+time:2017-10-31 19:32:55,529 
+level:INFO 
+logger:Microsoft.AspNetCore.Hosting.Internal.WebHost
+file:? line? 
+content:Request finished in 4.2204ms 404 
+
+-----------------------------------------
+
+time:2017-10-31 19:32:59,945 
+level:INFO 
+logger:Microsoft.AspNetCore.Hosting.Internal.WebHost
+file:? line? 
+content:Request starting HTTP/1.1 GET http://localhost:57942/passport/auto-login  
+
+-----------------------------------------
+
+time:2017-10-31 19:32:59,948 
+level:INFO 
+logger:Microsoft.AspNetCore.Authentication.Cookies.CookieAuthenticationHandler
+file:? line? 
+content:AuthenticationScheme: AuthenticationScheme was successfully authenticated.
+
+-----------------------------------------
+
+time:2017-10-31 19:32:59,959 
+level:INFO 
+logger:Microsoft.AspNetCore.Hosting.Internal.WebHost
+file:? line? 
+content:Request finished in 5.0795ms 404 
+
+-----------------------------------------
+
+time:2017-10-31 19:33:05,882 
+level:INFO 
+logger:Microsoft.AspNetCore.Hosting.Internal.WebHost
+file:? line? 
+content:Request starting HTTP/1.1 GET http://localhost:57942/Passport/auto-login  
+
+-----------------------------------------
+
+time:2017-10-31 19:33:05,885 
+level:INFO 
+logger:Microsoft.AspNetCore.Authentication.Cookies.CookieAuthenticationHandler
+file:? line? 
+content:AuthenticationScheme: AuthenticationScheme was successfully authenticated.
+
+-----------------------------------------
+
+time:2017-10-31 19:33:05,896 
+level:INFO 
+logger:Microsoft.AspNetCore.Hosting.Internal.WebHost
+file:? line? 
+content:Request finished in 6.0968ms 404 
+
+-----------------------------------------
+
+time:2017-10-31 19:34:09,499 
+level:INFO 
+logger:Microsoft.AspNetCore.Hosting.Internal.WebHost
+file:? line? 
+content:Request starting HTTP/1.1 GET http://localhost:57942/api/values  
+
+-----------------------------------------
+
+time:2017-10-31 19:34:09,582 
+level:INFO 
+logger:Microsoft.AspNetCore.Authentication.Cookies.CookieAuthenticationHandler
+file:? line? 
+content:AuthenticationScheme: AuthenticationScheme was successfully authenticated.
+
+-----------------------------------------
+
+time:2017-10-31 19:34:11,586 
+level:INFO 
+logger:Microsoft.AspNetCore.Hosting.Internal.WebHost
+file:? line? 
+content:Request finished in 2103.1992ms 404 
+
+-----------------------------------------
+
+time:2017-10-31 19:34:11,609 
+level:INFO 
+logger:Microsoft.AspNetCore.Hosting.Internal.WebHost
+file:? line? 
+content:Request starting HTTP/1.1 GET http://localhost:57942/favicon.ico  
+
+-----------------------------------------
+
+time:2017-10-31 19:34:11,615 
+level:INFO 
+logger:Microsoft.AspNetCore.Authentication.Cookies.CookieAuthenticationHandler
+file:? line? 
+content:AuthenticationScheme: AuthenticationScheme was successfully authenticated.
+
+-----------------------------------------
+
+time:2017-10-31 19:34:11,630 
+level:INFO 
+logger:Microsoft.AspNetCore.Hosting.Internal.WebHost
+file:? line? 
+content:Request finished in 11.5363ms 404 
+
+-----------------------------------------
+
+time:2017-10-31 19:34:18,193 
+level:INFO 
+logger:Microsoft.AspNetCore.Hosting.Internal.WebHost
+file:? line? 
+content:Request starting HTTP/1.1 GET http://localhost:57942/passport  
+
+-----------------------------------------
+
+time:2017-10-31 19:34:18,196 
+level:INFO 
+logger:Microsoft.AspNetCore.Authentication.Cookies.CookieAuthenticationHandler
+file:? line? 
+content:AuthenticationScheme: AuthenticationScheme was successfully authenticated.
+
+-----------------------------------------
+
+time:2017-10-31 19:34:18,214 
+level:ERROR 
+logger:Microsoft.AspNetCore.Mvc.Internal.ActionSelector
+file:? line? 
+content:Request matched multiple actions resulting in ambiguity. Matching actions: NTCore.WebFront.Controllers.PassportController.Login (NTCore.WebFront)
+NTCore.WebFront.Controllers.PassportController.Logout (NTCore.WebFront)
+NTCore.WebFront.Controllers.PassportController.forbidden (NTCore.WebFront)
+
+-----------------------------------------
+
+time:2017-10-31 19:34:18,278 
+level:ERROR 
+logger:Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware
+file:? line? 
+content:An unhandled exception has occurred while executing the request
+Microsoft.AspNetCore.Mvc.Internal.AmbiguousActionException: Multiple actions matched. The following actions matched route data and had all constraints satisfied:
+
+NTCore.WebFront.Controllers.PassportController.Login (NTCore.WebFront)
+NTCore.WebFront.Controllers.PassportController.Logout (NTCore.WebFront)
+NTCore.WebFront.Controllers.PassportController.forbidden (NTCore.WebFront)
+   at Microsoft.AspNetCore.Mvc.Internal.ActionSelector.SelectBestCandidate(RouteContext context, IReadOnlyList`1 candidates)
+   at Microsoft.AspNetCore.Mvc.Internal.MvcAttributeRouteHandler.RouteAsync(RouteContext context)
+   at Microsoft.AspNetCore.Routing.Tree.TreeRouter.<RouteAsync>d__13.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Routing.RouteCollection.<RouteAsync>d__9.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Builder.RouterMiddleware.<Invoke>d__4.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.<Invoke>d__6.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.<Invoke>d__7.MoveNext()
+
+-----------------------------------------
+
+time:2017-10-31 19:34:18,383 
+level:INFO 
+logger:Microsoft.AspNetCore.Hosting.Internal.WebHost
+file:? line? 
+content:Request finished in 166.8075ms 500 text/html; charset=utf-8
+
+-----------------------------------------
+
+time:2017-10-31 19:34:26,738 
+level:INFO 
+logger:Microsoft.AspNetCore.Hosting.Internal.WebHost
+file:? line? 
+content:Request starting HTTP/1.1 GET http://localhost:57942/passport/auto-login  
+
+-----------------------------------------
+
+time:2017-10-31 19:34:26,740 
+level:INFO 
+logger:Microsoft.AspNetCore.Authentication.Cookies.CookieAuthenticationHandler
+file:? line? 
+content:AuthenticationScheme: AuthenticationScheme was successfully authenticated.
+
+-----------------------------------------
+
+time:2017-10-31 19:34:26,774 
+level:ERROR 
+logger:Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware
+file:? line? 
+content:An unhandled exception has occurred while executing the request
+System.InvalidOperationException: A suitable constructor for type 'NTCore.WebFront.Controllers.PassportController' could not be located. Ensure the type is concrete and services are registered for all parameters of a public constructor.
+   at Microsoft.Extensions.Internal.ActivatorUtilities.FindApplicableConstructor(Type instanceType, Type[] argumentTypes, ConstructorInfo& matchingConstructor, Nullable`1[]& parameterMap)
+   at Microsoft.Extensions.Internal.ActivatorUtilities.CreateFactory(Type instanceType, Type[] argumentTypes)
+   at Microsoft.Extensions.DependencyInjection.ActivatorUtilities.CreateFactory(Type instanceType, Type[] argumentTypes)
+   at Microsoft.AspNetCore.Mvc.Controllers.ControllerActivatorProvider.CreateActivator(ControllerActionDescriptor descriptor)
+   at Microsoft.AspNetCore.Mvc.Controllers.ControllerFactoryProvider.CreateControllerFactory(ControllerActionDescriptor descriptor)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvokerCache.GetCachedResult(ControllerContext controllerContext)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvokerProvider.OnProvidersExecuting(ActionInvokerProviderContext context)
+   at Microsoft.AspNetCore.Mvc.Internal.ActionInvokerFactory.CreateInvoker(ActionContext actionContext)
+   at Microsoft.AspNetCore.Mvc.Internal.MvcAttributeRouteHandler.<>c__DisplayClass12_0.<RouteAsync>b__0(HttpContext c)
+   at Microsoft.AspNetCore.Builder.RouterMiddleware.<Invoke>d__4.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.<Invoke>d__6.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.<Invoke>d__7.MoveNext()
+
+-----------------------------------------
+
+time:2017-10-31 19:34:26,843 
+level:INFO 
+logger:Microsoft.AspNetCore.Hosting.Internal.WebHost
+file:? line? 
+content:Request finished in 89.7033ms 500 text/html; charset=utf-8
+
+-----------------------------------------
+
+time:2017-10-31 19:36:26,252 
+level:INFO 
+logger:Microsoft.AspNetCore.Hosting.Internal.WebHost
+file:? line? 
+content:Request starting HTTP/1.1 GET http://localhost:57942/passport  
+
+-----------------------------------------
+
+time:2017-10-31 19:36:26,257 
+level:INFO 
+logger:Microsoft.AspNetCore.Authentication.Cookies.CookieAuthenticationHandler
+file:? line? 
+content:AuthenticationScheme: AuthenticationScheme was successfully authenticated.
+
+-----------------------------------------
+
+time:2017-10-31 19:36:26,266 
+level:ERROR 
+logger:Microsoft.AspNetCore.Mvc.Internal.ActionSelector
+file:? line? 
+content:Request matched multiple actions resulting in ambiguity. Matching actions: NTCore.WebFront.Controllers.PassportController.Login (NTCore.WebFront)
+NTCore.WebFront.Controllers.PassportController.Logout (NTCore.WebFront)
+NTCore.WebFront.Controllers.PassportController.forbidden (NTCore.WebFront)
+
+-----------------------------------------
+
+time:2017-10-31 19:36:26,288 
+level:ERROR 
+logger:Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware
+file:? line? 
+content:An unhandled exception has occurred while executing the request
+Microsoft.AspNetCore.Mvc.Internal.AmbiguousActionException: Multiple actions matched. The following actions matched route data and had all constraints satisfied:
+
+NTCore.WebFront.Controllers.PassportController.Login (NTCore.WebFront)
+NTCore.WebFront.Controllers.PassportController.Logout (NTCore.WebFront)
+NTCore.WebFront.Controllers.PassportController.forbidden (NTCore.WebFront)
+   at Microsoft.AspNetCore.Mvc.Internal.ActionSelector.SelectBestCandidate(RouteContext context, IReadOnlyList`1 candidates)
+   at Microsoft.AspNetCore.Mvc.Internal.MvcAttributeRouteHandler.RouteAsync(RouteContext context)
+   at Microsoft.AspNetCore.Routing.Tree.TreeRouter.<RouteAsync>d__13.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Routing.RouteCollection.<RouteAsync>d__9.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Builder.RouterMiddleware.<Invoke>d__4.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.<Invoke>d__6.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.<Invoke>d__7.MoveNext()
+
+-----------------------------------------
+
+time:2017-10-31 19:36:26,336 
+level:INFO 
+logger:Microsoft.AspNetCore.Hosting.Internal.WebHost
+file:? line? 
+content:Request finished in 80.616ms 500 text/html; charset=utf-8
+
+-----------------------------------------
+
+time:2017-10-31 19:37:02,345 
+level:INFO 
+logger:Microsoft.AspNetCore.Hosting.Internal.WebHost
+file:? line? 
+content:Request starting HTTP/1.1 GET http://localhost:57942/passport/Logout  
+
+-----------------------------------------
+
+time:2017-10-31 19:37:02,348 
+level:INFO 
+logger:Microsoft.AspNetCore.Authentication.Cookies.CookieAuthenticationHandler
+file:? line? 
+content:AuthenticationScheme: AuthenticationScheme was successfully authenticated.
+
+-----------------------------------------
+
+time:2017-10-31 19:37:02,356 
+level:INFO 
+logger:Microsoft.AspNetCore.Hosting.Internal.WebHost
+file:? line? 
+content:Request finished in 5.2659ms 404 
+
+-----------------------------------------
+
+time:2017-10-31 19:37:06,744 
+level:INFO 
+logger:Microsoft.AspNetCore.Hosting.Internal.WebHost
+file:? line? 
+content:Request starting HTTP/1.1 GET http://localhost:57942/passport/Logout  
+
+-----------------------------------------
+
+time:2017-10-31 19:37:06,746 
+level:INFO 
+logger:Microsoft.AspNetCore.Authentication.Cookies.CookieAuthenticationHandler
+file:? line? 
+content:AuthenticationScheme: AuthenticationScheme was successfully authenticated.
+
+-----------------------------------------
+
+time:2017-10-31 19:37:06,755 
+level:INFO 
+logger:Microsoft.AspNetCore.Hosting.Internal.WebHost
+file:? line? 
+content:Request finished in 4.0773ms 404 
+
+-----------------------------------------
+
+time:2017-10-31 19:37:35,416 
+level:INFO 
+logger:Microsoft.AspNetCore.Hosting.Internal.WebHost
+file:? line? 
+content:Request starting HTTP/1.1 GET http://localhost:57942/passport/auto-login  
+
+-----------------------------------------
+
+time:2017-10-31 19:37:35,419 
+level:INFO 
+logger:Microsoft.AspNetCore.Authentication.Cookies.CookieAuthenticationHandler
+file:? line? 
+content:AuthenticationScheme: AuthenticationScheme was successfully authenticated.
+
+-----------------------------------------
+
+time:2017-10-31 19:37:35,444 
+level:ERROR 
+logger:Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware
+file:? line? 
+content:An unhandled exception has occurred while executing the request
+System.InvalidOperationException: A suitable constructor for type 'NTCore.WebFront.Controllers.PassportController' could not be located. Ensure the type is concrete and services are registered for all parameters of a public constructor.
+   at Microsoft.Extensions.Internal.ActivatorUtilities.FindApplicableConstructor(Type instanceType, Type[] argumentTypes, ConstructorInfo& matchingConstructor, Nullable`1[]& parameterMap)
+   at Microsoft.Extensions.Internal.ActivatorUtilities.CreateFactory(Type instanceType, Type[] argumentTypes)
+   at Microsoft.Extensions.DependencyInjection.ActivatorUtilities.CreateFactory(Type instanceType, Type[] argumentTypes)
+   at Microsoft.AspNetCore.Mvc.Controllers.ControllerActivatorProvider.CreateActivator(ControllerActionDescriptor descriptor)
+   at Microsoft.AspNetCore.Mvc.Controllers.ControllerFactoryProvider.CreateControllerFactory(ControllerActionDescriptor descriptor)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvokerCache.GetCachedResult(ControllerContext controllerContext)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvokerProvider.OnProvidersExecuting(ActionInvokerProviderContext context)
+   at Microsoft.AspNetCore.Mvc.Internal.ActionInvokerFactory.CreateInvoker(ActionContext actionContext)
+   at Microsoft.AspNetCore.Mvc.Internal.MvcAttributeRouteHandler.<>c__DisplayClass12_0.<RouteAsync>b__0(HttpContext c)
+   at Microsoft.AspNetCore.Builder.RouterMiddleware.<Invoke>d__4.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.<Invoke>d__6.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.<Invoke>d__7.MoveNext()
+
+-----------------------------------------
+
+time:2017-10-31 19:37:35,500 
+level:INFO 
+logger:Microsoft.AspNetCore.Hosting.Internal.WebHost
+file:? line? 
+content:Request finished in 75.3984ms 500 text/html; charset=utf-8
+
+-----------------------------------------
+
+time:2017-10-31 19:40:50,737 
+level:INFO 
+logger:Microsoft.AspNetCore.Hosting.Internal.WebHost
+file:? line? 
+content:Request starting HTTP/1.1 GET http://localhost:57942/api/values  
+
+-----------------------------------------
+
+time:2017-10-31 19:40:50,824 
+level:INFO 
+logger:Microsoft.AspNetCore.Authentication.Cookies.CookieAuthenticationHandler
+file:? line? 
+content:AuthenticationScheme: AuthenticationScheme was successfully authenticated.
+
+-----------------------------------------
+
+time:2017-10-31 19:40:54,072 
+level:INFO 
+logger:Microsoft.AspNetCore.Hosting.Internal.WebHost
+file:? line? 
+content:Request finished in 3338.7052ms 404 
+
+-----------------------------------------
+
+time:2017-10-31 19:40:54,105 
+level:INFO 
+logger:Microsoft.AspNetCore.Hosting.Internal.WebHost
+file:? line? 
+content:Request starting HTTP/1.1 GET http://localhost:57942/favicon.ico  
+
+-----------------------------------------
+
+time:2017-10-31 19:40:54,117 
+level:INFO 
+logger:Microsoft.AspNetCore.Authentication.Cookies.CookieAuthenticationHandler
+file:? line? 
+content:AuthenticationScheme: AuthenticationScheme was successfully authenticated.
+
+-----------------------------------------
+
+time:2017-10-31 19:40:54,129 
+level:INFO 
+logger:Microsoft.AspNetCore.Hosting.Internal.WebHost
+file:? line? 
+content:Request finished in 17.4131ms 404 
+
+-----------------------------------------
+
+time:2017-10-31 19:40:59,329 
+level:INFO 
+logger:Microsoft.AspNetCore.Hosting.Internal.WebHost
+file:? line? 
+content:Request starting HTTP/1.1 GET http://localhost:57942/passport  
+
+-----------------------------------------
+
+time:2017-10-31 19:40:59,331 
+level:INFO 
+logger:Microsoft.AspNetCore.Authentication.Cookies.CookieAuthenticationHandler
+file:? line? 
+content:AuthenticationScheme: AuthenticationScheme was successfully authenticated.
+
+-----------------------------------------
+
+time:2017-10-31 19:40:59,351 
+level:ERROR 
+logger:Microsoft.AspNetCore.Mvc.Internal.ActionSelector
+file:? line? 
+content:Request matched multiple actions resulting in ambiguity. Matching actions: NTCore.WebFront.Controllers.PassportController.Login (NTCore.WebFront)
+NTCore.WebFront.Controllers.PassportController.Logout (NTCore.WebFront)
+NTCore.WebFront.Controllers.PassportController.forbidden (NTCore.WebFront)
+
+-----------------------------------------
+
+time:2017-10-31 19:40:59,417 
+level:ERROR 
+logger:Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware
+file:? line? 
+content:An unhandled exception has occurred while executing the request
+Microsoft.AspNetCore.Mvc.Internal.AmbiguousActionException: Multiple actions matched. The following actions matched route data and had all constraints satisfied:
+
+NTCore.WebFront.Controllers.PassportController.Login (NTCore.WebFront)
+NTCore.WebFront.Controllers.PassportController.Logout (NTCore.WebFront)
+NTCore.WebFront.Controllers.PassportController.forbidden (NTCore.WebFront)
+   at Microsoft.AspNetCore.Mvc.Internal.ActionSelector.SelectBestCandidate(RouteContext context, IReadOnlyList`1 candidates)
+   at Microsoft.AspNetCore.Mvc.Internal.MvcAttributeRouteHandler.RouteAsync(RouteContext context)
+   at Microsoft.AspNetCore.Routing.Tree.TreeRouter.<RouteAsync>d__13.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Routing.RouteCollection.<RouteAsync>d__9.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Builder.RouterMiddleware.<Invoke>d__4.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.<Invoke>d__6.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.<Invoke>d__7.MoveNext()
+
+-----------------------------------------
+
+time:2017-10-31 19:40:59,507 
+level:INFO 
+logger:Microsoft.AspNetCore.Hosting.Internal.WebHost
+file:? line? 
+content:Request finished in 156.7186ms 500 text/html; charset=utf-8
+
+-----------------------------------------
+
+time:2017-10-31 19:41:03,078 
+level:INFO 
+logger:Microsoft.AspNetCore.Hosting.Internal.WebHost
+file:? line? 
+content:Request starting HTTP/1.1 GET http://localhost:57942/passport/auto-login  
+
+-----------------------------------------
+
+time:2017-10-31 19:41:03,080 
+level:INFO 
+logger:Microsoft.AspNetCore.Authentication.Cookies.CookieAuthenticationHandler
+file:? line? 
+content:AuthenticationScheme: AuthenticationScheme was successfully authenticated.
+
+-----------------------------------------
+
+time:2017-10-31 19:41:03,113 
+level:ERROR 
+logger:Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware
+file:? line? 
+content:An unhandled exception has occurred while executing the request
+System.InvalidOperationException: A suitable constructor for type 'NTCore.WebFront.Controllers.PassportController' could not be located. Ensure the type is concrete and services are registered for all parameters of a public constructor.
+   at Microsoft.Extensions.Internal.ActivatorUtilities.FindApplicableConstructor(Type instanceType, Type[] argumentTypes, ConstructorInfo& matchingConstructor, Nullable`1[]& parameterMap)
+   at Microsoft.Extensions.Internal.ActivatorUtilities.CreateFactory(Type instanceType, Type[] argumentTypes)
+   at Microsoft.Extensions.DependencyInjection.ActivatorUtilities.CreateFactory(Type instanceType, Type[] argumentTypes)
+   at Microsoft.AspNetCore.Mvc.Controllers.ControllerActivatorProvider.CreateActivator(ControllerActionDescriptor descriptor)
+   at Microsoft.AspNetCore.Mvc.Controllers.ControllerFactoryProvider.CreateControllerFactory(ControllerActionDescriptor descriptor)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvokerCache.GetCachedResult(ControllerContext controllerContext)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvokerProvider.OnProvidersExecuting(ActionInvokerProviderContext context)
+   at Microsoft.AspNetCore.Mvc.Internal.ActionInvokerFactory.CreateInvoker(ActionContext actionContext)
+   at Microsoft.AspNetCore.Mvc.Internal.MvcAttributeRouteHandler.<>c__DisplayClass12_0.<RouteAsync>b__0(HttpContext c)
+   at Microsoft.AspNetCore.Builder.RouterMiddleware.<Invoke>d__4.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.<Invoke>d__6.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.<Invoke>d__7.MoveNext()
+
+-----------------------------------------
+
+time:2017-10-31 19:41:03,167 
+level:INFO 
+logger:Microsoft.AspNetCore.Hosting.Internal.WebHost
+file:? line? 
+content:Request finished in 84.3645ms 500 text/html; charset=utf-8
+
+-----------------------------------------
+
+time:2017-10-31 19:41:17,347 
+level:INFO 
+logger:Microsoft.AspNetCore.Hosting.Internal.WebHost
+file:? line? 
+content:Request starting HTTP/1.1 GET http://localhost:57942/passport/auto-login  
+
+-----------------------------------------
+
+time:2017-10-31 19:41:17,349 
+level:INFO 
+logger:Microsoft.AspNetCore.Authentication.Cookies.CookieAuthenticationHandler
+file:? line? 
+content:AuthenticationScheme: AuthenticationScheme was successfully authenticated.
+
+-----------------------------------------
+
+time:2017-10-31 19:41:17,379 
+level:ERROR 
+logger:Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware
+file:? line? 
+content:An unhandled exception has occurred while executing the request
+System.InvalidOperationException: A suitable constructor for type 'NTCore.WebFront.Controllers.PassportController' could not be located. Ensure the type is concrete and services are registered for all parameters of a public constructor.
+   at Microsoft.Extensions.Internal.ActivatorUtilities.FindApplicableConstructor(Type instanceType, Type[] argumentTypes, ConstructorInfo& matchingConstructor, Nullable`1[]& parameterMap)
+   at Microsoft.Extensions.Internal.ActivatorUtilities.CreateFactory(Type instanceType, Type[] argumentTypes)
+   at Microsoft.Extensions.DependencyInjection.ActivatorUtilities.CreateFactory(Type instanceType, Type[] argumentTypes)
+   at Microsoft.AspNetCore.Mvc.Controllers.ControllerActivatorProvider.CreateActivator(ControllerActionDescriptor descriptor)
+   at Microsoft.AspNetCore.Mvc.Controllers.ControllerFactoryProvider.CreateControllerFactory(ControllerActionDescriptor descriptor)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvokerCache.GetCachedResult(ControllerContext controllerContext)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvokerProvider.OnProvidersExecuting(ActionInvokerProviderContext context)
+   at Microsoft.AspNetCore.Mvc.Internal.ActionInvokerFactory.CreateInvoker(ActionContext actionContext)
+   at Microsoft.AspNetCore.Mvc.Internal.MvcAttributeRouteHandler.<>c__DisplayClass12_0.<RouteAsync>b__0(HttpContext c)
+   at Microsoft.AspNetCore.Builder.RouterMiddleware.<Invoke>d__4.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.<Invoke>d__6.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.<Invoke>d__7.MoveNext()
+
+-----------------------------------------
+
+time:2017-10-31 19:41:17,464 
+level:INFO 
+logger:Microsoft.AspNetCore.Hosting.Internal.WebHost
+file:? line? 
+content:Request finished in 101.6907ms 500 text/html; charset=utf-8
+
+-----------------------------------------
+
+time:2017-10-31 19:43:48,063 
+level:INFO 
+logger:Microsoft.AspNetCore.Hosting.Internal.WebHost
+file:? line? 
+content:Request starting HTTP/1.1 GET http://localhost:57942/api/values  
+
+-----------------------------------------
+
+time:2017-10-31 19:43:48,154 
+level:INFO 
+logger:Microsoft.AspNetCore.Authentication.Cookies.CookieAuthenticationHandler
+file:? line? 
+content:AuthenticationScheme: AuthenticationScheme was successfully authenticated.
+
+-----------------------------------------
+
+time:2017-10-31 19:43:50,930 
+level:INFO 
+logger:Microsoft.AspNetCore.Hosting.Internal.WebHost
+file:? line? 
+content:Request finished in 2859.6348ms 404 
+
+-----------------------------------------
+
+time:2017-10-31 19:43:50,945 
+level:INFO 
+logger:Microsoft.AspNetCore.Hosting.Internal.WebHost
+file:? line? 
+content:Request starting HTTP/1.1 GET http://localhost:57942/favicon.ico  
+
+-----------------------------------------
+
+time:2017-10-31 19:43:50,952 
+level:INFO 
+logger:Microsoft.AspNetCore.Authentication.Cookies.CookieAuthenticationHandler
+file:? line? 
+content:AuthenticationScheme: AuthenticationScheme was successfully authenticated.
+
+-----------------------------------------
+
+time:2017-10-31 19:43:50,963 
+level:INFO 
+logger:Microsoft.AspNetCore.Hosting.Internal.WebHost
+file:? line? 
+content:Request finished in 17.3383ms 404 
+
+-----------------------------------------
+
+time:2017-10-31 19:43:55,885 
+level:INFO 
+logger:Microsoft.AspNetCore.Hosting.Internal.WebHost
+file:? line? 
+content:Request starting HTTP/1.1 GET http://localhost:57942/passport  
+
+-----------------------------------------
+
+time:2017-10-31 19:43:55,888 
+level:INFO 
+logger:Microsoft.AspNetCore.Authentication.Cookies.CookieAuthenticationHandler
+file:? line? 
+content:AuthenticationScheme: AuthenticationScheme was successfully authenticated.
+
+-----------------------------------------
+
+time:2017-10-31 19:43:55,906 
+level:ERROR 
+logger:Microsoft.AspNetCore.Mvc.Internal.ActionSelector
+file:? line? 
+content:Request matched multiple actions resulting in ambiguity. Matching actions: NTCore.WebFront.Controllers.PassportController.Login (NTCore.WebFront)
+NTCore.WebFront.Controllers.PassportController.Logout (NTCore.WebFront)
+NTCore.WebFront.Controllers.PassportController.forbidden (NTCore.WebFront)
+
+-----------------------------------------
+
+time:2017-10-31 19:43:55,968 
+level:ERROR 
+logger:Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware
+file:? line? 
+content:An unhandled exception has occurred while executing the request
+Microsoft.AspNetCore.Mvc.Internal.AmbiguousActionException: Multiple actions matched. The following actions matched route data and had all constraints satisfied:
+
+NTCore.WebFront.Controllers.PassportController.Login (NTCore.WebFront)
+NTCore.WebFront.Controllers.PassportController.Logout (NTCore.WebFront)
+NTCore.WebFront.Controllers.PassportController.forbidden (NTCore.WebFront)
+   at Microsoft.AspNetCore.Mvc.Internal.ActionSelector.SelectBestCandidate(RouteContext context, IReadOnlyList`1 candidates)
+   at Microsoft.AspNetCore.Mvc.Internal.MvcAttributeRouteHandler.RouteAsync(RouteContext context)
+   at Microsoft.AspNetCore.Routing.Tree.TreeRouter.<RouteAsync>d__13.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Routing.RouteCollection.<RouteAsync>d__9.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Builder.RouterMiddleware.<Invoke>d__4.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.<Invoke>d__6.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.<Invoke>d__7.MoveNext()
+
+-----------------------------------------
+
+time:2017-10-31 19:43:56,052 
+level:INFO 
+logger:Microsoft.AspNetCore.Hosting.Internal.WebHost
+file:? line? 
+content:Request finished in 160.3302ms 500 text/html; charset=utf-8
+
+-----------------------------------------
+
+time:2017-10-31 19:43:59,940 
+level:INFO 
+logger:Microsoft.AspNetCore.Hosting.Internal.WebHost
+file:? line? 
+content:Request starting HTTP/1.1 GET http://localhost:57942/passport/auto-login  
+
+-----------------------------------------
+
+time:2017-10-31 19:43:59,942 
+level:INFO 
+logger:Microsoft.AspNetCore.Authentication.Cookies.CookieAuthenticationHandler
+file:? line? 
+content:AuthenticationScheme: AuthenticationScheme was successfully authenticated.
+
+-----------------------------------------
+
+time:2017-10-31 19:43:59,978 
+level:ERROR 
+logger:Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware
+file:? line? 
+content:An unhandled exception has occurred while executing the request
+System.InvalidOperationException: A suitable constructor for type 'NTCore.WebFront.Controllers.PassportController' could not be located. Ensure the type is concrete and services are registered for all parameters of a public constructor.
+   at Microsoft.Extensions.Internal.ActivatorUtilities.FindApplicableConstructor(Type instanceType, Type[] argumentTypes, ConstructorInfo& matchingConstructor, Nullable`1[]& parameterMap)
+   at Microsoft.Extensions.Internal.ActivatorUtilities.CreateFactory(Type instanceType, Type[] argumentTypes)
+   at Microsoft.Extensions.DependencyInjection.ActivatorUtilities.CreateFactory(Type instanceType, Type[] argumentTypes)
+   at Microsoft.AspNetCore.Mvc.Controllers.ControllerActivatorProvider.CreateActivator(ControllerActionDescriptor descriptor)
+   at Microsoft.AspNetCore.Mvc.Controllers.ControllerFactoryProvider.CreateControllerFactory(ControllerActionDescriptor descriptor)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvokerCache.GetCachedResult(ControllerContext controllerContext)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvokerProvider.OnProvidersExecuting(ActionInvokerProviderContext context)
+   at Microsoft.AspNetCore.Mvc.Internal.ActionInvokerFactory.CreateInvoker(ActionContext actionContext)
+   at Microsoft.AspNetCore.Mvc.Internal.MvcAttributeRouteHandler.<>c__DisplayClass12_0.<RouteAsync>b__0(HttpContext c)
+   at Microsoft.AspNetCore.Builder.RouterMiddleware.<Invoke>d__4.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.<Invoke>d__6.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.<Invoke>d__7.MoveNext()
+
+-----------------------------------------
+
+time:2017-10-31 19:44:00,046 
+level:INFO 
+logger:Microsoft.AspNetCore.Hosting.Internal.WebHost
+file:? line? 
+content:Request finished in 91.5466ms 500 text/html; charset=utf-8

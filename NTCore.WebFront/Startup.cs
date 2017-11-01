@@ -20,6 +20,8 @@ using NTCore.Extensions.HttpContext;
 using NTCore.Extensions.MvcFilter;
 using NTCore.Utility;
 using MySQL.Data.EntityFrameworkCore.Extensions;
+using NTCore.Extensions.MvcRoute;
+using Microsoft.AspNetCore.Mvc;
 
 namespace NTCore.WebFront
 {
@@ -36,7 +38,7 @@ namespace NTCore.WebFront
         public void ConfigureServices(IServiceCollection services)
         {
             var connection = Configuration.GetConnectionString("SqlServer");
-            services.AddEntityFrameworkSqlServer().AddDbContext<MainContext>(options => options.UseSqlServer(connection, b => b.MigrationsAssembly("NTCore.WebFront")));
+            services.AddEntityFrameworkSqlServer().AddDbContext<MainContext>(options => options.UseSqlServer(connection));
 
             //var connection = Configuration.GetConnectionString("MySQL");
             //services.AddEntityFrameworkSqlServer().AddDbContext<MainContext>(options => options.UseMySQL(connection, b => b.MigrationsAssembly("NTCore.WebFront")));
@@ -68,6 +70,7 @@ namespace NTCore.WebFront
             services.AddMvc(options =>
             {
                 options.Filters.Add(typeof(ValidationFilter));
+                options.UseCentralRoutePrefix(new RouteAttribute("api/v{version}"), new RouteAttribute(""));
 
                 var policy = new AuthorizationPolicyBuilder()
                     .RequireAuthenticatedUser()

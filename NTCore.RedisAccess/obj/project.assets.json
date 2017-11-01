@@ -4646,7 +4646,7 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\hongduo\\.nuget\\packages\\": {},
+    "C:\\Users\\liuhongduo\\.nuget\\packages\\": {},
     "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder": {}
   },
   "project": {
@@ -4655,17 +4655,17 @@
       "hideWarningsAndErrors": true
     },
     "restore": {
-      "projectUniqueName": "D:\\Projects\\NTPlatform\\NTCore.RedisAccess\\NTCore.RedisAccess.csproj",
+      "projectUniqueName": "E:\\Projects\\NTPlatform\\NTCore.RedisAccess\\NTCore.RedisAccess.csproj",
       "projectName": "NTCore.RedisAccess",
-      "projectPath": "D:\\Projects\\NTPlatform\\NTCore.RedisAccess\\NTCore.RedisAccess.csproj",
-      "packagesPath": "C:\\Users\\hongduo\\.nuget\\packages\\",
-      "outputPath": "D:\\Projects\\NTPlatform\\NTCore.RedisAccess\\obj\\",
+      "projectPath": "E:\\Projects\\NTPlatform\\NTCore.RedisAccess\\NTCore.RedisAccess.csproj",
+      "packagesPath": "C:\\Users\\liuhongduo\\.nuget\\packages\\",
+      "outputPath": "E:\\Projects\\NTPlatform\\NTCore.RedisAccess\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
       ],
       "configFilePaths": [
-        "C:\\Users\\hongduo\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\liuhongduo\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [

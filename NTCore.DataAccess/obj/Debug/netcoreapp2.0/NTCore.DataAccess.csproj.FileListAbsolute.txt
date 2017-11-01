@@ -18,3 +18,14 @@ D:\Projects\NTPlatform\NTCore.DataAccess\bin\Debug\netcoreapp2.0\NTCore.DataMode
 D:\Projects\NTPlatform\NTCore.DataAccess\bin\Debug\netcoreapp2.0\NTCore.DataModel.pdb
 D:\Projects\NTPlatform\NTCore.DataAccess\obj\Debug\netcoreapp2.0\NTCore.DataAccess.dll
 D:\Projects\NTPlatform\NTCore.DataAccess\obj\Debug\netcoreapp2.0\NTCore.DataAccess.pdb
+E:\Projects\NTPlatform\NTCore.DataAccess\bin\Debug\netcoreapp2.0\NTCore.DataAccess.deps.json
+E:\Projects\NTPlatform\NTCore.DataAccess\bin\Debug\netcoreapp2.0\NTCore.DataAccess.dll
+E:\Projects\NTPlatform\NTCore.DataAccess\bin\Debug\netcoreapp2.0\NTCore.DataAccess.pdb
+E:\Projects\NTPlatform\NTCore.DataAccess\bin\Debug\netcoreapp2.0\NTCore.DataModel.dll
+E:\Projects\NTPlatform\NTCore.DataAccess\bin\Debug\netcoreapp2.0\NTCore.DataModel.pdb
+E:\Projects\NTPlatform\NTCore.DataAccess\obj\Debug\netcoreapp2.0\NTCore.DataAccess.csprojResolveAssemblyReference.cache
+E:\Projects\NTPlatform\NTCore.DataAccess\obj\Debug\netcoreapp2.0\NTCore.DataAccess.csproj.CoreCompileInputs.cache
+E:\Projects\NTPlatform\NTCore.DataAccess\obj\Debug\netcoreapp2.0\NTCore.DataAccess.AssemblyInfoInputs.cache
+E:\Projects\NTPlatform\NTCore.DataAccess\obj\Debug\netcoreapp2.0\NTCore.DataAccess.AssemblyInfo.cs
+E:\Projects\NTPlatform\NTCore.DataAccess\obj\Debug\netcoreapp2.0\NTCore.DataAccess.dll
+E:\Projects\NTPlatform\NTCore.DataAccess\obj\Debug\netcoreapp2.0\NTCore.DataAccess.pdb

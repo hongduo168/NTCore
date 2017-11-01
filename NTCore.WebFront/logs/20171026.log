@@ -1,0 +1,2395 @@
+
+-----------------------------------------
+
+time:2017-10-26 17:38:22,996 
+level:INFO 
+logger:Microsoft.AspNetCore.Hosting.Internal.WebHost
+file:? line? 
+content:Request starting HTTP/1.1 GET http://localhost:57942/api/values  
+
+-----------------------------------------
+
+time:2017-10-26 17:38:23,648 
+level:INFO 
+logger:Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker
+file:? line? 
+content:Executing action method NTCore.WebFront.Controllers.ValuesController.GetAsync (NTCore.WebFront) with arguments ((null)) - ModelState is Valid
+
+-----------------------------------------
+
+time:2017-10-26 17:38:32,123 
+level:INFO 
+logger:Microsoft.EntityFrameworkCore.Infrastructure
+file:? line? 
+content:Entity Framework Core 2.0.0-rtm-26452 initialized 'MainContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: MigrationsAssembly=NTCore.WebFront 
+
+-----------------------------------------
+
+time:2017-10-26 17:38:32,166 
+level:WARN 
+logger:Microsoft.EntityFrameworkCore.Query
+file:? line? 
+content:Query: '(from UserInfo <generated>_1 in DbSet<UserInfo> select [<generated>_1]).FirstOrDefault()' uses First/FirstOrDefault operation without OrderBy and filter which may lead to unpredictable results.
+
+-----------------------------------------
+
+time:2017-10-26 17:38:32,366 
+level:INFO 
+logger:Microsoft.EntityFrameworkCore.Database.Command
+file:? line? 
+content:Executed DbCommand (37ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT TOP(1) [u].[id], [u].[auth_type], [u].[avatar], [u].[confirmed], [u].[create_time], [u].[creator_id], [u].[data_state], [u].[email], [u].[employee_number], [u].[hotel_id], [u].[mobile_number], [u].[nickname], [u].[password], [u].[update_time], [u].[updater_id], [u].[username]
+FROM [user] AS [u]
+WHERE [u].[data_state] = 1
+
+-----------------------------------------
+
+time:2017-10-26 17:38:32,476 
+level:ERROR 
+logger:Microsoft.EntityFrameworkCore.Query
+file:? line? 
+content:An exception occurred in the database while iterating the results of a query for context type 'NTCore.DataAccess.MainContext'.
+System.InvalidCastException: Unable to cast object of type 'System.Byte' to type 'System.Int32'.
+   at lambda_method(Closure , Object[] )
+   at Microsoft.EntityFrameworkCore.Storage.Internal.UntypedRelationalValueBufferFactory.Create(DbDataReader dataReader)
+   at Microsoft.EntityFrameworkCore.Query.Internal.QueryingEnumerable`1.Enumerator.BufferlessMoveNext(Boolean buffer)
+   at Microsoft.EntityFrameworkCore.Storage.Internal.SqlServerExecutionStrategy.Execute[TState,TResult](TState state, Func`3 operation, Func`3 verifySucceeded)
+   at Microsoft.EntityFrameworkCore.Query.Internal.QueryingEnumerable`1.Enumerator.MoveNext()
+   at System.Linq.Enumerable.TryGetFirst[TSource](IEnumerable`1 source, Boolean& found)
+   at lambda_method(Closure , QueryContext )
+   at Microsoft.EntityFrameworkCore.Query.Internal.QueryCompiler.<>c__DisplayClass17_0`1.<CompileQueryCore>b__0(QueryContext qc)
+System.InvalidCastException: Unable to cast object of type 'System.Byte' to type 'System.Int32'.
+   at lambda_method(Closure , Object[] )
+   at Microsoft.EntityFrameworkCore.Storage.Internal.UntypedRelationalValueBufferFactory.Create(DbDataReader dataReader)
+   at Microsoft.EntityFrameworkCore.Query.Internal.QueryingEnumerable`1.Enumerator.BufferlessMoveNext(Boolean buffer)
+   at Microsoft.EntityFrameworkCore.Storage.Internal.SqlServerExecutionStrategy.Execute[TState,TResult](TState state, Func`3 operation, Func`3 verifySucceeded)
+   at Microsoft.EntityFrameworkCore.Query.Internal.QueryingEnumerable`1.Enumerator.MoveNext()
+   at System.Linq.Enumerable.TryGetFirst[TSource](IEnumerable`1 source, Boolean& found)
+   at lambda_method(Closure , QueryContext )
+   at Microsoft.EntityFrameworkCore.Query.Internal.QueryCompiler.<>c__DisplayClass17_0`1.<CompileQueryCore>b__0(QueryContext qc)
+
+-----------------------------------------
+
+time:2017-10-26 17:38:32,569 
+level:INFO 
+logger:Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker
+file:? line? 
+content:Executed action NTCore.WebFront.Controllers.ValuesController.GetAsync (NTCore.WebFront) in 9148.3312ms
+
+-----------------------------------------
+
+time:2017-10-26 17:38:32,626 
+level:ERROR 
+logger:Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware
+file:? line? 
+content:An unhandled exception has occurred while executing the request
+System.InvalidCastException: Unable to cast object of type 'System.Byte' to type 'System.Int32'.
+   at lambda_method(Closure , Object[] )
+   at Microsoft.EntityFrameworkCore.Storage.Internal.UntypedRelationalValueBufferFactory.Create(DbDataReader dataReader)
+   at Microsoft.EntityFrameworkCore.Query.Internal.QueryingEnumerable`1.Enumerator.BufferlessMoveNext(Boolean buffer)
+   at Microsoft.EntityFrameworkCore.Storage.Internal.SqlServerExecutionStrategy.Execute[TState,TResult](TState state, Func`3 operation, Func`3 verifySucceeded)
+   at Microsoft.EntityFrameworkCore.Query.Internal.QueryingEnumerable`1.Enumerator.MoveNext()
+   at System.Linq.Enumerable.TryGetFirst[TSource](IEnumerable`1 source, Boolean& found)
+   at lambda_method(Closure , QueryContext )
+   at Microsoft.EntityFrameworkCore.Query.Internal.QueryCompiler.<>c__DisplayClass17_0`1.<CompileQueryCore>b__0(QueryContext qc)
+   at Microsoft.EntityFrameworkCore.Query.Internal.QueryCompiler.Execute[TResult](Expression query)
+   at Microsoft.EntityFrameworkCore.Query.Internal.EntityQueryProvider.Execute[TResult](Expression expression)
+   at System.Linq.Queryable.FirstOrDefault[TSource](IQueryable`1 source)
+   at NTCore.WebFront.Controllers.ValuesController.<GetAsync>d__3.MoveNext() in E:\Projects\NTPlatform\NTCore.WebFront\Controllers\ValuesController.cs:line 38
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at lambda_method(Closure , Object )
+   at Microsoft.Extensions.Internal.ObjectMethodExecutorAwaitable.Awaiter.GetResult()
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.<InvokeActionMethodAsync>d__12.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.<InvokeNextActionFilterAsync>d__10.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.Rethrow(ActionExecutedContext context)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.<InvokeInnerFilterAsync>d__14.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.<InvokeNextResourceFilter>d__22.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.Rethrow(ResourceExecutedContext context)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.<InvokeFilterPipelineAsync>d__17.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.<InvokeAsync>d__15.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Builder.RouterMiddleware.<Invoke>d__4.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.<Invoke>d__6.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.<Invoke>d__7.MoveNext()
+
+-----------------------------------------
+
+time:2017-10-26 17:38:32,774 
+level:INFO 
+logger:Microsoft.AspNetCore.Hosting.Internal.WebHost
+file:? line? 
+content:Request finished in 9791.8371ms 500 text/html; charset=utf-8
+
+-----------------------------------------
+
+time:2017-10-26 17:38:32,959 
+level:INFO 
+logger:Microsoft.AspNetCore.Hosting.Internal.WebHost
+file:? line? 
+content:Request starting HTTP/1.1 GET http://localhost:57942/favicon.ico  
+
+-----------------------------------------
+
+time:2017-10-26 17:38:32,970 
+level:INFO 
+logger:Microsoft.AspNetCore.Hosting.Internal.WebHost
+file:? line? 
+content:Request finished in 4.2981ms 404 
+
+-----------------------------------------
+
+time:2017-10-26 17:38:48,766 
+level:INFO 
+logger:Microsoft.AspNetCore.Hosting.Internal.WebHost
+file:? line? 
+content:Request starting HTTP/1.1 GET http://localhost:57942/assign-room  
+
+-----------------------------------------
+
+time:2017-10-26 17:38:48,783 
+level:INFO 
+logger:Microsoft.AspNetCore.Authorization.DefaultAuthorizationService
+file:? line? 
+content:Authorization failed for user: (null).
+
+-----------------------------------------
+
+time:2017-10-26 17:38:48,785 
+level:INFO 
+logger:Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker
+file:? line? 
+content:Authorization failed for the request at filter 'Microsoft.AspNetCore.Mvc.Authorization.AuthorizeFilter'.
+
+-----------------------------------------
+
+time:2017-10-26 17:38:48,791 
+level:INFO 
+logger:Microsoft.AspNetCore.Mvc.ChallengeResult
+file:? line? 
+content:Executing ChallengeResult with authentication schemes ().
+
+-----------------------------------------
+
+time:2017-10-26 17:38:48,796 
+level:INFO 
+logger:Microsoft.AspNetCore.Authentication.Cookies.CookieAuthenticationHandler
+file:? line? 
+content:AuthenticationScheme: AuthenticationScheme was challenged.
+
+-----------------------------------------
+
+time:2017-10-26 17:38:48,798 
+level:INFO 
+logger:Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker
+file:? line? 
+content:Executed action NTCore.WebFront.Controllers.AssignRoomController.Get (NTCore.WebFront) in 27.365ms
+
+-----------------------------------------
+
+time:2017-10-26 17:38:48,803 
+level:INFO 
+logger:Microsoft.AspNetCore.Hosting.Internal.WebHost
+file:? line? 
+content:Request finished in 35.1557ms 302 
+
+-----------------------------------------
+
+time:2017-10-26 17:38:48,808 
+level:INFO 
+logger:Microsoft.AspNetCore.Hosting.Internal.WebHost
+file:? line? 
+content:Request starting HTTP/1.1 GET http://localhost:57942/passport/login?ReturnUrl=%2Fassign-room  
+
+-----------------------------------------
+
+time:2017-10-26 17:38:48,820 
+level:INFO 
+logger:Microsoft.AspNetCore.Hosting.Internal.WebHost
+file:? line? 
+content:Request finished in 2.3428ms 404 
+
+-----------------------------------------
+
+time:2017-10-26 17:41:01,476 
+level:INFO 
+logger:Microsoft.AspNetCore.Hosting.Internal.WebHost
+file:? line? 
+content:Request starting HTTP/1.1 GET http://localhost:57942/api/values  
+
+-----------------------------------------
+
+time:2017-10-26 17:41:01,877 
+level:INFO 
+logger:Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker
+file:? line? 
+content:Executing action method NTCore.WebFront.Controllers.ValuesController.GetAsync (NTCore.WebFront) with arguments ((null)) - ModelState is Valid
+
+-----------------------------------------
+
+time:2017-10-26 17:41:08,457 
+level:INFO 
+logger:Microsoft.EntityFrameworkCore.Infrastructure
+file:? line? 
+content:Entity Framework Core 2.0.0-rtm-26452 initialized 'MainContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: MigrationsAssembly=NTCore.WebFront 
+
+-----------------------------------------
+
+time:2017-10-26 17:41:08,507 
+level:WARN 
+logger:Microsoft.EntityFrameworkCore.Query
+file:? line? 
+content:Query: '(from UserInfo <generated>_1 in DbSet<UserInfo> select [<generated>_1]).FirstOrDefault()' uses First/FirstOrDefault operation without OrderBy and filter which may lead to unpredictable results.
+
+-----------------------------------------
+
+time:2017-10-26 17:41:08,715 
+level:INFO 
+logger:Microsoft.EntityFrameworkCore.Database.Command
+file:? line? 
+content:Executed DbCommand (36ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT TOP(1) [u].[id], [u].[auth_type], [u].[avatar], [u].[confirmed], [u].[create_time], [u].[creator_id], [u].[data_state], [u].[email], [u].[employee_number], [u].[hotel_id], [u].[mobile_number], [u].[nickname], [u].[password], [u].[update_time], [u].[updater_id], [u].[username]
+FROM [user] AS [u]
+WHERE [u].[data_state] = 1
+
+-----------------------------------------
+
+time:2017-10-26 17:41:08,791 
+level:ERROR 
+logger:Microsoft.EntityFrameworkCore.Query
+file:? line? 
+content:An exception occurred in the database while iterating the results of a query for context type 'NTCore.DataAccess.MainContext'.
+System.InvalidCastException: Unable to cast object of type 'System.Byte' to type 'System.Int32'.
+   at lambda_method(Closure , Object[] )
+   at Microsoft.EntityFrameworkCore.Storage.Internal.UntypedRelationalValueBufferFactory.Create(DbDataReader dataReader)
+   at Microsoft.EntityFrameworkCore.Query.Internal.QueryingEnumerable`1.Enumerator.BufferlessMoveNext(Boolean buffer)
+   at Microsoft.EntityFrameworkCore.Storage.Internal.SqlServerExecutionStrategy.Execute[TState,TResult](TState state, Func`3 operation, Func`3 verifySucceeded)
+   at Microsoft.EntityFrameworkCore.Query.Internal.QueryingEnumerable`1.Enumerator.MoveNext()
+   at System.Linq.Enumerable.TryGetFirst[TSource](IEnumerable`1 source, Boolean& found)
+   at lambda_method(Closure , QueryContext )
+   at Microsoft.EntityFrameworkCore.Query.Internal.QueryCompiler.<>c__DisplayClass17_0`1.<CompileQueryCore>b__0(QueryContext qc)
+System.InvalidCastException: Unable to cast object of type 'System.Byte' to type 'System.Int32'.
+   at lambda_method(Closure , Object[] )
+   at Microsoft.EntityFrameworkCore.Storage.Internal.UntypedRelationalValueBufferFactory.Create(DbDataReader dataReader)
+   at Microsoft.EntityFrameworkCore.Query.Internal.QueryingEnumerable`1.Enumerator.BufferlessMoveNext(Boolean buffer)
+   at Microsoft.EntityFrameworkCore.Storage.Internal.SqlServerExecutionStrategy.Execute[TState,TResult](TState state, Func`3 operation, Func`3 verifySucceeded)
+   at Microsoft.EntityFrameworkCore.Query.Internal.QueryingEnumerable`1.Enumerator.MoveNext()
+   at System.Linq.Enumerable.TryGetFirst[TSource](IEnumerable`1 source, Boolean& found)
+   at lambda_method(Closure , QueryContext )
+   at Microsoft.EntityFrameworkCore.Query.Internal.QueryCompiler.<>c__DisplayClass17_0`1.<CompileQueryCore>b__0(QueryContext qc)
+
+-----------------------------------------
+
+time:2017-10-26 17:41:08,879 
+level:INFO 
+logger:Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker
+file:? line? 
+content:Executed action NTCore.WebFront.Controllers.ValuesController.GetAsync (NTCore.WebFront) in 7127.9311ms
+
+-----------------------------------------
+
+time:2017-10-26 17:41:08,988 
+level:ERROR 
+logger:Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware
+file:? line? 
+content:An unhandled exception has occurred while executing the request
+System.InvalidCastException: Unable to cast object of type 'System.Byte' to type 'System.Int32'.
+   at lambda_method(Closure , Object[] )
+   at Microsoft.EntityFrameworkCore.Storage.Internal.UntypedRelationalValueBufferFactory.Create(DbDataReader dataReader)
+   at Microsoft.EntityFrameworkCore.Query.Internal.QueryingEnumerable`1.Enumerator.BufferlessMoveNext(Boolean buffer)
+   at Microsoft.EntityFrameworkCore.Storage.Internal.SqlServerExecutionStrategy.Execute[TState,TResult](TState state, Func`3 operation, Func`3 verifySucceeded)
+   at Microsoft.EntityFrameworkCore.Query.Internal.QueryingEnumerable`1.Enumerator.MoveNext()
+   at System.Linq.Enumerable.TryGetFirst[TSource](IEnumerable`1 source, Boolean& found)
+   at lambda_method(Closure , QueryContext )
+   at Microsoft.EntityFrameworkCore.Query.Internal.QueryCompiler.<>c__DisplayClass17_0`1.<CompileQueryCore>b__0(QueryContext qc)
+   at Microsoft.EntityFrameworkCore.Query.Internal.QueryCompiler.Execute[TResult](Expression query)
+   at Microsoft.EntityFrameworkCore.Query.Internal.EntityQueryProvider.Execute[TResult](Expression expression)
+   at System.Linq.Queryable.FirstOrDefault[TSource](IQueryable`1 source)
+   at NTCore.WebFront.Controllers.ValuesController.<GetAsync>d__3.MoveNext() in E:\Projects\NTPlatform\NTCore.WebFront\Controllers\ValuesController.cs:line 38
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at lambda_method(Closure , Object )
+   at Microsoft.Extensions.Internal.ObjectMethodExecutorAwaitable.Awaiter.GetResult()
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.<InvokeActionMethodAsync>d__12.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.<InvokeNextActionFilterAsync>d__10.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.Rethrow(ActionExecutedContext context)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.<InvokeInnerFilterAsync>d__14.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.<InvokeNextResourceFilter>d__22.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.Rethrow(ResourceExecutedContext context)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.<InvokeFilterPipelineAsync>d__17.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.<InvokeAsync>d__15.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Builder.RouterMiddleware.<Invoke>d__4.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.<Invoke>d__6.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.<Invoke>d__7.MoveNext()
+
+-----------------------------------------
+
+time:2017-10-26 17:41:09,225 
+level:INFO 
+logger:Microsoft.AspNetCore.Hosting.Internal.WebHost
+file:? line? 
+content:Request finished in 7728.3119ms 500 text/html; charset=utf-8
+
+-----------------------------------------
+
+time:2017-10-26 17:41:09,243 
+level:INFO 
+logger:Microsoft.AspNetCore.Hosting.Internal.WebHost
+file:? line? 
+content:Request starting HTTP/1.1 GET http://localhost:57942/favicon.ico  
+
+-----------------------------------------
+
+time:2017-10-26 17:41:09,252 
+level:ERROR 
+logger:Microsoft.AspNetCore.Mvc.Internal.ActionSelector
+file:? line? 
+content:Request matched multiple actions resulting in ambiguity. Matching actions: NTCore.WebFront.Controllers.Api.RoomController.Get (NTCore.WebFront)
+NTCore.WebFront.Controllers.Api.SweepController.Get (NTCore.WebFront)
+
+-----------------------------------------
+
+time:2017-10-26 17:41:09,291 
+level:ERROR 
+logger:Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware
+file:? line? 
+content:An unhandled exception has occurred while executing the request
+Microsoft.AspNetCore.Mvc.Internal.AmbiguousActionException: Multiple actions matched. The following actions matched route data and had all constraints satisfied:
+
+NTCore.WebFront.Controllers.Api.RoomController.Get (NTCore.WebFront)
+NTCore.WebFront.Controllers.Api.SweepController.Get (NTCore.WebFront)
+   at Microsoft.AspNetCore.Mvc.Internal.ActionSelector.SelectBestCandidate(RouteContext context, IReadOnlyList`1 candidates)
+   at Microsoft.AspNetCore.Mvc.Internal.MvcAttributeRouteHandler.RouteAsync(RouteContext context)
+   at Microsoft.AspNetCore.Routing.Tree.TreeRouter.<RouteAsync>d__13.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Routing.RouteCollection.<RouteAsync>d__9.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Builder.RouterMiddleware.<Invoke>d__4.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.<Invoke>d__6.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.<Invoke>d__7.MoveNext()
+
+-----------------------------------------
+
+time:2017-10-26 17:41:09,329 
+level:INFO 
+logger:Microsoft.AspNetCore.Hosting.Internal.WebHost
+file:? line? 
+content:Request finished in 86.3442ms 500 text/html; charset=utf-8
+
+-----------------------------------------
+
+time:2017-10-26 17:41:57,559 
+level:INFO 
+logger:Microsoft.AspNetCore.Hosting.Internal.WebHost
+file:? line? 
+content:Request starting HTTP/1.1 GET http://localhost:57942/assign-room  
+
+-----------------------------------------
+
+time:2017-10-26 17:41:57,576 
+level:INFO 
+logger:Microsoft.AspNetCore.Authorization.DefaultAuthorizationService
+file:? line? 
+content:Authorization failed for user: (null).
+
+-----------------------------------------
+
+time:2017-10-26 17:41:57,580 
+level:INFO 
+logger:Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker
+file:? line? 
+content:Authorization failed for the request at filter 'Microsoft.AspNetCore.Mvc.Authorization.AuthorizeFilter'.
+
+-----------------------------------------
+
+time:2017-10-26 17:41:57,585 
+level:INFO 
+logger:Microsoft.AspNetCore.Mvc.ChallengeResult
+file:? line? 
+content:Executing ChallengeResult with authentication schemes ().
+
+-----------------------------------------
+
+time:2017-10-26 17:41:57,591 
+level:INFO 
+logger:Microsoft.AspNetCore.Authentication.Cookies.CookieAuthenticationHandler
+file:? line? 
+content:AuthenticationScheme: AuthenticationScheme was challenged.
+
+-----------------------------------------
+
+time:2017-10-26 17:41:57,593 
+level:INFO 
+logger:Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker
+file:? line? 
+content:Executed action NTCore.WebFront.Controllers.AssignRoomController.Get (NTCore.WebFront) in 28.8218ms
+
+-----------------------------------------
+
+time:2017-10-26 17:41:57,598 
+level:INFO 
+logger:Microsoft.AspNetCore.Hosting.Internal.WebHost
+file:? line? 
+content:Request finished in 37.5521ms 302 
+
+-----------------------------------------
+
+time:2017-10-26 17:41:57,604 
+level:INFO 
+logger:Microsoft.AspNetCore.Hosting.Internal.WebHost
+file:? line? 
+content:Request starting HTTP/1.1 GET http://localhost:57942/passport/login?ReturnUrl=%2Fassign-room  
+
+-----------------------------------------
+
+time:2017-10-26 17:41:57,618 
+level:INFO 
+logger:Microsoft.AspNetCore.Hosting.Internal.WebHost
+file:? line? 
+content:Request finished in 3.2606ms 404 
+
+-----------------------------------------
+
+time:2017-10-26 17:41:57,624 
+level:INFO 
+logger:Microsoft.AspNetCore.Hosting.Internal.WebHost
+file:? line? 
+content:Request starting HTTP/1.1 GET http://localhost:57942/favicon.ico  
+
+-----------------------------------------
+
+time:2017-10-26 17:41:57,632 
+level:ERROR 
+logger:Microsoft.AspNetCore.Mvc.Internal.ActionSelector
+file:? line? 
+content:Request matched multiple actions resulting in ambiguity. Matching actions: NTCore.WebFront.Controllers.Api.RoomController.Get (NTCore.WebFront)
+NTCore.WebFront.Controllers.Api.SweepController.Get (NTCore.WebFront)
+
+-----------------------------------------
+
+time:2017-10-26 17:41:57,651 
+level:ERROR 
+logger:Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware
+file:? line? 
+content:An unhandled exception has occurred while executing the request
+Microsoft.AspNetCore.Mvc.Internal.AmbiguousActionException: Multiple actions matched. The following actions matched route data and had all constraints satisfied:
+
+NTCore.WebFront.Controllers.Api.RoomController.Get (NTCore.WebFront)
+NTCore.WebFront.Controllers.Api.SweepController.Get (NTCore.WebFront)
+   at Microsoft.AspNetCore.Mvc.Internal.ActionSelector.SelectBestCandidate(RouteContext context, IReadOnlyList`1 candidates)
+   at Microsoft.AspNetCore.Mvc.Internal.MvcAttributeRouteHandler.RouteAsync(RouteContext context)
+   at Microsoft.AspNetCore.Routing.Tree.TreeRouter.<RouteAsync>d__13.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Routing.RouteCollection.<RouteAsync>d__9.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Builder.RouterMiddleware.<Invoke>d__4.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.<Invoke>d__6.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.<Invoke>d__7.MoveNext()
+
+-----------------------------------------
+
+time:2017-10-26 17:41:57,680 
+level:INFO 
+logger:Microsoft.AspNetCore.Hosting.Internal.WebHost
+file:? line? 
+content:Request finished in 52.2692ms 500 text/html; charset=utf-8
+
+-----------------------------------------
+
+time:2017-10-26 17:42:43,112 
+level:INFO 
+logger:Microsoft.AspNetCore.Hosting.Internal.WebHost
+file:? line? 
+content:Request starting HTTP/1.1 GET http://localhost:57942/passport/login?username=111&password=111&backUrl=111  
+
+-----------------------------------------
+
+time:2017-10-26 17:42:43,124 
+level:INFO 
+logger:Microsoft.AspNetCore.Hosting.Internal.WebHost
+file:? line? 
+content:Request finished in 3.4306ms 404 
+
+-----------------------------------------
+
+time:2017-10-26 17:42:43,133 
+level:INFO 
+logger:Microsoft.AspNetCore.Hosting.Internal.WebHost
+file:? line? 
+content:Request starting HTTP/1.1 GET http://localhost:57942/favicon.ico  
+
+-----------------------------------------
+
+time:2017-10-26 17:42:43,138 
+level:ERROR 
+logger:Microsoft.AspNetCore.Mvc.Internal.ActionSelector
+file:? line? 
+content:Request matched multiple actions resulting in ambiguity. Matching actions: NTCore.WebFront.Controllers.Api.RoomController.Get (NTCore.WebFront)
+NTCore.WebFront.Controllers.Api.SweepController.Get (NTCore.WebFront)
+
+-----------------------------------------
+
+time:2017-10-26 17:42:43,158 
+level:ERROR 
+logger:Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware
+file:? line? 
+content:An unhandled exception has occurred while executing the request
+Microsoft.AspNetCore.Mvc.Internal.AmbiguousActionException: Multiple actions matched. The following actions matched route data and had all constraints satisfied:
+
+NTCore.WebFront.Controllers.Api.RoomController.Get (NTCore.WebFront)
+NTCore.WebFront.Controllers.Api.SweepController.Get (NTCore.WebFront)
+   at Microsoft.AspNetCore.Mvc.Internal.ActionSelector.SelectBestCandidate(RouteContext context, IReadOnlyList`1 candidates)
+   at Microsoft.AspNetCore.Mvc.Internal.MvcAttributeRouteHandler.RouteAsync(RouteContext context)
+   at Microsoft.AspNetCore.Routing.Tree.TreeRouter.<RouteAsync>d__13.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Routing.RouteCollection.<RouteAsync>d__9.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Builder.RouterMiddleware.<Invoke>d__4.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.<Invoke>d__6.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.<Invoke>d__7.MoveNext()
+
+-----------------------------------------
+
+time:2017-10-26 17:42:43,185 
+level:INFO 
+logger:Microsoft.AspNetCore.Hosting.Internal.WebHost
+file:? line? 
+content:Request finished in 49.0782ms 500 text/html; charset=utf-8
+
+-----------------------------------------
+
+time:2017-10-26 17:44:00,478 
+level:INFO 
+logger:Microsoft.AspNetCore.Hosting.Internal.WebHost
+file:? line? 
+content:Request starting HTTP/1.1 GET http://localhost:57942/passport/login?username=111&password=111&backUrl=111  
+
+-----------------------------------------
+
+time:2017-10-26 17:44:00,485 
+level:INFO 
+logger:Microsoft.AspNetCore.Hosting.Internal.WebHost
+file:? line? 
+content:Request finished in 29.3351ms 404 
+
+-----------------------------------------
+
+time:2017-10-26 17:44:00,496 
+level:INFO 
+logger:Microsoft.AspNetCore.Hosting.Internal.WebHost
+file:? line? 
+content:Request starting HTTP/1.1 GET http://localhost:57942/favicon.ico  
+
+-----------------------------------------
+
+time:2017-10-26 17:44:00,506 
+level:ERROR 
+logger:Microsoft.AspNetCore.Mvc.Internal.ActionSelector
+file:? line? 
+content:Request matched multiple actions resulting in ambiguity. Matching actions: NTCore.WebFront.Controllers.Api.RoomController.Get (NTCore.WebFront)
+NTCore.WebFront.Controllers.Api.SweepController.Get (NTCore.WebFront)
+
+-----------------------------------------
+
+time:2017-10-26 17:44:00,528 
+level:ERROR 
+logger:Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware
+file:? line? 
+content:An unhandled exception has occurred while executing the request
+Microsoft.AspNetCore.Mvc.Internal.AmbiguousActionException: Multiple actions matched. The following actions matched route data and had all constraints satisfied:
+
+NTCore.WebFront.Controllers.Api.RoomController.Get (NTCore.WebFront)
+NTCore.WebFront.Controllers.Api.SweepController.Get (NTCore.WebFront)
+   at Microsoft.AspNetCore.Mvc.Internal.ActionSelector.SelectBestCandidate(RouteContext context, IReadOnlyList`1 candidates)
+   at Microsoft.AspNetCore.Mvc.Internal.MvcAttributeRouteHandler.RouteAsync(RouteContext context)
+   at Microsoft.AspNetCore.Routing.Tree.TreeRouter.<RouteAsync>d__13.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Routing.RouteCollection.<RouteAsync>d__9.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Builder.RouterMiddleware.<Invoke>d__4.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.<Invoke>d__6.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.<Invoke>d__7.MoveNext()
+
+-----------------------------------------
+
+time:2017-10-26 17:44:00,555 
+level:INFO 
+logger:Microsoft.AspNetCore.Hosting.Internal.WebHost
+file:? line? 
+content:Request finished in 55.7268ms 500 text/html; charset=utf-8
+
+-----------------------------------------
+
+time:2017-10-26 17:44:01,206 
+level:INFO 
+logger:Microsoft.AspNetCore.Hosting.Internal.WebHost
+file:? line? 
+content:Request starting HTTP/1.1 GET http://localhost:57942/passport/login?username=111&password=111&backUrl=111  
+
+-----------------------------------------
+
+time:2017-10-26 17:44:01,218 
+level:INFO 
+logger:Microsoft.AspNetCore.Hosting.Internal.WebHost
+file:? line? 
+content:Request finished in 2.7422ms 404 
+
+-----------------------------------------
+
+time:2017-10-26 17:44:01,225 
+level:INFO 
+logger:Microsoft.AspNetCore.Hosting.Internal.WebHost
+file:? line? 
+content:Request starting HTTP/1.1 GET http://localhost:57942/favicon.ico  
+
+-----------------------------------------
+
+time:2017-10-26 17:44:01,231 
+level:ERROR 
+logger:Microsoft.AspNetCore.Mvc.Internal.ActionSelector
+file:? line? 
+content:Request matched multiple actions resulting in ambiguity. Matching actions: NTCore.WebFront.Controllers.Api.RoomController.Get (NTCore.WebFront)
+NTCore.WebFront.Controllers.Api.SweepController.Get (NTCore.WebFront)
+
+-----------------------------------------
+
+time:2017-10-26 17:44:01,254 
+level:ERROR 
+logger:Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware
+file:? line? 
+content:An unhandled exception has occurred while executing the request
+Microsoft.AspNetCore.Mvc.Internal.AmbiguousActionException: Multiple actions matched. The following actions matched route data and had all constraints satisfied:
+
+NTCore.WebFront.Controllers.Api.RoomController.Get (NTCore.WebFront)
+NTCore.WebFront.Controllers.Api.SweepController.Get (NTCore.WebFront)
+   at Microsoft.AspNetCore.Mvc.Internal.ActionSelector.SelectBestCandidate(RouteContext context, IReadOnlyList`1 candidates)
+   at Microsoft.AspNetCore.Mvc.Internal.MvcAttributeRouteHandler.RouteAsync(RouteContext context)
+   at Microsoft.AspNetCore.Routing.Tree.TreeRouter.<RouteAsync>d__13.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Routing.RouteCollection.<RouteAsync>d__9.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Builder.RouterMiddleware.<Invoke>d__4.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.<Invoke>d__6.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.<Invoke>d__7.MoveNext()
+
+-----------------------------------------
+
+time:2017-10-26 17:44:01,290 
+level:INFO 
+logger:Microsoft.AspNetCore.Hosting.Internal.WebHost
+file:? line? 
+content:Request finished in 63.4909ms 500 text/html; charset=utf-8
+
+-----------------------------------------
+
+time:2017-10-26 17:44:01,396 
+level:INFO 
+logger:Microsoft.AspNetCore.Hosting.Internal.WebHost
+file:? line? 
+content:Request starting HTTP/1.1 GET http://localhost:57942/passport/login?username=111&password=111&backUrl=111  
+
+-----------------------------------------
+
+time:2017-10-26 17:44:01,407 
+level:INFO 
+logger:Microsoft.AspNetCore.Hosting.Internal.WebHost
+file:? line? 
+content:Request finished in 1.9238ms 404 
+
+-----------------------------------------
+
+time:2017-10-26 17:44:01,413 
+level:INFO 
+logger:Microsoft.AspNetCore.Hosting.Internal.WebHost
+file:? line? 
+content:Request starting HTTP/1.1 GET http://localhost:57942/favicon.ico  
+
+-----------------------------------------
+
+time:2017-10-26 17:44:01,439 
+level:ERROR 
+logger:Microsoft.AspNetCore.Mvc.Internal.ActionSelector
+file:? line? 
+content:Request matched multiple actions resulting in ambiguity. Matching actions: NTCore.WebFront.Controllers.Api.RoomController.Get (NTCore.WebFront)
+NTCore.WebFront.Controllers.Api.SweepController.Get (NTCore.WebFront)
+
+-----------------------------------------
+
+time:2017-10-26 17:44:01,458 
+level:ERROR 
+logger:Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware
+file:? line? 
+content:An unhandled exception has occurred while executing the request
+Microsoft.AspNetCore.Mvc.Internal.AmbiguousActionException: Multiple actions matched. The following actions matched route data and had all constraints satisfied:
+
+NTCore.WebFront.Controllers.Api.RoomController.Get (NTCore.WebFront)
+NTCore.WebFront.Controllers.Api.SweepController.Get (NTCore.WebFront)
+   at Microsoft.AspNetCore.Mvc.Internal.ActionSelector.SelectBestCandidate(RouteContext context, IReadOnlyList`1 candidates)
+   at Microsoft.AspNetCore.Mvc.Internal.MvcAttributeRouteHandler.RouteAsync(RouteContext context)
+   at Microsoft.AspNetCore.Routing.Tree.TreeRouter.<RouteAsync>d__13.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Routing.RouteCollection.<RouteAsync>d__9.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Builder.RouterMiddleware.<Invoke>d__4.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.<Invoke>d__6.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.<Invoke>d__7.MoveNext()
+
+-----------------------------------------
+
+time:2017-10-26 17:44:01,489 
+level:INFO 
+logger:Microsoft.AspNetCore.Hosting.Internal.WebHost
+file:? line? 
+content:Request finished in 72.7541ms 500 text/html; charset=utf-8
+
+-----------------------------------------
+
+time:2017-10-26 17:44:01,713 
+level:INFO 
+logger:Microsoft.AspNetCore.Hosting.Internal.WebHost
+file:? line? 
+content:Request starting HTTP/1.1 GET http://localhost:57942/passport/login?username=111&password=111&backUrl=111  
+
+-----------------------------------------
+
+time:2017-10-26 17:44:01,731 
+level:INFO 
+logger:Microsoft.AspNetCore.Hosting.Internal.WebHost
+file:? line? 
+content:Request finished in 8.8438ms 404 
+
+-----------------------------------------
+
+time:2017-10-26 17:44:01,737 
+level:INFO 
+logger:Microsoft.AspNetCore.Hosting.Internal.WebHost
+file:? line? 
+content:Request starting HTTP/1.1 GET http://localhost:57942/favicon.ico  
+
+-----------------------------------------
+
+time:2017-10-26 17:44:01,744 
+level:ERROR 
+logger:Microsoft.AspNetCore.Mvc.Internal.ActionSelector
+file:? line? 
+content:Request matched multiple actions resulting in ambiguity. Matching actions: NTCore.WebFront.Controllers.Api.RoomController.Get (NTCore.WebFront)
+NTCore.WebFront.Controllers.Api.SweepController.Get (NTCore.WebFront)
+
+-----------------------------------------
+
+time:2017-10-26 17:44:01,770 
+level:ERROR 
+logger:Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware
+file:? line? 
+content:An unhandled exception has occurred while executing the request
+Microsoft.AspNetCore.Mvc.Internal.AmbiguousActionException: Multiple actions matched. The following actions matched route data and had all constraints satisfied:
+
+NTCore.WebFront.Controllers.Api.RoomController.Get (NTCore.WebFront)
+NTCore.WebFront.Controllers.Api.SweepController.Get (NTCore.WebFront)
+   at Microsoft.AspNetCore.Mvc.Internal.ActionSelector.SelectBestCandidate(RouteContext context, IReadOnlyList`1 candidates)
+   at Microsoft.AspNetCore.Mvc.Internal.MvcAttributeRouteHandler.RouteAsync(RouteContext context)
+   at Microsoft.AspNetCore.Routing.Tree.TreeRouter.<RouteAsync>d__13.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Routing.RouteCollection.<RouteAsync>d__9.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Builder.RouterMiddleware.<Invoke>d__4.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.<Invoke>d__6.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.<Invoke>d__7.MoveNext()
+
+-----------------------------------------
+
+time:2017-10-26 17:44:01,803 
+level:INFO 
+logger:Microsoft.AspNetCore.Hosting.Internal.WebHost
+file:? line? 
+content:Request finished in 55.4734ms 500 text/html; charset=utf-8
+
+-----------------------------------------
+
+time:2017-10-26 17:44:01,901 
+level:INFO 
+logger:Microsoft.AspNetCore.Hosting.Internal.WebHost
+file:? line? 
+content:Request starting HTTP/1.1 GET http://localhost:57942/passport/login?username=111&password=111&backUrl=111  
+
+-----------------------------------------
+
+time:2017-10-26 17:44:01,914 
+level:INFO 
+logger:Microsoft.AspNetCore.Hosting.Internal.WebHost
+file:? line? 
+content:Request finished in 7.2767ms 404 
+
+-----------------------------------------
+
+time:2017-10-26 17:44:01,931 
+level:INFO 
+logger:Microsoft.AspNetCore.Hosting.Internal.WebHost
+file:? line? 
+content:Request starting HTTP/1.1 GET http://localhost:57942/favicon.ico  
+
+-----------------------------------------
+
+time:2017-10-26 17:44:01,956 
+level:ERROR 
+logger:Microsoft.AspNetCore.Mvc.Internal.ActionSelector
+file:? line? 
+content:Request matched multiple actions resulting in ambiguity. Matching actions: NTCore.WebFront.Controllers.Api.RoomController.Get (NTCore.WebFront)
+NTCore.WebFront.Controllers.Api.SweepController.Get (NTCore.WebFront)
+
+-----------------------------------------
+
+time:2017-10-26 17:44:01,974 
+level:ERROR 
+logger:Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware
+file:? line? 
+content:An unhandled exception has occurred while executing the request
+Microsoft.AspNetCore.Mvc.Internal.AmbiguousActionException: Multiple actions matched. The following actions matched route data and had all constraints satisfied:
+
+NTCore.WebFront.Controllers.Api.RoomController.Get (NTCore.WebFront)
+NTCore.WebFront.Controllers.Api.SweepController.Get (NTCore.WebFront)
+   at Microsoft.AspNetCore.Mvc.Internal.ActionSelector.SelectBestCandidate(RouteContext context, IReadOnlyList`1 candidates)
+   at Microsoft.AspNetCore.Mvc.Internal.MvcAttributeRouteHandler.RouteAsync(RouteContext context)
+   at Microsoft.AspNetCore.Routing.Tree.TreeRouter.<RouteAsync>d__13.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Routing.RouteCollection.<RouteAsync>d__9.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Builder.RouterMiddleware.<Invoke>d__4.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.<Invoke>d__6.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.<Invoke>d__7.MoveNext()
+
+-----------------------------------------
+
+time:2017-10-26 17:44:01,999 
+level:INFO 
+logger:Microsoft.AspNetCore.Hosting.Internal.WebHost
+file:? line? 
+content:Request finished in 67.3408ms 500 text/html; charset=utf-8
+
+-----------------------------------------
+
+time:2017-10-26 17:44:02,068 
+level:INFO 
+logger:Microsoft.AspNetCore.Hosting.Internal.WebHost
+file:? line? 
+content:Request starting HTTP/1.1 GET http://localhost:57942/passport/login?username=111&password=111&backUrl=111  
+
+-----------------------------------------
+
+time:2017-10-26 17:44:02,079 
+level:INFO 
+logger:Microsoft.AspNetCore.Hosting.Internal.WebHost
+file:? line? 
+content:Request finished in 2.0046ms 404 
+
+-----------------------------------------
+
+time:2017-10-26 17:44:02,085 
+level:INFO 
+logger:Microsoft.AspNetCore.Hosting.Internal.WebHost
+file:? line? 
+content:Request starting HTTP/1.1 GET http://localhost:57942/favicon.ico  
+
+-----------------------------------------
+
+time:2017-10-26 17:44:02,092 
+level:ERROR 
+logger:Microsoft.AspNetCore.Mvc.Internal.ActionSelector
+file:? line? 
+content:Request matched multiple actions resulting in ambiguity. Matching actions: NTCore.WebFront.Controllers.Api.RoomController.Get (NTCore.WebFront)
+NTCore.WebFront.Controllers.Api.SweepController.Get (NTCore.WebFront)
+
+-----------------------------------------
+
+time:2017-10-26 17:44:02,112 
+level:ERROR 
+logger:Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware
+file:? line? 
+content:An unhandled exception has occurred while executing the request
+Microsoft.AspNetCore.Mvc.Internal.AmbiguousActionException: Multiple actions matched. The following actions matched route data and had all constraints satisfied:
+
+NTCore.WebFront.Controllers.Api.RoomController.Get (NTCore.WebFront)
+NTCore.WebFront.Controllers.Api.SweepController.Get (NTCore.WebFront)
+   at Microsoft.AspNetCore.Mvc.Internal.ActionSelector.SelectBestCandidate(RouteContext context, IReadOnlyList`1 candidates)
+   at Microsoft.AspNetCore.Mvc.Internal.MvcAttributeRouteHandler.RouteAsync(RouteContext context)
+   at Microsoft.AspNetCore.Routing.Tree.TreeRouter.<RouteAsync>d__13.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Routing.RouteCollection.<RouteAsync>d__9.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Builder.RouterMiddleware.<Invoke>d__4.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.<Invoke>d__6.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.<Invoke>d__7.MoveNext()
+
+-----------------------------------------
+
+time:2017-10-26 17:44:02,146 
+level:INFO 
+logger:Microsoft.AspNetCore.Hosting.Internal.WebHost
+file:? line? 
+content:Request finished in 59.7978ms 500 text/html; charset=utf-8
+
+-----------------------------------------
+
+time:2017-10-26 17:46:32,610 
+level:INFO 
+logger:Microsoft.AspNetCore.Hosting.Internal.WebHost
+file:? line? 
+content:Request starting HTTP/1.1 GET http://localhost:57942/api/values  
+
+-----------------------------------------
+
+time:2017-10-26 17:46:33,016 
+level:INFO 
+logger:Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker
+file:? line? 
+content:Executing action method NTCore.WebFront.Controllers.ValuesController.GetAsync (NTCore.WebFront) with arguments ((null)) - ModelState is Valid
+
+-----------------------------------------
+
+time:2017-10-26 17:46:37,447 
+level:INFO 
+logger:Microsoft.EntityFrameworkCore.Infrastructure
+file:? line? 
+content:Entity Framework Core 2.0.0-rtm-26452 initialized 'MainContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None
+
+-----------------------------------------
+
+time:2017-10-26 17:46:37,502 
+level:WARN 
+logger:Microsoft.EntityFrameworkCore.Query
+file:? line? 
+content:Query: '(from UserInfo <generated>_1 in DbSet<UserInfo> select [<generated>_1]).FirstOrDefault()' uses First/FirstOrDefault operation without OrderBy and filter which may lead to unpredictable results.
+
+-----------------------------------------
+
+time:2017-10-26 17:46:37,811 
+level:INFO 
+logger:Microsoft.EntityFrameworkCore.Database.Command
+file:? line? 
+content:Executed DbCommand (36ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT TOP(1) [u].[id], [u].[auth_type], [u].[avatar], [u].[confirmed], [u].[create_time], [u].[creator_id], [u].[data_state], [u].[email], [u].[employee_number], [u].[hotel_id], [u].[mobile_number], [u].[nickname], [u].[password], [u].[update_time], [u].[updater_id], [u].[username]
+FROM [user] AS [u]
+WHERE [u].[data_state] = 1
+
+-----------------------------------------
+
+time:2017-10-26 17:46:37,900 
+level:ERROR 
+logger:Microsoft.EntityFrameworkCore.Query
+file:? line? 
+content:An exception occurred in the database while iterating the results of a query for context type 'NTCore.DataAccess.MainContext'.
+System.InvalidCastException: Unable to cast object of type 'System.Byte' to type 'System.Int32'.
+   at lambda_method(Closure , Object[] )
+   at Microsoft.EntityFrameworkCore.Storage.Internal.UntypedRelationalValueBufferFactory.Create(DbDataReader dataReader)
+   at Microsoft.EntityFrameworkCore.Query.Internal.QueryingEnumerable`1.Enumerator.BufferlessMoveNext(Boolean buffer)
+   at Microsoft.EntityFrameworkCore.Storage.Internal.SqlServerExecutionStrategy.Execute[TState,TResult](TState state, Func`3 operation, Func`3 verifySucceeded)
+   at Microsoft.EntityFrameworkCore.Query.Internal.QueryingEnumerable`1.Enumerator.MoveNext()
+   at System.Linq.Enumerable.TryGetFirst[TSource](IEnumerable`1 source, Boolean& found)
+   at lambda_method(Closure , QueryContext )
+   at Microsoft.EntityFrameworkCore.Query.Internal.QueryCompiler.<>c__DisplayClass17_0`1.<CompileQueryCore>b__0(QueryContext qc)
+System.InvalidCastException: Unable to cast object of type 'System.Byte' to type 'System.Int32'.
+   at lambda_method(Closure , Object[] )
+   at Microsoft.EntityFrameworkCore.Storage.Internal.UntypedRelationalValueBufferFactory.Create(DbDataReader dataReader)
+   at Microsoft.EntityFrameworkCore.Query.Internal.QueryingEnumerable`1.Enumerator.BufferlessMoveNext(Boolean buffer)
+   at Microsoft.EntityFrameworkCore.Storage.Internal.SqlServerExecutionStrategy.Execute[TState,TResult](TState state, Func`3 operation, Func`3 verifySucceeded)
+   at Microsoft.EntityFrameworkCore.Query.Internal.QueryingEnumerable`1.Enumerator.MoveNext()
+   at System.Linq.Enumerable.TryGetFirst[TSource](IEnumerable`1 source, Boolean& found)
+   at lambda_method(Closure , QueryContext )
+   at Microsoft.EntityFrameworkCore.Query.Internal.QueryCompiler.<>c__DisplayClass17_0`1.<CompileQueryCore>b__0(QueryContext qc)
+
+-----------------------------------------
+
+time:2017-10-26 17:46:37,972 
+level:INFO 
+logger:Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker
+file:? line? 
+content:Executed action NTCore.WebFront.Controllers.ValuesController.GetAsync (NTCore.WebFront) in 5108.478ms
+
+-----------------------------------------
+
+time:2017-10-26 17:46:38,025 
+level:ERROR 
+logger:Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware
+file:? line? 
+content:An unhandled exception has occurred while executing the request
+System.InvalidCastException: Unable to cast object of type 'System.Byte' to type 'System.Int32'.
+   at lambda_method(Closure , Object[] )
+   at Microsoft.EntityFrameworkCore.Storage.Internal.UntypedRelationalValueBufferFactory.Create(DbDataReader dataReader)
+   at Microsoft.EntityFrameworkCore.Query.Internal.QueryingEnumerable`1.Enumerator.BufferlessMoveNext(Boolean buffer)
+   at Microsoft.EntityFrameworkCore.Storage.Internal.SqlServerExecutionStrategy.Execute[TState,TResult](TState state, Func`3 operation, Func`3 verifySucceeded)
+   at Microsoft.EntityFrameworkCore.Query.Internal.QueryingEnumerable`1.Enumerator.MoveNext()
+   at System.Linq.Enumerable.TryGetFirst[TSource](IEnumerable`1 source, Boolean& found)
+   at lambda_method(Closure , QueryContext )
+   at Microsoft.EntityFrameworkCore.Query.Internal.QueryCompiler.<>c__DisplayClass17_0`1.<CompileQueryCore>b__0(QueryContext qc)
+   at Microsoft.EntityFrameworkCore.Query.Internal.QueryCompiler.Execute[TResult](Expression query)
+   at Microsoft.EntityFrameworkCore.Query.Internal.EntityQueryProvider.Execute[TResult](Expression expression)
+   at System.Linq.Queryable.FirstOrDefault[TSource](IQueryable`1 source)
+   at NTCore.WebFront.Controllers.ValuesController.<GetAsync>d__3.MoveNext() in E:\Projects\NTPlatform\NTCore.WebFront\Controllers\ValuesController.cs:line 38
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at lambda_method(Closure , Object )
+   at Microsoft.Extensions.Internal.ObjectMethodExecutorAwaitable.Awaiter.GetResult()
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.<InvokeActionMethodAsync>d__12.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.<InvokeNextActionFilterAsync>d__10.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.Rethrow(ActionExecutedContext context)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.<InvokeInnerFilterAsync>d__14.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.<InvokeNextResourceFilter>d__22.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.Rethrow(ResourceExecutedContext context)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.<InvokeFilterPipelineAsync>d__17.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.<InvokeAsync>d__15.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Builder.RouterMiddleware.<Invoke>d__4.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.<Invoke>d__6.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.<Invoke>d__7.MoveNext()
+
+-----------------------------------------
+
+time:2017-10-26 17:46:38,178 
+level:INFO 
+logger:Microsoft.AspNetCore.Hosting.Internal.WebHost
+file:? line? 
+content:Request finished in 5572.3349ms 500 text/html; charset=utf-8
+
+-----------------------------------------
+
+time:2017-10-26 17:46:38,200 
+level:INFO 
+logger:Microsoft.AspNetCore.Hosting.Internal.WebHost
+file:? line? 
+content:Request starting HTTP/1.1 GET http://localhost:57942/favicon.ico  
+
+-----------------------------------------
+
+time:2017-10-26 17:46:38,217 
+level:ERROR 
+logger:Microsoft.AspNetCore.Mvc.Internal.ActionSelector
+file:? line? 
+content:Request matched multiple actions resulting in ambiguity. Matching actions: NTCore.WebFront.Controllers.Api.RoomController.Get (NTCore.WebFront)
+NTCore.WebFront.Controllers.Api.SweepController.Get (NTCore.WebFront)
+
+-----------------------------------------
+
+time:2017-10-26 17:46:38,256 
+level:ERROR 
+logger:Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware
+file:? line? 
+content:An unhandled exception has occurred while executing the request
+Microsoft.AspNetCore.Mvc.Internal.AmbiguousActionException: Multiple actions matched. The following actions matched route data and had all constraints satisfied:
+
+NTCore.WebFront.Controllers.Api.RoomController.Get (NTCore.WebFront)
+NTCore.WebFront.Controllers.Api.SweepController.Get (NTCore.WebFront)
+   at Microsoft.AspNetCore.Mvc.Internal.ActionSelector.SelectBestCandidate(RouteContext context, IReadOnlyList`1 candidates)
+   at Microsoft.AspNetCore.Mvc.Internal.MvcAttributeRouteHandler.RouteAsync(RouteContext context)
+   at Microsoft.AspNetCore.Routing.Tree.TreeRouter.<RouteAsync>d__13.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Routing.RouteCollection.<RouteAsync>d__9.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Builder.RouterMiddleware.<Invoke>d__4.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.<Invoke>d__6.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.<Invoke>d__7.MoveNext()
+
+-----------------------------------------
+
+time:2017-10-26 17:46:38,283 
+level:INFO 
+logger:Microsoft.AspNetCore.Hosting.Internal.WebHost
+file:? line? 
+content:Request finished in 81.6919ms 500 text/html; charset=utf-8
+
+-----------------------------------------
+
+time:2017-10-26 17:46:53,633 
+level:INFO 
+logger:Microsoft.AspNetCore.Hosting.Internal.WebHost
+file:? line? 
+content:Request starting HTTP/1.1 GET http://localhost:57942/api/values  
+
+-----------------------------------------
+
+time:2017-10-26 17:46:53,663 
+level:INFO 
+logger:Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker
+file:? line? 
+content:Executing action method NTCore.WebFront.Controllers.ValuesController.GetAsync (NTCore.WebFront) with arguments ((null)) - ModelState is Valid
+
+-----------------------------------------
+
+time:2017-10-26 17:46:56,489 
+level:INFO 
+logger:Microsoft.EntityFrameworkCore.Infrastructure
+file:? line? 
+content:Entity Framework Core 2.0.0-rtm-26452 initialized 'MainContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None
+
+-----------------------------------------
+
+time:2017-10-26 17:46:59,073 
+level:INFO 
+logger:Microsoft.EntityFrameworkCore.Database.Command
+file:? line? 
+content:Executed DbCommand (23ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT TOP(1) [u].[id], [u].[auth_type], [u].[avatar], [u].[confirmed], [u].[create_time], [u].[creator_id], [u].[data_state], [u].[email], [u].[employee_number], [u].[hotel_id], [u].[mobile_number], [u].[nickname], [u].[password], [u].[update_time], [u].[updater_id], [u].[username]
+FROM [user] AS [u]
+WHERE [u].[data_state] = 1
+
+-----------------------------------------
+
+time:2017-10-26 17:46:59,095 
+level:ERROR 
+logger:Microsoft.EntityFrameworkCore.Query
+file:? line? 
+content:An exception occurred in the database while iterating the results of a query for context type 'NTCore.DataAccess.MainContext'.
+System.InvalidCastException: Unable to cast object of type 'System.Byte' to type 'System.Int32'.
+   at lambda_method(Closure , Object[] )
+   at Microsoft.EntityFrameworkCore.Storage.Internal.UntypedRelationalValueBufferFactory.Create(DbDataReader dataReader)
+   at Microsoft.EntityFrameworkCore.Query.Internal.QueryingEnumerable`1.Enumerator.BufferlessMoveNext(Boolean buffer)
+   at Microsoft.EntityFrameworkCore.Storage.Internal.SqlServerExecutionStrategy.Execute[TState,TResult](TState state, Func`3 operation, Func`3 verifySucceeded)
+   at Microsoft.EntityFrameworkCore.Query.Internal.QueryingEnumerable`1.Enumerator.MoveNext()
+   at System.Linq.Enumerable.TryGetFirst[TSource](IEnumerable`1 source, Boolean& found)
+   at lambda_method(Closure , QueryContext )
+   at Microsoft.EntityFrameworkCore.Query.Internal.QueryCompiler.<>c__DisplayClass17_0`1.<CompileQueryCore>b__0(QueryContext qc)
+System.InvalidCastException: Unable to cast object of type 'System.Byte' to type 'System.Int32'.
+   at lambda_method(Closure , Object[] )
+   at Microsoft.EntityFrameworkCore.Storage.Internal.UntypedRelationalValueBufferFactory.Create(DbDataReader dataReader)
+   at Microsoft.EntityFrameworkCore.Query.Internal.QueryingEnumerable`1.Enumerator.BufferlessMoveNext(Boolean buffer)
+   at Microsoft.EntityFrameworkCore.Storage.Internal.SqlServerExecutionStrategy.Execute[TState,TResult](TState state, Func`3 operation, Func`3 verifySucceeded)
+   at Microsoft.EntityFrameworkCore.Query.Internal.QueryingEnumerable`1.Enumerator.MoveNext()
+   at System.Linq.Enumerable.TryGetFirst[TSource](IEnumerable`1 source, Boolean& found)
+   at lambda_method(Closure , QueryContext )
+   at Microsoft.EntityFrameworkCore.Query.Internal.QueryCompiler.<>c__DisplayClass17_0`1.<CompileQueryCore>b__0(QueryContext qc)
+
+-----------------------------------------
+
+time:2017-10-26 17:47:04,674 
+level:INFO 
+logger:Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker
+file:? line? 
+content:Executed action NTCore.WebFront.Controllers.ValuesController.GetAsync (NTCore.WebFront) in 5574.7461ms
+
+-----------------------------------------
+
+time:2017-10-26 17:47:08,411 
+level:ERROR 
+logger:Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware
+file:? line? 
+content:An unhandled exception has occurred while executing the request
+System.InvalidCastException: Unable to cast object of type 'System.Byte' to type 'System.Int32'.
+   at lambda_method(Closure , Object[] )
+   at Microsoft.EntityFrameworkCore.Storage.Internal.UntypedRelationalValueBufferFactory.Create(DbDataReader dataReader)
+   at Microsoft.EntityFrameworkCore.Query.Internal.QueryingEnumerable`1.Enumerator.BufferlessMoveNext(Boolean buffer)
+   at Microsoft.EntityFrameworkCore.Storage.Internal.SqlServerExecutionStrategy.Execute[TState,TResult](TState state, Func`3 operation, Func`3 verifySucceeded)
+   at Microsoft.EntityFrameworkCore.Query.Internal.QueryingEnumerable`1.Enumerator.MoveNext()
+   at System.Linq.Enumerable.TryGetFirst[TSource](IEnumerable`1 source, Boolean& found)
+   at lambda_method(Closure , QueryContext )
+   at Microsoft.EntityFrameworkCore.Query.Internal.QueryCompiler.<>c__DisplayClass17_0`1.<CompileQueryCore>b__0(QueryContext qc)
+   at Microsoft.EntityFrameworkCore.Query.Internal.QueryCompiler.Execute[TResult](Expression query)
+   at Microsoft.EntityFrameworkCore.Query.Internal.EntityQueryProvider.Execute[TResult](Expression expression)
+   at System.Linq.Queryable.FirstOrDefault[TSource](IQueryable`1 source)
+   at NTCore.WebFront.Controllers.ValuesController.<GetAsync>d__3.MoveNext() in E:\Projects\NTPlatform\NTCore.WebFront\Controllers\ValuesController.cs:line 38
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at lambda_method(Closure , Object )
+   at Microsoft.Extensions.Internal.ObjectMethodExecutorAwaitable.Awaiter.GetResult()
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.<InvokeActionMethodAsync>d__12.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.<InvokeNextActionFilterAsync>d__10.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.Rethrow(ActionExecutedContext context)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.<InvokeInnerFilterAsync>d__14.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.<InvokeNextResourceFilter>d__22.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.Rethrow(ResourceExecutedContext context)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.<InvokeFilterPipelineAsync>d__17.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.<InvokeAsync>d__15.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Builder.RouterMiddleware.<Invoke>d__4.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.<Invoke>d__6.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.<Invoke>d__7.MoveNext()
+
+-----------------------------------------
+
+time:2017-10-26 17:47:10,854 
+level:INFO 
+logger:Microsoft.AspNetCore.Hosting.Internal.WebHost
+file:? line? 
+content:Request finished in 15444.6675ms 500 text/html; charset=utf-8
+
+-----------------------------------------
+
+time:2017-10-26 17:47:15,983 
+level:INFO 
+logger:Microsoft.AspNetCore.Hosting.Internal.WebHost
+file:? line? 
+content:Request starting HTTP/1.1 GET http://localhost:57942/favicon.ico  
+
+-----------------------------------------
+
+time:2017-10-26 17:47:19,025 
+level:ERROR 
+logger:Microsoft.AspNetCore.Mvc.Internal.ActionSelector
+file:? line? 
+content:Request matched multiple actions resulting in ambiguity. Matching actions: NTCore.WebFront.Controllers.Api.RoomController.Get (NTCore.WebFront)
+NTCore.WebFront.Controllers.Api.SweepController.Get (NTCore.WebFront)
+
+-----------------------------------------
+
+time:2017-10-26 17:47:21,874 
+level:ERROR 
+logger:Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware
+file:? line? 
+content:An unhandled exception has occurred while executing the request
+Microsoft.AspNetCore.Mvc.Internal.AmbiguousActionException: Multiple actions matched. The following actions matched route data and had all constraints satisfied:
+
+NTCore.WebFront.Controllers.Api.RoomController.Get (NTCore.WebFront)
+NTCore.WebFront.Controllers.Api.SweepController.Get (NTCore.WebFront)
+   at Microsoft.AspNetCore.Mvc.Internal.ActionSelector.SelectBestCandidate(RouteContext context, IReadOnlyList`1 candidates)
+   at Microsoft.AspNetCore.Mvc.Internal.MvcAttributeRouteHandler.RouteAsync(RouteContext context)
+   at Microsoft.AspNetCore.Routing.Tree.TreeRouter.<RouteAsync>d__13.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Routing.RouteCollection.<RouteAsync>d__9.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Builder.RouterMiddleware.<Invoke>d__4.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.<Invoke>d__6.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.<Invoke>d__7.MoveNext()
+
+-----------------------------------------
+
+time:2017-10-26 17:47:26,244 
+level:INFO 
+logger:Microsoft.AspNetCore.Hosting.Internal.WebHost
+file:? line? 
+content:Request finished in 14779.6027ms 500 text/html; charset=utf-8
+
+-----------------------------------------
+
+time:2017-10-26 17:51:04,078 
+level:INFO 
+logger:Microsoft.AspNetCore.Hosting.Internal.WebHost
+file:? line? 
+content:Request starting HTTP/1.1 GET http://localhost:57942/api/values  
+
+-----------------------------------------
+
+time:2017-10-26 17:51:04,102 
+level:INFO 
+logger:Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker
+file:? line? 
+content:Executing action method NTCore.WebFront.Controllers.ValuesController.GetAsync (NTCore.WebFront) with arguments ((null)) - ModelState is Valid
+
+-----------------------------------------
+
+time:2017-10-26 17:51:05,640 
+level:INFO 
+logger:Microsoft.EntityFrameworkCore.Infrastructure
+file:? line? 
+content:Entity Framework Core 2.0.0-rtm-26452 initialized 'MainContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None
+
+-----------------------------------------
+
+time:2017-10-26 17:51:05,680 
+level:INFO 
+logger:Microsoft.EntityFrameworkCore.Database.Command
+file:? line? 
+content:Executed DbCommand (37ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT TOP(1) [u].[id], [u].[auth_type], [u].[avatar], [u].[confirmed], [u].[create_time], [u].[creator_id], [u].[data_state], [u].[email], [u].[employee_number], [u].[hotel_id], [u].[mobile_number], [u].[nickname], [u].[password], [u].[update_time], [u].[updater_id], [u].[username]
+FROM [user] AS [u]
+WHERE [u].[data_state] = 1
+
+-----------------------------------------
+
+time:2017-10-26 17:51:13,980 
+level:INFO 
+logger:Microsoft.AspNetCore.Authentication.Cookies.CookieAuthenticationHandler
+file:? line? 
+content:AuthenticationScheme: AuthenticationScheme signed in.
+
+-----------------------------------------
+
+time:2017-10-26 17:51:21,849 
+level:INFO 
+logger:Microsoft.AspNetCore.Mvc.Internal.ObjectResultExecutor
+file:? line? 
+content:Executing ObjectResult, writing value Microsoft.AspNetCore.Mvc.ControllerContext.
+
+-----------------------------------------
+
+time:2017-10-26 17:51:21,906 
+level:INFO 
+logger:Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker
+file:? line? 
+content:Executed action NTCore.WebFront.Controllers.ValuesController.GetAsync (NTCore.WebFront) in 17812.1834ms
+
+-----------------------------------------
+
+time:2017-10-26 17:51:21,915 
+level:INFO 
+logger:Microsoft.AspNetCore.Hosting.Internal.WebHost
+file:? line? 
+content:Request finished in 17830.677ms 200 application/json; charset=utf-8
+
+-----------------------------------------
+
+time:2017-10-26 17:51:21,928 
+level:INFO 
+logger:Microsoft.AspNetCore.Hosting.Internal.WebHost
+file:? line? 
+content:Request starting HTTP/1.1 GET http://localhost:57942/favicon.ico  
+
+-----------------------------------------
+
+time:2017-10-26 17:51:21,933 
+level:INFO 
+logger:Microsoft.AspNetCore.Authentication.Cookies.CookieAuthenticationHandler
+file:? line? 
+content:AuthenticationScheme: AuthenticationScheme was successfully authenticated.
+
+-----------------------------------------
+
+time:2017-10-26 17:51:21,942 
+level:ERROR 
+logger:Microsoft.AspNetCore.Mvc.Internal.ActionSelector
+file:? line? 
+content:Request matched multiple actions resulting in ambiguity. Matching actions: NTCore.WebFront.Controllers.Api.RoomController.Get (NTCore.WebFront)
+NTCore.WebFront.Controllers.Api.SweepController.Get (NTCore.WebFront)
+
+-----------------------------------------
+
+time:2017-10-26 17:51:21,970 
+level:ERROR 
+logger:Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware
+file:? line? 
+content:An unhandled exception has occurred while executing the request
+Microsoft.AspNetCore.Mvc.Internal.AmbiguousActionException: Multiple actions matched. The following actions matched route data and had all constraints satisfied:
+
+NTCore.WebFront.Controllers.Api.RoomController.Get (NTCore.WebFront)
+NTCore.WebFront.Controllers.Api.SweepController.Get (NTCore.WebFront)
+   at Microsoft.AspNetCore.Mvc.Internal.ActionSelector.SelectBestCandidate(RouteContext context, IReadOnlyList`1 candidates)
+   at Microsoft.AspNetCore.Mvc.Internal.MvcAttributeRouteHandler.RouteAsync(RouteContext context)
+   at Microsoft.AspNetCore.Routing.Tree.TreeRouter.<RouteAsync>d__13.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Routing.RouteCollection.<RouteAsync>d__9.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Builder.RouterMiddleware.<Invoke>d__4.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.<Invoke>d__6.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.<Invoke>d__7.MoveNext()
+
+-----------------------------------------
+
+time:2017-10-26 17:51:22,001 
+level:INFO 
+logger:Microsoft.AspNetCore.Hosting.Internal.WebHost
+file:? line? 
+content:Request finished in 77.1827ms 500 text/html; charset=utf-8
+
+-----------------------------------------
+
+time:2017-10-26 17:51:24,924 
+level:INFO 
+logger:Microsoft.AspNetCore.Hosting.Internal.WebHost
+file:? line? 
+content:Request starting HTTP/1.1 GET http://localhost:57942/api/values  
+
+-----------------------------------------
+
+time:2017-10-26 17:51:24,927 
+level:INFO 
+logger:Microsoft.AspNetCore.Authentication.Cookies.CookieAuthenticationHandler
+file:? line? 
+content:AuthenticationScheme: AuthenticationScheme was successfully authenticated.
+
+-----------------------------------------
+
+time:2017-10-26 17:51:24,948 
+level:INFO 
+logger:Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker
+file:? line? 
+content:Executing action method NTCore.WebFront.Controllers.ValuesController.GetAsync (NTCore.WebFront) with arguments ((null)) - ModelState is Valid
+
+-----------------------------------------
+
+time:2017-10-26 17:51:25,542 
+level:INFO 
+logger:Microsoft.EntityFrameworkCore.Infrastructure
+file:? line? 
+content:Entity Framework Core 2.0.0-rtm-26452 initialized 'MainContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None
+
+-----------------------------------------
+
+time:2017-10-26 17:51:25,626 
+level:INFO 
+logger:Microsoft.EntityFrameworkCore.Database.Command
+file:? line? 
+content:Executed DbCommand (81ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT TOP(1) [u].[id], [u].[auth_type], [u].[avatar], [u].[confirmed], [u].[create_time], [u].[creator_id], [u].[data_state], [u].[email], [u].[employee_number], [u].[hotel_id], [u].[mobile_number], [u].[nickname], [u].[password], [u].[update_time], [u].[updater_id], [u].[username]
+FROM [user] AS [u]
+WHERE [u].[data_state] = 1
+
+-----------------------------------------
+
+time:2017-10-26 17:51:26,198 
+level:INFO 
+logger:Microsoft.AspNetCore.Authentication.Cookies.CookieAuthenticationHandler
+file:? line? 
+content:AuthenticationScheme: AuthenticationScheme signed in.
+
+-----------------------------------------
+
+time:2017-10-26 17:51:26,205 
+level:INFO 
+logger:Microsoft.AspNetCore.Mvc.Internal.ObjectResultExecutor
+file:? line? 
+content:Executing ObjectResult, writing value Microsoft.AspNetCore.Mvc.ControllerContext.
+
+-----------------------------------------
+
+time:2017-10-26 17:51:26,219 
+level:INFO 
+logger:Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker
+file:? line? 
+content:Executed action NTCore.WebFront.Controllers.ValuesController.GetAsync (NTCore.WebFront) in 1279.5227ms
+
+-----------------------------------------
+
+time:2017-10-26 17:51:26,232 
+level:INFO 
+logger:Microsoft.AspNetCore.Hosting.Internal.WebHost
+file:? line? 
+content:Request finished in 1300.9494ms 200 application/json; charset=utf-8
+
+-----------------------------------------
+
+time:2017-10-26 17:51:26,241 
+level:INFO 
+logger:Microsoft.AspNetCore.Hosting.Internal.WebHost
+file:? line? 
+content:Request starting HTTP/1.1 GET http://localhost:57942/favicon.ico  
+
+-----------------------------------------
+
+time:2017-10-26 17:51:26,244 
+level:INFO 
+logger:Microsoft.AspNetCore.Authentication.Cookies.CookieAuthenticationHandler
+file:? line? 
+content:AuthenticationScheme: AuthenticationScheme was successfully authenticated.
+
+-----------------------------------------
+
+time:2017-10-26 17:51:26,250 
+level:ERROR 
+logger:Microsoft.AspNetCore.Mvc.Internal.ActionSelector
+file:? line? 
+content:Request matched multiple actions resulting in ambiguity. Matching actions: NTCore.WebFront.Controllers.Api.RoomController.Get (NTCore.WebFront)
+NTCore.WebFront.Controllers.Api.SweepController.Get (NTCore.WebFront)
+
+-----------------------------------------
+
+time:2017-10-26 17:51:26,272 
+level:ERROR 
+logger:Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware
+file:? line? 
+content:An unhandled exception has occurred while executing the request
+Microsoft.AspNetCore.Mvc.Internal.AmbiguousActionException: Multiple actions matched. The following actions matched route data and had all constraints satisfied:
+
+NTCore.WebFront.Controllers.Api.RoomController.Get (NTCore.WebFront)
+NTCore.WebFront.Controllers.Api.SweepController.Get (NTCore.WebFront)
+   at Microsoft.AspNetCore.Mvc.Internal.ActionSelector.SelectBestCandidate(RouteContext context, IReadOnlyList`1 candidates)
+   at Microsoft.AspNetCore.Mvc.Internal.MvcAttributeRouteHandler.RouteAsync(RouteContext context)
+   at Microsoft.AspNetCore.Routing.Tree.TreeRouter.<RouteAsync>d__13.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Routing.RouteCollection.<RouteAsync>d__9.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Builder.RouterMiddleware.<Invoke>d__4.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.<Invoke>d__6.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.<Invoke>d__7.MoveNext()
+
+-----------------------------------------
+
+time:2017-10-26 17:51:26,303 
+level:INFO 
+logger:Microsoft.AspNetCore.Hosting.Internal.WebHost
+file:? line? 
+content:Request finished in 56.5657ms 500 text/html; charset=utf-8
+
+-----------------------------------------
+
+time:2017-10-26 17:51:34,652 
+level:INFO 
+logger:Microsoft.AspNetCore.Hosting.Internal.WebHost
+file:? line? 
+content:Request starting HTTP/1.1 GET http://localhost:57942/api/assign-room  
+
+-----------------------------------------
+
+time:2017-10-26 17:51:34,655 
+level:INFO 
+logger:Microsoft.AspNetCore.Authentication.Cookies.CookieAuthenticationHandler
+file:? line? 
+content:AuthenticationScheme: AuthenticationScheme was successfully authenticated.
+
+-----------------------------------------
+
+time:2017-10-26 17:51:34,668 
+level:INFO 
+logger:Microsoft.AspNetCore.Hosting.Internal.WebHost
+file:? line? 
+content:Request finished in 8.354ms 404 
+
+-----------------------------------------
+
+time:2017-10-26 17:51:34,674 
+level:INFO 
+logger:Microsoft.AspNetCore.Hosting.Internal.WebHost
+file:? line? 
+content:Request starting HTTP/1.1 GET http://localhost:57942/favicon.ico  
+
+-----------------------------------------
+
+time:2017-10-26 17:51:34,677 
+level:INFO 
+logger:Microsoft.AspNetCore.Authentication.Cookies.CookieAuthenticationHandler
+file:? line? 
+content:AuthenticationScheme: AuthenticationScheme was successfully authenticated.
+
+-----------------------------------------
+
+time:2017-10-26 17:51:34,682 
+level:ERROR 
+logger:Microsoft.AspNetCore.Mvc.Internal.ActionSelector
+file:? line? 
+content:Request matched multiple actions resulting in ambiguity. Matching actions: NTCore.WebFront.Controllers.Api.RoomController.Get (NTCore.WebFront)
+NTCore.WebFront.Controllers.Api.SweepController.Get (NTCore.WebFront)
+
+-----------------------------------------
+
+time:2017-10-26 17:51:34,701 
+level:ERROR 
+logger:Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware
+file:? line? 
+content:An unhandled exception has occurred while executing the request
+Microsoft.AspNetCore.Mvc.Internal.AmbiguousActionException: Multiple actions matched. The following actions matched route data and had all constraints satisfied:
+
+NTCore.WebFront.Controllers.Api.RoomController.Get (NTCore.WebFront)
+NTCore.WebFront.Controllers.Api.SweepController.Get (NTCore.WebFront)
+   at Microsoft.AspNetCore.Mvc.Internal.ActionSelector.SelectBestCandidate(RouteContext context, IReadOnlyList`1 candidates)
+   at Microsoft.AspNetCore.Mvc.Internal.MvcAttributeRouteHandler.RouteAsync(RouteContext context)
+   at Microsoft.AspNetCore.Routing.Tree.TreeRouter.<RouteAsync>d__13.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Routing.RouteCollection.<RouteAsync>d__9.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Builder.RouterMiddleware.<Invoke>d__4.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.<Invoke>d__6.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.<Invoke>d__7.MoveNext()
+
+-----------------------------------------
+
+time:2017-10-26 17:51:34,727 
+level:INFO 
+logger:Microsoft.AspNetCore.Hosting.Internal.WebHost
+file:? line? 
+content:Request finished in 50.6017ms 500 text/html; charset=utf-8
+
+-----------------------------------------
+
+time:2017-10-26 17:51:37,528 
+level:INFO 
+logger:Microsoft.AspNetCore.Hosting.Internal.WebHost
+file:? line? 
+content:Request starting HTTP/1.1 GET http://localhost:57942/assign-room  
+
+-----------------------------------------
+
+time:2017-10-26 17:51:37,531 
+level:INFO 
+logger:Microsoft.AspNetCore.Authentication.Cookies.CookieAuthenticationHandler
+file:? line? 
+content:AuthenticationScheme: AuthenticationScheme was successfully authenticated.
+
+-----------------------------------------
+
+time:2017-10-26 17:51:37,540 
+level:INFO 
+logger:Microsoft.AspNetCore.Authorization.DefaultAuthorizationService
+file:? line? 
+content:Authorization was successful for user: bob.
+
+-----------------------------------------
+
+time:2017-10-26 17:51:41,188 
+level:INFO 
+logger:Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker
+file:? line? 
+content:Executing action method NTCore.WebFront.Controllers.AssignRoomController.Get (NTCore.WebFront) with arguments ((null)) - ModelState is Valid
+
+-----------------------------------------
+
+time:2017-10-26 17:51:42,528 
+level:INFO 
+logger:Microsoft.EntityFrameworkCore.Infrastructure
+file:? line? 
+content:Entity Framework Core 2.0.0-rtm-26452 initialized 'MainContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None
+
+-----------------------------------------
+
+time:2017-10-26 17:51:43,909 
+level:INFO 
+logger:Microsoft.EntityFrameworkCore.Database.Command
+file:? line? 
+content:Executed DbCommand (62ms) [Parameters=[@__name_0='?' (Size = 50)], CommandType='Text', CommandTimeout='30']
+SELECT TOP(1) [u].[id], [u].[auth_type], [u].[avatar], [u].[confirmed], [u].[create_time], [u].[creator_id], [u].[data_state], [u].[email], [u].[employee_number], [u].[hotel_id], [u].[mobile_number], [u].[nickname], [u].[password], [u].[update_time], [u].[updater_id], [u].[username]
+FROM [user] AS [u]
+WHERE ([u].[data_state] = 1) AND (([u].[username] = @__name_0) AND ([u].[confirmed] = 1))
+
+-----------------------------------------
+
+time:2017-10-26 17:51:43,940 
+level:INFO 
+logger:Microsoft.EntityFrameworkCore.Database.Command
+file:? line? 
+content:Executed DbCommand (21ms) [Parameters=[@__UserInfo_HotelId_0='?'], CommandType='Text', CommandTimeout='30']
+SELECT [a].[id], [a].[assign_time], [a].[coeffcient], [a].[create_time], [a].[creator_id], [a].[data_state], [a].[hotel_id], [a].[room_number], [a].[room_status], [a].[update_time], [a].[updater_id], [a].[userid]
+FROM [assign_room] AS [a]
+WHERE ([a].[data_state] = 1) AND ([a].[hotel_id] = @__UserInfo_HotelId_0)
+
+-----------------------------------------
+
+time:2017-10-26 17:51:43,950 
+level:INFO 
+logger:Microsoft.AspNetCore.Mvc.Formatters.Json.Internal.JsonResultExecutor
+file:? line? 
+content:Executing JsonResult, writing value NTCore.WebFront.Model.BaseReturn.
+
+-----------------------------------------
+
+time:2017-10-26 17:51:43,985 
+level:INFO 
+logger:Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker
+file:? line? 
+content:Executed action NTCore.WebFront.Controllers.AssignRoomController.Get (NTCore.WebFront) in 6443.0911ms
+
+-----------------------------------------
+
+time:2017-10-26 17:51:44,001 
+level:INFO 
+logger:Microsoft.AspNetCore.Hosting.Internal.WebHost
+file:? line? 
+content:Request finished in 6459.4247ms 200 application/json; charset=utf-8
+
+-----------------------------------------
+
+time:2017-10-26 17:51:44,006 
+level:INFO 
+logger:Microsoft.AspNetCore.Hosting.Internal.WebHost
+file:? line? 
+content:Request starting HTTP/1.1 GET http://localhost:57942/favicon.ico  
+
+-----------------------------------------
+
+time:2017-10-26 17:51:44,008 
+level:INFO 
+logger:Microsoft.AspNetCore.Authentication.Cookies.CookieAuthenticationHandler
+file:? line? 
+content:AuthenticationScheme: AuthenticationScheme was successfully authenticated.
+
+-----------------------------------------
+
+time:2017-10-26 17:51:44,014 
+level:ERROR 
+logger:Microsoft.AspNetCore.Mvc.Internal.ActionSelector
+file:? line? 
+content:Request matched multiple actions resulting in ambiguity. Matching actions: NTCore.WebFront.Controllers.Api.RoomController.Get (NTCore.WebFront)
+NTCore.WebFront.Controllers.Api.SweepController.Get (NTCore.WebFront)
+
+-----------------------------------------
+
+time:2017-10-26 17:51:44,034 
+level:ERROR 
+logger:Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware
+file:? line? 
+content:An unhandled exception has occurred while executing the request
+Microsoft.AspNetCore.Mvc.Internal.AmbiguousActionException: Multiple actions matched. The following actions matched route data and had all constraints satisfied:
+
+NTCore.WebFront.Controllers.Api.RoomController.Get (NTCore.WebFront)
+NTCore.WebFront.Controllers.Api.SweepController.Get (NTCore.WebFront)
+   at Microsoft.AspNetCore.Mvc.Internal.ActionSelector.SelectBestCandidate(RouteContext context, IReadOnlyList`1 candidates)
+   at Microsoft.AspNetCore.Mvc.Internal.MvcAttributeRouteHandler.RouteAsync(RouteContext context)
+   at Microsoft.AspNetCore.Routing.Tree.TreeRouter.<RouteAsync>d__13.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Routing.RouteCollection.<RouteAsync>d__9.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Builder.RouterMiddleware.<Invoke>d__4.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.<Invoke>d__6.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.<Invoke>d__7.MoveNext()
+
+-----------------------------------------
+
+time:2017-10-26 17:51:44,084 
+level:INFO 
+logger:Microsoft.AspNetCore.Hosting.Internal.WebHost
+file:? line? 
+content:Request finished in 61.0887ms 500 text/html; charset=utf-8
+
+-----------------------------------------
+
+time:2017-10-26 17:53:15,575 
+level:INFO 
+logger:Microsoft.AspNetCore.Hosting.Internal.WebHost
+file:? line? 
+content:Request starting HTTP/1.1 GET http://localhost:57942/api/values  
+
+-----------------------------------------
+
+time:2017-10-26 17:53:15,668 
+level:INFO 
+logger:Microsoft.AspNetCore.Authentication.Cookies.CookieAuthenticationHandler
+file:? line? 
+content:AuthenticationScheme: AuthenticationScheme was successfully authenticated.
+
+-----------------------------------------
+
+time:2017-10-26 17:53:15,990 
+level:INFO 
+logger:Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker
+file:? line? 
+content:Executing action method NTCore.WebFront.Controllers.ValuesController.GetAsync (NTCore.WebFront) with arguments ((null)) - ModelState is Valid
+
+-----------------------------------------
+
+time:2017-10-26 17:53:18,353 
+level:INFO 
+logger:Microsoft.EntityFrameworkCore.Infrastructure
+file:? line? 
+content:Entity Framework Core 2.0.0-rtm-26452 initialized 'MainContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None
+
+-----------------------------------------
+
+time:2017-10-26 17:53:18,426 
+level:WARN 
+logger:Microsoft.EntityFrameworkCore.Query
+file:? line? 
+content:Query: '(from UserInfo <generated>_1 in DbSet<UserInfo> select [<generated>_1]).FirstOrDefault()' uses First/FirstOrDefault operation without OrderBy and filter which may lead to unpredictable results.
+
+-----------------------------------------
+
+time:2017-10-26 17:53:18,631 
+level:INFO 
+logger:Microsoft.EntityFrameworkCore.Database.Command
+file:? line? 
+content:Executed DbCommand (39ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT TOP(1) [u].[id], [u].[auth_type], [u].[avatar], [u].[confirmed], [u].[create_time], [u].[creator_id], [u].[data_state], [u].[email], [u].[employee_number], [u].[hotel_id], [u].[mobile_number], [u].[nickname], [u].[password], [u].[update_time], [u].[updater_id], [u].[username]
+FROM [user] AS [u]
+WHERE [u].[data_state] = 1
+
+-----------------------------------------
+
+time:2017-10-26 17:53:18,714 
+level:ERROR 
+logger:Microsoft.EntityFrameworkCore.Query
+file:? line? 
+content:An exception occurred in the database while iterating the results of a query for context type 'NTCore.DataAccess.MainContext'.
+System.InvalidCastException: Unable to cast object of type 'System.Int16' to type 'System.Int32'.
+   at lambda_method(Closure , Object[] )
+   at Microsoft.EntityFrameworkCore.Storage.Internal.UntypedRelationalValueBufferFactory.Create(DbDataReader dataReader)
+   at Microsoft.EntityFrameworkCore.Query.Internal.QueryingEnumerable`1.Enumerator.BufferlessMoveNext(Boolean buffer)
+   at Microsoft.EntityFrameworkCore.Storage.Internal.SqlServerExecutionStrategy.Execute[TState,TResult](TState state, Func`3 operation, Func`3 verifySucceeded)
+   at Microsoft.EntityFrameworkCore.Query.Internal.QueryingEnumerable`1.Enumerator.MoveNext()
+   at System.Linq.Enumerable.TryGetFirst[TSource](IEnumerable`1 source, Boolean& found)
+   at lambda_method(Closure , QueryContext )
+   at Microsoft.EntityFrameworkCore.Query.Internal.QueryCompiler.<>c__DisplayClass17_0`1.<CompileQueryCore>b__0(QueryContext qc)
+System.InvalidCastException: Unable to cast object of type 'System.Int16' to type 'System.Int32'.
+   at lambda_method(Closure , Object[] )
+   at Microsoft.EntityFrameworkCore.Storage.Internal.UntypedRelationalValueBufferFactory.Create(DbDataReader dataReader)
+   at Microsoft.EntityFrameworkCore.Query.Internal.QueryingEnumerable`1.Enumerator.BufferlessMoveNext(Boolean buffer)
+   at Microsoft.EntityFrameworkCore.Storage.Internal.SqlServerExecutionStrategy.Execute[TState,TResult](TState state, Func`3 operation, Func`3 verifySucceeded)
+   at Microsoft.EntityFrameworkCore.Query.Internal.QueryingEnumerable`1.Enumerator.MoveNext()
+   at System.Linq.Enumerable.TryGetFirst[TSource](IEnumerable`1 source, Boolean& found)
+   at lambda_method(Closure , QueryContext )
+   at Microsoft.EntityFrameworkCore.Query.Internal.QueryCompiler.<>c__DisplayClass17_0`1.<CompileQueryCore>b__0(QueryContext qc)
+
+-----------------------------------------
+
+time:2017-10-26 17:53:18,793 
+level:INFO 
+logger:Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker
+file:? line? 
+content:Executed action NTCore.WebFront.Controllers.ValuesController.GetAsync (NTCore.WebFront) in 2929.9415ms
+
+-----------------------------------------
+
+time:2017-10-26 17:53:18,862 
+level:ERROR 
+logger:Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware
+file:? line? 
+content:An unhandled exception has occurred while executing the request
+System.InvalidCastException: Unable to cast object of type 'System.Int16' to type 'System.Int32'.
+   at lambda_method(Closure , Object[] )
+   at Microsoft.EntityFrameworkCore.Storage.Internal.UntypedRelationalValueBufferFactory.Create(DbDataReader dataReader)
+   at Microsoft.EntityFrameworkCore.Query.Internal.QueryingEnumerable`1.Enumerator.BufferlessMoveNext(Boolean buffer)
+   at Microsoft.EntityFrameworkCore.Storage.Internal.SqlServerExecutionStrategy.Execute[TState,TResult](TState state, Func`3 operation, Func`3 verifySucceeded)
+   at Microsoft.EntityFrameworkCore.Query.Internal.QueryingEnumerable`1.Enumerator.MoveNext()
+   at System.Linq.Enumerable.TryGetFirst[TSource](IEnumerable`1 source, Boolean& found)
+   at lambda_method(Closure , QueryContext )
+   at Microsoft.EntityFrameworkCore.Query.Internal.QueryCompiler.<>c__DisplayClass17_0`1.<CompileQueryCore>b__0(QueryContext qc)
+   at Microsoft.EntityFrameworkCore.Query.Internal.QueryCompiler.Execute[TResult](Expression query)
+   at Microsoft.EntityFrameworkCore.Query.Internal.EntityQueryProvider.Execute[TResult](Expression expression)
+   at System.Linq.Queryable.FirstOrDefault[TSource](IQueryable`1 source)
+   at NTCore.WebFront.Controllers.ValuesController.<GetAsync>d__3.MoveNext() in E:\Projects\NTPlatform\NTCore.WebFront\Controllers\ValuesController.cs:line 38
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at lambda_method(Closure , Object )
+   at Microsoft.Extensions.Internal.ObjectMethodExecutorAwaitable.Awaiter.GetResult()
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.<InvokeActionMethodAsync>d__12.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.<InvokeNextActionFilterAsync>d__10.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.Rethrow(ActionExecutedContext context)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.<InvokeInnerFilterAsync>d__14.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.<InvokeNextResourceFilter>d__22.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.Rethrow(ResourceExecutedContext context)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.<InvokeFilterPipelineAsync>d__17.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.<InvokeAsync>d__15.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Builder.RouterMiddleware.<Invoke>d__4.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.<Invoke>d__6.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.<Invoke>d__7.MoveNext()
+
+-----------------------------------------
+
+time:2017-10-26 17:53:19,014 
+level:INFO 
+logger:Microsoft.AspNetCore.Hosting.Internal.WebHost
+file:? line? 
+content:Request finished in 3446.0161ms 500 text/html; charset=utf-8
+
+-----------------------------------------
+
+time:2017-10-26 17:53:19,040 
+level:INFO 
+logger:Microsoft.AspNetCore.Hosting.Internal.WebHost
+file:? line? 
+content:Request starting HTTP/1.1 GET http://localhost:57942/favicon.ico  
+
+-----------------------------------------
+
+time:2017-10-26 17:53:19,046 
+level:INFO 
+logger:Microsoft.AspNetCore.Authentication.Cookies.CookieAuthenticationHandler
+file:? line? 
+content:AuthenticationScheme: AuthenticationScheme was successfully authenticated.
+
+-----------------------------------------
+
+time:2017-10-26 17:53:19,054 
+level:INFO 
+logger:Microsoft.AspNetCore.Hosting.Internal.WebHost
+file:? line? 
+content:Request finished in 9.4973ms 404 
+
+-----------------------------------------
+
+time:2017-10-26 17:53:37,159 
+level:INFO 
+logger:Microsoft.AspNetCore.Hosting.Internal.WebHost
+file:? line? 
+content:Request starting HTTP/1.1 GET http://localhost:57942/api/values  
+
+-----------------------------------------
+
+time:2017-10-26 17:53:37,162 
+level:INFO 
+logger:Microsoft.AspNetCore.Authentication.Cookies.CookieAuthenticationHandler
+file:? line? 
+content:AuthenticationScheme: AuthenticationScheme was successfully authenticated.
+
+-----------------------------------------
+
+time:2017-10-26 17:53:37,191 
+level:INFO 
+logger:Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker
+file:? line? 
+content:Executing action method NTCore.WebFront.Controllers.ValuesController.GetAsync (NTCore.WebFront) with arguments ((null)) - ModelState is Valid
+
+-----------------------------------------
+
+time:2017-10-26 17:53:46,075 
+level:INFO 
+logger:Microsoft.EntityFrameworkCore.Infrastructure
+file:? line? 
+content:Entity Framework Core 2.0.0-rtm-26452 initialized 'MainContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None
+
+-----------------------------------------
+
+time:2017-10-26 17:53:46,106 
+level:INFO 
+logger:Microsoft.EntityFrameworkCore.Database.Command
+file:? line? 
+content:Executed DbCommand (27ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT TOP(1) [u].[id], [u].[auth_type], [u].[avatar], [u].[confirmed], [u].[create_time], [u].[creator_id], [u].[data_state], [u].[email], [u].[employee_number], [u].[hotel_id], [u].[mobile_number], [u].[nickname], [u].[password], [u].[update_time], [u].[updater_id], [u].[username]
+FROM [user] AS [u]
+WHERE [u].[data_state] = 1
+
+-----------------------------------------
+
+time:2017-10-26 17:53:46,129 
+level:ERROR 
+logger:Microsoft.EntityFrameworkCore.Query
+file:? line? 
+content:An exception occurred in the database while iterating the results of a query for context type 'NTCore.DataAccess.MainContext'.
+System.InvalidCastException: Unable to cast object of type 'System.Int16' to type 'System.Int32'.
+   at lambda_method(Closure , Object[] )
+   at Microsoft.EntityFrameworkCore.Storage.Internal.UntypedRelationalValueBufferFactory.Create(DbDataReader dataReader)
+   at Microsoft.EntityFrameworkCore.Query.Internal.QueryingEnumerable`1.Enumerator.BufferlessMoveNext(Boolean buffer)
+   at Microsoft.EntityFrameworkCore.Storage.Internal.SqlServerExecutionStrategy.Execute[TState,TResult](TState state, Func`3 operation, Func`3 verifySucceeded)
+   at Microsoft.EntityFrameworkCore.Query.Internal.QueryingEnumerable`1.Enumerator.MoveNext()
+   at System.Linq.Enumerable.TryGetFirst[TSource](IEnumerable`1 source, Boolean& found)
+   at lambda_method(Closure , QueryContext )
+   at Microsoft.EntityFrameworkCore.Query.Internal.QueryCompiler.<>c__DisplayClass17_0`1.<CompileQueryCore>b__0(QueryContext qc)
+System.InvalidCastException: Unable to cast object of type 'System.Int16' to type 'System.Int32'.
+   at lambda_method(Closure , Object[] )
+   at Microsoft.EntityFrameworkCore.Storage.Internal.UntypedRelationalValueBufferFactory.Create(DbDataReader dataReader)
+   at Microsoft.EntityFrameworkCore.Query.Internal.QueryingEnumerable`1.Enumerator.BufferlessMoveNext(Boolean buffer)
+   at Microsoft.EntityFrameworkCore.Storage.Internal.SqlServerExecutionStrategy.Execute[TState,TResult](TState state, Func`3 operation, Func`3 verifySucceeded)
+   at Microsoft.EntityFrameworkCore.Query.Internal.QueryingEnumerable`1.Enumerator.MoveNext()
+   at System.Linq.Enumerable.TryGetFirst[TSource](IEnumerable`1 source, Boolean& found)
+   at lambda_method(Closure , QueryContext )
+   at Microsoft.EntityFrameworkCore.Query.Internal.QueryCompiler.<>c__DisplayClass17_0`1.<CompileQueryCore>b__0(QueryContext qc)
+
+-----------------------------------------
+
+time:2017-10-26 17:53:46,179 
+level:INFO 
+logger:Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker
+file:? line? 
+content:Executed action NTCore.WebFront.Controllers.ValuesController.GetAsync (NTCore.WebFront) in 9014.6696ms
+
+-----------------------------------------
+
+time:2017-10-26 17:53:46,225 
+level:ERROR 
+logger:Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware
+file:? line? 
+content:An unhandled exception has occurred while executing the request
+System.InvalidCastException: Unable to cast object of type 'System.Int16' to type 'System.Int32'.
+   at lambda_method(Closure , Object[] )
+   at Microsoft.EntityFrameworkCore.Storage.Internal.UntypedRelationalValueBufferFactory.Create(DbDataReader dataReader)
+   at Microsoft.EntityFrameworkCore.Query.Internal.QueryingEnumerable`1.Enumerator.BufferlessMoveNext(Boolean buffer)
+   at Microsoft.EntityFrameworkCore.Storage.Internal.SqlServerExecutionStrategy.Execute[TState,TResult](TState state, Func`3 operation, Func`3 verifySucceeded)
+   at Microsoft.EntityFrameworkCore.Query.Internal.QueryingEnumerable`1.Enumerator.MoveNext()
+   at System.Linq.Enumerable.TryGetFirst[TSource](IEnumerable`1 source, Boolean& found)
+   at lambda_method(Closure , QueryContext )
+   at Microsoft.EntityFrameworkCore.Query.Internal.QueryCompiler.<>c__DisplayClass17_0`1.<CompileQueryCore>b__0(QueryContext qc)
+   at Microsoft.EntityFrameworkCore.Query.Internal.QueryCompiler.Execute[TResult](Expression query)
+   at Microsoft.EntityFrameworkCore.Query.Internal.EntityQueryProvider.Execute[TResult](Expression expression)
+   at System.Linq.Queryable.FirstOrDefault[TSource](IQueryable`1 source)
+   at NTCore.WebFront.Controllers.ValuesController.<GetAsync>d__3.MoveNext() in E:\Projects\NTPlatform\NTCore.WebFront\Controllers\ValuesController.cs:line 38
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at lambda_method(Closure , Object )
+   at Microsoft.Extensions.Internal.ObjectMethodExecutorAwaitable.Awaiter.GetResult()
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.<InvokeActionMethodAsync>d__12.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.<InvokeNextActionFilterAsync>d__10.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.Rethrow(ActionExecutedContext context)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.<InvokeInnerFilterAsync>d__14.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.<InvokeNextResourceFilter>d__22.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.Rethrow(ResourceExecutedContext context)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.<InvokeFilterPipelineAsync>d__17.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.<InvokeAsync>d__15.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Builder.RouterMiddleware.<Invoke>d__4.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.<Invoke>d__6.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.<Invoke>d__7.MoveNext()
+
+-----------------------------------------
+
+time:2017-10-26 17:53:46,314 
+level:INFO 
+logger:Microsoft.AspNetCore.Hosting.Internal.WebHost
+file:? line? 
+content:Request finished in 9134.6169ms 500 text/html; charset=utf-8
+
+-----------------------------------------
+
+time:2017-10-26 17:53:59,133 
+level:INFO 
+logger:Microsoft.AspNetCore.Hosting.Internal.WebHost
+file:? line? 
+content:Request starting HTTP/1.1 GET http://localhost:57942/api/values  
+
+-----------------------------------------
+
+time:2017-10-26 17:53:59,135 
+level:INFO 
+logger:Microsoft.AspNetCore.Authentication.Cookies.CookieAuthenticationHandler
+file:? line? 
+content:AuthenticationScheme: AuthenticationScheme was successfully authenticated.
+
+-----------------------------------------
+
+time:2017-10-26 17:53:59,155 
+level:INFO 
+logger:Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker
+file:? line? 
+content:Executing action method NTCore.WebFront.Controllers.ValuesController.GetAsync (NTCore.WebFront) with arguments ((null)) - ModelState is Valid
+
+-----------------------------------------
+
+time:2017-10-26 17:53:59,752 
+level:INFO 
+logger:Microsoft.EntityFrameworkCore.Infrastructure
+file:? line? 
+content:Entity Framework Core 2.0.0-rtm-26452 initialized 'MainContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None
+
+-----------------------------------------
+
+time:2017-10-26 17:53:59,782 
+level:INFO 
+logger:Microsoft.EntityFrameworkCore.Database.Command
+file:? line? 
+content:Executed DbCommand (27ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT TOP(1) [u].[id], [u].[auth_type], [u].[avatar], [u].[confirmed], [u].[create_time], [u].[creator_id], [u].[data_state], [u].[email], [u].[employee_number], [u].[hotel_id], [u].[mobile_number], [u].[nickname], [u].[password], [u].[update_time], [u].[updater_id], [u].[username]
+FROM [user] AS [u]
+WHERE [u].[data_state] = 1
+
+-----------------------------------------
+
+time:2017-10-26 17:54:00,286 
+level:INFO 
+logger:Microsoft.AspNetCore.Authentication.Cookies.CookieAuthenticationHandler
+file:? line? 
+content:AuthenticationScheme: AuthenticationScheme signed in.
+
+-----------------------------------------
+
+time:2017-10-26 17:54:00,480 
+level:INFO 
+logger:Microsoft.AspNetCore.Mvc.Internal.ObjectResultExecutor
+file:? line? 
+content:Executing ObjectResult, writing value Microsoft.AspNetCore.Mvc.ControllerContext.
+
+-----------------------------------------
+
+time:2017-10-26 17:54:00,524 
+level:INFO 
+logger:Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker
+file:? line? 
+content:Executed action NTCore.WebFront.Controllers.ValuesController.GetAsync (NTCore.WebFront) in 1381.5933ms
+
+-----------------------------------------
+
+time:2017-10-26 17:54:00,540 
+level:INFO 
+logger:Microsoft.AspNetCore.Hosting.Internal.WebHost
+file:? line? 
+content:Request finished in 1394.1668ms 200 application/json; charset=utf-8
+
+-----------------------------------------
+
+time:2017-10-26 17:54:07,775 
+level:INFO 
+logger:Microsoft.AspNetCore.Hosting.Internal.WebHost
+file:? line? 
+content:Request starting HTTP/1.1 GET http://localhost:57942/api/assign-room  
+
+-----------------------------------------
+
+time:2017-10-26 17:54:07,779 
+level:INFO 
+logger:Microsoft.AspNetCore.Authentication.Cookies.CookieAuthenticationHandler
+file:? line? 
+content:AuthenticationScheme: AuthenticationScheme was successfully authenticated.
+
+-----------------------------------------
+
+time:2017-10-26 17:54:07,795 
+level:INFO 
+logger:Microsoft.AspNetCore.Hosting.Internal.WebHost
+file:? line? 
+content:Request finished in 6.263ms 404 

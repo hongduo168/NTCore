@@ -38,7 +38,7 @@ namespace NTCore.DataModel
         /// <summary>
         /// 授权渠道
         /// </summary>
-        [Required, DefaultValue(0), Column("auth_type", TypeName = "tinyint")]
+        [Required, DefaultValue(0), Column("auth_type", TypeName = "smallint")]
         public UserAuthType AuthType { get; set; }
 
     }

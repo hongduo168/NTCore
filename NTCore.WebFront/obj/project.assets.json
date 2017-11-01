@@ -13739,7 +13739,7 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\hongduo\\.nuget\\packages\\": {},
+    "C:\\Users\\liuhongduo\\.nuget\\packages\\": {},
     "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder": {}
   },
   "project": {
@@ -13748,17 +13748,17 @@
       "hideWarningsAndErrors": true
     },
     "restore": {
-      "projectUniqueName": "D:\\Projects\\NTPlatform\\NTCore.WebFront\\NTCore.WebFront.csproj",
+      "projectUniqueName": "E:\\Projects\\NTPlatform\\NTCore.WebFront\\NTCore.WebFront.csproj",
       "projectName": "NTCore.WebFront",
-      "projectPath": "D:\\Projects\\NTPlatform\\NTCore.WebFront\\NTCore.WebFront.csproj",
-      "packagesPath": "C:\\Users\\hongduo\\.nuget\\packages\\",
-      "outputPath": "D:\\Projects\\NTPlatform\\NTCore.WebFront\\obj\\",
+      "projectPath": "E:\\Projects\\NTPlatform\\NTCore.WebFront\\NTCore.WebFront.csproj",
+      "packagesPath": "C:\\Users\\liuhongduo\\.nuget\\packages\\",
+      "outputPath": "E:\\Projects\\NTPlatform\\NTCore.WebFront\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
       ],
       "configFilePaths": [
-        "C:\\Users\\hongduo\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\liuhongduo\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -13771,17 +13771,17 @@
       "frameworks": {
         "netcoreapp2.0": {
           "projectReferences": {
-            "D:\\Projects\\NTPlatform\\NTCore.DataModel\\NTCore.DataModel.csproj": {
-              "projectPath": "D:\\Projects\\NTPlatform\\NTCore.DataModel\\NTCore.DataModel.csproj"
+            "E:\\Projects\\NTPlatform\\NTCore.DataModel\\NTCore.DataModel.csproj": {
+              "projectPath": "E:\\Projects\\NTPlatform\\NTCore.DataModel\\NTCore.DataModel.csproj"
             },
-            "D:\\Projects\\NTPlatform\\NTCore.DataAccess\\NTCore.DataAccess.csproj": {
-              "projectPath": "D:\\Projects\\NTPlatform\\NTCore.DataAccess\\NTCore.DataAccess.csproj"
+            "E:\\Projects\\NTPlatform\\NTCore.DataAccess\\NTCore.DataAccess.csproj": {
+              "projectPath": "E:\\Projects\\NTPlatform\\NTCore.DataAccess\\NTCore.DataAccess.csproj"
             },
-            "D:\\Projects\\NTPlatform\\NTCore.Extensions\\NTCore.Extensions.csproj": {
-              "projectPath": "D:\\Projects\\NTPlatform\\NTCore.Extensions\\NTCore.Extensions.csproj"
+            "E:\\Projects\\NTPlatform\\NTCore.Extensions\\NTCore.Extensions.csproj": {
+              "projectPath": "E:\\Projects\\NTPlatform\\NTCore.Extensions\\NTCore.Extensions.csproj"
             },
-            "D:\\Projects\\NTPlatform\\NTCore.RedisAccess\\NTCore.RedisAccess.csproj": {
-              "projectPath": "D:\\Projects\\NTPlatform\\NTCore.RedisAccess\\NTCore.RedisAccess.csproj"
+            "E:\\Projects\\NTPlatform\\NTCore.RedisAccess\\NTCore.RedisAccess.csproj": {
+              "projectPath": "E:\\Projects\\NTPlatform\\NTCore.RedisAccess\\NTCore.RedisAccess.csproj"
             }
           }
         }

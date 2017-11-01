@@ -25,8 +25,8 @@ namespace NTCore.DataModel
         [Required(AllowEmptyStrings = true), DefaultValue(""), Column("room_number", TypeName = "varchar(30)"), MaxLength(30)]
         public string RoomNumber { get; set; }
 
-        [Required, DefaultValue(1.0), Column("coeffcient", TypeName = "decimal(10,2)")]
-        public decimal Coeffcient { get; set; }
+        [Required, DefaultValue(1.0), Column("coefficient", TypeName = "decimal(10,2)")]
+        public decimal Coefficient { get; set; }
 
         [Required(AllowEmptyStrings = true), DefaultValue(""), Column("from_status", TypeName = "varchar(30)"), MaxLength(30)]
         public string FromStatus { get; set; }

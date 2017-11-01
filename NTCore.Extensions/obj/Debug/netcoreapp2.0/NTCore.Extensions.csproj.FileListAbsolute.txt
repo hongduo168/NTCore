@@ -20,3 +20,14 @@ D:\Projects\NTPlatform\NTCore.Extensions\obj\Debug\netcoreapp2.0\NTCore.Extensio
 D:\Projects\NTPlatform\NTCore.Extensions\obj\Debug\netcoreapp2.0\NTCore.Extensions.AssemblyInfo.cs
 D:\Projects\NTPlatform\NTCore.Extensions\obj\Debug\netcoreapp2.0\NTCore.Extensions.dll
 D:\Projects\NTPlatform\NTCore.Extensions\obj\Debug\netcoreapp2.0\NTCore.Extensions.pdb
+E:\Projects\NTPlatform\NTCore.Extensions\bin\Debug\netcoreapp2.0\NTCore.Extensions.deps.json
+E:\Projects\NTPlatform\NTCore.Extensions\bin\Debug\netcoreapp2.0\NTCore.Extensions.dll
+E:\Projects\NTPlatform\NTCore.Extensions\bin\Debug\netcoreapp2.0\NTCore.Extensions.pdb
+E:\Projects\NTPlatform\NTCore.Extensions\bin\Debug\netcoreapp2.0\NTCore.Utility.dll
+E:\Projects\NTPlatform\NTCore.Extensions\bin\Debug\netcoreapp2.0\NTCore.Utility.pdb
+E:\Projects\NTPlatform\NTCore.Extensions\obj\Debug\netcoreapp2.0\NTCore.Extensions.csprojResolveAssemblyReference.cache
+E:\Projects\NTPlatform\NTCore.Extensions\obj\Debug\netcoreapp2.0\NTCore.Extensions.csproj.CoreCompileInputs.cache
+E:\Projects\NTPlatform\NTCore.Extensions\obj\Debug\netcoreapp2.0\NTCore.Extensions.AssemblyInfoInputs.cache
+E:\Projects\NTPlatform\NTCore.Extensions\obj\Debug\netcoreapp2.0\NTCore.Extensions.AssemblyInfo.cs
+E:\Projects\NTPlatform\NTCore.Extensions\obj\Debug\netcoreapp2.0\NTCore.Extensions.dll
+E:\Projects\NTPlatform\NTCore.Extensions\obj\Debug\netcoreapp2.0\NTCore.Extensions.pdb

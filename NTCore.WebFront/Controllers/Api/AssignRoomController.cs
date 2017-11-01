@@ -12,8 +12,12 @@ using NTCore.WebFront.Model.Api;
 
 // For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
 
-namespace NTCore.WebFront.Controllers
+namespace NTCore.WebFront.Controllers.Api
 {
+    [Route("assign-room")]
+    /// <summary>
+    /// 排放
+    /// </summary>
     public class AssignRoomController : MemberBaseController
     {
         public AssignRoomController(ILogger<AssignRoomController> logger, MainContext dbContext) : base(logger, dbContext)
@@ -43,7 +47,7 @@ namespace NTCore.WebFront.Controllers
                     data = new AssignRoomInfo()
                     {
                         AssignTime = DateTime.Now,
-                        Coeffcient = 1.0M,
+                        Coefficient = 1.0M,
                         CreateTime = DateTime.Now,
                         CreatorId = this.UserInfo.Id,
                         DataState = EnumState.Normal,
@@ -66,10 +70,10 @@ namespace NTCore.WebFront.Controllers
 
                 #region 填充排房结束时间
 
-                var lastRecord = this.dbContext.AssignRoomHistory.FirstOrDefault(x=>x.RoomNumber == item && x.HotelId == this.UserInfo.HotelId && x.Deadline == DataDefine.NullDateTime);
+                var lastRecord = this.dbContext.AssignRoomHistory.FirstOrDefault(x => x.RoomNumber == item && x.HotelId == this.UserInfo.HotelId && x.Deadline == DataDefine.NullDateTime);
                 if (lastRecord != null)
                 {
-                    lastRecord.Deadline = DateTime.Now;;
+                    lastRecord.Deadline = DateTime.Now; ;
                     this.dbContext.AssignRoomHistory.Update(lastRecord);
                 }
 
@@ -79,7 +83,7 @@ namespace NTCore.WebFront.Controllers
 
                 var history = new AssignRoomHistoryInfo()
                 {
-                    Coeffcient = 1.0M,
+                    Coefficient = 1.0M,
                     CreateTime = DateTime.Now,
                     CreatorId = this.UserInfo.Id,
                     DataState = EnumState.Normal,
@@ -92,13 +96,13 @@ namespace NTCore.WebFront.Controllers
                     Deadline = DataDefine.NullDateTime
                 };
                 this.dbContext.AssignRoomHistory.Add(history);
-                
+
                 #endregion
             }
             resp.IsError = this.dbContext.SaveChanges() < 1;
             return Json(resp);
         }
-        
+
     }
 }
 

@@ -13,7 +13,7 @@ using static NTCore.DataModel.MinibarConsumeFinishStatus;
 
 namespace NTCore.WebFront.Controllers.Api
 {
-    [Route("api/[controller]")]
+    [Route("minibar")]
     public class MinibarController : MemberBaseController
     {
         protected MinibarController(ILogger<MemberBaseController> logger, MainContext dbContext) : base(logger, dbContext)

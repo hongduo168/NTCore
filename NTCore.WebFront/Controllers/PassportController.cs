@@ -17,50 +17,68 @@ using NTCore.Utility;
 
 namespace NTCore.WebFront.Controllers
 {
+    [Route("passport")]
     [AllowAnonymous]
-    public class PassportController : Controller
+    public class PassportController : BaseController
     {
-        private ILogger<ValuesController> logger;
-        private MainContext dbContext;
-        protected PassportController(ILogger<ValuesController> logger, MainContext dbContext)
+        public PassportController(ILogger<PassportController> logger, MainContext dbContext) : base(logger, dbContext)
         {
-            this.logger = logger;
-            this.dbContext = dbContext;
+        }
+
+        public async Task<IActionResult> Login(string username, string password, string backUrl)
+        {
+            var user = this.dbContext.User.FirstOrDefault(x => x.Username == username);
+            if (user != null)
+            {
+                if (user.Confirmed)
+                {
+                    if (user.Password == password)
+                    {
+                        var claims = new ClaimsIdentity(CookieKeys.AuthenticationScheme);
+                        claims.AddClaim(new Claim(ClaimTypes.Name, user.Username));
+                        claims.AddClaim(new Claim(ClaimTypes.GroupSid, user.HotelId.ToString()));
+
+                        var cp = new ClaimsPrincipal(claims);
+                        await HttpContext.SignInAsync(CookieKeys.AuthenticationScheme, cp, new AuthenticationProperties
+                        {
+                            IsPersistent = true,
+                            ExpiresUtc = DateTimeOffset.Now.Add(TimeSpan.FromDays(180)),
+                        });
+                    }
+                }
+            }
+
+
+
+
+            if (string.IsNullOrWhiteSpace(backUrl))
+            {
+                backUrl = "/";
+            }
+            return Redirect(backUrl);
         }
 
 
-        public IActionResult Login(string username, string password, string backUrl)
+        [Route("auto-login")]
+        // GET api/values
+        [HttpGet]
+        public async Task<IActionResult> AutoLogin()
         {
-            return View();
-            //var user = this.dbContext.User.FirstOrDefault(x => x.Username == username);
-            //if (user != null)
-            //{
-            //    if (user.Confirmed)
-            //    {
-            //        if (user.Password == password)
-            //        {
-            //            var claims = new ClaimsIdentity(CookieKeys.AuthenticationScheme);
-            //            claims.AddClaim(new Claim(ClaimTypes.Name, user.Username));
-            //            claims.AddClaim(new Claim(ClaimTypes.GroupSid, user.HotelId.ToString()));
+            var firstOrDefault = this.dbContext.User.FirstOrDefault();
 
-            //            var cp = new ClaimsPrincipal(claims);
-            //            await HttpContext.SignInAsync(CookieKeys.AuthenticationScheme, cp, new AuthenticationProperties
-            //            {
-            //                IsPersistent = true,
-            //                ExpiresUtc = DateTimeOffset.Now.Add(TimeSpan.FromDays(180)),
-            //            });
-            //        }
-            //    }
-            //}
+            var user = new ClaimsPrincipal(new ClaimsIdentity(new[] { new Claim(ClaimTypes.Name, "hongduo168") }, CookieKeys.AuthenticationScheme));
+            await HttpContext.SignInAsync(CookieKeys.AuthenticationScheme, user, new AuthenticationProperties
+            {
+                IsPersistent = true,
+                ExpiresUtc = DateTimeOffset.Now.Add(TimeSpan.FromDays(180)),
+            });
 
+            var nameValue = User.FindFirst(ClaimTypes.Name)?.Value;
 
+            var isAuth = User.Identity.IsAuthenticated;
+            var name = User.Identity.Name;
 
-
-            //if (string.IsNullOrWhiteSpace(backUrl))
-            //{
-            //    backUrl = "/";
-            //}
-            //return Redirect(backUrl);
+            return Json(new string[] { nameValue, isAuth.ToString() });
         }
 
         [Authorize]

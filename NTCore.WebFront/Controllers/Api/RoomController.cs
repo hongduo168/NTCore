@@ -12,8 +12,14 @@ using NTCore.WebFront.Model.Api;
 
 namespace NTCore.WebFront.Controllers.Api
 {
+    [Route("rooms")]
     public class RoomController : MemberBaseController
     {
+
+        /// <summary>
+        /// 所有房间
+        /// </summary>
+        /// <returns></returns>
         // GET: api/values
         [HttpGet]
         public BaseReturn Get()
@@ -33,6 +39,11 @@ namespace NTCore.WebFront.Controllers.Api
             return resp;
         }
 
+        /// <summary>
+        /// 单个房间
+        /// </summary>
+        /// <param name="id"></param>
+        /// <returns></returns>
         // GET api/values/5
         [HttpGet("{id}")]
         public BaseReturn Get(int id)

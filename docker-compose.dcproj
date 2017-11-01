@@ -5,7 +5,7 @@
     <DockerTargetOS>Linux</DockerTargetOS>
     <ProjectGuid>6eafb280-2827-4a2b-9daf-dbfdd8fc1eb2</ProjectGuid>
     <DockerLaunchBrowser>True</DockerLaunchBrowser>
-    <DockerServiceUrl>http://localhost:{ServicePort}/api/values</DockerServiceUrl>
+    <DockerServiceUrl>http://localhost:{ServicePort}/</DockerServiceUrl>
     <DockerServiceName>ntcore.webfront</DockerServiceName>
   </PropertyGroup>
   <ItemGroup>
