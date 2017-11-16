@@ -37,7 +37,7 @@ namespace NTCore.DataAccess
             modelBuilder.Entity<UserInfo>().HasQueryFilter(x => x.DataState == EnumState.Normal);
             modelBuilder.Entity<HotelInfo>().HasQueryFilter(x => x.DataState == EnumState.Normal);
             modelBuilder.Entity<ActionRecordInfo>().HasQueryFilter(x => x.DataState == EnumState.Normal);
-            modelBuilder.Entity<CustomerRequestDefineInfo>().HasQueryFilter(x => x.DataState == EnumState.Normal);
+            modelBuilder.Entity<HotelSupplyDefineInfo>().HasQueryFilter(x => x.DataState == EnumState.Normal);
             modelBuilder.Entity<CustomerRequestInfo>().HasQueryFilter(x => x.DataState == EnumState.Normal);
             modelBuilder.Entity<CustomerRequestItemInfo>().HasQueryFilter(x => x.DataState == EnumState.Normal);
             modelBuilder.Entity<HotelRoleInfo>().HasQueryFilter(x => x.DataState == EnumState.Normal);
@@ -64,7 +64,7 @@ namespace NTCore.DataAccess
         public virtual DbSet<UserInfo> User { get; set; }
         public virtual DbSet<HotelInfo> Hotel { get; set; }
         public virtual DbSet<ActionRecordInfo> ActionRecord { get; set; }
-        public virtual DbSet<CustomerRequestDefineInfo> CustomerRequestDefine { get; set; }
+        public virtual DbSet<HotelSupplyDefineInfo> CustomerRequestDefine { get; set; }
         public virtual DbSet<CustomerRequestInfo> CustomerRequest { get; set; }
         public virtual DbSet<CustomerRequestItemInfo> CustomerRequestItem { get; set; }
         public virtual DbSet<HotelRoleInfo> HotelRole { get; set; }

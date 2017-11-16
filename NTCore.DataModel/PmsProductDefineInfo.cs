@@ -21,5 +21,14 @@ namespace NTCore.DataModel
 
         [Required(AllowEmptyStrings = true), DefaultValue(""), Column("source", TypeName = "nvarchar(30)"), MaxLength(30)]
         public string Source { get; set; }
+
+        [Required(AllowEmptyStrings = true), DefaultValue(""), Column("token", TypeName = "nvarchar(64)"), MaxLength(64)]
+        public string Token { get; set; }
+
+        /// <summary>
+        /// Token有效期
+        /// </summary>
+        [Required, DefaultValue(0), Column("token_effective_second")]
+        public int TokenEffectiveSecond { get; set; }
     }
 }

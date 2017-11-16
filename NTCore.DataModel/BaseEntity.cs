@@ -47,6 +47,10 @@ namespace NTCore.DataModel
         //[DataMember(Name = "data_state", EmitDefaultValue = true)]
         [Required, DefaultValue(0), Column("data_state")]
         public EnumState DataState { get; set; }
+
+        
+        [Required, DefaultValue(0), Column("data_sort")]
+        public int DataSort { get; set; }
     }
 
     public partial class HotelEntity : BaseEntity

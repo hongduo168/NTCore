@@ -7,8 +7,12 @@ using System.Text;
 
 namespace NTCore.DataModel
 {
-    [Table("customer_request_define")]
-    public class CustomerRequestDefineInfo : HotelEntity
+    /// <summary>
+    /// 客用品
+    /// 客需
+    /// </summary>
+    [Table("hotel_supply_define")]
+    public class HotelSupplyDefineInfo : HotelEntity
     {
         [Required, DefaultValue(0), Column("data_type")]
         public CustomerRequestDefineType DataType { get; set; }
@@ -22,7 +26,5 @@ namespace NTCore.DataModel
         [Required(AllowEmptyStrings = true), DefaultValue(""), Column("data_note", TypeName = "nvarchar(2000)"), MaxLength(2000)]
         public string DataNote { get; set; }
 
-        [Required, DefaultValue(0), Column("data_sort")]
-        public int DataSort { get; set; }
     }
 }

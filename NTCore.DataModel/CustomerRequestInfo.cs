@@ -26,6 +26,9 @@ namespace NTCore.DataModel
         [Required, DefaultValue(0), Column("assign_userid")]
         public int AssignUserId { get; set; }
 
+        /// <summary>
+        /// 期望完成时间
+        /// </summary>
         [Required, DefaultValue("getdate()"), Column("expect_time")]
         public DateTime ExpectTime { get; set; }
 

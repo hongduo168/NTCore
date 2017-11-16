@@ -34,5 +34,11 @@ namespace NTCore.DataModel
         [Required, DefaultValue(false), Column("is_rush", TypeName = "bit"), MaxLength(30)]
         public bool IsRush { get; set; }
 
+        /// <summary>
+        /// 矛盾
+        /// </summary>
+        [Required, DefaultValue(false), Column("is_contradiction", TypeName = "bit"), MaxLength(30)]
+        public bool IsContradiction { get; set; }
+
     }
 }

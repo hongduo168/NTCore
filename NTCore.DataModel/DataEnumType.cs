@@ -19,16 +19,25 @@ namespace NTCore.DataModel
         Windows = 1,
 
         [Description("外部PMS")]
-        PMS = 1,
+        PMS = 2,
     }
 
     public enum ActionRecordType
     {
+        [Description("请求记录")]
+        Request = 5,
+
         [Description("房态")]
         RoomStatus = 1,
 
         [Description("计件")]
-        Workload = 2
+        Workload = 2,
+
+        [Description("短信")]
+        SMS = 3,
+
+        [Description("邮件")]
+        Mail = 4
     }
 
     public enum CustomerRequestDefineType
