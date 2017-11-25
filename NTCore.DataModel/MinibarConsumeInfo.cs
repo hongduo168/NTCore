@@ -20,7 +20,7 @@ namespace NTCore.DataModel
         public decimal TotalPrice { get; set; }
 
         [Required, DefaultValue(0), Column("finish_status")]
-        public MinibarConsumeFinishStatus FinishStatus { get; set; }
+        public DataEnum.MinibarConsumeFinishStatus FinishStatus { get; set; }
 
         /// <summary>
         /// 房间关闭会无法抛帐，账务会记录到假房

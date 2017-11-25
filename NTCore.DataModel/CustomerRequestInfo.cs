@@ -15,7 +15,7 @@ namespace NTCore.DataModel
     {
 
         [Required, DefaultValue(0), Column("data_type")]
-        public CustomerRequestDefineType DataType { get; set; }
+        public DataEnum.CustomerRequestDefineType DataType { get; set; }
 
         [Required(AllowEmptyStrings = true), DefaultValue(""), Column("room_number", TypeName = "varchar(30)"), MaxLength(30)]
         public string RoomNumber { get; set; }
@@ -24,7 +24,7 @@ namespace NTCore.DataModel
         public string MessageText { get; set; }
 
         [Required, DefaultValue(0), Column("finish_status")]
-        public CustomerRequestFinishStatus FinishStatus { get; set; }
+        public DataEnum.CustomerRequestFinishStatus FinishStatus { get; set; }
 
         [Required, DefaultValue(0), Column("assign_userid")]
         public int AssignUserId { get; set; }

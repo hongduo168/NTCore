@@ -19,7 +19,6 @@ D:\Projects\NTPlatform\NTCore.DataModel\obj\Debug\netcoreapp2.0\NTCore.DataModel
 E:\Projects\NTPlatform\NTCore.DataModel\bin\Debug\netcoreapp2.0\NTCore.DataModel.deps.json
 E:\Projects\NTPlatform\NTCore.DataModel\bin\Debug\netcoreapp2.0\NTCore.DataModel.dll
 E:\Projects\NTPlatform\NTCore.DataModel\bin\Debug\netcoreapp2.0\NTCore.DataModel.pdb
-E:\Projects\NTPlatform\NTCore.DataModel\obj\Debug\netcoreapp2.0\NTCore.DataModel.csprojResolveAssemblyReference.cache
 E:\Projects\NTPlatform\NTCore.DataModel\obj\Debug\netcoreapp2.0\NTCore.DataModel.csproj.CoreCompileInputs.cache
 E:\Projects\NTPlatform\NTCore.DataModel\obj\Debug\netcoreapp2.0\NTCore.DataModel.AssemblyInfoInputs.cache
 E:\Projects\NTPlatform\NTCore.DataModel\obj\Debug\netcoreapp2.0\NTCore.DataModel.AssemblyInfo.cs

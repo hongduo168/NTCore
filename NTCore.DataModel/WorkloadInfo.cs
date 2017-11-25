@@ -64,7 +64,7 @@ namespace NTCore.DataModel
         public string MessageText { get; set; }
 
         [Required, DefaultValue(0), Column("work_type")]
-        public WorkloadType WorkType { get; set; }
+        public DataEnum.WorkloadType WorkType { get; set; }
 
 
     }

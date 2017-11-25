@@ -1,0 +1,8 @@
+E:\Projects\NTPlatform\NTCore.BizLogic\bin\Debug\netcoreapp2.0\NTCore.BizLogic.deps.json
+E:\Projects\NTPlatform\NTCore.BizLogic\bin\Debug\netcoreapp2.0\NTCore.BizLogic.dll
+E:\Projects\NTPlatform\NTCore.BizLogic\bin\Debug\netcoreapp2.0\NTCore.BizLogic.pdb
+E:\Projects\NTPlatform\NTCore.BizLogic\obj\Debug\netcoreapp2.0\NTCore.BizLogic.csproj.CoreCompileInputs.cache
+E:\Projects\NTPlatform\NTCore.BizLogic\obj\Debug\netcoreapp2.0\NTCore.BizLogic.AssemblyInfoInputs.cache
+E:\Projects\NTPlatform\NTCore.BizLogic\obj\Debug\netcoreapp2.0\NTCore.BizLogic.AssemblyInfo.cs
+E:\Projects\NTPlatform\NTCore.BizLogic\obj\Debug\netcoreapp2.0\NTCore.BizLogic.dll
+E:\Projects\NTPlatform\NTCore.BizLogic\obj\Debug\netcoreapp2.0\NTCore.BizLogic.pdb

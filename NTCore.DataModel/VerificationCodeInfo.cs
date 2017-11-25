@@ -23,6 +23,6 @@ namespace NTCore.DataModel
         public string RequestId { get; set; }
 
         [Required(), DefaultValue(0), Column("send_status")]
-        public VerificationCodeSendStatus SendStatus { get; set; }
+        public DataEnum.VerificationCodeSendStatus SendStatus { get; set; }
     }
 }

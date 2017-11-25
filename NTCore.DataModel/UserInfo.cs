@@ -36,10 +36,11 @@ namespace NTCore.DataModel
         public bool Confirmed { get; set; }
 
         /// <summary>
+        /// UserAuthType
         /// 授权渠道
         /// </summary>
         [Required, DefaultValue(0), Column("auth_type", TypeName = "smallint")]
-        public UserAuthType AuthType { get; set; }
+        public DataEnum.UserAuthType AuthType { get; set; }
 
     }
 }

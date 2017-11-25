@@ -15,7 +15,7 @@ namespace NTCore.DataModel
     public class HotelSupplyDefineInfo : HotelEntity
     {
         [Required, DefaultValue(0), Column("data_type")]
-        public CustomerRequestDefineType DataType { get; set; }
+        public DataEnum.CustomerRequestDefineType DataType { get; set; }
 
         [Required(AllowEmptyStrings = true), DefaultValue(""), Column("data_code", TypeName = "varchar(30)"), MaxLength(30)]
         public string DataCode { get; set; }

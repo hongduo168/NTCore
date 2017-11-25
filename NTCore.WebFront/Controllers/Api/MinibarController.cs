@@ -7,7 +7,7 @@ using Microsoft.Extensions.Logging;
 using NTCore.DataAccess;
 using NTCore.DataModel;
 using NTCore.WebFront.Model;
-using static NTCore.DataModel.MinibarConsumeFinishStatus;
+using static NTCore.DataModel.DataEnum.MinibarConsumeFinishStatus;
 
 // For more information on enabling Web API for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
 
@@ -54,7 +54,7 @@ namespace NTCore.WebFront.Controllers.Api
                 if (roomMinibarInfo != null)
                 {
                     var products = this.dbContext.MinibarProduct.Where(x => x.MinibarId == roomMinibarInfo.MinibarId && x.HotelId == this.UserInfo.HotelId);
-                    var orders = this.dbContext.MinibarConsume.Where(x => x.HotelId == this.UserInfo.HotelId && x.RoomNumber == roomInfo.RoomNumber && new MinibarConsumeFinishStatus[] { MinibarConsumeFinishStatus.Created, MinibarConsumeFinishStatus.Served }.Contains(x.FinishStatus));
+                    var orders = this.dbContext.MinibarConsume.Where(x => x.HotelId == this.UserInfo.HotelId && x.RoomNumber == roomInfo.RoomNumber && new DataEnum.MinibarConsumeFinishStatus[] { DataEnum.MinibarConsumeFinishStatus.Created, DataEnum.MinibarConsumeFinishStatus.Served }.Contains(x.FinishStatus));
 
                     resp.Data = new { Products = products, Orders = orders };
 
