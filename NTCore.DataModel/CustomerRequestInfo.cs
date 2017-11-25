@@ -7,6 +7,9 @@ using System.Text;
 
 namespace NTCore.DataModel
 {
+    /// <summary>
+    /// 客需数据
+    /// </summary>
     [Table("customer_request")]
     public class CustomerRequestInfo : HotelEntity
     {

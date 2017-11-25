@@ -34,6 +34,20 @@ namespace NTCore.DataModel
         [Required(AllowEmptyStrings = true), DefaultValue(""), Column("endto_status", TypeName = "varchar(30)"), MaxLength(30)]
         public string EndToStatus { get; set; }
 
+        /// <summary>
+        /// 接收人/工作人
+        /// </summary>
+        [Required, DefaultValue(0), Column("receiver_userid")]
+        public int ReceiverId { get; set; }
+
+        /// <summary>
+        /// 关联数据ID
+        /// 
+        /// </summary>
+        [Required, DefaultValue(0), Column("relation_id")]
+        public int RaletionId { get; set; }
+
+
         [Required, DefaultValue("getdate()"), Column("check_time")]
         public DateTime CheckTime { get; set; }
 

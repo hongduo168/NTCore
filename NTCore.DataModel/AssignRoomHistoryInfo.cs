@@ -19,7 +19,7 @@ namespace NTCore.DataModel
         [Required, DefaultValue(1.0), Column("coefficient", TypeName = "decimal(10,2)")]
         public decimal Coefficient { get; set; }
 
-        [Required, DefaultValue("getdate"), Column("fromtime")]
+        [Required, DefaultValue("getdate()"), Column("fromtime")]
         public DateTime FromTime { get; set; }
 
         [Required, DefaultValue("getdate()"), Column("deadline")]

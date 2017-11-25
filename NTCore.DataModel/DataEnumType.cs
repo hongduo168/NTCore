@@ -10,140 +10,219 @@ namespace NTCore.DataModel
         public static readonly DateTime NullDateTime = new DateTime(1970, 1, 1);
     }
 
-    public enum UserAuthType
+    public class DataEnum
     {
-        [Description("系统验证")]
-        System = 0,
 
-        [Description("Windows")]
-        Windows = 1,
+        public enum UserAuthType
+        {
+            [Description("系统验证")]
+            System = 0,
 
-        [Description("外部PMS")]
-        PMS = 2,
-    }
+            [Description("Windows")]
+            Windows = 1,
 
-    public enum ActionRecordType
-    {
-        [Description("请求记录")]
-        Request = 5,
+            [Description("外部PMS")]
+            PMS = 2,
+        }
 
-        [Description("房态")]
-        RoomStatus = 1,
+        public enum ActionRecordType
+        {
+            [Description("请求记录")]
+            Request = 10,
 
-        [Description("计件")]
-        Workload = 2,
+            [Description("房态记录")]
+            RoomStatus = 20,
 
-        [Description("短信")]
-        SMS = 3,
+            [Description("打扫计件")]
+            Workload = 30,
 
-        [Description("邮件")]
-        Mail = 4
-    }
+            [Description("短信发送")]
+            SMSSend = 40,
 
-    public enum CustomerRequestDefineType
-    {
-        [Description("客需物品")]
-        CustomerRequest = 1,
+            [Description("邮件发送")]
+            MailSend = 50,
 
-        [Description("一般客用品")] //客用品
-        CustomerSupply1 = 2,
+            [Description("主管查房")]
+            CleanCheck = 60
+        }
 
-        [Description("易耗客用品")] //客用品
-        CustomerSupply2 = 3,
-    }
+        public enum CustomerRequestDefineType
+        {
+            [Description("客需物品")]
+            CustomerRequest = 1,
 
-    public enum CustomerRequestFinishStatus
-    {
-        [Description("新增")]
-        Create = 1,
+            [Description("一般客用品")] //客用品
+            CustomerSupply1 = 2,
 
-        [Description("正在处理")]
-        Handling = 10,
+            [Description("易耗客用品")] //客用品
+            CustomerSupply2 = 3,
+        }
 
-        [Description("完成")]
-        Finish = 20,
+        public enum CustomerRequestFinishStatus
+        {
+            [Description("新增")]
+            Create = 1,
 
-        [Description("反馈")]
-        Feedback = 30,
-    }
+            [Description("正在处理")]
+            Handling = 10,
 
-    public enum WorkloadType
-    {
-        [Description("赶房")]
-        RushRoom = 0x07,
+            [Description("完成")]
+            Finish = 20,
 
-        [Description("打扫")]
-        CleanRoom = 0x01,
+            [Description("反馈")]
+            Feedback = 30,
+        }
 
-        [Description("大清")]
-        DeepClean = 0x02,
+        public enum WorkloadType
+        {
+            [Description("赶房")]
+            RushRoom = 0x07,
 
-        [Description("维修")]
-        RepairRoom = 0x03,
+            [Description("打扫")]
+            CleanRoom = 0x01,
 
-        [Description("保养")]
-        CuringRoom = 0x04,
+            [Description("大清")]
+            DeepClean = 0x02,
 
-        [Description("客需")]
-        CustomerRequest = 0x05,
+            [Description("维修")]
+            RepairRoom = 0x03,
 
-        [Description("检查")]
-        CheckRoom = 0x06,
-    }
+            [Description("保养")]
+            CuringRoom = 0x04,
 
-    public enum RoomStatusType
-    {
-        [Description("OC")]
-        OC = 1,
+            [Description("客需")]
+            CustomerRequest = 0x05,
 
-        [Description("OD")]
-        OD = 2,
+            [Description("检查")]
+            CheckRoom = 0x06,
+        }
 
-        [Description("OK")]
-        OK = 3,
+        public enum RoomStatusType
+        {
+            [Description("OC")]
+            OC = 1,
 
-        [Description("VC")]
-        VC = 4,
+            [Description("OD")]
+            OD = 2,
 
-        //[Description("VD")]
-        VD = 5,
+            [Description("OK")]
+            OK = 3,
 
-        [Description("V_C")]
-        V_C = 6, //空隔夜
+            [Description("VC")]
+            VC = 4,
 
-        [Description("O_D")]
-        O_D = 7, //换床单
+            //[Description("VD")]
+            VD = 5,
 
-        [Description("HS")]
-        HS = 8, //占用放
+            [Description("V_C")]
+            V_C = 6, //空隔夜
 
-        [Description("DK")]
-        DK = 9 //差异房
+            [Description("O_D")]
+            O_D = 7, //换床单
 
-    }
+            [Description("HS")]
+            HS = 8, //占用放
 
-    public enum MinibarConsumeFinishStatus
-    {
-        [Description("已创建")]
-        Created = 1,
+            [Description("DK")]
+            DK = 9 //差异房
 
-        [Description("已送达")]
-        Served = 2,
+        }
 
-        [Description("已确定")]
-        Confirmed = 3,
+        public enum MinibarConsumeFinishStatus
+        {
+            [Description("已创建")]
+            Created = 1,
 
-        [Description("已撤销")]
-        Revoked = 4,
+            [Description("已送达")]
+            Served = 2,
 
-    }
+            [Description("已确定")]
+            Confirmed = 3,
 
-    public enum VerificationCodeSendStatus
-    {
-        [Description("已发送")]
-        Send = 1,
+            [Description("已撤销")]
+            Revoked = 4,
 
-        [Description("已成功")]
-        Success = 2,
+        }
+
+        public enum VerificationCodeSendStatus
+        {
+            [Description("已发送")]
+            Send = 1,
+
+            [Description("已成功")]
+            Success = 2,
+        }
+
+        /// <summary>
+        /// 欢迎词指定时间类型
+        /// </summary>
+        public enum ShowDayType
+        {
+            [Description("每天")]
+            Day = 10,
+
+            [Description("每周")]
+            Week = 20,
+
+            [Description("每月")]
+            Month = 30,
+
+            [Description("每年")]
+            Year = 40,
+        }
+
+        public enum WelcomePlanType
+        {
+
+            [Description("欢迎语")]
+            Welcome = 10,
+
+
+        }
+
+
+        public enum MessageTemplateType
+        {
+            [Description("短信")]
+            SMS = 10,
+
+            [Description("邮件")]
+            Mail = 20,
+
+            [Description("App")]
+            App = 30,
+
+        }
+
+        public enum WorkloadStepType
+        {
+            [Description("开始")]
+            Start = 10,
+
+            [Description("暂停")]
+            Pause = 20,
+
+            [Description("完成")]
+            Finsh = 30,
+
+            [Description("停止")]
+            Stop = 40,
+
+            [Description("恢复")]
+            Restore = 50,
+        }
+
+        /// <summary>
+        /// 附件关联数据的类型
+        /// </summary>
+        public enum AttachmentRelationType
+        {
+            [Description("维修")]
+            RepairRoom = 10,
+
+            [Description("保养")]
+            CuringRoom = 20,
+
+        }
     }
 }

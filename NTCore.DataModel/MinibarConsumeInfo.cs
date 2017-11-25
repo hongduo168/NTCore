@@ -7,6 +7,9 @@ using System.Text;
 
 namespace NTCore.DataModel
 {
+    /// <summary>
+    /// minibar消费数据
+    /// </summary>
     [Table("minibar_consume")]
     public class MinibarConsumeInfo : HotelEntity
     {
