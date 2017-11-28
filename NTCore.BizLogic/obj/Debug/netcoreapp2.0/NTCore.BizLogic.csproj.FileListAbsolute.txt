@@ -6,3 +6,8 @@ E:\Projects\NTPlatform\NTCore.BizLogic\obj\Debug\netcoreapp2.0\NTCore.BizLogic.A
 E:\Projects\NTPlatform\NTCore.BizLogic\obj\Debug\netcoreapp2.0\NTCore.BizLogic.AssemblyInfo.cs
 E:\Projects\NTPlatform\NTCore.BizLogic\obj\Debug\netcoreapp2.0\NTCore.BizLogic.dll
 E:\Projects\NTPlatform\NTCore.BizLogic\obj\Debug\netcoreapp2.0\NTCore.BizLogic.pdb
+E:\Projects\NTPlatform\NTCore.BizLogic\obj\Debug\netcoreapp2.0\NTCore.BizLogic.csprojResolveAssemblyReference.cache
+E:\Projects\NTPlatform\NTCore.BizLogic\bin\Debug\netcoreapp2.0\NTCore.DataAccess.dll
+E:\Projects\NTPlatform\NTCore.BizLogic\bin\Debug\netcoreapp2.0\NTCore.DataModel.dll
+E:\Projects\NTPlatform\NTCore.BizLogic\bin\Debug\netcoreapp2.0\NTCore.DataAccess.pdb
+E:\Projects\NTPlatform\NTCore.BizLogic\bin\Debug\netcoreapp2.0\NTCore.DataModel.pdb

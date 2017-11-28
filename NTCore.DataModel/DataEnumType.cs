@@ -16,13 +16,13 @@ namespace NTCore.DataModel
         public enum UserAuthType
         {
             [Description("系统验证")]
-            System = 0,
+            System = 10,
 
             [Description("Windows")]
-            Windows = 1,
+            Windows = 20,
 
             [Description("外部PMS")]
-            PMS = 2,
+            PMS = 30,
         }
 
         public enum ActionRecordType
@@ -43,7 +43,10 @@ namespace NTCore.DataModel
             MailSend = 50,
 
             [Description("主管查房")]
-            CleanCheck = 60
+            CleanCheck = 60,
+
+            [Description("用户反馈")]
+            Feedback = 100
         }
 
         public enum CustomerRequestDefineType
@@ -224,5 +227,40 @@ namespace NTCore.DataModel
             CuringRoom = 20,
 
         }
+
+
+        public enum WorkFinishStatus
+        {
+            [Description("创建")]
+            Created = 10,
+
+
+            [Description("开始")]
+            Start = 20,
+
+
+            [Description("暂停")]
+            Pause = 30,
+
+            [Description("停止")]
+            Stop = 40,
+
+            [Description("完成")]
+            Finsh = 50,
+
+            [Description("未通过")]
+            Failed = 60,
+
+            [Description("检查通过")]
+            Checked = 100,
+
+            [Description("取消")]
+            Cancel = 110,
+
+
+
+        }
+
+
     }
 }

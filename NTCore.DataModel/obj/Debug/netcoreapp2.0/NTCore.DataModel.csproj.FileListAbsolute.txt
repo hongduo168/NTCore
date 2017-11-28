@@ -24,3 +24,4 @@ E:\Projects\NTPlatform\NTCore.DataModel\obj\Debug\netcoreapp2.0\NTCore.DataModel
 E:\Projects\NTPlatform\NTCore.DataModel\obj\Debug\netcoreapp2.0\NTCore.DataModel.AssemblyInfo.cs
 E:\Projects\NTPlatform\NTCore.DataModel\obj\Debug\netcoreapp2.0\NTCore.DataModel.dll
 E:\Projects\NTPlatform\NTCore.DataModel\obj\Debug\netcoreapp2.0\NTCore.DataModel.pdb
+E:\Projects\NTPlatform\NTCore.DataModel\obj\Debug\netcoreapp2.0\NTCore.DataModel.csprojResolveAssemblyReference.cache

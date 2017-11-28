@@ -5,7 +5,7 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <Folder Include="DataBaseBiz\" />
+    <ProjectReference Include="..\NTCore.DataAccess\NTCore.DataAccess.csproj" />
   </ItemGroup>
 
 </Project>

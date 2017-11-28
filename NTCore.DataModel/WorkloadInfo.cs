@@ -42,7 +42,6 @@ namespace NTCore.DataModel
 
         /// <summary>
         /// 关联数据ID
-        /// 
         /// </summary>
         [Required, DefaultValue(0), Column("relation_id")]
         public int RaletionId { get; set; }
@@ -58,7 +57,7 @@ namespace NTCore.DataModel
         public bool IsChecked { get; set; }
 
         [Required, DefaultValue(0), Column("finish_status")]
-        public int FinishStatus { get; set; }
+        public DataEnum.WorkFinishStatus FinishStatus { get; set; }
 
         [Required(AllowEmptyStrings = true), DefaultValue(""), Column("message_text", TypeName = "nvarchar(2000)"), MaxLength(2000)]
         public string MessageText { get; set; }

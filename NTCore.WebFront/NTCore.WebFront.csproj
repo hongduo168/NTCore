@@ -10,7 +10,7 @@
     <Folder Include="wwwroot\" />
   </ItemGroup>
   <ItemGroup>
-    <PackageReference Include="Microsoft.AspNetCore.All" Version="2.0.0" />
+    <PackageReference Include="Microsoft.AspNetCore.All" Version="2.0.3" />
     <PackageReference Include="MySql.Data" Version="8.0.8-dmr" />
     <PackageReference Include="MySql.Data.EntityFrameworkCore" Version="8.0.8-dmr" />
     <PackageReference Include="StackExchange.Redis" Version="1.2.6" />
@@ -21,9 +21,11 @@
   </ItemGroup>
 
   <ItemGroup>
+    <ProjectReference Include="..\NTCore.BizLogic\NTCore.BizLogic.csproj" />
     <ProjectReference Include="..\NTCore.DataAccess\NTCore.DataAccess.csproj" />
     <ProjectReference Include="..\NTCore.DataModel\NTCore.DataModel.csproj" />
     <ProjectReference Include="..\NTCore.Extensions\NTCore.Extensions.csproj" />
     <ProjectReference Include="..\NTCore.RedisAccess\NTCore.RedisAccess.csproj" />
+    <ProjectReference Include="..\NTCore.Utility\NTCore.Utility.csproj" />
   </ItemGroup>
 </Project>

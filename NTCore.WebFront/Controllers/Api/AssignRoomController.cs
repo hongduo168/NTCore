@@ -22,14 +22,44 @@ namespace NTCore.WebFront.Controllers.Api
     {
         public AssignRoomController(ILogger<AssignRoomController> logger, MainContext dbContext) : base(logger, dbContext)
         {
+            //var list = dbContext.User.ToList();
+            //var f = list.First();
+            //f.AuthType = DataEnum.UserAuthType.Windows;
+            //f.Id = 0;
+            //dbContext.Entry(f).State = Microsoft.EntityFrameworkCore.EntityState.Added;
+            //this.dbContext.User.Remove(f);
+            //dbContext.SaveChanges();
         }
 
         [HttpGet]
         public ActionResult Get()
         {
             var resp = new BaseReturn(false);
+            var hotelRooms = this.dbContext.HotelRoom.Where(x => x.HotelId == this.UserInfo.HotelId).ToList();
             var assignRooms = this.dbContext.AssignRoom.Where(x => x.HotelId == this.UserInfo.HotelId).ToList();
-            resp.Data = assignRooms;
+            var data = from room in hotelRooms
+                       join assign in assignRooms on room.RoomNumber equals assign.RoomNumber into temp
+                       from tt in temp.DefaultIfEmpty(new AssignRoomInfo())
+                       select new
+                       {
+                           room.RoomNumber,
+                           room.DataSort,
+                           room.HotelId,
+                           room.IsChecked,
+                           room.IsContradiction,
+                           room.IsDueIn,
+                           room.IsDueOut,
+                           room.IsRush,
+                           room.PmsRoomNumber,
+                           room.RoomStatus,
+                           room.RoomTypeCode,
+
+                           tt.AssignTime,
+                           tt.Coefficient,
+                           AssignRoomStatus = tt.RoomStatus //排房时房态
+                       };
+
+            resp.Data = data;
             return Json(resp);
         }
 
@@ -55,6 +85,7 @@ namespace NTCore.WebFront.Controllers.Api
                         RoomNumber = item,
                         RoomStatus = string.Empty, //TODO
                         UpdaterId = this.UserInfo.HotelId,
+                        DataSort = 0,
                         UpdateTime = DateTime.Now,
                         UserId = info.UserId
                     };
@@ -63,7 +94,7 @@ namespace NTCore.WebFront.Controllers.Api
                 else
                 {
                     data.UserId = info.UserId;
-                    this.dbContext.AssignRoom.Update(data);
+                    //this.dbContext.AssignRoom.Update(data);
                 }
 
                 #endregion
@@ -74,7 +105,7 @@ namespace NTCore.WebFront.Controllers.Api
                 if (lastRecord != null)
                 {
                     lastRecord.Deadline = DateTime.Now; ;
-                    this.dbContext.AssignRoomHistory.Update(lastRecord);
+                    //this.dbContext.AssignRoomHistory.Update(lastRecord);
                 }
 
                 #endregion
@@ -92,6 +123,7 @@ namespace NTCore.WebFront.Controllers.Api
                     UpdaterId = this.UserInfo.HotelId,
                     UpdateTime = DateTime.Now,
                     UserId = info.UserId,
+                    DataSort = 0,
                     FromTime = DateTime.Now,
                     Deadline = DataDefine.NullDateTime
                 };

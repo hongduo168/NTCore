@@ -22,6 +22,9 @@ using NTCore.Utility;
 using MySQL.Data.EntityFrameworkCore.Extensions;
 using NTCore.Extensions.MvcRoute;
 using Microsoft.AspNetCore.Mvc;
+using NTCore.DataModel;
+using NTCore.DataAccess.DAL;
+using NTCore.BizLogic.DbAccess;
 
 namespace NTCore.WebFront
 {
@@ -38,7 +41,7 @@ namespace NTCore.WebFront
         public void ConfigureServices(IServiceCollection services)
         {
             var connection = Configuration.GetConnectionString("SqlServer");
-            services.AddEntityFrameworkSqlServer().AddDbContext<MainContext>(options => options.UseSqlServer(connection));
+            services.AddEntityFrameworkSqlServer().AddDbContext<MainContext>(options => options.UseSqlServer(connection, b => b.MigrationsAssembly("NTCore.WebFront")));
 
             //var connection = Configuration.GetConnectionString("MySQL");
             //services.AddEntityFrameworkSqlServer().AddDbContext<MainContext>(options => options.UseMySQL(connection, b => b.MigrationsAssembly("NTCore.WebFront")));
@@ -77,6 +80,8 @@ namespace NTCore.WebFront
                     .Build();
                 options.Filters.Add(new AuthorizeFilter(policy));
             });
+
+            services.AddSingleton<IRepository<UserInfo>, DbRepository<UserInfo>>();
 
         }
 

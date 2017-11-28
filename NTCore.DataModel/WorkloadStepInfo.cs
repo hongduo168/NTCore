@@ -17,10 +17,9 @@ namespace NTCore.DataModel
         public int ReceiverId { get; set; }
 
         /// <summary>
-        /// WorkloadStepType
         /// 类型
         /// </summary>
         [Required, DefaultValue(0), Column("step_type")]
-        public int StepType { get; set; }
+        public DataEnum.WorkloadStepType StepType { get; set; }
     }
 }

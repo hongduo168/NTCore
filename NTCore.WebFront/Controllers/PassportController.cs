@@ -66,7 +66,7 @@ namespace NTCore.WebFront.Controllers
         {
             var firstOrDefault = this.dbContext.User.FirstOrDefault();
 
-            var user = new ClaimsPrincipal(new ClaimsIdentity(new[] { new Claim(ClaimTypes.Name, "hongduo168") }, CookieKeys.AuthenticationScheme));
+            var user = new ClaimsPrincipal(new ClaimsIdentity(new[] { new Claim(ClaimTypes.Name, firstOrDefault?.Username ?? string.Empty) }, CookieKeys.AuthenticationScheme));
             await HttpContext.SignInAsync(CookieKeys.AuthenticationScheme, user, new AuthenticationProperties
             {
                 IsPersistent = true,
@@ -81,10 +81,11 @@ namespace NTCore.WebFront.Controllers
             return Json(new string[] { nameValue, isAuth.ToString() });
         }
 
+        [Route("logout")]
         [Authorize]
         public async Task<IActionResult> Logout()
         {
-            await HttpContext.SignOutAsync(CookieKeys.AuthenticationCookie);
+            await HttpContext.SignOutAsync(CookieKeys.AuthenticationScheme);
             return Redirect("/");
         }
 

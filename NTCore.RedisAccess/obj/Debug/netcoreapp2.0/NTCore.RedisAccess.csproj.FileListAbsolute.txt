@@ -24,3 +24,4 @@ E:\Projects\NTPlatform\NTCore.RedisAccess\obj\Debug\netcoreapp2.0\NTCore.RedisAc
 E:\Projects\NTPlatform\NTCore.RedisAccess\obj\Debug\netcoreapp2.0\NTCore.RedisAccess.AssemblyInfo.cs
 E:\Projects\NTPlatform\NTCore.RedisAccess\obj\Debug\netcoreapp2.0\NTCore.RedisAccess.dll
 E:\Projects\NTPlatform\NTCore.RedisAccess\obj\Debug\netcoreapp2.0\NTCore.RedisAccess.pdb
+E:\Projects\NTPlatform\NTCore.RedisAccess\obj\Debug\netcoreapp2.0\NTCore.RedisAccess.csprojResolveAssemblyReference.cache

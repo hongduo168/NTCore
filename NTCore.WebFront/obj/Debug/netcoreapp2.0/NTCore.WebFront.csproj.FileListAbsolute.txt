@@ -43,11 +43,13 @@ E:\Projects\NTPlatform\NTCore.WebFront\bin\Debug\netcoreapp2.0\NTCore.WebFront.r
 E:\Projects\NTPlatform\NTCore.WebFront\bin\Debug\netcoreapp2.0\NTCore.WebFront.runtimeconfig.dev.json
 E:\Projects\NTPlatform\NTCore.WebFront\bin\Debug\netcoreapp2.0\NTCore.WebFront.dll
 E:\Projects\NTPlatform\NTCore.WebFront\bin\Debug\netcoreapp2.0\NTCore.WebFront.pdb
+E:\Projects\NTPlatform\NTCore.WebFront\bin\Debug\netcoreapp2.0\NTCore.BizLogic.dll
 E:\Projects\NTPlatform\NTCore.WebFront\bin\Debug\netcoreapp2.0\NTCore.DataAccess.dll
 E:\Projects\NTPlatform\NTCore.WebFront\bin\Debug\netcoreapp2.0\NTCore.DataModel.dll
 E:\Projects\NTPlatform\NTCore.WebFront\bin\Debug\netcoreapp2.0\NTCore.Extensions.dll
 E:\Projects\NTPlatform\NTCore.WebFront\bin\Debug\netcoreapp2.0\NTCore.RedisAccess.dll
 E:\Projects\NTPlatform\NTCore.WebFront\bin\Debug\netcoreapp2.0\NTCore.Utility.dll
+E:\Projects\NTPlatform\NTCore.WebFront\bin\Debug\netcoreapp2.0\NTCore.BizLogic.pdb
 E:\Projects\NTPlatform\NTCore.WebFront\bin\Debug\netcoreapp2.0\NTCore.DataAccess.pdb
 E:\Projects\NTPlatform\NTCore.WebFront\bin\Debug\netcoreapp2.0\NTCore.DataModel.pdb
 E:\Projects\NTPlatform\NTCore.WebFront\bin\Debug\netcoreapp2.0\NTCore.Extensions.pdb

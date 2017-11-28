@@ -1,8 +1,0 @@
-version: '3'
-
-services:
-  ntcore.webfront:
-    image: ntcore.webfront
-    build:
-      context: ./NTCore.WebFront
-      dockerfile: Dockerfile

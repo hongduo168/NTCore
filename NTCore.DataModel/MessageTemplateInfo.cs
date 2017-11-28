@@ -14,7 +14,7 @@ namespace NTCore.DataModel
         /// MessageTemplateType
         /// </summary>
         [Required, DefaultValue(0), Column("group_type")]
-        public int GroupType { get; set; }
+        public DataEnum.MessageTemplateType GroupType { get; set; }
 
         [Required(AllowEmptyStrings = true), DefaultValue(""), Column("template_name", TypeName = "nvarchar(30)"), MaxLength(30)]
         public string TemplateName { get; set; }

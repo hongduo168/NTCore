@@ -16,6 +16,9 @@ namespace NTCore.DataModel
         [Required, DefaultValue(0), Column("userid")]
         public int UserId { get; set; }
 
+        /// <summary>
+        /// 排房开始时系数
+        /// </summary>
         [Required, DefaultValue(1.0), Column("coefficient", TypeName = "decimal(10,2)")]
         public decimal Coefficient { get; set; }
 

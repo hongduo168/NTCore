@@ -7,7 +7,9 @@ using System.Text;
 
 namespace NTCore.DataModel
 {
-
+    /// <summary>
+    /// 附件
+    /// </summary>
     [Table("attachment")]
     public class AttachmentInfo : HotelEntity
     {
@@ -22,7 +24,7 @@ namespace NTCore.DataModel
         /// AttachmentRelationType
         /// 关联数据的类型
         /// </summary>
-        public int RelationType { get; set; }
+        public DataEnum.AttachmentRelationType RelationType { get; set; }
 
         [Required, DefaultValue(0), Column("relation_id")]
         /// <summary>

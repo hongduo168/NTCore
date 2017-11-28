@@ -15,9 +15,7 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "NTCore.Utility", "NTCore.Ut
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "NTCore.RedisAccess", "NTCore.RedisAccess\NTCore.RedisAccess.csproj", "{BBA2B209-E0E8-488D-A8BB-32A6ACC6E84F}"
 EndProject
-Project("{E53339B2-1760-4266-BCC7-CA923CBCF16C}") = "docker-compose", "docker-compose.dcproj", "{6EAFB280-2827-4A2B-9DAF-DBFDD8FC1EB2}"
-EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NTCore.BizLogic", "NTCore.BizLogic\NTCore.BizLogic.csproj", "{7D42F9E8-BE7B-4E73-931B-E706D20A69FF}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "NTCore.BizLogic", "NTCore.BizLogic\NTCore.BizLogic.csproj", "{7D42F9E8-BE7B-4E73-931B-E706D20A69FF}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -49,10 +47,6 @@ Global
 		{BBA2B209-E0E8-488D-A8BB-32A6ACC6E84F}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{BBA2B209-E0E8-488D-A8BB-32A6ACC6E84F}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{BBA2B209-E0E8-488D-A8BB-32A6ACC6E84F}.Release|Any CPU.Build.0 = Release|Any CPU
-		{6EAFB280-2827-4A2B-9DAF-DBFDD8FC1EB2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{6EAFB280-2827-4A2B-9DAF-DBFDD8FC1EB2}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{6EAFB280-2827-4A2B-9DAF-DBFDD8FC1EB2}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{6EAFB280-2827-4A2B-9DAF-DBFDD8FC1EB2}.Release|Any CPU.Build.0 = Release|Any CPU
 		{7D42F9E8-BE7B-4E73-931B-E706D20A69FF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{7D42F9E8-BE7B-4E73-931B-E706D20A69FF}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{7D42F9E8-BE7B-4E73-931B-E706D20A69FF}.Release|Any CPU.ActiveCfg = Release|Any CPU

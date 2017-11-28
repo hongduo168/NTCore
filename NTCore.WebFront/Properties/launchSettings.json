@@ -18,7 +18,7 @@
     },
     "NTCore.WebFront": {
       "commandName": "Project",
-      "launchUrl": "api/values",
+      "launchUrl": "passport/auto-login",
       "environmentVariables": {
         "ASPNETCORE_ENVIRONMENT": "Development"
       },

@@ -1,0 +1,1587 @@
+
+-----------------------------------------
+
+time:2017-11-28 15:43:44,396 
+level:INFO 
+logger:Microsoft.AspNetCore.Hosting.Internal.WebHost
+file:? line? 
+content:Request starting HTTP/1.1 GET http://localhost:57942/passport/auto-login  
+
+-----------------------------------------
+
+time:2017-11-28 15:43:44,531 
+level:INFO 
+logger:Microsoft.AspNetCore.Authentication.Cookies.CookieAuthenticationHandler
+file:? line? 
+content:AuthenticationScheme: AuthenticationScheme was successfully authenticated.
+
+-----------------------------------------
+
+time:2017-11-28 15:43:44,855 
+level:INFO 
+logger:Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker
+file:? line? 
+content:Executing action method NTCore.WebFront.Controllers.PassportController.AutoLogin (NTCore.WebFront) with arguments ((null)) - ModelState is Valid
+
+-----------------------------------------
+
+time:2017-11-28 15:43:45,170 
+level:INFO 
+logger:Microsoft.EntityFrameworkCore.Infrastructure
+file:? line? 
+content:Entity Framework Core 2.0.1-rtm-125 initialized 'MainContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: MigrationsAssembly=NTCore.WebFront 
+
+-----------------------------------------
+
+time:2017-11-28 15:43:45,218 
+level:WARN 
+logger:Microsoft.EntityFrameworkCore.Query
+file:? line? 
+content:Query: '(from UserInfo <generated>_1 in DbSet<UserInfo> select [<generated>_1]).FirstOrDefault()' uses First/FirstOrDefault operation without OrderBy and filter which may lead to unpredictable results.
+
+-----------------------------------------
+
+time:2017-11-28 15:43:45,424 
+level:INFO 
+logger:Microsoft.EntityFrameworkCore.Database.Command
+file:? line? 
+content:Executed DbCommand (41ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT TOP(1) [u].[id], [u].[auth_type], [u].[avatar], [u].[confirmed], [u].[create_time], [u].[creator_id], [u].[data_sort], [u].[data_state], [u].[email], [u].[employee_number], [u].[hotel_id], [u].[mobile_number], [u].[nickname], [u].[password], [u].[update_time], [u].[updater_id], [u].[username]
+FROM [user] AS [u]
+WHERE [u].[data_state] = 1
+
+-----------------------------------------
+
+time:2017-11-28 15:43:45,475 
+level:INFO 
+logger:Microsoft.AspNetCore.Authentication.Cookies.CookieAuthenticationHandler
+file:? line? 
+content:AuthenticationScheme: AuthenticationScheme signed in.
+
+-----------------------------------------
+
+time:2017-11-28 15:43:45,487 
+level:INFO 
+logger:Microsoft.AspNetCore.Mvc.Formatters.Json.Internal.JsonResultExecutor
+file:? line? 
+content:Executing JsonResult, writing value System.String[].
+
+-----------------------------------------
+
+time:2017-11-28 15:43:45,544 
+level:INFO 
+logger:Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker
+file:? line? 
+content:Executed action NTCore.WebFront.Controllers.PassportController.AutoLogin (NTCore.WebFront) in 831.7223ms
+
+-----------------------------------------
+
+time:2017-11-28 15:43:45,562 
+level:INFO 
+logger:Microsoft.AspNetCore.Hosting.Internal.WebHost
+file:? line? 
+content:Request finished in 1167.8933ms 200 application/json; charset=utf-8
+
+-----------------------------------------
+
+time:2017-11-28 15:43:53,365 
+level:INFO 
+logger:Microsoft.AspNetCore.Hosting.Internal.WebHost
+file:? line? 
+content:Request starting HTTP/1.1 GET http://localhost:57942/assign-room  
+
+-----------------------------------------
+
+time:2017-11-28 15:43:53,368 
+level:INFO 
+logger:Microsoft.AspNetCore.Authentication.Cookies.CookieAuthenticationHandler
+file:? line? 
+content:AuthenticationScheme: AuthenticationScheme was successfully authenticated.
+
+-----------------------------------------
+
+time:2017-11-28 15:43:53,377 
+level:INFO 
+logger:Microsoft.AspNetCore.Authorization.DefaultAuthorizationService
+file:? line? 
+content:Authorization was successful for user: hongduo168.
+
+-----------------------------------------
+
+time:2017-11-28 15:43:55,520 
+level:INFO 
+logger:Microsoft.EntityFrameworkCore.Infrastructure
+file:? line? 
+content:Entity Framework Core 2.0.1-rtm-125 initialized 'MainContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: MigrationsAssembly=NTCore.WebFront 
+
+-----------------------------------------
+
+time:2017-11-28 15:43:55,549 
+level:INFO 
+logger:Microsoft.EntityFrameworkCore.Database.Command
+file:? line? 
+content:Executed DbCommand (19ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [u].[id], [u].[auth_type], [u].[avatar], [u].[confirmed], [u].[create_time], [u].[creator_id], [u].[data_sort], [u].[data_state], [u].[email], [u].[employee_number], [u].[hotel_id], [u].[mobile_number], [u].[nickname], [u].[password], [u].[update_time], [u].[updater_id], [u].[username]
+FROM [user] AS [u]
+WHERE [u].[data_state] = 1
+
+-----------------------------------------
+
+time:2017-11-28 15:44:01,913 
+level:INFO 
+logger:Microsoft.EntityFrameworkCore.Database.Command
+file:? line? 
+content:Executed DbCommand (43ms) [Parameters=[@p1='?', @p0='?'], CommandType='Text', CommandTimeout='30']
+SET NOCOUNT ON;
+UPDATE [user] SET [auth_type] = @p0
+WHERE [id] = @p1;
+SELECT @@ROWCOUNT;
+
+-----------------------------------------
+
+time:2017-11-28 15:44:49,483 
+level:INFO 
+logger:Microsoft.AspNetCore.Hosting.Internal.WebHost
+file:? line? 
+content:Request starting HTTP/1.1 GET http://localhost:57942/passport/auto-login  
+
+-----------------------------------------
+
+time:2017-11-28 15:44:49,563 
+level:INFO 
+logger:Microsoft.AspNetCore.Authentication.Cookies.CookieAuthenticationHandler
+file:? line? 
+content:AuthenticationScheme: AuthenticationScheme was successfully authenticated.
+
+-----------------------------------------
+
+time:2017-11-28 15:44:49,839 
+level:INFO 
+logger:Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker
+file:? line? 
+content:Executing action method NTCore.WebFront.Controllers.PassportController.AutoLogin (NTCore.WebFront) with arguments ((null)) - ModelState is Valid
+
+-----------------------------------------
+
+time:2017-11-28 15:44:50,069 
+level:INFO 
+logger:Microsoft.EntityFrameworkCore.Infrastructure
+file:? line? 
+content:Entity Framework Core 2.0.1-rtm-125 initialized 'MainContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: MigrationsAssembly=NTCore.WebFront 
+
+-----------------------------------------
+
+time:2017-11-28 15:44:50,112 
+level:WARN 
+logger:Microsoft.EntityFrameworkCore.Query
+file:? line? 
+content:Query: '(from UserInfo <generated>_1 in DbSet<UserInfo> select [<generated>_1]).FirstOrDefault()' uses First/FirstOrDefault operation without OrderBy and filter which may lead to unpredictable results.
+
+-----------------------------------------
+
+time:2017-11-28 15:44:50,288 
+level:INFO 
+logger:Microsoft.EntityFrameworkCore.Database.Command
+file:? line? 
+content:Executed DbCommand (36ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT TOP(1) [u].[id], [u].[auth_type], [u].[avatar], [u].[confirmed], [u].[create_time], [u].[creator_id], [u].[data_sort], [u].[data_state], [u].[email], [u].[employee_number], [u].[hotel_id], [u].[mobile_number], [u].[nickname], [u].[password], [u].[update_time], [u].[updater_id], [u].[username]
+FROM [user] AS [u]
+WHERE [u].[data_state] = 1
+
+-----------------------------------------
+
+time:2017-11-28 15:44:50,331 
+level:INFO 
+logger:Microsoft.AspNetCore.Authentication.Cookies.CookieAuthenticationHandler
+file:? line? 
+content:AuthenticationScheme: AuthenticationScheme signed in.
+
+-----------------------------------------
+
+time:2017-11-28 15:44:50,338 
+level:INFO 
+logger:Microsoft.AspNetCore.Mvc.Formatters.Json.Internal.JsonResultExecutor
+file:? line? 
+content:Executing JsonResult, writing value System.String[].
+
+-----------------------------------------
+
+time:2017-11-28 15:44:50,391 
+level:INFO 
+logger:Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker
+file:? line? 
+content:Executed action NTCore.WebFront.Controllers.PassportController.AutoLogin (NTCore.WebFront) in 677.4992ms
+
+-----------------------------------------
+
+time:2017-11-28 15:44:50,396 
+level:INFO 
+logger:Microsoft.AspNetCore.Hosting.Internal.WebHost
+file:? line? 
+content:Request finished in 924.8177ms 200 application/json; charset=utf-8
+
+-----------------------------------------
+
+time:2017-11-28 15:44:53,280 
+level:INFO 
+logger:Microsoft.AspNetCore.Hosting.Internal.WebHost
+file:? line? 
+content:Request starting HTTP/1.1 GET http://localhost:57942/assign-room  
+
+-----------------------------------------
+
+time:2017-11-28 15:44:53,285 
+level:INFO 
+logger:Microsoft.AspNetCore.Authentication.Cookies.CookieAuthenticationHandler
+file:? line? 
+content:AuthenticationScheme: AuthenticationScheme was successfully authenticated.
+
+-----------------------------------------
+
+time:2017-11-28 15:44:53,304 
+level:INFO 
+logger:Microsoft.AspNetCore.Authorization.DefaultAuthorizationService
+file:? line? 
+content:Authorization was successful for user: hongduo168.
+
+-----------------------------------------
+
+time:2017-11-28 15:44:56,811 
+level:INFO 
+logger:Microsoft.EntityFrameworkCore.Infrastructure
+file:? line? 
+content:Entity Framework Core 2.0.1-rtm-125 initialized 'MainContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: MigrationsAssembly=NTCore.WebFront 
+
+-----------------------------------------
+
+time:2017-11-28 15:44:56,844 
+level:INFO 
+logger:Microsoft.EntityFrameworkCore.Database.Command
+file:? line? 
+content:Executed DbCommand (21ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [u].[id], [u].[auth_type], [u].[avatar], [u].[confirmed], [u].[create_time], [u].[creator_id], [u].[data_sort], [u].[data_state], [u].[email], [u].[employee_number], [u].[hotel_id], [u].[mobile_number], [u].[nickname], [u].[password], [u].[update_time], [u].[updater_id], [u].[username]
+FROM [user] AS [u]
+WHERE [u].[data_state] = 1
+
+-----------------------------------------
+
+time:2017-11-28 15:44:57,591 
+level:INFO 
+logger:Microsoft.EntityFrameworkCore.Database.Command
+file:? line? 
+content:Executed DbCommand (48ms) [Parameters=[@p0='?'], CommandType='Text', CommandTimeout='30']
+SET NOCOUNT ON;
+DELETE FROM [user]
+WHERE [id] = @p0;
+SELECT @@ROWCOUNT;
+
+-----------------------------------------
+
+time:2017-11-28 15:46:15,147 
+level:INFO 
+logger:Microsoft.EntityFrameworkCore.Database.Command
+file:? line? 
+content:Executed DbCommand (15ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [u].[id], [u].[auth_type], [u].[avatar], [u].[confirmed], [u].[create_time], [u].[creator_id], [u].[data_sort], [u].[data_state], [u].[email], [u].[employee_number], [u].[hotel_id], [u].[mobile_number], [u].[nickname], [u].[password], [u].[update_time], [u].[updater_id], [u].[username]
+FROM [user] AS [u]
+WHERE [u].[data_state] = 1
+
+-----------------------------------------
+
+time:2017-11-28 15:46:30,152 
+level:INFO 
+logger:Microsoft.EntityFrameworkCore.Database.Command
+file:? line? 
+content:Executed DbCommand (16ms) [Parameters=[@p0='?'], CommandType='Text', CommandTimeout='30']
+SET NOCOUNT ON;
+DELETE FROM [user]
+WHERE [id] = @p0;
+SELECT @@ROWCOUNT;
+
+-----------------------------------------
+
+time:2017-11-28 15:49:22,324 
+level:INFO 
+logger:Microsoft.AspNetCore.Hosting.Internal.WebHost
+file:? line? 
+content:Request starting HTTP/1.1 GET http://localhost:57942/passport/auto-login  
+
+-----------------------------------------
+
+time:2017-11-28 15:49:22,403 
+level:INFO 
+logger:Microsoft.AspNetCore.Authentication.Cookies.CookieAuthenticationHandler
+file:? line? 
+content:AuthenticationScheme: AuthenticationScheme was successfully authenticated.
+
+-----------------------------------------
+
+time:2017-11-28 15:49:22,724 
+level:INFO 
+logger:Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker
+file:? line? 
+content:Executing action method NTCore.WebFront.Controllers.PassportController.AutoLogin (NTCore.WebFront) with arguments ((null)) - ModelState is Valid
+
+-----------------------------------------
+
+time:2017-11-28 15:49:22,938 
+level:INFO 
+logger:Microsoft.EntityFrameworkCore.Infrastructure
+file:? line? 
+content:Entity Framework Core 2.0.1-rtm-125 initialized 'MainContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: MigrationsAssembly=NTCore.WebFront 
+
+-----------------------------------------
+
+time:2017-11-28 15:49:22,984 
+level:WARN 
+logger:Microsoft.EntityFrameworkCore.Query
+file:? line? 
+content:Query: '(from UserInfo <generated>_1 in DbSet<UserInfo> select [<generated>_1]).FirstOrDefault()' uses First/FirstOrDefault operation without OrderBy and filter which may lead to unpredictable results.
+
+-----------------------------------------
+
+time:2017-11-28 15:49:23,167 
+level:INFO 
+logger:Microsoft.EntityFrameworkCore.Database.Command
+file:? line? 
+content:Executed DbCommand (36ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT TOP(1) [u].[id], [u].[auth_type], [u].[avatar], [u].[confirmed], [u].[create_time], [u].[creator_id], [u].[data_sort], [u].[data_state], [u].[email], [u].[employee_number], [u].[hotel_id], [u].[mobile_number], [u].[nickname], [u].[password], [u].[update_time], [u].[updater_id], [u].[username]
+FROM [user] AS [u]
+WHERE [u].[data_state] = 1
+
+-----------------------------------------
+
+time:2017-11-28 15:49:23,216 
+level:INFO 
+logger:Microsoft.AspNetCore.Authentication.Cookies.CookieAuthenticationHandler
+file:? line? 
+content:AuthenticationScheme: AuthenticationScheme signed in.
+
+-----------------------------------------
+
+time:2017-11-28 15:49:23,225 
+level:INFO 
+logger:Microsoft.AspNetCore.Mvc.Formatters.Json.Internal.JsonResultExecutor
+file:? line? 
+content:Executing JsonResult, writing value System.String[].
+
+-----------------------------------------
+
+time:2017-11-28 15:49:23,279 
+level:INFO 
+logger:Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker
+file:? line? 
+content:Executed action NTCore.WebFront.Controllers.PassportController.AutoLogin (NTCore.WebFront) in 689.9101ms
+
+-----------------------------------------
+
+time:2017-11-28 15:49:23,292 
+level:INFO 
+logger:Microsoft.AspNetCore.Hosting.Internal.WebHost
+file:? line? 
+content:Request finished in 972.3475ms 200 application/json; charset=utf-8
+
+-----------------------------------------
+
+time:2017-11-28 15:49:24,521 
+level:INFO 
+logger:Microsoft.AspNetCore.Hosting.Internal.WebHost
+file:? line? 
+content:Request starting HTTP/1.1 GET http://localhost:57942/assign-room  
+
+-----------------------------------------
+
+time:2017-11-28 15:49:24,523 
+level:INFO 
+logger:Microsoft.AspNetCore.Authentication.Cookies.CookieAuthenticationHandler
+file:? line? 
+content:AuthenticationScheme: AuthenticationScheme was successfully authenticated.
+
+-----------------------------------------
+
+time:2017-11-28 15:49:24,531 
+level:INFO 
+logger:Microsoft.AspNetCore.Authorization.DefaultAuthorizationService
+file:? line? 
+content:Authorization was successful for user: hongduo168.
+
+-----------------------------------------
+
+time:2017-11-28 15:49:25,967 
+level:INFO 
+logger:Microsoft.EntityFrameworkCore.Infrastructure
+file:? line? 
+content:Entity Framework Core 2.0.1-rtm-125 initialized 'MainContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: MigrationsAssembly=NTCore.WebFront 
+
+-----------------------------------------
+
+time:2017-11-28 15:49:25,999 
+level:INFO 
+logger:Microsoft.EntityFrameworkCore.Database.Command
+file:? line? 
+content:Executed DbCommand (19ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [u].[id], [u].[auth_type], [u].[avatar], [u].[confirmed], [u].[create_time], [u].[creator_id], [u].[data_sort], [u].[data_state], [u].[email], [u].[employee_number], [u].[hotel_id], [u].[mobile_number], [u].[nickname], [u].[password], [u].[update_time], [u].[updater_id], [u].[username]
+FROM [user] AS [u]
+WHERE [u].[data_state] = 1
+
+-----------------------------------------
+
+time:2017-11-28 15:49:29,028 
+level:ERROR 
+logger:Microsoft.EntityFrameworkCore.Database.Command
+file:? line? 
+content:Failed executing DbCommand (50ms) [Parameters=[@p0='?', @p1='?', @p2='?' (Size = 255), @p3='?', @p4='?', @p5='?', @p6='?', @p7='?', @p8='?' (Size = 100), @p9='?' (Size = 30), @p10='?', @p11='?' (Size = 30), @p12='?' (Size = 50), @p13='?' (Size = 50), @p14='?', @p15='?', @p16='?' (Size = 50)], CommandType='Text', CommandTimeout='30']
+SET NOCOUNT ON;
+INSERT INTO [user] ([id], [auth_type], [avatar], [confirmed], [create_time], [creator_id], [data_sort], [data_state], [email], [employee_number], [hotel_id], [mobile_number], [nickname], [password], [update_time], [updater_id], [username])
+VALUES (@p0, @p1, @p2, @p3, @p4, @p5, @p6, @p7, @p8, @p9, @p10, @p11, @p12, @p13, @p14, @p15, @p16);
+System.Data.SqlClient.SqlException (0x80131904): 当 IDENTITY_INSERT 设置为 OFF 时，不能为表 'user' 中的标识列插入显式值。
+   at System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   at System.Data.SqlClient.SqlDataReader.TryConsumeMetaData()
+   at System.Data.SqlClient.SqlDataReader.get_MetaData()
+   at System.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean async, Int32 timeout, Task& task, Boolean asyncWrite, SqlDataReader ds)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, TaskCompletionSource`1 completion, Int32 timeout, Task& task, Boolean asyncWrite, String method)
+   at System.Data.SqlClient.SqlCommand.ExecuteReader(CommandBehavior behavior)
+   at System.Data.SqlClient.SqlCommand.ExecuteDbDataReader(CommandBehavior behavior)
+   at System.Data.Common.DbCommand.ExecuteReader()
+   at Microsoft.EntityFrameworkCore.Storage.Internal.RelationalCommand.Execute(IRelationalConnection connection, DbCommandMethod executeMethod, IReadOnlyDictionary`2 parameterValues)
+ClientConnectionId:8fe7e731-19d8-4063-ae2a-317b3240a0de
+Error Number:544,State:1,Class:16
+
+-----------------------------------------
+
+time:2017-11-28 15:49:29,077 
+level:ERROR 
+logger:Microsoft.EntityFrameworkCore.Update
+file:? line? 
+content:An exception occurred in the database while saving changes for context type 'NTCore.DataAccess.MainContext'.
+Microsoft.EntityFrameworkCore.DbUpdateException: An error occurred while updating the entries. See the inner exception for details. ---> System.Data.SqlClient.SqlException: 当 IDENTITY_INSERT 设置为 OFF 时，不能为表 'user' 中的标识列插入显式值。
+   at System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   at System.Data.SqlClient.SqlDataReader.TryConsumeMetaData()
+   at System.Data.SqlClient.SqlDataReader.get_MetaData()
+   at System.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean async, Int32 timeout, Task& task, Boolean asyncWrite, SqlDataReader ds)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, TaskCompletionSource`1 completion, Int32 timeout, Task& task, Boolean asyncWrite, String method)
+   at System.Data.SqlClient.SqlCommand.ExecuteReader(CommandBehavior behavior)
+   at System.Data.SqlClient.SqlCommand.ExecuteDbDataReader(CommandBehavior behavior)
+   at System.Data.Common.DbCommand.ExecuteReader()
+   at Microsoft.EntityFrameworkCore.Storage.Internal.RelationalCommand.Execute(IRelationalConnection connection, DbCommandMethod executeMethod, IReadOnlyDictionary`2 parameterValues)
+   at Microsoft.EntityFrameworkCore.Storage.Internal.RelationalCommand.ExecuteReader(IRelationalConnection connection, IReadOnlyDictionary`2 parameterValues)
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.Execute(IRelationalConnection connection)
+   --- End of inner exception stack trace ---
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.Execute(IRelationalConnection connection)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.Execute(Tuple`2 parameters)
+   at Microsoft.EntityFrameworkCore.Storage.Internal.SqlServerExecutionStrategy.Execute[TState,TResult](TState state, Func`3 operation, Func`3 verifySucceeded)
+   at Microsoft.EntityFrameworkCore.ExecutionStrategyExtensions.Execute[TState,TResult](IExecutionStrategy strategy, TState state, Func`2 operation)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.Execute(IEnumerable`1 commandBatches, IRelationalConnection connection)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalDatabase.SaveChanges(IReadOnlyList`1 entries)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChanges(IReadOnlyList`1 entriesToSave)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChanges(Boolean acceptAllChangesOnSuccess)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChanges(Boolean acceptAllChangesOnSuccess)
+Microsoft.EntityFrameworkCore.DbUpdateException: An error occurred while updating the entries. See the inner exception for details. ---> System.Data.SqlClient.SqlException: 当 IDENTITY_INSERT 设置为 OFF 时，不能为表 'user' 中的标识列插入显式值。
+   at System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   at System.Data.SqlClient.SqlDataReader.TryConsumeMetaData()
+   at System.Data.SqlClient.SqlDataReader.get_MetaData()
+   at System.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean async, Int32 timeout, Task& task, Boolean asyncWrite, SqlDataReader ds)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, TaskCompletionSource`1 completion, Int32 timeout, Task& task, Boolean asyncWrite, String method)
+   at System.Data.SqlClient.SqlCommand.ExecuteReader(CommandBehavior behavior)
+   at System.Data.SqlClient.SqlCommand.ExecuteDbDataReader(CommandBehavior behavior)
+   at System.Data.Common.DbCommand.ExecuteReader()
+   at Microsoft.EntityFrameworkCore.Storage.Internal.RelationalCommand.Execute(IRelationalConnection connection, DbCommandMethod executeMethod, IReadOnlyDictionary`2 parameterValues)
+   at Microsoft.EntityFrameworkCore.Storage.Internal.RelationalCommand.ExecuteReader(IRelationalConnection connection, IReadOnlyDictionary`2 parameterValues)
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.Execute(IRelationalConnection connection)
+   --- End of inner exception stack trace ---
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.Execute(IRelationalConnection connection)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.Execute(Tuple`2 parameters)
+   at Microsoft.EntityFrameworkCore.Storage.Internal.SqlServerExecutionStrategy.Execute[TState,TResult](TState state, Func`3 operation, Func`3 verifySucceeded)
+   at Microsoft.EntityFrameworkCore.ExecutionStrategyExtensions.Execute[TState,TResult](IExecutionStrategy strategy, TState state, Func`2 operation)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.Execute(IEnumerable`1 commandBatches, IRelationalConnection connection)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalDatabase.SaveChanges(IReadOnlyList`1 entries)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChanges(IReadOnlyList`1 entriesToSave)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChanges(Boolean acceptAllChangesOnSuccess)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChanges(Boolean acceptAllChangesOnSuccess)
+
+-----------------------------------------
+
+time:2017-11-28 15:51:51,412 
+level:INFO 
+logger:Microsoft.AspNetCore.Hosting.Internal.WebHost
+file:? line? 
+content:Request starting HTTP/1.1 GET http://localhost:57942/passport/auto-login  
+
+-----------------------------------------
+
+time:2017-11-28 15:51:51,495 
+level:INFO 
+logger:Microsoft.AspNetCore.Authentication.Cookies.CookieAuthenticationHandler
+file:? line? 
+content:AuthenticationScheme: AuthenticationScheme was successfully authenticated.
+
+-----------------------------------------
+
+time:2017-11-28 15:51:51,817 
+level:INFO 
+logger:Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker
+file:? line? 
+content:Executing action method NTCore.WebFront.Controllers.PassportController.AutoLogin (NTCore.WebFront) with arguments ((null)) - ModelState is Valid
+
+-----------------------------------------
+
+time:2017-11-28 15:51:52,037 
+level:INFO 
+logger:Microsoft.EntityFrameworkCore.Infrastructure
+file:? line? 
+content:Entity Framework Core 2.0.1-rtm-125 initialized 'MainContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: MigrationsAssembly=NTCore.WebFront 
+
+-----------------------------------------
+
+time:2017-11-28 15:51:52,098 
+level:WARN 
+logger:Microsoft.EntityFrameworkCore.Query
+file:? line? 
+content:Query: '(from UserInfo <generated>_1 in DbSet<UserInfo> select [<generated>_1]).FirstOrDefault()' uses First/FirstOrDefault operation without OrderBy and filter which may lead to unpredictable results.
+
+-----------------------------------------
+
+time:2017-11-28 15:51:52,282 
+level:INFO 
+logger:Microsoft.EntityFrameworkCore.Database.Command
+file:? line? 
+content:Executed DbCommand (39ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT TOP(1) [u].[id], [u].[auth_type], [u].[avatar], [u].[confirmed], [u].[create_time], [u].[creator_id], [u].[data_sort], [u].[data_state], [u].[email], [u].[employee_number], [u].[hotel_id], [u].[mobile_number], [u].[nickname], [u].[password], [u].[update_time], [u].[updater_id], [u].[username]
+FROM [user] AS [u]
+WHERE [u].[data_state] = 1
+
+-----------------------------------------
+
+time:2017-11-28 15:51:52,324 
+level:INFO 
+logger:Microsoft.AspNetCore.Authentication.Cookies.CookieAuthenticationHandler
+file:? line? 
+content:AuthenticationScheme: AuthenticationScheme signed in.
+
+-----------------------------------------
+
+time:2017-11-28 15:51:52,331 
+level:INFO 
+logger:Microsoft.AspNetCore.Mvc.Formatters.Json.Internal.JsonResultExecutor
+file:? line? 
+content:Executing JsonResult, writing value System.String[].
+
+-----------------------------------------
+
+time:2017-11-28 15:51:52,372 
+level:INFO 
+logger:Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker
+file:? line? 
+content:Executed action NTCore.WebFront.Controllers.PassportController.AutoLogin (NTCore.WebFront) in 698.6048ms
+
+-----------------------------------------
+
+time:2017-11-28 15:51:52,379 
+level:INFO 
+logger:Microsoft.AspNetCore.Hosting.Internal.WebHost
+file:? line? 
+content:Request finished in 977.2313ms 200 application/json; charset=utf-8
+
+-----------------------------------------
+
+time:2017-11-28 15:52:13,770 
+level:INFO 
+logger:Microsoft.AspNetCore.Hosting.Internal.WebHost
+file:? line? 
+content:Request starting HTTP/1.1 GET http://localhost:57942/assign-room  
+
+-----------------------------------------
+
+time:2017-11-28 15:52:13,780 
+level:INFO 
+logger:Microsoft.AspNetCore.Authentication.Cookies.CookieAuthenticationHandler
+file:? line? 
+content:AuthenticationScheme: AuthenticationScheme was successfully authenticated.
+
+-----------------------------------------
+
+time:2017-11-28 15:52:13,796 
+level:INFO 
+logger:Microsoft.AspNetCore.Authorization.DefaultAuthorizationService
+file:? line? 
+content:Authorization was successful for user: hongduo168.
+
+-----------------------------------------
+
+time:2017-11-28 15:52:16,310 
+level:INFO 
+logger:Microsoft.EntityFrameworkCore.Infrastructure
+file:? line? 
+content:Entity Framework Core 2.0.1-rtm-125 initialized 'MainContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: MigrationsAssembly=NTCore.WebFront 
+
+-----------------------------------------
+
+time:2017-11-28 15:52:16,347 
+level:INFO 
+logger:Microsoft.EntityFrameworkCore.Database.Command
+file:? line? 
+content:Executed DbCommand (23ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [u].[id], [u].[auth_type], [u].[avatar], [u].[confirmed], [u].[create_time], [u].[creator_id], [u].[data_sort], [u].[data_state], [u].[email], [u].[employee_number], [u].[hotel_id], [u].[mobile_number], [u].[nickname], [u].[password], [u].[update_time], [u].[updater_id], [u].[username]
+FROM [user] AS [u]
+WHERE [u].[data_state] = 1
+
+-----------------------------------------
+
+time:2017-11-28 15:52:17,664 
+level:INFO 
+logger:Microsoft.EntityFrameworkCore.Database.Command
+file:? line? 
+content:Executed DbCommand (37ms) [Parameters=[@p0='?'], CommandType='Text', CommandTimeout='30']
+SET NOCOUNT ON;
+DELETE FROM [user]
+WHERE [id] = @p0;
+SELECT @@ROWCOUNT;
+
+-----------------------------------------
+
+time:2017-11-28 15:52:25,079 
+level:INFO 
+logger:Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker
+file:? line? 
+content:Executing action method NTCore.WebFront.Controllers.Api.AssignRoomController.Get (NTCore.WebFront) with arguments ((null)) - ModelState is Valid
+
+-----------------------------------------
+
+time:2017-11-28 15:52:25,141 
+level:INFO 
+logger:Microsoft.EntityFrameworkCore.Database.Command
+file:? line? 
+content:Executed DbCommand (45ms) [Parameters=[@__name_0='?' (Size = 50)], CommandType='Text', CommandTimeout='30']
+SELECT TOP(1) [u].[id], [u].[auth_type], [u].[avatar], [u].[confirmed], [u].[create_time], [u].[creator_id], [u].[data_sort], [u].[data_state], [u].[email], [u].[employee_number], [u].[hotel_id], [u].[mobile_number], [u].[nickname], [u].[password], [u].[update_time], [u].[updater_id], [u].[username]
+FROM [user] AS [u]
+WHERE ([u].[data_state] = 1) AND (([u].[username] = @__name_0) AND ([u].[confirmed] = 1))
+
+-----------------------------------------
+
+time:2017-11-28 15:52:25,172 
+level:INFO 
+logger:Microsoft.EntityFrameworkCore.Database.Command
+file:? line? 
+content:Executed DbCommand (24ms) [Parameters=[@__name_0='?' (Size = 50)], CommandType='Text', CommandTimeout='30']
+SELECT TOP(1) [u].[id], [u].[auth_type], [u].[avatar], [u].[confirmed], [u].[create_time], [u].[creator_id], [u].[data_sort], [u].[data_state], [u].[email], [u].[employee_number], [u].[hotel_id], [u].[mobile_number], [u].[nickname], [u].[password], [u].[update_time], [u].[updater_id], [u].[username]
+FROM [user] AS [u]
+WHERE ([u].[data_state] = 1) AND (([u].[username] = @__name_0) AND ([u].[confirmed] = 1))
+
+-----------------------------------------
+
+time:2017-11-28 15:52:29,971 
+level:INFO 
+logger:Microsoft.EntityFrameworkCore.Database.Command
+file:? line? 
+content:Executed DbCommand (2ms) [Parameters=[@__name_0='?' (Size = 50)], CommandType='Text', CommandTimeout='30']
+SELECT TOP(1) [u].[id], [u].[auth_type], [u].[avatar], [u].[confirmed], [u].[create_time], [u].[creator_id], [u].[data_sort], [u].[data_state], [u].[email], [u].[employee_number], [u].[hotel_id], [u].[mobile_number], [u].[nickname], [u].[password], [u].[update_time], [u].[updater_id], [u].[username]
+FROM [user] AS [u]
+WHERE ([u].[data_state] = 1) AND (([u].[username] = @__name_0) AND ([u].[confirmed] = 1))
+
+-----------------------------------------
+
+time:2017-11-28 15:53:15,694 
+level:INFO 
+logger:Microsoft.EntityFrameworkCore.Database.Command
+file:? line? 
+content:Executed DbCommand (14ms) [Parameters=[@__name_0='?' (Size = 50)], CommandType='Text', CommandTimeout='30']
+SELECT TOP(1) [u].[id], [u].[auth_type], [u].[avatar], [u].[confirmed], [u].[create_time], [u].[creator_id], [u].[data_sort], [u].[data_state], [u].[email], [u].[employee_number], [u].[hotel_id], [u].[mobile_number], [u].[nickname], [u].[password], [u].[update_time], [u].[updater_id], [u].[username]
+FROM [user] AS [u]
+WHERE ([u].[data_state] = 1) AND (([u].[username] = @__name_0) AND ([u].[confirmed] = 1))
+
+-----------------------------------------
+
+time:2017-11-28 15:53:18,001 
+level:INFO 
+logger:Microsoft.EntityFrameworkCore.Database.Command
+file:? line? 
+content:Executed DbCommand (2ms) [Parameters=[@__name_0='?' (Size = 50)], CommandType='Text', CommandTimeout='30']
+SELECT TOP(1) [u].[id], [u].[auth_type], [u].[avatar], [u].[confirmed], [u].[create_time], [u].[creator_id], [u].[data_sort], [u].[data_state], [u].[email], [u].[employee_number], [u].[hotel_id], [u].[mobile_number], [u].[nickname], [u].[password], [u].[update_time], [u].[updater_id], [u].[username]
+FROM [user] AS [u]
+WHERE ([u].[data_state] = 1) AND (([u].[username] = @__name_0) AND ([u].[confirmed] = 1))
+
+-----------------------------------------
+
+time:2017-11-28 15:58:02,200 
+level:INFO 
+logger:Microsoft.AspNetCore.Hosting.Internal.WebHost
+file:? line? 
+content:Request starting HTTP/1.1 GET http://localhost:57942/passport/auto-login  
+
+-----------------------------------------
+
+time:2017-11-28 15:58:02,283 
+level:INFO 
+logger:Microsoft.AspNetCore.Authentication.Cookies.CookieAuthenticationHandler
+file:? line? 
+content:AuthenticationScheme: AuthenticationScheme was successfully authenticated.
+
+-----------------------------------------
+
+time:2017-11-28 15:58:02,565 
+level:INFO 
+logger:Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker
+file:? line? 
+content:Executing action method NTCore.WebFront.Controllers.PassportController.AutoLogin (NTCore.WebFront) with arguments ((null)) - ModelState is Valid
+
+-----------------------------------------
+
+time:2017-11-28 15:58:02,830 
+level:INFO 
+logger:Microsoft.EntityFrameworkCore.Infrastructure
+file:? line? 
+content:Entity Framework Core 2.0.1-rtm-125 initialized 'MainContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: MigrationsAssembly=NTCore.WebFront 
+
+-----------------------------------------
+
+time:2017-11-28 15:58:02,873 
+level:WARN 
+logger:Microsoft.EntityFrameworkCore.Query
+file:? line? 
+content:Query: '(from UserInfo <generated>_1 in DbSet<UserInfo> select [<generated>_1]).FirstOrDefault()' uses First/FirstOrDefault operation without OrderBy and filter which may lead to unpredictable results.
+
+-----------------------------------------
+
+time:2017-11-28 15:58:03,059 
+level:INFO 
+logger:Microsoft.EntityFrameworkCore.Database.Command
+file:? line? 
+content:Executed DbCommand (35ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT TOP(1) [u].[id], [u].[auth_type], [u].[avatar], [u].[confirmed], [u].[create_time], [u].[creator_id], [u].[data_sort], [u].[data_state], [u].[email], [u].[employee_number], [u].[hotel_id], [u].[mobile_number], [u].[nickname], [u].[password], [u].[update_time], [u].[updater_id], [u].[username]
+FROM [user] AS [u]
+WHERE [u].[data_state] = 1
+
+-----------------------------------------
+
+time:2017-11-28 15:58:03,107 
+level:INFO 
+logger:Microsoft.AspNetCore.Authentication.Cookies.CookieAuthenticationHandler
+file:? line? 
+content:AuthenticationScheme: AuthenticationScheme signed in.
+
+-----------------------------------------
+
+time:2017-11-28 15:58:03,116 
+level:INFO 
+logger:Microsoft.AspNetCore.Mvc.Formatters.Json.Internal.JsonResultExecutor
+file:? line? 
+content:Executing JsonResult, writing value System.String[].
+
+-----------------------------------------
+
+time:2017-11-28 15:58:03,168 
+level:INFO 
+logger:Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker
+file:? line? 
+content:Executed action NTCore.WebFront.Controllers.PassportController.AutoLogin (NTCore.WebFront) in 729.3662ms
+
+-----------------------------------------
+
+time:2017-11-28 15:58:03,175 
+level:INFO 
+logger:Microsoft.AspNetCore.Hosting.Internal.WebHost
+file:? line? 
+content:Request finished in 984.0166ms 200 application/json; charset=utf-8
+
+-----------------------------------------
+
+time:2017-11-28 15:58:16,157 
+level:INFO 
+logger:Microsoft.AspNetCore.Hosting.Internal.WebHost
+file:? line? 
+content:Request starting HTTP/1.1 GET http://localhost:57942/passport/Logout  
+
+-----------------------------------------
+
+time:2017-11-28 15:58:16,161 
+level:INFO 
+logger:Microsoft.AspNetCore.Authentication.Cookies.CookieAuthenticationHandler
+file:? line? 
+content:AuthenticationScheme: AuthenticationScheme was successfully authenticated.
+
+-----------------------------------------
+
+time:2017-11-28 15:58:16,166 
+level:INFO 
+logger:Microsoft.AspNetCore.Hosting.Internal.WebHost
+file:? line? 
+content:Request finished in 8.2009ms 404 
+
+-----------------------------------------
+
+time:2017-11-28 15:58:36,349 
+level:INFO 
+logger:Microsoft.AspNetCore.Hosting.Internal.WebHost
+file:? line? 
+content:Request starting HTTP/1.1 GET http://localhost:57942/passport/Logout  
+
+-----------------------------------------
+
+time:2017-11-28 15:58:36,351 
+level:INFO 
+logger:Microsoft.AspNetCore.Authentication.Cookies.CookieAuthenticationHandler
+file:? line? 
+content:AuthenticationScheme: AuthenticationScheme was successfully authenticated.
+
+-----------------------------------------
+
+time:2017-11-28 15:58:36,354 
+level:INFO 
+logger:Microsoft.AspNetCore.Hosting.Internal.WebHost
+file:? line? 
+content:Request finished in 4.7026ms 404 
+
+-----------------------------------------
+
+time:2017-11-28 15:58:46,846 
+level:INFO 
+logger:Microsoft.AspNetCore.Hosting.Internal.WebHost
+file:? line? 
+content:Request starting HTTP/1.1 GET http://localhost:57942/assign-room  
+
+-----------------------------------------
+
+time:2017-11-28 15:58:46,848 
+level:INFO 
+logger:Microsoft.AspNetCore.Authentication.Cookies.CookieAuthenticationHandler
+file:? line? 
+content:AuthenticationScheme: AuthenticationScheme was successfully authenticated.
+
+-----------------------------------------
+
+time:2017-11-28 15:58:46,864 
+level:INFO 
+logger:Microsoft.AspNetCore.Authorization.DefaultAuthorizationService
+file:? line? 
+content:Authorization was successful for user: hongduo168.
+
+-----------------------------------------
+
+time:2017-11-28 15:58:49,601 
+level:INFO 
+logger:Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker
+file:? line? 
+content:Executing action method NTCore.WebFront.Controllers.Api.AssignRoomController.Get (NTCore.WebFront) with arguments ((null)) - ModelState is Valid
+
+-----------------------------------------
+
+time:2017-11-28 15:58:49,607 
+level:INFO 
+logger:Microsoft.EntityFrameworkCore.Infrastructure
+file:? line? 
+content:Entity Framework Core 2.0.1-rtm-125 initialized 'MainContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: MigrationsAssembly=NTCore.WebFront 
+
+-----------------------------------------
+
+time:2017-11-28 15:58:49,682 
+level:INFO 
+logger:Microsoft.EntityFrameworkCore.Database.Command
+file:? line? 
+content:Executed DbCommand (57ms) [Parameters=[@__name_0='?' (Size = 50)], CommandType='Text', CommandTimeout='30']
+SELECT TOP(1) [u].[id], [u].[auth_type], [u].[avatar], [u].[confirmed], [u].[create_time], [u].[creator_id], [u].[data_sort], [u].[data_state], [u].[email], [u].[employee_number], [u].[hotel_id], [u].[mobile_number], [u].[nickname], [u].[password], [u].[update_time], [u].[updater_id], [u].[username]
+FROM [user] AS [u]
+WHERE ([u].[data_state] = 1) AND (([u].[username] = @__name_0) AND ([u].[confirmed] = 1))
+
+-----------------------------------------
+
+time:2017-11-28 15:58:49,712 
+level:INFO 
+logger:Microsoft.EntityFrameworkCore.Database.Command
+file:? line? 
+content:Executed DbCommand (23ms) [Parameters=[@__name_0='?' (Size = 50)], CommandType='Text', CommandTimeout='30']
+SELECT TOP(1) [u].[id], [u].[auth_type], [u].[avatar], [u].[confirmed], [u].[create_time], [u].[creator_id], [u].[data_sort], [u].[data_state], [u].[email], [u].[employee_number], [u].[hotel_id], [u].[mobile_number], [u].[nickname], [u].[password], [u].[update_time], [u].[updater_id], [u].[username]
+FROM [user] AS [u]
+WHERE ([u].[data_state] = 1) AND (([u].[username] = @__name_0) AND ([u].[confirmed] = 1))
+
+-----------------------------------------
+
+time:2017-11-28 15:58:51,154 
+level:INFO 
+logger:Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker
+file:? line? 
+content:Executed action NTCore.WebFront.Controllers.Api.AssignRoomController.Get (NTCore.WebFront) in 4302.5756ms
+
+-----------------------------------------
+
+time:2017-11-28 15:58:51,257 
+level:ERROR 
+logger:Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware
+file:? line? 
+content:An unhandled exception has occurred while executing the request
+System.InvalidOperationException: An exception was thrown while attempting to evaluate a LINQ query parameter expression. To show additional information call EnableSensitiveDataLogging() when overriding DbContext.OnConfiguring. ---> System.NullReferenceException: Object reference not set to an instance of an object.
+   at lambda_method(Closure )
+   at Microsoft.EntityFrameworkCore.Query.ExpressionVisitors.Internal.ParameterExtractingExpressionVisitor.Evaluate(Expression expression, String& parameterName)
+   --- End of inner exception stack trace ---
+   at Microsoft.EntityFrameworkCore.Query.ExpressionVisitors.Internal.ParameterExtractingExpressionVisitor.Evaluate(Expression expression, String& parameterName)
+   at Microsoft.EntityFrameworkCore.Query.ExpressionVisitors.Internal.ParameterExtractingExpressionVisitor.TryExtractParameter(Expression expression)
+   at Microsoft.EntityFrameworkCore.Query.ExpressionVisitors.Internal.ParameterExtractingExpressionVisitor.VisitMember(MemberExpression memberExpression)
+   at System.Linq.Expressions.MemberExpression.Accept(ExpressionVisitor visitor)
+   at System.Linq.Expressions.ExpressionVisitor.Visit(Expression node)
+   at System.Linq.Expressions.ExpressionVisitor.VisitBinary(BinaryExpression node)
+   at Microsoft.EntityFrameworkCore.Query.ExpressionVisitors.Internal.ParameterExtractingExpressionVisitor.VisitBinary(BinaryExpression binaryExpression)
+   at System.Linq.Expressions.BinaryExpression.Accept(ExpressionVisitor visitor)
+   at System.Linq.Expressions.ExpressionVisitor.Visit(Expression node)
+   at System.Linq.Expressions.ExpressionVisitor.VisitLambda[T](Expression`1 node)
+   at Microsoft.EntityFrameworkCore.Query.ExpressionVisitors.Internal.ParameterExtractingExpressionVisitor.VisitLambda[T](Expression`1 node)
+   at System.Linq.Expressions.Expression`1.Accept(ExpressionVisitor visitor)
+   at System.Linq.Expressions.ExpressionVisitor.Visit(Expression node)
+   at System.Linq.Expressions.ExpressionVisitor.VisitUnary(UnaryExpression node)
+   at Microsoft.EntityFrameworkCore.Query.ExpressionVisitors.Internal.ParameterExtractingExpressionVisitor.VisitUnary(UnaryExpression unaryExpression)
+   at System.Linq.Expressions.UnaryExpression.Accept(ExpressionVisitor visitor)
+   at System.Linq.Expressions.ExpressionVisitor.Visit(Expression node)
+   at System.Dynamic.Utils.ExpressionVisitorUtils.VisitArguments(ExpressionVisitor visitor, IArgumentProvider nodes)
+   at System.Linq.Expressions.ExpressionVisitor.VisitMethodCall(MethodCallExpression node)
+   at Microsoft.EntityFrameworkCore.Query.ExpressionVisitors.Internal.ParameterExtractingExpressionVisitor.VisitMethodCall(MethodCallExpression methodCallExpression)
+   at System.Linq.Expressions.MethodCallExpression.Accept(ExpressionVisitor visitor)
+   at System.Linq.Expressions.ExpressionVisitor.Visit(Expression node)
+   at Microsoft.EntityFrameworkCore.Query.ExpressionVisitors.Internal.ParameterExtractingExpressionVisitor.ExtractParameters(Expression expression)
+   at Microsoft.EntityFrameworkCore.Query.Internal.QueryCompiler.ExtractParameters(Expression query, QueryContext queryContext, Boolean parameterize)
+   at Microsoft.EntityFrameworkCore.Query.Internal.QueryCompiler.Execute[TResult](Expression query)
+   at Microsoft.EntityFrameworkCore.Query.Internal.EntityQueryProvider.Execute[TResult](Expression expression)
+   at Remotion.Linq.QueryableBase`1.GetEnumerator()
+   at System.Collections.Generic.List`1.AddEnumerable(IEnumerable`1 enumerable)
+   at System.Linq.Enumerable.ToList[TSource](IEnumerable`1 source)
+   at NTCore.WebFront.Controllers.Api.AssignRoomController.Get() in E:\Projects\NTPlatform\NTCore.WebFront\Controllers\Api\AssignRoomController.cs:line 32
+   at lambda_method(Closure , Object , Object[] )
+   at Microsoft.Extensions.Internal.ObjectMethodExecutor.Execute(Object target, Object[] parameters)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.<InvokeActionMethodAsync>d__12.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.<InvokeNextActionFilterAsync>d__10.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.Rethrow(ActionExecutedContext context)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.<InvokeInnerFilterAsync>d__14.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.<InvokeNextResourceFilter>d__22.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.Rethrow(ResourceExecutedContext context)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.<InvokeFilterPipelineAsync>d__17.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.<InvokeAsync>d__15.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Builder.RouterMiddleware.<Invoke>d__4.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.<Invoke>d__6.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.<Invoke>d__7.MoveNext()
+
+-----------------------------------------
+
+time:2017-11-28 15:58:51,358 
+level:INFO 
+logger:Microsoft.AspNetCore.Hosting.Internal.WebHost
+file:? line? 
+content:Request finished in 4509.5311ms 500 text/html; charset=utf-8
+
+-----------------------------------------
+
+time:2017-11-28 16:00:02,319 
+level:INFO 
+logger:Microsoft.AspNetCore.Hosting.Internal.WebHost
+file:? line? 
+content:Request starting HTTP/1.1 GET http://localhost:57942/passport/auto-login  
+
+-----------------------------------------
+
+time:2017-11-28 16:00:02,406 
+level:INFO 
+logger:Microsoft.AspNetCore.Authentication.Cookies.CookieAuthenticationHandler
+file:? line? 
+content:AuthenticationScheme: AuthenticationScheme was successfully authenticated.
+
+-----------------------------------------
+
+time:2017-11-28 16:00:02,738 
+level:INFO 
+logger:Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker
+file:? line? 
+content:Executing action method NTCore.WebFront.Controllers.PassportController.AutoLogin (NTCore.WebFront) with arguments ((null)) - ModelState is Valid
+
+-----------------------------------------
+
+time:2017-11-28 16:00:02,963 
+level:INFO 
+logger:Microsoft.EntityFrameworkCore.Infrastructure
+file:? line? 
+content:Entity Framework Core 2.0.1-rtm-125 initialized 'MainContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: MigrationsAssembly=NTCore.WebFront 
+
+-----------------------------------------
+
+time:2017-11-28 16:00:03,015 
+level:WARN 
+logger:Microsoft.EntityFrameworkCore.Query
+file:? line? 
+content:Query: '(from UserInfo <generated>_1 in DbSet<UserInfo> select [<generated>_1]).FirstOrDefault()' uses First/FirstOrDefault operation without OrderBy and filter which may lead to unpredictable results.
+
+-----------------------------------------
+
+time:2017-11-28 16:00:03,204 
+level:INFO 
+logger:Microsoft.EntityFrameworkCore.Database.Command
+file:? line? 
+content:Executed DbCommand (36ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT TOP(1) [u].[id], [u].[auth_type], [u].[avatar], [u].[confirmed], [u].[create_time], [u].[creator_id], [u].[data_sort], [u].[data_state], [u].[email], [u].[employee_number], [u].[hotel_id], [u].[mobile_number], [u].[nickname], [u].[password], [u].[update_time], [u].[updater_id], [u].[username]
+FROM [user] AS [u]
+WHERE [u].[data_state] = 1
+
+-----------------------------------------
+
+time:2017-11-28 16:00:03,251 
+level:INFO 
+logger:Microsoft.AspNetCore.Authentication.Cookies.CookieAuthenticationHandler
+file:? line? 
+content:AuthenticationScheme: AuthenticationScheme signed in.
+
+-----------------------------------------
+
+time:2017-11-28 16:00:03,259 
+level:INFO 
+logger:Microsoft.AspNetCore.Mvc.Formatters.Json.Internal.JsonResultExecutor
+file:? line? 
+content:Executing JsonResult, writing value System.String[].
+
+-----------------------------------------
+
+time:2017-11-28 16:00:03,300 
+level:INFO 
+logger:Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker
+file:? line? 
+content:Executed action NTCore.WebFront.Controllers.PassportController.AutoLogin (NTCore.WebFront) in 708.9715ms
+
+-----------------------------------------
+
+time:2017-11-28 16:00:03,313 
+level:INFO 
+logger:Microsoft.AspNetCore.Hosting.Internal.WebHost
+file:? line? 
+content:Request finished in 998.0543ms 200 application/json; charset=utf-8
+
+-----------------------------------------
+
+time:2017-11-28 16:00:09,428 
+level:INFO 
+logger:Microsoft.AspNetCore.Hosting.Internal.WebHost
+file:? line? 
+content:Request starting HTTP/1.1 GET http://localhost:57942/passport/logout  
+
+-----------------------------------------
+
+time:2017-11-28 16:00:09,431 
+level:INFO 
+logger:Microsoft.AspNetCore.Authentication.Cookies.CookieAuthenticationHandler
+file:? line? 
+content:AuthenticationScheme: AuthenticationScheme was successfully authenticated.
+
+-----------------------------------------
+
+time:2017-11-28 16:00:09,458 
+level:INFO 
+logger:Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker
+file:? line? 
+content:Executing action method NTCore.WebFront.Controllers.PassportController.Logout (NTCore.WebFront) with arguments ((null)) - ModelState is Valid
+
+-----------------------------------------
+
+time:2017-11-28 16:00:09,465 
+level:INFO 
+logger:Microsoft.AspNetCore.Authentication.Cookies.CookieAuthenticationHandler
+file:? line? 
+content:AuthenticationScheme: AuthenticationScheme signed out.
+
+-----------------------------------------
+
+time:2017-11-28 16:00:09,470 
+level:INFO 
+logger:Microsoft.AspNetCore.Mvc.Internal.RedirectResultExecutor
+file:? line? 
+content:Executing RedirectResult, redirecting to /.
+
+-----------------------------------------
+
+time:2017-11-28 16:00:09,473 
+level:INFO 
+logger:Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker
+file:? line? 
+content:Executed action NTCore.WebFront.Controllers.PassportController.Logout (NTCore.WebFront) in 34.1137ms
+
+-----------------------------------------
+
+time:2017-11-28 16:00:09,477 
+level:INFO 
+logger:Microsoft.AspNetCore.Hosting.Internal.WebHost
+file:? line? 
+content:Request finished in 48.5376ms 302 
+
+-----------------------------------------
+
+time:2017-11-28 16:00:09,483 
+level:INFO 
+logger:Microsoft.AspNetCore.Hosting.Internal.WebHost
+file:? line? 
+content:Request starting HTTP/1.1 GET http://localhost:57942/  
+
+-----------------------------------------
+
+time:2017-11-28 16:00:09,492 
+level:INFO 
+logger:Microsoft.AspNetCore.Hosting.Internal.WebHost
+file:? line? 
+content:Request finished in 3.6192ms 404 
+
+-----------------------------------------
+
+time:2017-11-28 16:00:14,723 
+level:INFO 
+logger:Microsoft.AspNetCore.Hosting.Internal.WebHost
+file:? line? 
+content:Request starting HTTP/1.1 GET http://localhost:57942/assign-room  
+
+-----------------------------------------
+
+time:2017-11-28 16:00:14,731 
+level:INFO 
+logger:Microsoft.AspNetCore.Authorization.DefaultAuthorizationService
+file:? line? 
+content:Authorization failed for user: (null).
+
+-----------------------------------------
+
+time:2017-11-28 16:00:14,734 
+level:INFO 
+logger:Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker
+file:? line? 
+content:Authorization failed for the request at filter 'Microsoft.AspNetCore.Mvc.Authorization.AuthorizeFilter'.
+
+-----------------------------------------
+
+time:2017-11-28 16:00:14,738 
+level:INFO 
+logger:Microsoft.AspNetCore.Mvc.ChallengeResult
+file:? line? 
+content:Executing ChallengeResult with authentication schemes ().
+
+-----------------------------------------
+
+time:2017-11-28 16:00:14,744 
+level:INFO 
+logger:Microsoft.AspNetCore.Authentication.Cookies.CookieAuthenticationHandler
+file:? line? 
+content:AuthenticationScheme: AuthenticationScheme was challenged.
+
+-----------------------------------------
+
+time:2017-11-28 16:00:14,746 
+level:INFO 
+logger:Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker
+file:? line? 
+content:Executed action NTCore.WebFront.Controllers.Api.AssignRoomController.Get (NTCore.WebFront) in 19.2314ms
+
+-----------------------------------------
+
+time:2017-11-28 16:00:14,749 
+level:INFO 
+logger:Microsoft.AspNetCore.Hosting.Internal.WebHost
+file:? line? 
+content:Request finished in 25.8598ms 302 
+
+-----------------------------------------
+
+time:2017-11-28 16:00:14,754 
+level:INFO 
+logger:Microsoft.AspNetCore.Hosting.Internal.WebHost
+file:? line? 
+content:Request starting HTTP/1.1 GET http://localhost:57942/passport/login?ReturnUrl=%2Fassign-room  
+
+-----------------------------------------
+
+time:2017-11-28 16:00:14,759 
+level:INFO 
+logger:Microsoft.AspNetCore.Hosting.Internal.WebHost
+file:? line? 
+content:Request finished in 3.7427ms 404 
+
+-----------------------------------------
+
+time:2017-11-28 16:05:08,412 
+level:INFO 
+logger:Microsoft.AspNetCore.Hosting.Internal.WebHost
+file:? line? 
+content:Request starting HTTP/1.1 GET http://localhost:57942/passport/auto-login  
+
+-----------------------------------------
+
+time:2017-11-28 16:05:08,758 
+level:INFO 
+logger:Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker
+file:? line? 
+content:Executing action method NTCore.WebFront.Controllers.PassportController.AutoLogin (NTCore.WebFront) with arguments ((null)) - ModelState is Valid
+
+-----------------------------------------
+
+time:2017-11-28 16:05:11,124 
+level:WARN 
+logger:Microsoft.AspNetCore.Server.Kestrel
+file:? line? 
+content:Heartbeat took longer than "00:00:01" at "11/28/2017 08:05:11 +00:00".
+
+-----------------------------------------
+
+time:2017-11-28 16:05:11,319 
+level:INFO 
+logger:Microsoft.EntityFrameworkCore.Infrastructure
+file:? line? 
+content:Entity Framework Core 2.0.1-rtm-125 initialized 'MainContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: MigrationsAssembly=NTCore.WebFront 
+
+-----------------------------------------
+
+time:2017-11-28 16:05:11,370 
+level:WARN 
+logger:Microsoft.EntityFrameworkCore.Query
+file:? line? 
+content:Query: '(from UserInfo <generated>_1 in DbSet<UserInfo> select [<generated>_1]).FirstOrDefault()' uses First/FirstOrDefault operation without OrderBy and filter which may lead to unpredictable results.
+
+-----------------------------------------
+
+time:2017-11-28 16:05:11,549 
+level:INFO 
+logger:Microsoft.EntityFrameworkCore.Database.Command
+file:? line? 
+content:Executed DbCommand (41ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT TOP(1) [u].[id], [u].[auth_type], [u].[avatar], [u].[confirmed], [u].[create_time], [u].[creator_id], [u].[data_sort], [u].[data_state], [u].[email], [u].[employee_number], [u].[hotel_id], [u].[mobile_number], [u].[nickname], [u].[password], [u].[update_time], [u].[updater_id], [u].[username]
+FROM [user] AS [u]
+WHERE [u].[data_state] = 1
+
+-----------------------------------------
+
+time:2017-11-28 16:05:23,077 
+level:INFO 
+logger:Microsoft.AspNetCore.Authentication.Cookies.CookieAuthenticationHandler
+file:? line? 
+content:AuthenticationScheme: AuthenticationScheme signed in.
+
+-----------------------------------------
+
+time:2017-11-28 16:05:29,467 
+level:INFO 
+logger:Microsoft.AspNetCore.Mvc.Formatters.Json.Internal.JsonResultExecutor
+file:? line? 
+content:Executing JsonResult, writing value System.String[].
+
+-----------------------------------------
+
+time:2017-11-28 16:05:29,530 
+level:INFO 
+logger:Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker
+file:? line? 
+content:Executed action NTCore.WebFront.Controllers.PassportController.AutoLogin (NTCore.WebFront) in 20895.097ms
+
+-----------------------------------------
+
+time:2017-11-28 16:05:29,550 
+level:INFO 
+logger:Microsoft.AspNetCore.Hosting.Internal.WebHost
+file:? line? 
+content:Request finished in 21139.7423ms 200 application/json; charset=utf-8
+
+-----------------------------------------
+
+time:2017-11-28 16:05:33,499 
+level:INFO 
+logger:Microsoft.AspNetCore.Hosting.Internal.WebHost
+file:? line? 
+content:Request starting HTTP/1.1 GET http://localhost:57942/passport/auto-login  
+
+-----------------------------------------
+
+time:2017-11-28 16:05:33,511 
+level:INFO 
+logger:Microsoft.AspNetCore.Authentication.Cookies.CookieAuthenticationHandler
+file:? line? 
+content:AuthenticationScheme: AuthenticationScheme was successfully authenticated.
+
+-----------------------------------------
+
+time:2017-11-28 16:05:33,534 
+level:INFO 
+logger:Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker
+file:? line? 
+content:Executing action method NTCore.WebFront.Controllers.PassportController.AutoLogin (NTCore.WebFront) with arguments ((null)) - ModelState is Valid
+
+-----------------------------------------
+
+time:2017-11-28 16:05:36,441 
+level:INFO 
+logger:Microsoft.EntityFrameworkCore.Infrastructure
+file:? line? 
+content:Entity Framework Core 2.0.1-rtm-125 initialized 'MainContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: MigrationsAssembly=NTCore.WebFront 
+
+-----------------------------------------
+
+time:2017-11-28 16:05:36,466 
+level:INFO 
+logger:Microsoft.EntityFrameworkCore.Database.Command
+file:? line? 
+content:Executed DbCommand (21ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT TOP(1) [u].[id], [u].[auth_type], [u].[avatar], [u].[confirmed], [u].[create_time], [u].[creator_id], [u].[data_sort], [u].[data_state], [u].[email], [u].[employee_number], [u].[hotel_id], [u].[mobile_number], [u].[nickname], [u].[password], [u].[update_time], [u].[updater_id], [u].[username]
+FROM [user] AS [u]
+WHERE [u].[data_state] = 1
+
+-----------------------------------------
+
+time:2017-11-28 16:05:36,468 
+level:INFO 
+logger:Microsoft.AspNetCore.Authentication.Cookies.CookieAuthenticationHandler
+file:? line? 
+content:AuthenticationScheme: AuthenticationScheme signed in.
+
+-----------------------------------------
+
+time:2017-11-28 16:05:36,470 
+level:INFO 
+logger:Microsoft.AspNetCore.Mvc.Formatters.Json.Internal.JsonResultExecutor
+file:? line? 
+content:Executing JsonResult, writing value System.String[].
+
+-----------------------------------------
+
+time:2017-11-28 16:05:36,474 
+level:INFO 
+logger:Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker
+file:? line? 
+content:Executed action NTCore.WebFront.Controllers.PassportController.AutoLogin (NTCore.WebFront) in 2958.4827ms
+
+-----------------------------------------
+
+time:2017-11-28 16:05:36,480 
+level:INFO 
+logger:Microsoft.AspNetCore.Hosting.Internal.WebHost
+file:? line? 
+content:Request finished in 2976.6093ms 200 application/json; charset=utf-8
+
+-----------------------------------------
+
+time:2017-11-28 16:05:41,081 
+level:INFO 
+logger:Microsoft.AspNetCore.Hosting.Internal.WebHost
+file:? line? 
+content:Request starting HTTP/1.1 GET http://localhost:57942/passport/auto-login  
+
+-----------------------------------------
+
+time:2017-11-28 16:05:41,083 
+level:INFO 
+logger:Microsoft.AspNetCore.Authentication.Cookies.CookieAuthenticationHandler
+file:? line? 
+content:AuthenticationScheme: AuthenticationScheme was successfully authenticated.
+
+-----------------------------------------
+
+time:2017-11-28 16:05:41,102 
+level:INFO 
+logger:Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker
+file:? line? 
+content:Executing action method NTCore.WebFront.Controllers.PassportController.AutoLogin (NTCore.WebFront) with arguments ((null)) - ModelState is Valid
+
+-----------------------------------------
+
+time:2017-11-28 16:05:41,105 
+level:INFO 
+logger:Microsoft.EntityFrameworkCore.Infrastructure
+file:? line? 
+content:Entity Framework Core 2.0.1-rtm-125 initialized 'MainContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: MigrationsAssembly=NTCore.WebFront 
+
+-----------------------------------------
+
+time:2017-11-28 16:05:41,126 
+level:INFO 
+logger:Microsoft.EntityFrameworkCore.Database.Command
+file:? line? 
+content:Executed DbCommand (18ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT TOP(1) [u].[id], [u].[auth_type], [u].[avatar], [u].[confirmed], [u].[create_time], [u].[creator_id], [u].[data_sort], [u].[data_state], [u].[email], [u].[employee_number], [u].[hotel_id], [u].[mobile_number], [u].[nickname], [u].[password], [u].[update_time], [u].[updater_id], [u].[username]
+FROM [user] AS [u]
+WHERE [u].[data_state] = 1
+
+-----------------------------------------
+
+time:2017-11-28 16:05:41,129 
+level:INFO 
+logger:Microsoft.AspNetCore.Authentication.Cookies.CookieAuthenticationHandler
+file:? line? 
+content:AuthenticationScheme: AuthenticationScheme signed in.
+
+-----------------------------------------
+
+time:2017-11-28 16:05:41,131 
+level:INFO 
+logger:Microsoft.AspNetCore.Mvc.Formatters.Json.Internal.JsonResultExecutor
+file:? line? 
+content:Executing JsonResult, writing value System.String[].
+
+-----------------------------------------
+
+time:2017-11-28 16:05:41,133 
+level:INFO 
+logger:Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker
+file:? line? 
+content:Executed action NTCore.WebFront.Controllers.PassportController.AutoLogin (NTCore.WebFront) in 47.7273ms
+
+-----------------------------------------
+
+time:2017-11-28 16:05:41,134 
+level:INFO 
+logger:Microsoft.AspNetCore.Hosting.Internal.WebHost
+file:? line? 
+content:Request finished in 53.8357ms 200 application/json; charset=utf-8
+
+-----------------------------------------
+
+time:2017-11-28 16:20:27,529 
+level:INFO 
+logger:Microsoft.AspNetCore.Hosting.Internal.WebHost
+file:? line? 
+content:Request starting HTTP/1.1 GET http://localhost:57942/passport/auto-login  
+
+-----------------------------------------
+
+time:2017-11-28 16:20:27,612 
+level:INFO 
+logger:Microsoft.AspNetCore.Authentication.Cookies.CookieAuthenticationHandler
+file:? line? 
+content:AuthenticationScheme: AuthenticationScheme was successfully authenticated.
+
+-----------------------------------------
+
+time:2017-11-28 16:20:27,891 
+level:INFO 
+logger:Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker
+file:? line? 
+content:Executing action method NTCore.WebFront.Controllers.PassportController.AutoLogin (NTCore.WebFront) with arguments ((null)) - ModelState is Valid
+
+-----------------------------------------
+
+time:2017-11-28 16:20:28,122 
+level:INFO 
+logger:Microsoft.EntityFrameworkCore.Infrastructure
+file:? line? 
+content:Entity Framework Core 2.0.1-rtm-125 initialized 'MainContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: MigrationsAssembly=NTCore.WebFront 
+
+-----------------------------------------
+
+time:2017-11-28 16:20:28,174 
+level:WARN 
+logger:Microsoft.EntityFrameworkCore.Query
+file:? line? 
+content:Query: '(from UserInfo <generated>_1 in DbSet<UserInfo> select [<generated>_1]).FirstOrDefault()' uses First/FirstOrDefault operation without OrderBy and filter which may lead to unpredictable results.
+
+-----------------------------------------
+
+time:2017-11-28 16:20:28,350 
+level:INFO 
+logger:Microsoft.EntityFrameworkCore.Database.Command
+file:? line? 
+content:Executed DbCommand (32ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT TOP(1) [u].[id], [u].[auth_type], [u].[avatar], [u].[confirmed], [u].[create_time], [u].[creator_id], [u].[data_sort], [u].[data_state], [u].[email], [u].[employee_number], [u].[hotel_id], [u].[mobile_number], [u].[nickname], [u].[password], [u].[update_time], [u].[updater_id], [u].[username]
+FROM [user] AS [u]
+WHERE [u].[data_state] = 1
+
+-----------------------------------------
+
+time:2017-11-28 16:20:28,395 
+level:INFO 
+logger:Microsoft.AspNetCore.Authentication.Cookies.CookieAuthenticationHandler
+file:? line? 
+content:AuthenticationScheme: AuthenticationScheme signed in.
+
+-----------------------------------------
+
+time:2017-11-28 16:20:28,401 
+level:INFO 
+logger:Microsoft.AspNetCore.Mvc.Formatters.Json.Internal.JsonResultExecutor
+file:? line? 
+content:Executing JsonResult, writing value System.String[].
+
+-----------------------------------------
+
+time:2017-11-28 16:20:28,453 
+level:INFO 
+logger:Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker
+file:? line? 
+content:Executed action NTCore.WebFront.Controllers.PassportController.AutoLogin (NTCore.WebFront) in 672.275ms
+
+-----------------------------------------
+
+time:2017-11-28 16:20:28,459 
+level:INFO 
+logger:Microsoft.AspNetCore.Hosting.Internal.WebHost
+file:? line? 
+content:Request finished in 941.2184ms 200 application/json; charset=utf-8
+
+-----------------------------------------
+
+time:2017-11-28 16:20:46,982 
+level:INFO 
+logger:Microsoft.AspNetCore.Hosting.Internal.WebHost
+file:? line? 
+content:Request starting HTTP/1.1 GET http://localhost:57942/assign-room  
+
+-----------------------------------------
+
+time:2017-11-28 16:20:46,984 
+level:INFO 
+logger:Microsoft.AspNetCore.Authentication.Cookies.CookieAuthenticationHandler
+file:? line? 
+content:AuthenticationScheme: AuthenticationScheme was successfully authenticated.
+
+-----------------------------------------
+
+time:2017-11-28 16:20:46,994 
+level:INFO 
+logger:Microsoft.AspNetCore.Authorization.DefaultAuthorizationService
+file:? line? 
+content:Authorization was successful for user: 1.
+
+-----------------------------------------
+
+time:2017-11-28 16:20:48,939 
+level:INFO 
+logger:Microsoft.EntityFrameworkCore.Infrastructure
+file:? line? 
+content:Entity Framework Core 2.0.1-rtm-125 initialized 'MainContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: MigrationsAssembly=NTCore.WebFront 
+
+-----------------------------------------
+
+time:2017-11-28 16:20:48,969 
+level:INFO 
+logger:Microsoft.EntityFrameworkCore.Database.Command
+file:? line? 
+content:Executed DbCommand (19ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [u].[id], [u].[auth_type], [u].[avatar], [u].[confirmed], [u].[create_time], [u].[creator_id], [u].[data_sort], [u].[data_state], [u].[email], [u].[employee_number], [u].[hotel_id], [u].[mobile_number], [u].[nickname], [u].[password], [u].[update_time], [u].[updater_id], [u].[username]
+FROM [user] AS [u]
+WHERE [u].[data_state] = 1

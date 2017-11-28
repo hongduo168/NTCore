@@ -12,14 +12,14 @@ using System;
 namespace NTCore.WebFront.Migrations
 {
     [DbContext(typeof(MainContext))]
-    [Migration("20171019075110_init")]
+    [Migration("20171128031123_init")]
     partial class init
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
-                .HasAnnotation("ProductVersion", "2.0.0-rtm-26452")
+                .HasAnnotation("ProductVersion", "2.0.1-rtm-125")
                 .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
 
             modelBuilder.Entity("NTCore.DataModel.ActionRecordInfo", b =>
@@ -33,6 +33,9 @@ namespace NTCore.WebFront.Migrations
 
                     b.Property<int>("CreatorId")
                         .HasColumnName("creator_id");
+
+                    b.Property<int>("DataSort")
+                        .HasColumnName("data_sort");
 
                     b.Property<int>("DataState")
                         .HasColumnName("data_state");
@@ -66,11 +69,15 @@ namespace NTCore.WebFront.Migrations
                     b.ToTable("action_record");
                 });
 
-            modelBuilder.Entity("NTCore.DataModel.CustomerRequestDefineInfo", b =>
+            modelBuilder.Entity("NTCore.DataModel.AssignRoomHistoryInfo", b =>
                 {
                     b.Property<int>("Id")
                         .ValueGeneratedOnAdd()
                         .HasColumnName("id");
+
+                    b.Property<decimal>("Coefficient")
+                        .HasColumnName("coefficient")
+                        .HasColumnType("decimal(10,2)");
 
                     b.Property<DateTime>("CreateTime")
                         .HasColumnName("create_time");
@@ -78,35 +85,26 @@ namespace NTCore.WebFront.Migrations
                     b.Property<int>("CreatorId")
                         .HasColumnName("creator_id");
 
-                    b.Property<string>("DataCode")
-                        .IsRequired()
-                        .HasColumnName("data_code")
-                        .HasColumnType("varchar(30)")
-                        .HasMaxLength(30);
-
-                    b.Property<string>("DataName")
-                        .IsRequired()
-                        .HasColumnName("data_name")
-                        .HasColumnType("nvarchar(30)")
-                        .HasMaxLength(30);
-
-                    b.Property<string>("DataNote")
-                        .IsRequired()
-                        .HasColumnName("data_note")
-                        .HasColumnType("nvarchar(2000)")
-                        .HasMaxLength(2000);
-
                     b.Property<int>("DataSort")
                         .HasColumnName("data_sort");
 
                     b.Property<int>("DataState")
                         .HasColumnName("data_state");
 
-                    b.Property<int>("DataType")
-                        .HasColumnName("data_type");
+                    b.Property<DateTime>("Deadline")
+                        .HasColumnName("deadline");
+
+                    b.Property<DateTime>("FromTime")
+                        .HasColumnName("fromtime");
 
                     b.Property<int>("HotelId")
                         .HasColumnName("hotel_id");
+
+                    b.Property<string>("RoomNumber")
+                        .IsRequired()
+                        .HasColumnName("room_number")
+                        .HasColumnType("varchar(30)")
+                        .HasMaxLength(30);
 
                     b.Property<DateTime>("UpdateTime")
                         .HasColumnName("update_time");
@@ -114,9 +112,66 @@ namespace NTCore.WebFront.Migrations
                     b.Property<int>("UpdaterId")
                         .HasColumnName("updater_id");
 
+                    b.Property<int>("UserId")
+                        .HasColumnName("userid");
+
                     b.HasKey("Id");
 
-                    b.ToTable("customer_request_define");
+                    b.ToTable("assign_room_history");
+                });
+
+            modelBuilder.Entity("NTCore.DataModel.AssignRoomInfo", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnName("id");
+
+                    b.Property<DateTime>("AssignTime")
+                        .HasColumnName("assign_time");
+
+                    b.Property<decimal>("Coefficient")
+                        .HasColumnName("coefficient")
+                        .HasColumnType("decimal(10,2)");
+
+                    b.Property<DateTime>("CreateTime")
+                        .HasColumnName("create_time");
+
+                    b.Property<int>("CreatorId")
+                        .HasColumnName("creator_id");
+
+                    b.Property<int>("DataSort")
+                        .HasColumnName("data_sort");
+
+                    b.Property<int>("DataState")
+                        .HasColumnName("data_state");
+
+                    b.Property<int>("HotelId")
+                        .HasColumnName("hotel_id");
+
+                    b.Property<string>("RoomNumber")
+                        .IsRequired()
+                        .HasColumnName("room_number")
+                        .HasColumnType("varchar(30)")
+                        .HasMaxLength(30);
+
+                    b.Property<string>("RoomStatus")
+                        .IsRequired()
+                        .HasColumnName("room_status")
+                        .HasColumnType("varchar(30)")
+                        .HasMaxLength(30);
+
+                    b.Property<DateTime>("UpdateTime")
+                        .HasColumnName("update_time");
+
+                    b.Property<int>("UpdaterId")
+                        .HasColumnName("updater_id");
+
+                    b.Property<int>("UserId")
+                        .HasColumnName("userid");
+
+                    b.HasKey("Id");
+
+                    b.ToTable("assign_room");
                 });
 
             modelBuilder.Entity("NTCore.DataModel.CustomerRequestInfo", b =>
@@ -134,8 +189,14 @@ namespace NTCore.WebFront.Migrations
                     b.Property<int>("CreatorId")
                         .HasColumnName("creator_id");
 
+                    b.Property<int>("DataSort")
+                        .HasColumnName("data_sort");
+
                     b.Property<int>("DataState")
                         .HasColumnName("data_state");
+
+                    b.Property<int>("DataType")
+                        .HasColumnName("data_type");
 
                     b.Property<DateTime>("ExpectTime")
                         .HasColumnName("expect_time");
@@ -187,6 +248,9 @@ namespace NTCore.WebFront.Migrations
                     b.Property<int>("CustomerRequestId")
                         .HasColumnName("customer_request_id");
 
+                    b.Property<int>("DataSort")
+                        .HasColumnName("data_sort");
+
                     b.Property<int>("DataState")
                         .HasColumnName("data_state");
 
@@ -237,6 +301,9 @@ namespace NTCore.WebFront.Migrations
                     b.Property<int>("CreatorId")
                         .HasColumnName("creator_id");
 
+                    b.Property<int>("DataSort")
+                        .HasColumnName("data_sort");
+
                     b.Property<int>("DataState")
                         .HasColumnName("data_state");
 
@@ -284,6 +351,9 @@ namespace NTCore.WebFront.Migrations
                     b.Property<int>("CreatorId")
                         .HasColumnName("creator_id");
 
+                    b.Property<int>("DataSort")
+                        .HasColumnName("data_sort");
+
                     b.Property<int>("DataState")
                         .HasColumnName("data_state");
 
@@ -316,6 +386,9 @@ namespace NTCore.WebFront.Migrations
                     b.Property<int>("CreatorId")
                         .HasColumnName("creator_id");
 
+                    b.Property<int>("DataSort")
+                        .HasColumnName("data_sort");
+
                     b.Property<int>("DataState")
                         .HasColumnName("data_state");
 
@@ -324,6 +397,11 @@ namespace NTCore.WebFront.Migrations
 
                     b.Property<bool>("IsChecked")
                         .HasColumnName("is_checked")
+                        .HasColumnType("bit")
+                        .HasMaxLength(30);
+
+                    b.Property<bool>("IsContradiction")
+                        .HasColumnName("is_contradiction")
                         .HasColumnType("bit")
                         .HasMaxLength(30);
 
@@ -337,6 +415,11 @@ namespace NTCore.WebFront.Migrations
                         .HasColumnType("bit")
                         .HasMaxLength(30);
 
+                    b.Property<bool>("IsRush")
+                        .HasColumnName("is_rush")
+                        .HasColumnType("bit")
+                        .HasMaxLength(30);
+
                     b.Property<string>("PmsRoomNumber")
                         .IsRequired()
                         .HasColumnName("pms_room_number")
@@ -346,7 +429,7 @@ namespace NTCore.WebFront.Migrations
                     b.Property<string>("RoomNumber")
                         .IsRequired()
                         .HasColumnName("room_number")
-                        .HasColumnType("nvarchar(30)")
+                        .HasColumnType("varchar(30)")
                         .HasMaxLength(30);
 
                     b.Property<string>("RoomStatus")
@@ -372,6 +455,59 @@ namespace NTCore.WebFront.Migrations
                     b.ToTable("hotel_room");
                 });
 
+            modelBuilder.Entity("NTCore.DataModel.HotelSupplyDefineInfo", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnName("id");
+
+                    b.Property<DateTime>("CreateTime")
+                        .HasColumnName("create_time");
+
+                    b.Property<int>("CreatorId")
+                        .HasColumnName("creator_id");
+
+                    b.Property<string>("DataCode")
+                        .IsRequired()
+                        .HasColumnName("data_code")
+                        .HasColumnType("varchar(30)")
+                        .HasMaxLength(30);
+
+                    b.Property<string>("DataName")
+                        .IsRequired()
+                        .HasColumnName("data_name")
+                        .HasColumnType("nvarchar(30)")
+                        .HasMaxLength(30);
+
+                    b.Property<string>("DataNote")
+                        .IsRequired()
+                        .HasColumnName("data_note")
+                        .HasColumnType("nvarchar(2000)")
+                        .HasMaxLength(2000);
+
+                    b.Property<int>("DataSort")
+                        .HasColumnName("data_sort");
+
+                    b.Property<int>("DataState")
+                        .HasColumnName("data_state");
+
+                    b.Property<int>("DataType")
+                        .HasColumnName("data_type");
+
+                    b.Property<int>("HotelId")
+                        .HasColumnName("hotel_id");
+
+                    b.Property<DateTime>("UpdateTime")
+                        .HasColumnName("update_time");
+
+                    b.Property<int>("UpdaterId")
+                        .HasColumnName("updater_id");
+
+                    b.HasKey("Id");
+
+                    b.ToTable("hotel_supply_define");
+                });
+
             modelBuilder.Entity("NTCore.DataModel.HotelUserInfo", b =>
                 {
                     b.Property<int>("Id")
@@ -383,6 +519,9 @@ namespace NTCore.WebFront.Migrations
 
                     b.Property<int>("CreatorId")
                         .HasColumnName("creator_id");
+
+                    b.Property<int>("DataSort")
+                        .HasColumnName("data_sort");
 
                     b.Property<int>("DataState")
                         .HasColumnName("data_state");
@@ -418,6 +557,9 @@ namespace NTCore.WebFront.Migrations
 
                     b.Property<int>("CreatorId")
                         .HasColumnName("creator_id");
+
+                    b.Property<int>("DataSort")
+                        .HasColumnName("data_sort");
 
                     b.Property<int>("DataState")
                         .HasColumnName("data_state");
@@ -464,6 +606,9 @@ namespace NTCore.WebFront.Migrations
                     b.Property<int>("CreatorId")
                         .HasColumnName("creator_id");
 
+                    b.Property<int>("DataSort")
+                        .HasColumnName("data_sort");
+
                     b.Property<int>("DataState")
                         .HasColumnName("data_state");
 
@@ -505,6 +650,9 @@ namespace NTCore.WebFront.Migrations
 
                     b.Property<int>("CreatorId")
                         .HasColumnName("creator_id");
+
+                    b.Property<int>("DataSort")
+                        .HasColumnName("data_sort");
 
                     b.Property<int>("DataState")
                         .HasColumnName("data_state");
@@ -563,6 +711,9 @@ namespace NTCore.WebFront.Migrations
                     b.Property<int>("CreatorId")
                         .HasColumnName("creator_id");
 
+                    b.Property<int>("DataSort")
+                        .HasColumnName("data_sort");
+
                     b.Property<int>("DataState")
                         .HasColumnName("data_state");
 
@@ -610,20 +761,32 @@ namespace NTCore.WebFront.Migrations
                     b.Property<int>("CreatorId")
                         .HasColumnName("creator_id");
 
+                    b.Property<int>("DataSort")
+                        .HasColumnName("data_sort");
+
                     b.Property<int>("DataState")
                         .HasColumnName("data_state");
 
                     b.Property<string>("ProductName")
                         .IsRequired()
                         .HasColumnName("product_name")
-                        .HasColumnType("nvarchar(30)")
-                        .HasMaxLength(30);
+                        .HasColumnType("nvarchar(50)")
+                        .HasMaxLength(50);
 
                     b.Property<string>("Source")
                         .IsRequired()
                         .HasColumnName("source")
                         .HasColumnType("nvarchar(30)")
                         .HasMaxLength(30);
+
+                    b.Property<string>("Token")
+                        .IsRequired()
+                        .HasColumnName("token")
+                        .HasColumnType("nvarchar(64)")
+                        .HasMaxLength(64);
+
+                    b.Property<int>("TokenEffectiveSecond")
+                        .HasColumnName("token_effective_second");
 
                     b.Property<DateTime>("UpdateTime")
                         .HasColumnName("update_time");
@@ -647,6 +810,9 @@ namespace NTCore.WebFront.Migrations
 
                     b.Property<int>("CreatorId")
                         .HasColumnName("creator_id");
+
+                    b.Property<int>("DataSort")
+                        .HasColumnName("data_sort");
 
                     b.Property<int>("DataState")
                         .HasColumnName("data_state");
@@ -687,6 +853,9 @@ namespace NTCore.WebFront.Migrations
                     b.Property<int>("CreatorId")
                         .HasColumnName("creator_id");
 
+                    b.Property<int>("DataSort")
+                        .HasColumnName("data_sort");
+
                     b.Property<int>("DataState")
                         .HasColumnName("data_state");
 
@@ -720,105 +889,6 @@ namespace NTCore.WebFront.Migrations
                     b.ToTable("room_product_package");
                 });
 
-            modelBuilder.Entity("NTCore.DataModel.RowhouseHistoryInfo", b =>
-                {
-                    b.Property<int>("Id")
-                        .ValueGeneratedOnAdd()
-                        .HasColumnName("id");
-
-                    b.Property<decimal>("Coefficient")
-                        .HasColumnName("coefficient")
-                        .HasColumnType("decimal(10,2)");
-
-                    b.Property<DateTime>("CreateTime")
-                        .HasColumnName("create_time");
-
-                    b.Property<int>("CreatorId")
-                        .HasColumnName("creator_id");
-
-                    b.Property<int>("DataState")
-                        .HasColumnName("data_state");
-
-                    b.Property<DateTime>("Deadline")
-                        .HasColumnName("deadline");
-
-                    b.Property<DateTime>("FromTime")
-                        .HasColumnName("fromtime");
-
-                    b.Property<int>("HotelId")
-                        .HasColumnName("hotel_id");
-
-                    b.Property<string>("RoomNumber")
-                        .IsRequired()
-                        .HasColumnName("room_number")
-                        .HasColumnType("varchar(30)")
-                        .HasMaxLength(30);
-
-                    b.Property<DateTime>("UpdateTime")
-                        .HasColumnName("update_time");
-
-                    b.Property<int>("UpdaterId")
-                        .HasColumnName("updater_id");
-
-                    b.Property<int>("UserId")
-                        .HasColumnName("userid");
-
-                    b.HasKey("Id");
-
-                    b.ToTable("rowhouse_history");
-                });
-
-            modelBuilder.Entity("NTCore.DataModel.RowhouseInfo", b =>
-                {
-                    b.Property<int>("Id")
-                        .ValueGeneratedOnAdd()
-                        .HasColumnName("id");
-
-                    b.Property<DateTime>("AssignTime")
-                        .HasColumnName("assign_time");
-
-                    b.Property<decimal>("Coeffcient")
-                        .HasColumnName("coeffcient")
-                        .HasColumnType("decimal(10,2)");
-
-                    b.Property<DateTime>("CreateTime")
-                        .HasColumnName("create_time");
-
-                    b.Property<int>("CreatorId")
-                        .HasColumnName("creator_id");
-
-                    b.Property<int>("DataState")
-                        .HasColumnName("data_state");
-
-                    b.Property<int>("HotelId")
-                        .HasColumnName("hotel_id");
-
-                    b.Property<string>("RoomNumber")
-                        .IsRequired()
-                        .HasColumnName("room_number")
-                        .HasColumnType("varchar(30)")
-                        .HasMaxLength(30);
-
-                    b.Property<string>("RoomStatus")
-                        .IsRequired()
-                        .HasColumnName("room_status")
-                        .HasColumnType("varchar(30)")
-                        .HasMaxLength(30);
-
-                    b.Property<DateTime>("UpdateTime")
-                        .HasColumnName("update_time");
-
-                    b.Property<int>("UpdaterId")
-                        .HasColumnName("updater_id");
-
-                    b.Property<int>("UserId")
-                        .HasColumnName("userid");
-
-                    b.HasKey("Id");
-
-                    b.ToTable("rowhouse");
-                });
-
             modelBuilder.Entity("NTCore.DataModel.UserGroupInfo", b =>
                 {
                     b.Property<int>("Id")
@@ -830,6 +900,9 @@ namespace NTCore.WebFront.Migrations
 
                     b.Property<int>("CreatorId")
                         .HasColumnName("creator_id");
+
+                    b.Property<int>("DataSort")
+                        .HasColumnName("data_sort");
 
                     b.Property<int>("DataState")
                         .HasColumnName("data_state");
@@ -866,6 +939,9 @@ namespace NTCore.WebFront.Migrations
                     b.Property<int>("CreatorId")
                         .HasColumnName("creator_id");
 
+                    b.Property<int>("DataSort")
+                        .HasColumnName("data_sort");
+
                     b.Property<int>("DataState")
                         .HasColumnName("data_state");
 
@@ -895,9 +971,9 @@ namespace NTCore.WebFront.Migrations
                         .ValueGeneratedOnAdd()
                         .HasColumnName("id");
 
-                    b.Property<byte>("AuthType")
+                    b.Property<int>("AuthType")
                         .HasColumnName("auth_type")
-                        .HasColumnType("tinyint");
+                        .HasColumnType("smallint");
 
                     b.Property<string>("Avatar")
                         .IsRequired()
@@ -913,6 +989,9 @@ namespace NTCore.WebFront.Migrations
 
                     b.Property<int>("CreatorId")
                         .HasColumnName("creator_id");
+
+                    b.Property<int>("DataSort")
+                        .HasColumnName("data_sort");
 
                     b.Property<int>("DataState")
                         .HasColumnName("data_state");
@@ -935,8 +1014,8 @@ namespace NTCore.WebFront.Migrations
                     b.Property<string>("MobileNumber")
                         .IsRequired()
                         .HasColumnName("mobile_number")
-                        .HasColumnType("varchar(50)")
-                        .HasMaxLength(50);
+                        .HasColumnType("varchar(30)")
+                        .HasMaxLength(30);
 
                     b.Property<string>("Nickname")
                         .IsRequired()
@@ -977,6 +1056,9 @@ namespace NTCore.WebFront.Migrations
 
                     b.Property<int>("CreatorId")
                         .HasColumnName("creator_id");
+
+                    b.Property<int>("DataSort")
+                        .HasColumnName("data_sort");
 
                     b.Property<int>("DataState")
                         .HasColumnName("data_state");
@@ -1028,8 +1110,14 @@ namespace NTCore.WebFront.Migrations
                     b.Property<int>("CreatorId")
                         .HasColumnName("creator_id");
 
+                    b.Property<int>("DataSort")
+                        .HasColumnName("data_sort");
+
                     b.Property<int>("DataState")
                         .HasColumnName("data_state");
+
+                    b.Property<int>("DataType")
+                        .HasColumnName("data_type");
 
                     b.Property<DateTime>("Deadline")
                         .HasColumnName("deadline");
@@ -1039,6 +1127,9 @@ namespace NTCore.WebFront.Migrations
 
                     b.Property<int>("HotelId")
                         .HasColumnName("hotel_id");
+
+                    b.Property<int>("ShowDayType")
+                        .HasColumnName("show_day_type");
 
                     b.Property<int>("SpecificDay")
                         .HasColumnName("specific_day");
@@ -1072,8 +1163,8 @@ namespace NTCore.WebFront.Migrations
                     b.Property<int>("CheckUserId")
                         .HasColumnName("check_userid");
 
-                    b.Property<decimal>("Coeffcient")
-                        .HasColumnName("coeffcient")
+                    b.Property<decimal>("Coefficient")
+                        .HasColumnName("coefficient")
                         .HasColumnType("decimal(10,2)");
 
                     b.Property<DateTime>("CreateTime")
@@ -1081,6 +1172,9 @@ namespace NTCore.WebFront.Migrations
 
                     b.Property<int>("CreatorId")
                         .HasColumnName("creator_id");
+
+                    b.Property<int>("DataSort")
+                        .HasColumnName("data_sort");
 
                     b.Property<int>("DataState")
                         .HasColumnName("data_state");
@@ -1114,6 +1208,12 @@ namespace NTCore.WebFront.Migrations
                         .HasColumnName("message_text")
                         .HasColumnType("nvarchar(2000)")
                         .HasMaxLength(2000);
+
+                    b.Property<int>("RaletionId")
+                        .HasColumnName("relation_id");
+
+                    b.Property<int>("ReceiverId")
+                        .HasColumnName("receiver_userid");
 
                     b.Property<string>("RoomNumber")
                         .IsRequired()

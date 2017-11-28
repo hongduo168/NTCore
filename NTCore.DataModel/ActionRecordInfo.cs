@@ -15,10 +15,9 @@ namespace NTCore.DataModel
     {
         /// <summary>
         /// 日志类型
-        /// ActionRecordType
         /// </summary>
         [Required, DefaultValue(0), Column("data_type")]
-        public int DataType { get; set; }
+        public DataEnum.ActionRecordType DataType { get; set; }
 
         /// <summary>
         /// 标识

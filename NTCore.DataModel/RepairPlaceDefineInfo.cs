@@ -11,7 +11,7 @@ namespace NTCore.DataModel
     /// 维修地点定义
     /// </summary>
     [Table("repair_place_define")]
-    public class RepairPlaceDefine : HotelEntity
+    public class RepairPlaceDefineInfo : HotelEntity
     {
 
         [Required, DefaultValue(0), Column("parent_id")]
