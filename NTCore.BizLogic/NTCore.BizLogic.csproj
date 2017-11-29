@@ -6,6 +6,7 @@
 
   <ItemGroup>
     <ProjectReference Include="..\NTCore.DataAccess\NTCore.DataAccess.csproj" />
+    <ProjectReference Include="..\NTCore.Utility\NTCore.Utility.csproj" />
   </ItemGroup>
 
 </Project>

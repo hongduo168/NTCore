@@ -701,6 +701,20 @@
         "runtime": {
           "bin/placeholder/NTCore.DataModel.dll": {}
         }
+      },
+      "NTCore.Utility/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v2.0",
+        "dependencies": {
+          "Microsoft.Extensions.Caching.Abstractions": "2.0.0",
+          "Microsoft.Extensions.Options": "2.0.0"
+        },
+        "compile": {
+          "bin/placeholder/NTCore.Utility.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/NTCore.Utility.dll": {}
+        }
       }
     }
   },
@@ -2783,12 +2797,18 @@
       "type": "project",
       "path": "../NTCore.DataModel/NTCore.DataModel.csproj",
       "msbuildProject": "../NTCore.DataModel/NTCore.DataModel.csproj"
+    },
+    "NTCore.Utility/1.0.0": {
+      "type": "project",
+      "path": "../NTCore.Utility/NTCore.Utility.csproj",
+      "msbuildProject": "../NTCore.Utility/NTCore.Utility.csproj"
     }
   },
   "projectFileDependencyGroups": {
     ".NETCoreApp,Version=v2.0": [
       "Microsoft.NETCore.App >= 2.0.0",
-      "NTCore.DataAccess >= 1.0.0"
+      "NTCore.DataAccess >= 1.0.0",
+      "NTCore.Utility >= 1.0.0"
     ]
   },
   "packageFolders": {
@@ -2826,6 +2846,9 @@
           "projectReferences": {
             "E:\\Projects\\NTPlatform\\NTCore.DataAccess\\NTCore.DataAccess.csproj": {
               "projectPath": "E:\\Projects\\NTPlatform\\NTCore.DataAccess\\NTCore.DataAccess.csproj"
+            },
+            "E:\\Projects\\NTPlatform\\NTCore.Utility\\NTCore.Utility.csproj": {
+              "projectPath": "E:\\Projects\\NTPlatform\\NTCore.Utility\\NTCore.Utility.csproj"
             }
           }
         }

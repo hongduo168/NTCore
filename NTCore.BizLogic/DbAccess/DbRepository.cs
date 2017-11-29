@@ -11,7 +11,7 @@ namespace NTCore.BizLogic.DbAccess
 {
     public class DbRepository<T> : IRepository<T> where T : BaseEntity
     {
-        private readonly MainContext dbContext;
+        protected readonly MainContext dbContext;
 
         public DbRepository(MainContext dbContext)
         {

@@ -31,14 +31,18 @@ namespace NTCore.DataModel
         [Required(AllowEmptyStrings = true), DefaultValue(""), Column("from_status", TypeName = "varchar(30)"), MaxLength(30)]
         public string FromStatus { get; set; }
 
-        [Required(AllowEmptyStrings = true), DefaultValue(""), Column("endto_status", TypeName = "varchar(30)"), MaxLength(30)]
-        public string EndToStatus { get; set; }
+        [Required(AllowEmptyStrings = true), DefaultValue(""), Column("to_status", TypeName = "varchar(30)"), MaxLength(30)]
+        public string ToStatus { get; set; }
 
         /// <summary>
         /// 接收人/工作人
         /// </summary>
         [Required, DefaultValue(0), Column("receiver_userid")]
         public int ReceiverId { get; set; }
+
+
+        [Required, DefaultValue(0), Column("work_seconds")]
+        public int WorkSeconds { get; set; }
 
         /// <summary>
         /// 关联数据ID

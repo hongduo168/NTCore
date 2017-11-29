@@ -11,3 +11,5 @@ E:\Projects\NTPlatform\NTCore.BizLogic\bin\Debug\netcoreapp2.0\NTCore.DataAccess
 E:\Projects\NTPlatform\NTCore.BizLogic\bin\Debug\netcoreapp2.0\NTCore.DataModel.dll
 E:\Projects\NTPlatform\NTCore.BizLogic\bin\Debug\netcoreapp2.0\NTCore.DataAccess.pdb
 E:\Projects\NTPlatform\NTCore.BizLogic\bin\Debug\netcoreapp2.0\NTCore.DataModel.pdb
+E:\Projects\NTPlatform\NTCore.BizLogic\bin\Debug\netcoreapp2.0\NTCore.Utility.dll
+E:\Projects\NTPlatform\NTCore.BizLogic\bin\Debug\netcoreapp2.0\NTCore.Utility.pdb

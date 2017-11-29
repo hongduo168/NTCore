@@ -5,6 +5,9 @@ using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Logging;
 using NTCore.DataAccess;
+using NTCore.WebFront.Model;
+using NTCore.WebFront.Model.Api;
+using NTCore.BizLogic.DbAccess;
 
 // For more information on enabling Web API for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
 
@@ -16,23 +19,12 @@ namespace NTCore.WebFront.Controllers.Api
     [Route("sweep")]
     public class SweepController : MemberBaseController
     {
-        protected SweepController(ILogger<MemberBaseController> logger, MainContext dbContext) : base(logger, dbContext)
+        protected HotelRoomRepository hotelRoomRepository;
+        protected SweepController(ILogger<MemberBaseController> logger, MainContext dbContext, HotelRoomRepository hotelRoomRepository) : base(logger, dbContext)
         {
+            this.hotelRoomRepository = hotelRoomRepository;
         }
 
-        // GET: api/values
-        [HttpGet]
-        public IEnumerable<string> Get()
-        {
-            return new string[] { "value1", "value2" };
-        }
-
-        // GET api/values/5
-        [HttpGet("{id}")]
-        public string Get(int id)
-        {
-            return "value";
-        }
 
         /// <summary>
         /// 开始打扫
@@ -40,8 +32,16 @@ namespace NTCore.WebFront.Controllers.Api
         /// <param name="value"></param>
         // POST api/values
         [HttpPost]
-        public void Post([FromBody]string value)
+        public BaseReturn Post([FromBody]SweepPostInfo value)
         {
+            var resp = new BaseReturn();
+
+            if (!string.IsNullOrEmpty(value?.RoomNumber))
+            {
+                resp.IsError = !this.hotelRoomRepository.SweepStart(value.RoomNumber, this.UserInfo);
+            }
+
+            return resp;
         }
 
         /// <summary>
@@ -49,10 +49,23 @@ namespace NTCore.WebFront.Controllers.Api
         /// </summary>
         /// <param name="id"></param>
         /// <param name="value"></param>
-        // PUT api/values/5
-        [HttpPut("{id}")]
-        public void Put(int id, [FromBody]string value)
+        // PUT api/values
+        [HttpPut]
+        public BaseReturn Put([FromBody]SweepPostInfo value)
         {
+            var resp = new BaseReturn();
+
+            if (!string.IsNullOrEmpty(value?.RoomNumber))
+            {
+                resp.IsError = !this.hotelRoomRepository.SweepFinsh(value.RoomNumber, this.UserInfo);
+                if (!resp.IsError)
+                {
+                    //TODO 改房态接口
+
+                }
+            }
+
+            return resp;
         }
 
         /// <summary>
@@ -60,9 +73,17 @@ namespace NTCore.WebFront.Controllers.Api
         /// </summary>
         /// <param name="id"></param>
         // DELETE api/values/5
-        [HttpDelete("{id}")]
-        public void Delete(int id)
+        [HttpDelete]
+        public BaseReturn Delete([FromBody]SweepPostInfo value)
         {
+            var resp = new BaseReturn();
+
+            if (!string.IsNullOrEmpty(value?.RoomNumber))
+            {
+                resp.IsError = !this.hotelRoomRepository.SweepCancel(value.RoomNumber, this.UserInfo);
+            }
+
+            return resp;
         }
     }
 }

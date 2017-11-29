@@ -46,7 +46,10 @@ namespace NTCore.DataModel
             CleanCheck = 60,
 
             [Description("用户反馈")]
-            Feedback = 100
+            Feedback = 100,
+
+            [Description("操作记录")]
+            DataUpdate = 200
         }
 
         public enum CustomerRequestDefineType
@@ -199,6 +202,9 @@ namespace NTCore.DataModel
 
         public enum WorkloadStepType
         {
+            [Description("新建")]
+            Created = 5,
+
             [Description("开始")]
             Start = 10,
 
@@ -213,6 +219,9 @@ namespace NTCore.DataModel
 
             [Description("恢复")]
             Restore = 50,
+
+            [Description("切换类型")]
+            Switch = 60,
         }
 
         /// <summary>

@@ -13,8 +13,17 @@ namespace NTCore.DataModel
     /// </summary>
     public class WorkloadStepInfo : HotelEntity
     {
+        /// <summary>
+        /// 操作人ID
+        /// </summary>
+        [Required, DefaultValue(0), Column("userid")]
+        public int UserId { get; set; }
+
+        /// <summary>
+        /// 关联ID
+        /// </summary>
         [Required, DefaultValue(0), Column("workload_id")]
-        public int ReceiverId { get; set; }
+        public int WorkloadId { get; set; }
 
         /// <summary>
         /// 类型

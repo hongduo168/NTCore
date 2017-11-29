@@ -70,6 +70,7 @@ namespace NTCore.WebFront
 
             //services.AddSingleton()
             services.AddHttpContextAccessor();
+            services.AddMemoryCache();
             services.AddMvc(options =>
             {
                 options.Filters.Add(typeof(ValidationFilter));
@@ -81,7 +82,9 @@ namespace NTCore.WebFront
                 options.Filters.Add(new AuthorizeFilter(policy));
             });
 
-            services.AddSingleton<IRepository<UserInfo>, DbRepository<UserInfo>>();
+            //Biz
+            services.AddSingleton<IRepository<ActionRecordInfo>, ActionRecordRepository>();
+            services.AddSingleton<IRepository<HotelRoomInfo>, HotelRoomRepository>();
 
         }
 

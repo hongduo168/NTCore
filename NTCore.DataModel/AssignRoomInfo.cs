@@ -20,7 +20,7 @@ namespace NTCore.DataModel
         public int UserId { get; set; }
 
         /// <summary>
-        /// 排房系数
+        /// 排房时的计件系数
         /// </summary>
         [Required, DefaultValue(1.0), Column("coefficient", TypeName = "decimal(10,2)")]
         public decimal Coefficient { get; set; }

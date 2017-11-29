@@ -22,6 +22,15 @@ namespace NTCore.DataModel
         [Required(AllowEmptyStrings = true), DefaultValue(""), Column("room_status", TypeName = "varchar(30)"), MaxLength(30)]
         public string RoomStatus { get; set; }
 
+        /// <summary>
+        /// 计件系数
+        /// </summary>
+        [Required, DefaultValue(1.0), Column("coefficient", TypeName = "decimal(10,2)")]
+        public decimal Coefficient { get; set; }
+
+        [Required, DefaultValue(false), Column("is_cleaning", TypeName = "bit"), MaxLength(30)]
+        public bool IsCleaning { get; set; }
+
         [Required, DefaultValue(false), Column("is_checked", TypeName = "bit"), MaxLength(30)]
         public bool IsChecked { get; set; }
 

@@ -8,7 +8,7 @@ using NTCore.DataAccess;
 
 namespace NTCore.BizLogic.DbAccess
 {
-    public class UserRepository : DbRepository<UserInfo>
+    public class UserRepository : DbRepository<ActionRecordInfo>
     {
         private readonly MainContext dbContext;
 

@@ -4203,7 +4203,8 @@
       },
       "NTCore.BizLogic/1.0.0": {
         "dependencies": {
-          "NTCore.DataAccess": "1.0.0"
+          "NTCore.DataAccess": "1.0.0",
+          "NTCore.Utility": "1.0.0"
         },
         "runtime": {
           "NTCore.BizLogic.dll": {}
@@ -4259,6 +4260,10 @@
         }
       },
       "NTCore.Utility/1.0.0": {
+        "dependencies": {
+          "Microsoft.Extensions.Caching.Abstractions": "2.0.0",
+          "Microsoft.Extensions.Options": "2.0.0"
+        },
         "runtime": {
           "NTCore.Utility.dll": {}
         },

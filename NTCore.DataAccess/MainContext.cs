@@ -57,6 +57,8 @@ namespace NTCore.DataAccess
             //    }
             //}
 
+            //modelBuilder.HasChangeTrackingStrategy(ChangeTrackingStrategy.Snapshot);
+
             modelBuilder.Entity<ActionRecordInfo>().HasQueryFilter(x => x.DataState == EnumState.Normal);
             modelBuilder.Entity<AssignRoomHistoryInfo>().HasQueryFilter(x => x.DataState == EnumState.Normal);
             modelBuilder.Entity<AssignRoomInfo>().HasQueryFilter(x => x.DataState == EnumState.Normal);
@@ -81,7 +83,7 @@ namespace NTCore.DataAccess
             modelBuilder.Entity<RoomProductPackageInfo>().HasQueryFilter(x => x.DataState == EnumState.Normal);
             modelBuilder.Entity<UserGroupInfo>().HasQueryFilter(x => x.DataState == EnumState.Normal);
             modelBuilder.Entity<UserGroupMemberInfo>().HasQueryFilter(x => x.DataState == EnumState.Normal);
-            modelBuilder.Entity<UserInfo>().HasQueryFilter(x => x.DataState == EnumState.Normal);
+            modelBuilder.Entity<ActionRecordInfo>().HasQueryFilter(x => x.DataState == EnumState.Normal);
             modelBuilder.Entity<VerificationCodeInfo>().HasQueryFilter(x => x.DataState == EnumState.Normal);
             modelBuilder.Entity<WelcomePlanInfo>().HasQueryFilter(x => x.DataState == EnumState.Normal);
             modelBuilder.Entity<WorkloadInfo>().HasQueryFilter(x => x.DataState == EnumState.Normal);

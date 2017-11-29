@@ -13,5 +13,6 @@ namespace NTCore.DataModel
 
         [Required(AllowEmptyStrings = true), DefaultValue(""), Column("group_name", TypeName = "nvarchar(30)"), MaxLength(30)]
         public string GroupName { get; set; }
+
     }
 }
