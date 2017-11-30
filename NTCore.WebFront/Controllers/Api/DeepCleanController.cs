@@ -47,7 +47,7 @@ namespace NTCore.WebFront.Controllers.Api
         /// </summary>
         /// <param name="id"></param>
         // DELETE api/values/5
-        [HttpDelete]
+        [HttpPost]
         public BaseReturn Post([FromBody]DeepCleanPostInfo value)
         {
             var resp = new BaseReturn();

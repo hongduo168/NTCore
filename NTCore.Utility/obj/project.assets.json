@@ -791,6 +791,9 @@
   },
   "project": {
     "version": "1.0.0",
+    "restoreSettings": {
+      "hideWarningsAndErrors": true
+    },
     "restore": {
       "projectUniqueName": "E:\\Projects\\NTPlatform\\NTCore.Utility\\NTCore.Utility.csproj",
       "projectName": "NTCore.Utility",
@@ -826,15 +829,15 @@
     "frameworks": {
       "netcoreapp2.0": {
         "dependencies": {
+          "Microsoft.Extensions.Caching.Abstractions": {
+            "target": "Package",
+            "version": "2.0.0"
+          },
           "Microsoft.NETCore.App": {
             "suppressParent": "All",
             "target": "Package",
             "version": "2.0",
             "autoReferenced": true
-          },
-          "Microsoft.Extensions.Caching.Abstractions": {
-            "target": "Package",
-            "version": "2.0.0"
           },
           "Microsoft.Extensions.Options": {
             "target": "Package",
