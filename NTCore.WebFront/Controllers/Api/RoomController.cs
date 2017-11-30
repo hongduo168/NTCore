@@ -26,14 +26,14 @@ namespace NTCore.WebFront.Controllers.Api
         {
             var resp = new BaseReturn(false);
 
-            var hotelRooms = this.dbContext.HotelRoom.Where(x => x.HotelId == this.UserInfo.HotelId).ToList();
+            var rooms = this.dbContext.HotelRoom.Where(x => x.HotelId == this.UserInfo.HotelId).ToList();
 
-            var assignRooms = this.dbContext.AssignRoom.Where(x => x.HotelId == this.UserInfo.HotelId).ToList();
+            var allot = this.dbContext.AssignRoom.Where(x => x.HotelId == this.UserInfo.HotelId).ToList();
 
-            var userid = assignRooms.Select(x => x.UserId);
-            var hotelUsers = this.dbContext.User.Where(x => x.HotelId == this.UserInfo.HotelId && userid.Contains(x.Id));
+            var userid = allot.Select(x => x.UserId);
+            var users = this.dbContext.User.Where(x => x.HotelId == this.UserInfo.HotelId && userid.Contains(x.Id));
 
-            resp.Data = new { HotelRooms = hotelRooms, AssignRooms = assignRooms, HotelUsers = hotelUsers };
+            resp.Data = new { rooms, allot, users };
 
 
             return resp;
@@ -50,17 +50,17 @@ namespace NTCore.WebFront.Controllers.Api
         {
             var resp = new BaseReturn();
 
-            var roomInfo = this.dbContext.HotelRoom.FirstOrDefault(x => x.Id == id && x.HotelId == this.UserInfo.HotelId);
-            if (roomInfo == null)
+            var room = this.dbContext.HotelRoom.FirstOrDefault(x => x.Id == id && x.HotelId == this.UserInfo.HotelId);
+            if (room == null)
             {
                 return resp;
             }
 
-            var assignRoom = this.dbContext.AssignRoom.FirstOrDefault(x => x.RoomNumber == roomInfo.RoomNumber);
+            var assign = this.dbContext.AssignRoom.FirstOrDefault(x => x.RoomNumber == room.RoomNumber);
 
-            var userInfo = this.dbContext.User.Where(x => x.Id == assignRoom.UserId && x.HotelId == this.UserInfo.HotelId);
+            var user = this.dbContext.User.Where(x => x.Id == assign.UserId && x.HotelId == this.UserInfo.HotelId);
 
-            resp.Data = new { RoomInfo = roomInfo, AssignRoom = assignRoom, UserInfo = userInfo };
+            resp.Data = new { room, assign, user };
             resp.IsError = false;
 
             return resp;

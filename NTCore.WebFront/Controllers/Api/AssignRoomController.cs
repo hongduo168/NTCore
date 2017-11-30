@@ -16,9 +16,6 @@ using NTCore.BizLogic.DbAccess;
 namespace NTCore.WebFront.Controllers.Api
 {
     [Route("assign-room")]
-    /// <summary>
-    /// 排放
-    /// </summary>
     public class AssignRoomController : MemberBaseController
     {
         protected HotelRoomRepository hotelRoomRepository;
@@ -34,35 +31,25 @@ namespace NTCore.WebFront.Controllers.Api
             this.hotelRoomRepository = hotelRoomRepository;
         }
 
-        [HttpGet]
-        public ActionResult Get()
+        /// <summary>
+        /// 获取单个房间排房信息
+        /// </summary>
+        /// <param name="id"></param>
+        /// <returns></returns>
+        [HttpGet("{id}")]
+        public ActionResult Get(string id)
         {
             var resp = new BaseReturn(false);
-            var hotelRooms = this.dbContext.HotelRoom.Where(x => x.HotelId == this.UserInfo.HotelId).ToList();
-            var assignRooms = this.dbContext.AssignRoom.Where(x => x.HotelId == this.UserInfo.HotelId).ToList();
-            var data = from room in hotelRooms
-                       join assign in assignRooms on room.RoomNumber equals assign.RoomNumber into temp
-                       from tt in temp.DefaultIfEmpty(new AssignRoomInfo())
-                       select new
-                       {
-                           room.RoomNumber,
-                           room.DataSort,
-                           room.HotelId,
-                           room.IsChecked,
-                           room.IsContradiction,
-                           room.IsDueIn,
-                           room.IsDueOut,
-                           room.IsRush,
-                           room.PmsRoomNumber,
-                           room.RoomStatus,
-                           room.RoomTypeCode,
+            var room = this.dbContext.HotelRoom.FirstOrDefault(x => x.HotelId == this.UserInfo.HotelId && x.RoomNumber == id);
+            var assign = this.dbContext.AssignRoom.FirstOrDefault(x => x.HotelId == this.UserInfo.HotelId && x.RoomNumber == id);
 
-                           tt.AssignTime,
-                           tt.Coefficient,
-                           AssignRoomStatus = tt.RoomStatus //排房时房态
-                       };
+            UserInfo user = null;
+            if (assign != null && assign.UserId != 0)
+            {
+                user = this.dbContext.User.FirstOrDefault(x => x.Id == assign.UserId);
+            }
 
-            resp.Data = data;
+            resp.Data = new { room, assign, user };
             return Json(resp);
         }
 

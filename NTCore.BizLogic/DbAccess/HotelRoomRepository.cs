@@ -4,6 +4,7 @@ using NTCore.DataModel;
 using NTCore.Utility;
 using System;
 using System.Linq;
+using System.Transactions;
 using static NTCore.DataModel.DataEnum;
 
 namespace NTCore.BizLogic.DbAccess
@@ -32,11 +33,9 @@ namespace NTCore.BizLogic.DbAccess
                 var rows = 0;
                 var rooms = this.dbContext.HotelRoom.Where(x => x.HotelId == doer.HotelId && roomNumber.Contains(x.RoomNumber)).ToList();
 
-
-                using (var tran = this.dbContext.Database.BeginTransaction())
+                try
                 {
-
-                    try
+                    using (var tran = new TransactionScope(TransactionScopeOption.Required, DataDefine.DefaultTransactionOptions))
                     {
                         foreach (var item in rooms)
                         {
@@ -96,14 +95,14 @@ namespace NTCore.BizLogic.DbAccess
                         }
 
                         rows += this.dbContext.SaveChanges();
-                        tran.Commit();
+                        tran.Complete();
                     }
-                    catch (Exception ex)
-                    {
-                        tran.Rollback();
-                        this.logger.LogError(ex, ex.Message);
-                        rows = 0;
-                    }
+                }
+                catch (Exception ex)
+                {
+                    //tran.Rollback();
+                    this.logger.LogError(ex, ex.Message);
+                    rows = 0;
                 }
 
                 return (rows > 0);
@@ -125,10 +124,9 @@ namespace NTCore.BizLogic.DbAccess
             if (roomNumber == null) return false;
 
             int rows = 0;
-            using (var tran = this.dbContext.Database.BeginTransaction())
+            try
             {
-
-                try
+                using (var tran = new TransactionScope(TransactionScopeOption.Required, DataDefine.DefaultTransactionOptions))
                 {
 
                     foreach (var item in roomNumber)
@@ -192,20 +190,18 @@ namespace NTCore.BizLogic.DbAccess
                             Deadline = DataDefine.NullDateTime
                         };
                         this.dbContext.AssignRoomHistory.Add(history);
-                        tran.Commit();
+                        tran.Complete();
 
                         #endregion
                     }
 
                     rows = this.dbContext.SaveChanges();
                 }
-                catch (Exception ex)
-                {
-                    tran.Rollback();
-                    this.logger.LogError(ex, ex.Message);
-
-                    rows = 0;
-                }
+            }
+            catch (Exception ex)
+            {
+                this.logger.LogError(ex, ex.Message);
+                rows = 0;
             }
             return (rows > 0);
 
@@ -222,9 +218,9 @@ namespace NTCore.BizLogic.DbAccess
         public bool SweepStart(string roomNumber, UserInfo doer)
         {
             var rows = 0;
-            using (var tran = this.dbContext.Database.BeginTransaction())
+            try
             {
-                try
+                using (var tran = new TransactionScope(TransactionScopeOption.Required, DataDefine.DefaultTransactionOptions))
                 {
                     var room = this.dbContext.HotelRoom.FirstOrDefault(x => x.HotelId == doer.HotelId && x.RoomNumber == roomNumber);
                     if (room != null && !room.IsCleaning)
@@ -280,14 +276,13 @@ namespace NTCore.BizLogic.DbAccess
                         rows += this.dbContext.SaveChanges();
                     }
 
-                    tran.Commit();
+                    tran.Complete();
                 }
-                catch (Exception ex)
-                {
-                    tran.Rollback();
-                    this.logger.LogError(ex, ex.Message);
-                    rows = 0;
-                }
+            }
+            catch (Exception ex)
+            {
+                this.logger.LogError(ex, ex.Message);
+                rows = 0;
             }
             return (rows > 0);
         }
@@ -302,9 +297,9 @@ namespace NTCore.BizLogic.DbAccess
         public bool SweepFinsh(string roomNumber, UserInfo doer)
         {
             var rows = 0;
-            using (var tran = this.dbContext.Database.BeginTransaction())
+            try
             {
-                try
+                using (var tran = new TransactionScope(TransactionScopeOption.Required, DataDefine.DefaultTransactionOptions))
                 {
                     var room = this.dbContext.HotelRoom.FirstOrDefault(x => x.HotelId == doer.HotelId && x.RoomNumber == roomNumber);
                     if (room != null && room.IsCleaning)
@@ -345,14 +340,14 @@ namespace NTCore.BizLogic.DbAccess
 
                     }
                     rows += this.dbContext.SaveChanges();
-                    tran.Commit();
+                    tran.Complete();
                 }
-                catch (Exception ex)
-                {
-                    tran.Rollback();
-                    this.logger.LogError(ex, ex.Message);
-                    rows = 0;
-                }
+            }
+            catch (Exception ex)
+            {
+                this.logger.LogError(ex, ex.Message);
+                rows = 0;
+
             }
             return (rows > 0);
         }
@@ -367,9 +362,9 @@ namespace NTCore.BizLogic.DbAccess
         public bool SweepCancel(string roomNumber, UserInfo doer)
         {
             var rows = 0;
-            using (var tran = this.dbContext.Database.BeginTransaction())
+            try
             {
-                try
+                using (var tran = new TransactionScope(TransactionScopeOption.Required, DataDefine.DefaultTransactionOptions))
                 {
                     var room = this.dbContext.HotelRoom.FirstOrDefault(x => x.HotelId == doer.HotelId && x.RoomNumber == roomNumber);
                     if (room != null && room.IsCleaning)
@@ -406,14 +401,13 @@ namespace NTCore.BizLogic.DbAccess
 
                     }
                     rows += this.dbContext.SaveChanges();
-                    tran.Commit();
+                    tran.Complete();
                 }
-                catch (Exception ex)
-                {
-                    tran.Rollback();
-                    this.logger.LogError(ex, ex.Message);
-                    rows = 0;
-                }
+            }
+            catch (Exception ex)
+            {
+                this.logger.LogError(ex, ex.Message);
+                rows = 0;
             }
             return (rows > 0);
         }
@@ -427,9 +421,9 @@ namespace NTCore.BizLogic.DbAccess
         public bool SetDeepClean(int id, UserInfo doer)
         {
             var rows = 0;
-            using (var tran = this.dbContext.Database.BeginTransaction())
+            try
             {
-                try
+                using (var tran = new TransactionScope(TransactionScopeOption.Required, DataDefine.DefaultTransactionOptions))
                 {
                     //根据房号查找正在打扫
                     var model = this.dbContext.Workload.FirstOrDefault(x => x.Id == id);
@@ -463,14 +457,13 @@ namespace NTCore.BizLogic.DbAccess
                     }
 
                     rows += this.dbContext.SaveChanges();
-                    tran.Commit();
+                    tran.Complete();
                 }
-                catch (Exception ex)
-                {
-                    tran.Rollback();
-                    this.logger.LogError(ex, ex.Message);
-                    rows = 0;
-                }
+            }
+            catch (Exception ex)
+            {
+                this.logger.LogError(ex, ex.Message);
+                rows = 0;
             }
             return (rows > 0);
         }
@@ -485,9 +478,9 @@ namespace NTCore.BizLogic.DbAccess
         public bool SetNormalClean(int id, UserInfo doer)
         {
             var rows = 0;
-            using (var tran = this.dbContext.Database.BeginTransaction())
+            try
             {
-                try
+                using (var tran = new TransactionScope(TransactionScopeOption.Required, DataDefine.DefaultTransactionOptions))
                 {
                     //根据房号查找正在打扫
                     var model = this.dbContext.Workload.FirstOrDefault(x => x.Id == id);
@@ -521,14 +514,14 @@ namespace NTCore.BizLogic.DbAccess
                     }
 
                     rows += this.dbContext.SaveChanges();
-                    tran.Commit();
+                    tran.Complete();
                 }
-                catch (Exception ex)
-                {
-                    tran.Rollback();
-                    this.logger.LogError(ex, ex.Message);
-                    rows = 0;
-                }
+            }
+            catch (Exception ex)
+            {
+                this.logger.LogError(ex, ex.Message);
+                rows = 0;
+
             }
             return (rows > 0);
         }

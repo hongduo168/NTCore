@@ -2,6 +2,35 @@
   "version": 3,
   "targets": {
     ".NETCoreApp,Version=v2.0": {
+      "Dapper/1.50.2": {
+        "type": "package",
+        "dependencies": {
+          "System.Collections": "4.0.11",
+          "System.Collections.Concurrent": "4.0.12",
+          "System.Collections.NonGeneric": "4.0.1",
+          "System.Data.SqlClient": "4.1.0",
+          "System.Dynamic.Runtime": "4.0.11",
+          "System.Linq": "4.1.0",
+          "System.Reflection": "4.1.0",
+          "System.Reflection.Emit": "4.0.1",
+          "System.Reflection.Emit.Lightweight": "4.0.1",
+          "System.Reflection.Extensions": "4.0.1",
+          "System.Reflection.TypeExtensions": "4.1.0",
+          "System.Runtime": "4.1.0",
+          "System.Runtime.Extensions": "4.1.0",
+          "System.Runtime.InteropServices": "4.1.0",
+          "System.Text.RegularExpressions": "4.1.0",
+          "System.Threading": "4.0.11",
+          "System.Xml.XDocument": "4.0.11",
+          "System.Xml.XmlDocument": "4.0.1"
+        },
+        "compile": {
+          "lib/netstandard1.3/Dapper.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard1.3/Dapper.dll": {}
+        }
+      },
       "Google.Protobuf/3.3.0": {
         "type": "package",
         "dependencies": {
@@ -2874,34 +2903,14 @@
           "build/netstandard2.0/NETStandard.Library.targets": {}
         }
       },
-      "Newtonsoft.Json/10.0.1": {
+      "Newtonsoft.Json/10.0.3": {
         "type": "package",
         "dependencies": {
           "Microsoft.CSharp": "4.3.0",
-          "System.Collections": "4.3.0",
+          "NETStandard.Library": "1.6.1",
           "System.ComponentModel.TypeConverter": "4.3.0",
-          "System.Diagnostics.Debug": "4.3.0",
-          "System.Dynamic.Runtime": "4.3.0",
-          "System.Globalization": "4.3.0",
-          "System.IO": "4.3.0",
-          "System.Linq": "4.3.0",
-          "System.Linq.Expressions": "4.3.0",
-          "System.ObjectModel": "4.3.0",
-          "System.Reflection": "4.3.0",
-          "System.Reflection.Extensions": "4.3.0",
-          "System.Resources.ResourceManager": "4.3.0",
-          "System.Runtime": "4.3.0",
-          "System.Runtime.Extensions": "4.3.0",
-          "System.Runtime.Numerics": "4.3.0",
           "System.Runtime.Serialization.Formatters": "4.3.0",
           "System.Runtime.Serialization.Primitives": "4.3.0",
-          "System.Text.Encoding": "4.3.0",
-          "System.Text.Encoding.Extensions": "4.3.0",
-          "System.Text.RegularExpressions": "4.3.0",
-          "System.Threading": "4.3.0",
-          "System.Threading.Tasks": "4.3.0",
-          "System.Xml.ReaderWriter": "4.3.0",
-          "System.Xml.XDocument": "4.3.0",
           "System.Xml.XmlDocument": "4.3.0"
         },
         "compile": {
@@ -3259,6 +3268,36 @@
         },
         "runtime": {
           "lib/netstandard1.1/SQLitePCLRaw.provider.e_sqlite3.dll": {}
+        }
+      },
+      "StackExchange.Exceptional.AspNetCore/2.0.0-rc1-00187": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.AspNetCore.Hosting.Abstractions": "2.0.0",
+          "Microsoft.AspNetCore.Http.Abstractions": "2.0.0",
+          "Microsoft.Extensions.Configuration.Binder": "2.0.0",
+          "Microsoft.Extensions.Logging.Abstractions": "2.0.0",
+          "Microsoft.Extensions.Options": "2.0.0",
+          "StackExchange.Exceptional.Shared": "2.0.0-rc1-00187"
+        },
+        "compile": {
+          "lib/netstandard2.0/StackExchange.Exceptional.AspNetCore.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/StackExchange.Exceptional.AspNetCore.dll": {}
+        }
+      },
+      "StackExchange.Exceptional.Shared/2.0.0-rc1-00187": {
+        "type": "package",
+        "dependencies": {
+          "Dapper": "1.50.2",
+          "Newtonsoft.Json": "10.0.3"
+        },
+        "compile": {
+          "lib/netstandard2.0/StackExchange.Exceptional.Shared.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/StackExchange.Exceptional.Shared.dll": {}
         }
       },
       "StackExchange.Redis/1.2.6": {
@@ -5355,6 +5394,23 @@
     }
   },
   "libraries": {
+    "Dapper/1.50.2": {
+      "sha512": "6VcCiiOxVhgMwgMCuQuaff8I5IyDamrzeOjuUH1iMExh8R5TJqwkVCpwdVJGQdwSCqWsQA/PerrrK7T6mONthQ==",
+      "type": "package",
+      "path": "dapper/1.50.2",
+      "files": [
+        "dapper.1.50.2.nupkg.sha512",
+        "dapper.nuspec",
+        "lib/net40/Dapper.dll",
+        "lib/net40/Dapper.xml",
+        "lib/net45/Dapper.dll",
+        "lib/net45/Dapper.xml",
+        "lib/net451/Dapper.dll",
+        "lib/net451/Dapper.xml",
+        "lib/netstandard1.3/Dapper.dll",
+        "lib/netstandard1.3/Dapper.xml"
+      ]
+    },
     "Google.Protobuf/3.3.0": {
       "sha512": "W0TsIYM2ED9dc/FgdbdtP68vUP1JdbwaFscG3DeVtJNlfm8A/ozjAT0H3dWIk0jJd9Zcx6B7XZ1LYERF8PqqJA==",
       "type": "package",
@@ -8226,11 +8282,12 @@
         "netstandard.library.nuspec"
       ]
     },
-    "Newtonsoft.Json/10.0.1": {
-      "sha512": "ebWzW9j2nwxQeBo59As2TYn7nYr9BHicqqCwHOD1Vdo+50HBtLPuqdiCYJcLdTRknpYis/DSEOQz5KmZxwrIAg==",
+    "Newtonsoft.Json/10.0.3": {
+      "sha512": "hSXaFmh7hNCuEoC4XNY5DrRkLDzYHqPx/Ik23R4J86Z7PE/Y6YidhG602dFVdLBRSdG6xp9NabH3dXpcoxWvww==",
       "type": "package",
-      "path": "newtonsoft.json/10.0.1",
+      "path": "newtonsoft.json/10.0.3",
       "files": [
+        "LICENSE.md",
         "lib/net20/Newtonsoft.Json.dll",
         "lib/net20/Newtonsoft.Json.xml",
         "lib/net35/Newtonsoft.Json.dll",
@@ -8243,9 +8300,11 @@
         "lib/netstandard1.0/Newtonsoft.Json.xml",
         "lib/netstandard1.3/Newtonsoft.Json.dll",
         "lib/netstandard1.3/Newtonsoft.Json.xml",
-        "lib/portable-net45+win8+wpa81+wp8/Newtonsoft.Json.dll",
-        "lib/portable-net45+win8+wpa81+wp8/Newtonsoft.Json.xml",
-        "newtonsoft.json.10.0.1.nupkg.sha512",
+        "lib/portable-net40+sl5+win8+wp8+wpa81/Newtonsoft.Json.dll",
+        "lib/portable-net40+sl5+win8+wp8+wpa81/Newtonsoft.Json.xml",
+        "lib/portable-net45+win8+wp8+wpa81/Newtonsoft.Json.dll",
+        "lib/portable-net45+win8+wp8+wpa81/Newtonsoft.Json.xml",
+        "newtonsoft.json.10.0.3.nupkg.sha512",
         "newtonsoft.json.nuspec",
         "tools/install.ps1"
       ]
@@ -8662,6 +8721,36 @@
         "lib/netstandard1.1/SQLitePCLRaw.provider.e_sqlite3.dll",
         "sqlitepclraw.provider.e_sqlite3.netstandard11.1.1.7.nupkg.sha512",
         "sqlitepclraw.provider.e_sqlite3.netstandard11.nuspec"
+      ]
+    },
+    "StackExchange.Exceptional.AspNetCore/2.0.0-rc1-00187": {
+      "sha512": "HQEOcXLuEHCxEHAD0qvcxPjFb5bcST3z5yuHI/HbXoO7rguczhL0hllPdwMM5T8qV3zfjBpKe7mUkPuE1PFaaQ==",
+      "type": "package",
+      "path": "stackexchange.exceptional.aspnetcore/2.0.0-rc1-00187",
+      "files": [
+        "lib/net461/StackExchange.Exceptional.AspNetCore.dll",
+        "lib/net461/StackExchange.Exceptional.AspNetCore.pdb",
+        "lib/net461/StackExchange.Exceptional.AspNetCore.xml",
+        "lib/netstandard2.0/StackExchange.Exceptional.AspNetCore.dll",
+        "lib/netstandard2.0/StackExchange.Exceptional.AspNetCore.pdb",
+        "lib/netstandard2.0/StackExchange.Exceptional.AspNetCore.xml",
+        "stackexchange.exceptional.aspnetcore.2.0.0-rc1-00187.nupkg.sha512",
+        "stackexchange.exceptional.aspnetcore.nuspec"
+      ]
+    },
+    "StackExchange.Exceptional.Shared/2.0.0-rc1-00187": {
+      "sha512": "2k8m09+nRAmVkOy3G9KD2yPlTE/gQTGbZLHqlLZ703zHNwNSSgBLHwW8Z6+OKgk/WqRfsp1FAPyu5R52n+a04w==",
+      "type": "package",
+      "path": "stackexchange.exceptional.shared/2.0.0-rc1-00187",
+      "files": [
+        "lib/net451/StackExchange.Exceptional.Shared.dll",
+        "lib/net451/StackExchange.Exceptional.Shared.pdb",
+        "lib/net451/StackExchange.Exceptional.Shared.xml",
+        "lib/netstandard2.0/StackExchange.Exceptional.Shared.dll",
+        "lib/netstandard2.0/StackExchange.Exceptional.Shared.pdb",
+        "lib/netstandard2.0/StackExchange.Exceptional.Shared.xml",
+        "stackexchange.exceptional.shared.2.0.0-rc1-00187.nupkg.sha512",
+        "stackexchange.exceptional.shared.nuspec"
       ]
     },
     "StackExchange.Redis/1.2.6": {
@@ -13761,6 +13850,7 @@
       "NTCore.Extensions >= 1.0.0",
       "NTCore.RedisAccess >= 1.0.0",
       "NTCore.Utility >= 1.0.0",
+      "StackExchange.Exceptional.AspNetCore >= 2.0.0-rc1-00187",
       "StackExchange.Redis >= 1.2.6"
     ]
   },
@@ -13770,9 +13860,6 @@
   },
   "project": {
     "version": "1.0.0",
-    "restoreSettings": {
-      "hideWarningsAndErrors": true
-    },
     "restore": {
       "projectUniqueName": "E:\\Projects\\NTPlatform\\NTCore.WebFront\\NTCore.WebFront.csproj",
       "projectName": "NTCore.WebFront",
@@ -13800,20 +13887,20 @@
             "E:\\Projects\\NTPlatform\\NTCore.BizLogic\\NTCore.BizLogic.csproj": {
               "projectPath": "E:\\Projects\\NTPlatform\\NTCore.BizLogic\\NTCore.BizLogic.csproj"
             },
-            "E:\\Projects\\NTPlatform\\NTCore.DataModel\\NTCore.DataModel.csproj": {
-              "projectPath": "E:\\Projects\\NTPlatform\\NTCore.DataModel\\NTCore.DataModel.csproj"
-            },
             "E:\\Projects\\NTPlatform\\NTCore.DataAccess\\NTCore.DataAccess.csproj": {
               "projectPath": "E:\\Projects\\NTPlatform\\NTCore.DataAccess\\NTCore.DataAccess.csproj"
+            },
+            "E:\\Projects\\NTPlatform\\NTCore.DataModel\\NTCore.DataModel.csproj": {
+              "projectPath": "E:\\Projects\\NTPlatform\\NTCore.DataModel\\NTCore.DataModel.csproj"
             },
             "E:\\Projects\\NTPlatform\\NTCore.Extensions\\NTCore.Extensions.csproj": {
               "projectPath": "E:\\Projects\\NTPlatform\\NTCore.Extensions\\NTCore.Extensions.csproj"
             },
-            "E:\\Projects\\NTPlatform\\NTCore.Utility\\NTCore.Utility.csproj": {
-              "projectPath": "E:\\Projects\\NTPlatform\\NTCore.Utility\\NTCore.Utility.csproj"
-            },
             "E:\\Projects\\NTPlatform\\NTCore.RedisAccess\\NTCore.RedisAccess.csproj": {
               "projectPath": "E:\\Projects\\NTPlatform\\NTCore.RedisAccess\\NTCore.RedisAccess.csproj"
+            },
+            "E:\\Projects\\NTPlatform\\NTCore.Utility\\NTCore.Utility.csproj": {
+              "projectPath": "E:\\Projects\\NTPlatform\\NTCore.Utility\\NTCore.Utility.csproj"
             }
           }
         }
@@ -13827,18 +13914,6 @@
     "frameworks": {
       "netcoreapp2.0": {
         "dependencies": {
-          "MySql.Data.EntityFrameworkCore": {
-            "target": "Package",
-            "version": "8.0.8-dmr"
-          },
-          "MySql.Data": {
-            "target": "Package",
-            "version": "8.0.8-dmr"
-          },
-          "StackExchange.Redis": {
-            "target": "Package",
-            "version": "1.2.6"
-          },
           "Microsoft.NETCore.App": {
             "target": "Package",
             "version": "2.0",
@@ -13847,6 +13922,22 @@
           "Microsoft.AspNetCore.All": {
             "target": "Package",
             "version": "2.0.3"
+          },
+          "MySql.Data": {
+            "target": "Package",
+            "version": "8.0.8-dmr"
+          },
+          "MySql.Data.EntityFrameworkCore": {
+            "target": "Package",
+            "version": "8.0.8-dmr"
+          },
+          "StackExchange.Exceptional.AspNetCore": {
+            "target": "Package",
+            "version": "2.0.0-rc1-00187"
+          },
+          "StackExchange.Redis": {
+            "target": "Package",
+            "version": "1.2.6"
           }
         },
         "imports": [

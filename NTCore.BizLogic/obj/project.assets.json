@@ -2817,9 +2817,6 @@
   },
   "project": {
     "version": "1.0.0",
-    "restoreSettings": {
-      "hideWarningsAndErrors": true
-    },
     "restore": {
       "projectUniqueName": "E:\\Projects\\NTPlatform\\NTCore.BizLogic\\NTCore.BizLogic.csproj",
       "projectName": "NTCore.BizLogic",

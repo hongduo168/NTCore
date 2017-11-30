@@ -13,6 +13,7 @@
     <PackageReference Include="Microsoft.AspNetCore.All" Version="2.0.3" />
     <PackageReference Include="MySql.Data" Version="8.0.8-dmr" />
     <PackageReference Include="MySql.Data.EntityFrameworkCore" Version="8.0.8-dmr" />
+    <PackageReference Include="StackExchange.Exceptional.AspNetCore" Version="2.0.0-rc1-00187" />
     <PackageReference Include="StackExchange.Redis" Version="1.2.6" />
   </ItemGroup>
   <ItemGroup>

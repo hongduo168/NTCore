@@ -12,6 +12,7 @@ using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Logging;
 using NTCore.DataAccess;
 using NTCore.Utility;
+using StackExchange.Exceptional;
 
 // For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
 
@@ -23,6 +24,7 @@ namespace NTCore.WebFront.Controllers
     {
         public PassportController(ILogger<PassportController> logger, MainContext dbContext) : base(logger, dbContext)
         {
+            throw new AggregateException("AAAAAAAAAAAAAAAAAAAAAA");
         }
 
         public async Task<IActionResult> Login(string username, string password, string backUrl)
@@ -94,6 +96,8 @@ namespace NTCore.WebFront.Controllers
         {
             return View();
         }
+
+
 
     }
 }

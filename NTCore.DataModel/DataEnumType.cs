@@ -2,12 +2,19 @@
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Text;
+using System.Transactions;
 
 namespace NTCore.DataModel
 {
     public class DataDefine
     {
         public static readonly DateTime NullDateTime = new DateTime(1970, 1, 1);
+
+        public static TransactionOptions DefaultTransactionOptions = new TransactionOptions
+        {
+            IsolationLevel = System.Transactions.IsolationLevel.ReadUncommitted,
+            Timeout = TimeSpan.FromSeconds(20)
+        };
     }
 
     public class DataEnum

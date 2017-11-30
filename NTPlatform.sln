@@ -17,6 +17,8 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "NTCore.RedisAccess", "NTCor
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "NTCore.BizLogic", "NTCore.BizLogic\NTCore.BizLogic.csproj", "{7D42F9E8-BE7B-4E73-931B-E706D20A69FF}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "tests", "tests", "{2C2118BD-B4BB-4709-81CD-64D8A07F2463}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU

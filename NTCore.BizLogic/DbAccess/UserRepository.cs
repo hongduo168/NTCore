@@ -10,12 +10,8 @@ namespace NTCore.BizLogic.DbAccess
 {
     public class UserRepository : DbRepository<ActionRecordInfo>
     {
-        private readonly MainContext dbContext;
-
         public UserRepository(MainContext dbContext) : base(dbContext)
         {
-            this.dbContext = dbContext;
         }
-
     }
 }

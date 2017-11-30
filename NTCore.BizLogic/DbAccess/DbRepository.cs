@@ -13,10 +13,7 @@ namespace NTCore.BizLogic.DbAccess
     {
         protected readonly MainContext dbContext;
 
-        public DbRepository(MainContext dbContext)
-        {
-            this.dbContext = dbContext;
-        }
+        public DbRepository(MainContext dbContext) => this.dbContext = dbContext;
 
         public void Add(T entity, bool autoSave = true)
         {
