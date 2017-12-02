@@ -82,6 +82,9 @@ namespace NTCore.DataModel
             [Description("完成")]
             Finish = 20,
 
+            [Description("取消")]
+            Cancel = 21,
+
             [Description("反馈")]
             Feedback = 30,
         }

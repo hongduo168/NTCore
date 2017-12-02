@@ -48,7 +48,13 @@ namespace NTCore.DataModel
         [Required, DefaultValue(0), Column("data_state")]
         public EnumState DataState { get; set; }
 
-        
+        /// <summary>
+        /// 是否禁用
+        /// </summary>
+        [Required, DefaultValue(0), Column("is_disable")]
+        public EnumState IsDisable { get; set; }
+
+
         [Required, DefaultValue(0), Column("data_sort")]
         public int DataSort { get; set; }
     }

@@ -15,6 +15,9 @@ namespace NTCore.WebFront.Controllers.Api
     [Route("rooms")]
     public class RoomController : MemberBaseController
     {
+        protected RoomController(ILogger<MemberBaseController> logger, MainContext dbContext) : base(logger, dbContext)
+        {
+        }
 
         /// <summary>
         /// 所有房间
@@ -88,9 +91,5 @@ namespace NTCore.WebFront.Controllers.Api
             return resp;
         }
 
-
-        public RoomController(ILogger<MemberBaseController> logger, MainContext dbContext) : base(logger, dbContext)
-        {
-        }
     }
 }

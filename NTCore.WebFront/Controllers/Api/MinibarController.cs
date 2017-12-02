@@ -21,36 +21,21 @@ namespace NTCore.WebFront.Controllers.Api
         }
 
         /// <summary>
-        /// 
-        /// </summary>
-        /// <returns></returns>
-        // GET: api/values
-        [HttpGet]
-        public BaseReturn Get()
-        {
-            var resp = new BaseReturn();
-
-
-
-            return resp;
-        }
-
-        /// <summary>
         /// 消费记录
         /// 获取房间的minibar商品列表
         /// </summary>
         /// <param name="id"></param>
         /// <returns></returns>
-        // GET api/values/5
+        // GET api/values/0301
         [HttpGet("{id}")]
-        public BaseReturn Get(int id)
+        public BaseReturn Get(string id)
         {
             var resp = new BaseReturn();
 
-            var roomInfo = this.dbContext.HotelRoom.FirstOrDefault(x => x.Id == id && x.HotelId == this.UserInfo.HotelId);
+            var roomInfo = this.dbContext.HotelRoom.FirstOrDefault(x => x.RoomNumber == id && x.HotelId == this.UserInfo.HotelId);
             if (roomInfo != null)
             {
-                var roomMinibarInfo = this.dbContext.RoomMinibar.FirstOrDefault(x => x.RoomNumber == roomInfo.RoomNumber && x.HotelId == id);
+                var roomMinibarInfo = this.dbContext.RoomMinibar.FirstOrDefault(x => x.RoomNumber == roomInfo.RoomNumber && x.HotelId == this.UserInfo.HotelId);
                 if (roomMinibarInfo != null)
                 {
                     var products = this.dbContext.MinibarProduct.Where(x => x.MinibarId == roomMinibarInfo.MinibarId && x.HotelId == this.UserInfo.HotelId);
@@ -66,22 +51,32 @@ namespace NTCore.WebFront.Controllers.Api
             return resp;
         }
 
-        // POST api/values
+        /// <summary>
+        /// 消费记账
+        /// </summary>
+        /// <param name="value"></param>
         [HttpPost]
-        public void Post([FromBody]string value)
+        public BaseReturn Post([FromBody]string value)
         {
+            var resp = new BaseReturn();
+
+
+
+            return resp;
         }
 
-        // PUT api/values/5
-        [HttpPut("{id}")]
-        public void Put(int id, [FromBody]string value)
-        {
-        }
-
-        // DELETE api/values/5
+        /// <summary>
+        /// 取消记账
+        /// </summary>
+        /// <param name="id"></param>
         [HttpDelete("{id}")]
-        public void Delete(int id)
+        public BaseReturn Delete(int id)
         {
+            var resp = new BaseReturn();
+
+
+
+            return resp;
         }
     }
 }

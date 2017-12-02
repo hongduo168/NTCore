@@ -35,5 +35,11 @@ namespace NTCore.DataModel
         [Required, DefaultValue("getdate()"), Column("expect_time")]
         public DateTime ExpectTime { get; set; }
 
+        /// <summary>
+        /// 预计时间（秒）
+        /// </summary>
+        [Required, DefaultValue("getdate()"), Column("duration_seconds")]
+        public int DurationSeconds { get; set; }
+
     }
 }

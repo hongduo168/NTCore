@@ -31,6 +31,44 @@ namespace NTCore.WebFront.Controllers.Api
             this.hotelRoomRepository = hotelRoomRepository;
         }
 
+        /**
+         * @api {get} /assign-room/:id 获取单个房间排房信息
+         * @apiVersion 0.1.0
+         * @apiName 排房数据
+         * @apiGroup AssignRoom
+         * @apiPermission none
+         *
+         * @apiDescription Compare Verison 0.3.0 with 0.2.0 and you will see the green markers with new items in version 0.3.0 and red markers with removed items since 0.2.0.
+         *
+         * @apiParam {String} id 房间号.
+         *
+         * @apiExample Example usage:
+         * curl -i http://.../assign-room/1001
+         *
+         * @apiSuccess {Object}     room                    房间信息
+         * @apiSuccess {string}     room.roomNumber         房间号
+         * @apiSuccess {string}     room.roomTypeCode       房型
+         * @apiSuccess {string}     room.roomStatus         房态
+         * @apiSuccess {decimal}    room.coefficient        计件系数
+         * @apiSuccess {bool}       room.isCleaning         是否正在打扫
+         * @apiSuccess {bool}       room.isChecked          是否已检查
+         * @apiSuccess {bool}       room.isDueOut           是否预离
+         * @apiSuccess {bool}       room.isDueIn            是否预抵
+         * @apiSuccess {bool}       room.isRush             是否赶房
+         * @apiSuccess {bool}       room.isContradiction    是否矛盾房
+         *  
+         * @apiSuccess {Object}     assign                  排房信息.
+         * @apiSuccess {Object}     user                    用户信息.
+         *
+         *
+         * @apiErrorExample Response (example):
+         *     HTTP/1.1
+         *     {
+         *       "isError": true,
+         *       "data": null,
+         *       "message": ""
+         *     }
+         */
         /// <summary>
         /// 获取单个房间排房信息
         /// </summary>
