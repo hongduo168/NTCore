@@ -1,0 +1,16 @@
+
+-----------------------------------------
+
+time:2017-12-05 19:18:28,833 
+level:INFO 
+logger:Microsoft.AspNetCore.Hosting.Internal.WebHost
+file:? line? 
+content:Request starting HTTP/1.1 GET http://localhost:57942/passport/auto-login  
+
+-----------------------------------------
+
+time:2017-12-05 19:18:29,028 
+level:INFO 
+logger:Microsoft.AspNetCore.Authentication.Cookies.CookieAuthenticationHandler
+file:? line? 
+content:AuthenticationScheme: AuthenticationScheme was successfully authenticated.

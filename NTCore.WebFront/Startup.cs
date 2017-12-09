@@ -46,7 +46,6 @@ namespace NTCore.WebFront
         // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
         {
-            services.AddLocalization(options => options.ResourcesPath = "Resources");
 
             var connection = Configuration.GetConnectionString("SqlServer");
             services.AddEntityFrameworkSqlServer().AddDbContext<MainContext>(options => options.UseSqlServer(connection, b => b.MigrationsAssembly("NTCore.WebFront")));
@@ -97,18 +96,7 @@ namespace NTCore.WebFront
                 //options.SerializerSettings.ContractResolver = new DefaultContractResolver();
                 //设置时间格式
                 options.SerializerSettings.DateFormatString = "yyyy-MM-dd HH:mm:ss";
-            }).AddViewLocalization(LanguageViewLocationExpanderFormat.Suffix);
-            services.Configure<RequestLocalizationOptions>(
-                opts =>
-                {
-                    var supportedCultures = new List<CultureInfo>
-                    {
-                        new CultureInfo("en-US"),
-                        new CultureInfo("zh-CN")
-                    };
-                    opts.SupportedCultures = supportedCultures;
-                    opts.SupportedUICultures = supportedCultures;
-                });
+            });
 
             //Exceptional
             services.AddExceptional(Configuration.GetSection("Exceptional"), settings =>
@@ -130,8 +118,6 @@ namespace NTCore.WebFront
             //{
             //    app.UseDeveloperExceptionPage();
             //}
-            var requestLocalizationOptions = app.ApplicationServices.GetService<IOptions<RequestLocalizationOptions>>().Value;
-            app.UseRequestLocalization(requestLocalizationOptions);
 
             app.UseExceptional();
             app.UseStaticFiles();

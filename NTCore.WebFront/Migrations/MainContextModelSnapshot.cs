@@ -45,6 +45,9 @@ namespace NTCore.WebFront.Migrations
                     b.Property<int>("HotelId")
                         .HasColumnName("hotel_id");
 
+                    b.Property<int>("IsDisable")
+                        .HasColumnName("is_disable");
+
                     b.Property<string>("Text")
                         .IsRequired()
                         .HasColumnName("content_text")
@@ -99,6 +102,9 @@ namespace NTCore.WebFront.Migrations
                     b.Property<int>("HotelId")
                         .HasColumnName("hotel_id");
 
+                    b.Property<int>("IsDisable")
+                        .HasColumnName("is_disable");
+
                     b.Property<string>("RoomNumber")
                         .IsRequired()
                         .HasColumnName("room_number")
@@ -146,6 +152,9 @@ namespace NTCore.WebFront.Migrations
 
                     b.Property<int>("HotelId")
                         .HasColumnName("hotel_id");
+
+                    b.Property<int>("IsDisable")
+                        .HasColumnName("is_disable");
 
                     b.Property<string>("RoomNumber")
                         .IsRequired()
@@ -206,6 +215,9 @@ namespace NTCore.WebFront.Migrations
                     b.Property<int>("HotelId")
                         .HasColumnName("hotel_id");
 
+                    b.Property<int>("IsDisable")
+                        .HasColumnName("is_disable");
+
                     b.Property<int>("RelationId")
                         .HasColumnName("relation_id");
 
@@ -247,6 +259,9 @@ namespace NTCore.WebFront.Migrations
                     b.Property<int>("DataType")
                         .HasColumnName("data_type");
 
+                    b.Property<int>("DurationSeconds")
+                        .HasColumnName("duration_seconds");
+
                     b.Property<DateTime>("ExpectTime")
                         .HasColumnName("expect_time");
 
@@ -255,6 +270,9 @@ namespace NTCore.WebFront.Migrations
 
                     b.Property<int>("HotelId")
                         .HasColumnName("hotel_id");
+
+                    b.Property<int>("IsDisable")
+                        .HasColumnName("is_disable");
 
                     b.Property<string>("MessageText")
                         .IsRequired()
@@ -305,6 +323,9 @@ namespace NTCore.WebFront.Migrations
 
                     b.Property<int>("HotelId")
                         .HasColumnName("hotel_id");
+
+                    b.Property<int>("IsDisable")
+                        .HasColumnName("is_disable");
 
                     b.Property<int>("Quantity")
                         .HasColumnName("quantity");
@@ -374,6 +395,9 @@ namespace NTCore.WebFront.Migrations
                         .HasColumnType("varchar(255)")
                         .HasMaxLength(255);
 
+                    b.Property<int>("IsDisable")
+                        .HasColumnName("is_disable");
+
                     b.Property<int>("ProductId")
                         .HasColumnName("product_id");
 
@@ -408,6 +432,9 @@ namespace NTCore.WebFront.Migrations
 
                     b.Property<int>("HotelId")
                         .HasColumnName("hotel_id");
+
+                    b.Property<int>("IsDisable")
+                        .HasColumnName("is_disable");
 
                     b.Property<int>("RoleName")
                         .HasColumnName("role_name");
@@ -462,6 +489,9 @@ namespace NTCore.WebFront.Migrations
                         .HasColumnName("is_contradiction")
                         .HasColumnType("bit")
                         .HasMaxLength(30);
+
+                    b.Property<int>("IsDisable")
+                        .HasColumnName("is_disable");
 
                     b.Property<bool>("IsDueIn")
                         .HasColumnName("is_due_in")
@@ -555,6 +585,9 @@ namespace NTCore.WebFront.Migrations
                     b.Property<int>("HotelId")
                         .HasColumnName("hotel_id");
 
+                    b.Property<int>("IsDisable")
+                        .HasColumnName("is_disable");
+
                     b.Property<DateTime>("UpdateTime")
                         .HasColumnName("update_time");
 
@@ -586,6 +619,9 @@ namespace NTCore.WebFront.Migrations
 
                     b.Property<int>("HotelId")
                         .HasColumnName("hotel_id");
+
+                    b.Property<int>("IsDisable")
+                        .HasColumnName("is_disable");
 
                     b.Property<int>("RoleId")
                         .HasColumnName("roleid");
@@ -625,6 +661,9 @@ namespace NTCore.WebFront.Migrations
                     b.Property<int>("HotelId")
                         .HasColumnName("hotel_id");
 
+                    b.Property<int>("IsDisable")
+                        .HasColumnName("is_disable");
+
                     b.Property<string>("MessageText")
                         .IsRequired()
                         .HasColumnName("template_text")
@@ -661,6 +700,9 @@ namespace NTCore.WebFront.Migrations
 
                     b.Property<int>("HotelId")
                         .HasColumnName("hotel_id");
+
+                    b.Property<int>("IsDisable")
+                        .HasColumnName("is_disable");
 
                     b.Property<int>("MessageCenterId")
                         .HasColumnName("message_center_id");
@@ -705,6 +747,9 @@ namespace NTCore.WebFront.Migrations
 
                     b.Property<int>("HotelId")
                         .HasColumnName("hotel_id");
+
+                    b.Property<int>("IsDisable")
+                        .HasColumnName("is_disable");
 
                     b.Property<string>("TemplateName")
                         .IsRequired()
@@ -755,6 +800,9 @@ namespace NTCore.WebFront.Migrations
                     b.Property<bool>("IsClosed")
                         .HasColumnName("is_closed");
 
+                    b.Property<int>("IsDisable")
+                        .HasColumnName("is_disable");
+
                     b.Property<string>("RoomNumber")
                         .IsRequired()
                         .HasColumnName("room_number")
@@ -796,6 +844,9 @@ namespace NTCore.WebFront.Migrations
 
                     b.Property<int>("HotelId")
                         .HasColumnName("hotel_id");
+
+                    b.Property<int>("IsDisable")
+                        .HasColumnName("is_disable");
 
                     b.Property<int>("MinibarConsumeId")
                         .HasColumnName("minibar_consume_id");
@@ -841,6 +892,9 @@ namespace NTCore.WebFront.Migrations
 
                     b.Property<int>("HotelId")
                         .HasColumnName("hotel_id");
+
+                    b.Property<int>("IsDisable")
+                        .HasColumnName("is_disable");
 
                     b.Property<int>("MinibarId")
                         .HasColumnName("minibar_id");
@@ -902,6 +956,9 @@ namespace NTCore.WebFront.Migrations
                     b.Property<int>("HotelId")
                         .HasColumnName("hotel_id");
 
+                    b.Property<int>("IsDisable")
+                        .HasColumnName("is_disable");
+
                     b.Property<string>("MinibarName")
                         .IsRequired()
                         .HasColumnName("minibar_name")
@@ -948,6 +1005,9 @@ namespace NTCore.WebFront.Migrations
 
                     b.Property<int>("DataState")
                         .HasColumnName("data_state");
+
+                    b.Property<int>("IsDisable")
+                        .HasColumnName("is_disable");
 
                     b.Property<string>("ProductName")
                         .IsRequired()
@@ -1002,6 +1062,9 @@ namespace NTCore.WebFront.Migrations
                     b.Property<int>("HotelId")
                         .HasColumnName("hotel_id");
 
+                    b.Property<int>("IsDisable")
+                        .HasColumnName("is_disable");
+
                     b.Property<int>("ParentId")
                         .HasColumnName("parent_id");
 
@@ -1042,6 +1105,9 @@ namespace NTCore.WebFront.Migrations
 
                     b.Property<int>("HotelId")
                         .HasColumnName("hotel_id");
+
+                    b.Property<int>("IsDisable")
+                        .HasColumnName("is_disable");
 
                     b.Property<int>("MinibarId")
                         .HasColumnName("minibar_id")
@@ -1084,6 +1150,9 @@ namespace NTCore.WebFront.Migrations
 
                     b.Property<int>("HotelId")
                         .HasColumnName("hotel_id");
+
+                    b.Property<int>("IsDisable")
+                        .HasColumnName("is_disable");
 
                     b.Property<int>("MinibarProductId")
                         .HasColumnName("minibar_product_id");
@@ -1139,6 +1208,9 @@ namespace NTCore.WebFront.Migrations
                     b.Property<int>("HotelId")
                         .HasColumnName("hotel_id");
 
+                    b.Property<int>("IsDisable")
+                        .HasColumnName("is_disable");
+
                     b.Property<DateTime>("UpdateTime")
                         .HasColumnName("update_time");
 
@@ -1173,6 +1245,9 @@ namespace NTCore.WebFront.Migrations
 
                     b.Property<int>("HotelId")
                         .HasColumnName("hotel_id");
+
+                    b.Property<int>("IsDisable")
+                        .HasColumnName("is_disable");
 
                     b.Property<DateTime>("UpdateTime")
                         .HasColumnName("update_time");
@@ -1233,6 +1308,9 @@ namespace NTCore.WebFront.Migrations
                     b.Property<int>("HotelId")
                         .HasColumnName("hotel_id");
 
+                    b.Property<int>("IsDisable")
+                        .HasColumnName("is_disable");
+
                     b.Property<string>("MobileNumber")
                         .IsRequired()
                         .HasColumnName("mobile_number")
@@ -1290,6 +1368,9 @@ namespace NTCore.WebFront.Migrations
 
                     b.Property<int>("HotelId")
                         .HasColumnName("hotel_id");
+
+                    b.Property<int>("IsDisable")
+                        .HasColumnName("is_disable");
 
                     b.Property<string>("MobileNumber")
                         .IsRequired()
@@ -1352,6 +1433,9 @@ namespace NTCore.WebFront.Migrations
 
                     b.Property<int>("HotelId")
                         .HasColumnName("hotel_id");
+
+                    b.Property<int>("IsDisable")
+                        .HasColumnName("is_disable");
 
                     b.Property<int>("ShowDayType")
                         .HasColumnName("show_day_type");
@@ -1422,6 +1506,9 @@ namespace NTCore.WebFront.Migrations
                     b.Property<bool>("IsChecked")
                         .HasColumnName("is_checked");
 
+                    b.Property<int>("IsDisable")
+                        .HasColumnName("is_disable");
+
                     b.Property<string>("MessageText")
                         .IsRequired()
                         .HasColumnName("message_text")
@@ -1489,6 +1576,9 @@ namespace NTCore.WebFront.Migrations
 
                     b.Property<int>("HotelId")
                         .HasColumnName("hotel_id");
+
+                    b.Property<int>("IsDisable")
+                        .HasColumnName("is_disable");
 
                     b.Property<int>("StepType")
                         .HasColumnName("step_type");

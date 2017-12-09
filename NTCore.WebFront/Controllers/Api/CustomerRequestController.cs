@@ -7,13 +7,14 @@ using Microsoft.Extensions.Logging;
 using NTCore.DataAccess;
 using NTCore.WebFront.Model;
 using NTCore.WebFront.Model.Api;
+using NTCore.BizLogic.NTAttribute;
 
 namespace NTCore.WebFront.Controllers.Api
 {
     /// <summary>
     /// 客需
     /// </summary>
-    [Route("customer-request")]
+    [Route("customer-request"), Permission("customer-request", "客需相关")]
     public class CustomerRequestController : MemberBaseController
     {
         protected CustomerRequestController(ILogger<MemberBaseController> logger, MainContext dbContext) : base(logger, dbContext)
@@ -27,7 +28,7 @@ namespace NTCore.WebFront.Controllers.Api
         /// </summary>
         /// <param name="id"></param>
         /// <returns></returns>
-        [HttpGet]
+        [HttpGet, Permission("customer-request-get", "客需列表", typeof(CustomerRequestController))]
         public BaseReturn Get()
         {
             var resp = new BaseReturn(false);
@@ -53,7 +54,7 @@ namespace NTCore.WebFront.Controllers.Api
         /// 新增客需
         /// </summary>
         /// <returns></returns>
-        [HttpPost]
+        [HttpPost, Permission("customer-request-post", "新增客需", typeof(CustomerRequestController))]
         public BaseReturn Post([FromBody]CustomerRequestPostInfo info)
         {
             var resp = new BaseReturn();
@@ -69,7 +70,7 @@ namespace NTCore.WebFront.Controllers.Api
         /// </summary>
         /// <param name="id"></param>
         /// <returns></returns>
-        [HttpPut("{id}")]
+        [HttpPut("{id}"), Permission("customer-request-put", "更新客需", typeof(CustomerRequestController))]
         public BaseReturn Put(string id)
         {
             var resp = new BaseReturn();
@@ -81,11 +82,11 @@ namespace NTCore.WebFront.Controllers.Api
         }
 
         /// <summary>
-        /// 修改客需
+        /// 关闭客需
         /// </summary>
         /// <param name="id"></param>
         /// <returns></returns>
-        [HttpDelete("{id}")]
+        [HttpDelete("{id}"), Permission("customer-request-close", "关闭客需", typeof(CustomerRequestController))]
         public BaseReturn Delete(string id)
         {
             var resp = new BaseReturn();

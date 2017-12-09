@@ -19,8 +19,8 @@ namespace NTCore.DataModel
 
         [Required(AllowEmptyStrings = true), DefaultValue(""), Column("nickname"), MaxLength(50)]
         public string Nickname { get; set; }
-
-        [Required(AllowEmptyStrings = true), DefaultValue(""), Column("avatar", TypeName = "varchar(255)"), MaxLength(255)]
+        
+        [Required(AllowEmptyStrings = true), DefaultValue(""), Column("avatar", TypeName = "varchar(255)"), MaxLength(255), SqlDefaultValue]
         public string Avatar { get; set; }
 
         [Required(AllowEmptyStrings = true), DefaultValue(""), Column("mobile_number", TypeName = "varchar(30)"), MaxLength(30)]

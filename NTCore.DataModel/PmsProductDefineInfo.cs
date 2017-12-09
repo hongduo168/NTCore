@@ -22,7 +22,16 @@ namespace NTCore.DataModel
         [Required(AllowEmptyStrings = true), DefaultValue(""), Column("source", TypeName = "nvarchar(30)"), MaxLength(30)]
         public string Source { get; set; }
 
-        [Required(AllowEmptyStrings = true), DefaultValue(""), Column("token", TypeName = "nvarchar(64)"), MaxLength(64)]
+        /// <summary>
+        /// 入账代码
+        /// </summary>
+        [Required(AllowEmptyStrings = true), DefaultValue(""), Column("rransfer_code", TypeName = "varchar(64)"), MaxLength(64)]
+        public string TransferCode { get; set; }
+
+        /// <summary>
+        /// Token
+        /// </summary>
+        [Required(AllowEmptyStrings = true), DefaultValue(""), Column("token", TypeName = "varchar(64)"), MaxLength(64)]
         public string Token { get; set; }
 
         /// <summary>

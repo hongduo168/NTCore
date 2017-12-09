@@ -13,4 +13,12 @@ namespace NTCore.WebFront.Model
         {
         }
     }
+
+    public class BaseReturn<T> : ReturnValue<T> where T : class, new()
+    {
+        public BaseReturn(bool isError = true, string message = "", T data = null) : base(isError, message, data)
+        {
+        }
+    }
+
 }

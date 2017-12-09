@@ -23,6 +23,7 @@
 
   <ItemGroup>
     <ProjectReference Include="..\NTCore.BizLogic\NTCore.BizLogic.csproj" />
+    <ProjectReference Include="..\NTCore.Controller\NTCore.Controller.csproj" />
     <ProjectReference Include="..\NTCore.DataAccess\NTCore.DataAccess.csproj" />
     <ProjectReference Include="..\NTCore.DataModel\NTCore.DataModel.csproj" />
     <ProjectReference Include="..\NTCore.Extensions\NTCore.Extensions.csproj" />

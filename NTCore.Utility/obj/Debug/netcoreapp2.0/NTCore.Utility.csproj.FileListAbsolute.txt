@@ -26,3 +26,4 @@ E:\Projects\NTPlatform\NTCore.Utility\obj\Debug\netcoreapp2.0\NTCore.Utility.dll
 E:\Projects\NTPlatform\NTCore.Utility\obj\Debug\netcoreapp2.0\NTCore.Utility.pdb
 E:\Projects\NTPlatform\NTCore.Utility\bin\Debug\netcoreapp2.0\Microsoft.Extensions.Caching.Memory.dll
 E:\Projects\NTPlatform\NTCore.Utility\bin\Debug\netcoreapp2.0\Microsoft.Extensions.Caching.Memory.xml
+E:\Projects\NTPlatform\NTCore.Utility\obj\Debug\netcoreapp2.0\NTCore.Utility.csprojResolveAssemblyReference.cache

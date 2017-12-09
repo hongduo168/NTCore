@@ -1,0 +1,8 @@
+
+-----------------------------------------
+
+time:2017-12-04 15:18:35,143 
+level:INFO 
+logger:Microsoft.EntityFrameworkCore.Infrastructure
+file:? line? 
+content:Entity Framework Core 2.0.1-rtm-125 initialized 'MainContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: MigrationsAssembly=NTCore.WebFront 

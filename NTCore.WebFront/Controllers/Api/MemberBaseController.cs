@@ -11,7 +11,7 @@ using NTCore.DataModel;
 
 namespace NTCore.WebFront.Controllers.Api
 {
-    public class MemberBaseController : Controller
+    public class MemberBaseController : Microsoft.AspNetCore.Mvc.Controller
     {
         protected ILogger<MemberBaseController> logger;
         protected MainContext dbContext;
