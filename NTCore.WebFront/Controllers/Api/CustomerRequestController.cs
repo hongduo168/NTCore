@@ -33,7 +33,7 @@ namespace NTCore.WebFront.Controllers.Api
         {
             var resp = new BaseReturn(false);
 
-            var supply = this.dbContext.HotelSupplyDefine.Where(x => x.HotelId == this.UserInfo.HotelId && x.DataType == DataModel.DataEnum.CustomerRequestDefineType.CustomerRequest).ToList();
+            var supply = this.dbContext.HotelSupplyDefine.Where(x => x.HotelId == this.UserInfo.HotelId && x.SupplyType == DataModel.DataEnum.CustomerRequestDefineType.CustomerRequest).ToList();
             var request = this.dbContext.CustomerRequest.Where(x => x.HotelId == this.UserInfo.HotelId &&
                 (x.CreateTime > DateTime.Now.AddDays(-CustomerRequestDays) || (x.FinishStatus != DataModel.DataEnum.CustomerRequestFinishStatus.Finish && x.FinishStatus != DataModel.DataEnum.CustomerRequestFinishStatus.Cancel))).ToList();
 

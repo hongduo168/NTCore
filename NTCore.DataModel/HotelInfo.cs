@@ -30,5 +30,19 @@ namespace NTCore.DataModel
 
         [Required(AllowEmptyStrings = true), DefaultValue(""), Column("appkey", TypeName = "varchar(50)"), MaxLength(50)]
         public string Appkey { get; set; }
+
+        /// <summary>
+        /// 入账代码
+        /// </summary>
+        [Required(AllowEmptyStrings = true), DefaultValue(""), Column("transfer_code", TypeName = "varchar(64)"), MaxLength(64)]
+        public string TransferCode { get; set; }
+
+
+        /// <summary>
+        /// 假房房号
+        /// </summary>
+        [Required(AllowEmptyStrings = true), DefaultValue(""), Column("pseudo_number", TypeName = "varchar(30)"), MaxLength(30)]
+        public string PseudoNumber { get; set; }
+
     }
 }

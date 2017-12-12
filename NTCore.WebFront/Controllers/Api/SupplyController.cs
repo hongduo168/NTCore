@@ -43,7 +43,7 @@ namespace NTCore.WebFront.Controllers.Api
         {
             var resp = new BaseReturn(false);
 
-            resp.Data = this.dbContext.HotelSupplyDefine.Where(x => x.HotelId == this.UserInfo.HotelId && x.DataType == (DataModel.DataEnum.CustomerRequestDefineType)id).ToList();
+            resp.Data = this.dbContext.HotelSupplyDefine.Where(x => x.HotelId == this.UserInfo.HotelId && x.SupplyType == (DataModel.DataEnum.CustomerRequestDefineType)id).ToList();
 
             return resp;
         }

@@ -5323,6 +5323,19 @@
           "bin/placeholder/NTCore.BizLogic.dll": {}
         }
       },
+      "NTCore.Controller/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v2.0",
+        "dependencies": {
+          "Microsoft.NETCore.App": "2.0.0"
+        },
+        "compile": {
+          "bin/placeholder/NTCore.Controller.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/NTCore.Controller.dll": {}
+        }
+      },
       "NTCore.DataAccess/1.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v2.0",
@@ -13812,6 +13825,11 @@
       "path": "../NTCore.BizLogic/NTCore.BizLogic.csproj",
       "msbuildProject": "../NTCore.BizLogic/NTCore.BizLogic.csproj"
     },
+    "NTCore.Controller/1.0.0": {
+      "type": "project",
+      "path": "../NTCore.Controller/NTCore.Controller.csproj",
+      "msbuildProject": "../NTCore.Controller/NTCore.Controller.csproj"
+    },
     "NTCore.DataAccess/1.0.0": {
       "type": "project",
       "path": "../NTCore.DataAccess/NTCore.DataAccess.csproj",
@@ -13845,6 +13863,7 @@
       "MySql.Data >= 8.0.8-dmr",
       "MySql.Data.EntityFrameworkCore >= 8.0.8-dmr",
       "NTCore.BizLogic >= 1.0.0",
+      "NTCore.Controller >= 1.0.0",
       "NTCore.DataAccess >= 1.0.0",
       "NTCore.DataModel >= 1.0.0",
       "NTCore.Extensions >= 1.0.0",
@@ -13898,6 +13917,9 @@
             },
             "E:\\Projects\\NTPlatform\\NTCore.Extensions\\NTCore.Extensions.csproj": {
               "projectPath": "E:\\Projects\\NTPlatform\\NTCore.Extensions\\NTCore.Extensions.csproj"
+            },
+            "E:\\Projects\\NTPlatform\\NTCore.Controller\\NTCore.Controller.csproj": {
+              "projectPath": "E:\\Projects\\NTPlatform\\NTCore.Controller\\NTCore.Controller.csproj"
             },
             "E:\\Projects\\NTPlatform\\NTCore.Utility\\NTCore.Utility.csproj": {
               "projectPath": "E:\\Projects\\NTPlatform\\NTCore.Utility\\NTCore.Utility.csproj"
