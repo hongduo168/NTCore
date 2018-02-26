@@ -16,3 +16,12 @@ D:\Projects\NTPlatform\NTCore.RedisAccess\obj\Debug\netcoreapp2.0\NTCore.RedisAc
 D:\Projects\NTPlatform\NTCore.RedisAccess\obj\Debug\netcoreapp2.0\NTCore.RedisAccess.AssemblyInfo.cs
 D:\Projects\NTPlatform\NTCore.RedisAccess\obj\Debug\netcoreapp2.0\NTCore.RedisAccess.dll
 D:\Projects\NTPlatform\NTCore.RedisAccess\obj\Debug\netcoreapp2.0\NTCore.RedisAccess.pdb
+E:\NTCore\NTCore.RedisAccess\bin\Debug\netcoreapp2.0\NTCore.RedisAccess.deps.json
+E:\NTCore\NTCore.RedisAccess\bin\Debug\netcoreapp2.0\NTCore.RedisAccess.dll
+E:\NTCore\NTCore.RedisAccess\bin\Debug\netcoreapp2.0\NTCore.RedisAccess.pdb
+E:\NTCore\NTCore.RedisAccess\obj\Debug\netcoreapp2.0\NTCore.RedisAccess.csprojResolveAssemblyReference.cache
+E:\NTCore\NTCore.RedisAccess\obj\Debug\netcoreapp2.0\NTCore.RedisAccess.csproj.CoreCompileInputs.cache
+E:\NTCore\NTCore.RedisAccess\obj\Debug\netcoreapp2.0\NTCore.RedisAccess.AssemblyInfoInputs.cache
+E:\NTCore\NTCore.RedisAccess\obj\Debug\netcoreapp2.0\NTCore.RedisAccess.AssemblyInfo.cs
+E:\NTCore\NTCore.RedisAccess\obj\Debug\netcoreapp2.0\NTCore.RedisAccess.dll
+E:\NTCore\NTCore.RedisAccess\obj\Debug\netcoreapp2.0\NTCore.RedisAccess.pdb
