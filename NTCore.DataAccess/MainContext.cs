@@ -12,7 +12,7 @@ namespace NTCore.DataAccess
         }
 
         public DbSet<UserInfo> User { get; set; }
-        public DbSet<HotelInfo> Hotel { get; set; }
+        public DbSet<SiteInfo> Hotel { get; set; }
 
 
 

@@ -23,14 +23,14 @@ namespace NTCore.DataModel
         /// 创建时间
         /// </summary>
         //[DataMember(Name = "create_time", EmitDefaultValue = true)]
-        [Required, DefaultValue("getdate()"), Column("create_time")]
+        [Required, DefaultValue(DataEnum.DbDefaultDatetime), Column("create_time")]
         public DateTime CreateTime { get; set; }
 
         /// <summary>
         /// 更新时间
         /// </summary>
         //[DataMember(Name = "update_time")]
-        [Required, DefaultValue("getdate()"), Column("update_time")]
+        [Required, DefaultValue(DataEnum.DbDefaultDatetime), Column("update_time")]
 
         public DateTime UpdateTime { get; set; }
 
@@ -46,19 +46,19 @@ namespace NTCore.DataModel
         /// </summary>
         //[DataMember(Name = "data_state", EmitDefaultValue = true)]
         [Required, DefaultValue(0), Column("data_state")]
-        public EnumState DataState { get; set; }
+        public DataStateType DataState { get; set; }
     }
 
-    public partial class HotelEntity : BaseEntity
+    public partial class SiteEntity : BaseEntity
     {
-        [Required, DefaultValue(0), Column("hotel_id")]
-        public int HotelId { get; set; }
+        [Required, DefaultValue(0), Column("site_id")]
+        public int SiteId { get; set; }
     }
 
     /// <summary>
     /// 状态
     /// </summary>
-    public enum EnumState
+    public enum DataStateType
     {
         /// <summary>
         /// 删除

@@ -9,7 +9,7 @@ using System.Text;
 namespace NTCore.DataModel
 {
     [Table("user")]
-    public class UserInfo : HotelEntity
+    public class UserInfo : SiteEntity
     {
         [Required(AllowEmptyStrings = true), DefaultValue(""), Column("username", TypeName = "varchar(50)"), MaxLength(50)]
         public string Username { get; set; }

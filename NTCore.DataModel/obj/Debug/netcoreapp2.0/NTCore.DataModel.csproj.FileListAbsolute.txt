@@ -16,3 +16,12 @@ D:\Projects\NTPlatform\NTCore.DataModel\obj\Debug\netcoreapp2.0\NTCore.DataModel
 D:\Projects\NTPlatform\NTCore.DataModel\obj\Debug\netcoreapp2.0\NTCore.DataModel.AssemblyInfo.cs
 D:\Projects\NTPlatform\NTCore.DataModel\obj\Debug\netcoreapp2.0\NTCore.DataModel.dll
 D:\Projects\NTPlatform\NTCore.DataModel\obj\Debug\netcoreapp2.0\NTCore.DataModel.pdb
+E:\NTCore\NTCore.DataModel\obj\Debug\netcoreapp2.0\NTCore.DataModel.csprojResolveAssemblyReference.cache
+E:\NTCore\NTCore.DataModel\obj\Debug\netcoreapp2.0\NTCore.DataModel.csproj.CoreCompileInputs.cache
+E:\NTCore\NTCore.DataModel\obj\Debug\netcoreapp2.0\NTCore.DataModel.AssemblyInfoInputs.cache
+E:\NTCore\NTCore.DataModel\obj\Debug\netcoreapp2.0\NTCore.DataModel.AssemblyInfo.cs
+E:\NTCore\NTCore.DataModel\obj\Debug\netcoreapp2.0\NTCore.DataModel.dll
+E:\NTCore\NTCore.DataModel\obj\Debug\netcoreapp2.0\NTCore.DataModel.pdb
+E:\NTCore\NTCore.DataModel\bin\Debug\netcoreapp2.0\NTCore.DataModel.deps.json
+E:\NTCore\NTCore.DataModel\bin\Debug\netcoreapp2.0\NTCore.DataModel.dll
+E:\NTCore\NTCore.DataModel\bin\Debug\netcoreapp2.0\NTCore.DataModel.pdb
