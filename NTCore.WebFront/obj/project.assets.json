@@ -5210,6 +5210,9 @@
       "NTCore.Utility/1.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v2.0",
+        "dependencies": {
+          "Microsoft.Extensions.Caching.Memory": "2.0.0"
+        },
         "compile": {
           "bin/placeholder/NTCore.Utility.dll": {}
         },
@@ -13530,6 +13533,7 @@
   "projectFileDependencyGroups": {
     ".NETCoreApp,Version=v2.0": [
       "Microsoft.AspNetCore.All >= 2.0.5",
+      "Microsoft.Extensions.Caching.Memory >= 2.0.0",
       "Microsoft.NETCore.App >= 2.0.0",
       "MySql.Data >= 8.0.10-rc",
       "MySql.Data.EntityFrameworkCore >= 8.0.10-rc",
@@ -13596,6 +13600,10 @@
           "Microsoft.AspNetCore.All": {
             "target": "Package",
             "version": "[2.0.5, )"
+          },
+          "Microsoft.Extensions.Caching.Memory": {
+            "target": "Package",
+            "version": "[2.0.0, )"
           },
           "Microsoft.NETCore.App": {
             "target": "Package",

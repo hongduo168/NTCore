@@ -2973,6 +2973,9 @@
       "NTCore.Utility/1.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v2.0",
+        "dependencies": {
+          "Microsoft.Extensions.Caching.Memory": "2.0.0"
+        },
         "compile": {
           "bin/placeholder/NTCore.Utility.dll": {}
         },

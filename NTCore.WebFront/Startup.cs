@@ -59,6 +59,7 @@ namespace NTCore.WebFront
 
             //services.AddSingleton()
             services.AddHttpContextAccessor();
+            services.AddMemoryCache();
             services.AddMvc(options =>
             {
                 options.Filters.Add(typeof(ValidationFilter));

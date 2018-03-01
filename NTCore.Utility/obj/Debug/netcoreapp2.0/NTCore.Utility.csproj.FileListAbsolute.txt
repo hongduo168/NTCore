@@ -18,9 +18,9 @@ D:\Projects\NTPlatform\NTCore.Utility\obj\Debug\netcoreapp2.0\NTCore.Utility.pdb
 E:\NTCore\NTCore.Utility\bin\Debug\netcoreapp2.0\NTCore.Utility.deps.json
 E:\NTCore\NTCore.Utility\bin\Debug\netcoreapp2.0\NTCore.Utility.dll
 E:\NTCore\NTCore.Utility\bin\Debug\netcoreapp2.0\NTCore.Utility.pdb
-E:\NTCore\NTCore.Utility\obj\Debug\netcoreapp2.0\NTCore.Utility.csprojResolveAssemblyReference.cache
 E:\NTCore\NTCore.Utility\obj\Debug\netcoreapp2.0\NTCore.Utility.csproj.CoreCompileInputs.cache
 E:\NTCore\NTCore.Utility\obj\Debug\netcoreapp2.0\NTCore.Utility.AssemblyInfoInputs.cache
 E:\NTCore\NTCore.Utility\obj\Debug\netcoreapp2.0\NTCore.Utility.AssemblyInfo.cs
 E:\NTCore\NTCore.Utility\obj\Debug\netcoreapp2.0\NTCore.Utility.dll
 E:\NTCore\NTCore.Utility\obj\Debug\netcoreapp2.0\NTCore.Utility.pdb
+E:\NTCore\NTCore.Utility\obj\Debug\netcoreapp2.0\NTCore.Utility.csprojResolveAssemblyReference.cache
