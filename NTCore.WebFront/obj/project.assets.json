@@ -13570,6 +13570,9 @@
   },
   "project": {
     "version": "1.0.0",
+    "restoreSettings": {
+      "hideWarningsAndErrors": true
+    },
     "restore": {
       "projectUniqueName": "E:\\NTCore\\NTCore.WebFront\\NTCore.WebFront.csproj",
       "projectName": "NTCore.WebFront",
@@ -13594,20 +13597,20 @@
       "frameworks": {
         "netcoreapp2.0": {
           "projectReferences": {
-            "E:\\NTCore\\NTCore.BizLogic\\NTCore.BizLogic.csproj": {
-              "projectPath": "E:\\NTCore\\NTCore.BizLogic\\NTCore.BizLogic.csproj"
-            },
             "E:\\NTCore\\NTCore.DataAccess\\NTCore.DataAccess.csproj": {
               "projectPath": "E:\\NTCore\\NTCore.DataAccess\\NTCore.DataAccess.csproj"
+            },
+            "E:\\NTCore\\NTCore.RedisAccess\\NTCore.RedisAccess.csproj": {
+              "projectPath": "E:\\NTCore\\NTCore.RedisAccess\\NTCore.RedisAccess.csproj"
             },
             "E:\\NTCore\\NTCore.DataModel\\NTCore.DataModel.csproj": {
               "projectPath": "E:\\NTCore\\NTCore.DataModel\\NTCore.DataModel.csproj"
             },
+            "E:\\NTCore\\NTCore.BizLogic\\NTCore.BizLogic.csproj": {
+              "projectPath": "E:\\NTCore\\NTCore.BizLogic\\NTCore.BizLogic.csproj"
+            },
             "E:\\NTCore\\NTCore.Extensions\\NTCore.Extensions.csproj": {
               "projectPath": "E:\\NTCore\\NTCore.Extensions\\NTCore.Extensions.csproj"
-            },
-            "E:\\NTCore\\NTCore.RedisAccess\\NTCore.RedisAccess.csproj": {
-              "projectPath": "E:\\NTCore\\NTCore.RedisAccess\\NTCore.RedisAccess.csproj"
             }
           }
         }

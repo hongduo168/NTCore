@@ -67,17 +67,7 @@ namespace NTCore.WebFront.Controllers
         [HttpPost]
         public ReturnValue<object> Post([FromBody]string value)
         {
-            var o = this.dbContext.Article.FirstOrDefault(x => x.ChannelId == int.Parse(value));
             var rm = new ReturnValue<object>(null);
-            if (o == null)
-            {
-                rm.ErrorCode = ErrorCodeDefine.DbNotData;
-                rm.Message = ErrorCodeDefine.Description[ErrorCodeDefine.DbNotData];
-            }
-            else
-            {
-                rm.Data = new { TitleImage = o.TitleImage, Content = o.Content };
-            }
             return rm;
         }
 

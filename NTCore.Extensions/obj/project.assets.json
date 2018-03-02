@@ -8987,6 +8987,9 @@
   },
   "project": {
     "version": "1.0.0",
+    "restoreSettings": {
+      "hideWarningsAndErrors": true
+    },
     "restore": {
       "projectUniqueName": "E:\\NTCore\\NTCore.Extensions\\NTCore.Extensions.csproj",
       "projectName": "NTCore.Extensions",
@@ -9011,11 +9014,11 @@
       "frameworks": {
         "netcoreapp2.0": {
           "projectReferences": {
-            "E:\\NTCore\\NTCore.BizLogic\\NTCore.BizLogic.csproj": {
-              "projectPath": "E:\\NTCore\\NTCore.BizLogic\\NTCore.BizLogic.csproj"
-            },
             "E:\\NTCore\\NTCore.Utility\\NTCore.Utility.csproj": {
               "projectPath": "E:\\NTCore\\NTCore.Utility\\NTCore.Utility.csproj"
+            },
+            "E:\\NTCore\\NTCore.BizLogic\\NTCore.BizLogic.csproj": {
+              "projectPath": "E:\\NTCore\\NTCore.BizLogic\\NTCore.BizLogic.csproj"
             }
           }
         }
