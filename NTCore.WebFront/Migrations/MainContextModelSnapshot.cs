@@ -3,8 +3,7 @@ using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
 using Microsoft.EntityFrameworkCore.Migrations;
-using Microsoft.EntityFrameworkCore.Storage;
-using Microsoft.EntityFrameworkCore.Storage.Internal;
+using MySql.Data.EntityFrameworkCore.Storage.Internal;
 using NTCore.DataAccess;
 using NTCore.DataModel;
 using System;
@@ -18,8 +17,209 @@ namespace NTCore.WebFront.Migrations
         {
 #pragma warning disable 612, 618
             modelBuilder
-                .HasAnnotation("ProductVersion", "2.0.0-rtm-26452")
-                .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
+                .HasAnnotation("ProductVersion", "2.0.1-rtm-125");
+
+            modelBuilder.Entity("NTCore.DataModel.ActionRecordInfo", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnName("id");
+
+                    b.Property<DateTime>("CreateTime")
+                        .HasColumnName("create_time");
+
+                    b.Property<int>("CreatorId")
+                        .HasColumnName("creator_id");
+
+                    b.Property<int>("DataSort")
+                        .HasColumnName("data_sort");
+
+                    b.Property<int>("DataState")
+                        .HasColumnName("data_state");
+
+                    b.Property<int>("DataType")
+                        .HasColumnName("data_type");
+
+                    b.Property<int>("SiteId")
+                        .HasColumnName("site_id");
+
+                    b.Property<string>("Text")
+                        .IsRequired()
+                        .HasColumnName("content_text")
+                        .HasColumnType("nvarchar(2000)")
+                        .HasMaxLength(2000);
+
+                    b.Property<int>("TypeId")
+                        .HasColumnName("typeid");
+
+                    b.Property<DateTime>("UpdateTime")
+                        .HasColumnName("update_time");
+
+                    b.Property<int>("UpdaterId")
+                        .HasColumnName("updater_id");
+
+                    b.HasKey("Id");
+
+                    b.ToTable("action_record");
+                });
+
+            modelBuilder.Entity("NTCore.DataModel.ArticleInfo", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnName("id");
+
+                    b.Property<bool>("AllowComment")
+                        .HasColumnName("allow_comment");
+
+                    b.Property<int>("BaseClick")
+                        .HasColumnName("base_click");
+
+                    b.Property<int>("CategoryId")
+                        .HasColumnName("category_id");
+
+                    b.Property<int>("ChannelId")
+                        .HasColumnName("channel_id");
+
+                    b.Property<int>("ClickCount")
+                        .HasColumnName("click_count");
+
+                    b.Property<string>("Content")
+                        .IsRequired()
+                        .HasColumnName("text_content");
+
+                    b.Property<DateTime>("CreateTime")
+                        .HasColumnName("create_time");
+
+                    b.Property<int>("CreatorId")
+                        .HasColumnName("creator_id");
+
+                    b.Property<int>("DataSort")
+                        .HasColumnName("data_sort");
+
+                    b.Property<int>("DataState")
+                        .HasColumnName("data_state");
+
+                    b.Property<bool>("IsHot")
+                        .HasColumnName("is_hot");
+
+                    b.Property<bool>("IsSlide")
+                        .HasColumnName("is_slide");
+
+                    b.Property<bool>("IsSystem")
+                        .HasColumnName("is_system");
+
+                    b.Property<bool>("IsTop")
+                        .HasColumnName("is_top");
+
+                    b.Property<string>("LinkUrl")
+                        .IsRequired()
+                        .HasColumnName("link_url")
+                        .HasColumnType("varchar(255)")
+                        .HasMaxLength(255);
+
+                    b.Property<int>("PublishStatus")
+                        .HasColumnName("publish_status")
+                        .HasColumnType("tinyint");
+
+                    b.Property<string>("SEODescription")
+                        .IsRequired()
+                        .HasColumnName("seo_description")
+                        .HasMaxLength(255);
+
+                    b.Property<string>("SEOKeywords")
+                        .IsRequired()
+                        .HasColumnName("seo_keywords")
+                        .HasMaxLength(255);
+
+                    b.Property<string>("SEOTitle")
+                        .IsRequired()
+                        .HasColumnName("seo_title")
+                        .HasMaxLength(255);
+
+                    b.Property<int>("SiteId")
+                        .HasColumnName("site_id");
+
+                    b.Property<string>("Summary")
+                        .IsRequired()
+                        .HasColumnName("summary")
+                        .HasMaxLength(4000);
+
+                    b.Property<string>("Title")
+                        .IsRequired()
+                        .HasColumnName("title")
+                        .HasMaxLength(255);
+
+                    b.Property<string>("TitleColor")
+                        .IsRequired()
+                        .HasColumnName("title_color")
+                        .HasColumnType("varchar(10)")
+                        .HasMaxLength(10);
+
+                    b.Property<string>("TitleImage")
+                        .IsRequired()
+                        .HasColumnName("title_image")
+                        .HasColumnType("varchar(255)")
+                        .HasMaxLength(255);
+
+                    b.Property<DateTime>("UpdateTime")
+                        .HasColumnName("update_time");
+
+                    b.Property<int>("UpdaterId")
+                        .HasColumnName("updater_id");
+
+                    b.HasKey("Id");
+
+                    b.ToTable("article");
+                });
+
+            modelBuilder.Entity("NTCore.DataModel.SiteInfo", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnName("id");
+
+                    b.Property<DateTime>("CreateTime")
+                        .HasColumnName("create_time");
+
+                    b.Property<int>("CreatorId")
+                        .HasColumnName("creator_id");
+
+                    b.Property<int>("DataSort")
+                        .HasColumnName("data_sort");
+
+                    b.Property<int>("DataState")
+                        .HasColumnName("data_state");
+
+                    b.Property<DateTime>("ExpireTime")
+                        .HasColumnName("expire_time");
+
+                    b.Property<string>("SiteName")
+                        .IsRequired()
+                        .HasColumnName("site_name")
+                        .HasColumnType("nvarchar(255)")
+                        .HasMaxLength(255);
+
+                    b.Property<int>("SiteState")
+                        .HasColumnName("site_state")
+                        .HasColumnType("tinyint");
+
+                    b.Property<string>("SiteUrl")
+                        .IsRequired()
+                        .HasColumnName("site_url")
+                        .HasColumnType("varchar(255)")
+                        .HasMaxLength(255);
+
+                    b.Property<DateTime>("UpdateTime")
+                        .HasColumnName("update_time");
+
+                    b.Property<int>("UpdaterId")
+                        .HasColumnName("updater_id");
+
+                    b.HasKey("Id");
+
+                    b.ToTable("site");
+                });
 
             modelBuilder.Entity("NTCore.DataModel.UserInfo", b =>
                 {
@@ -30,11 +230,11 @@ namespace NTCore.WebFront.Migrations
                     b.Property<string>("Avatar")
                         .IsRequired()
                         .HasColumnName("avatar")
+                        .HasColumnType("varchar(255)")
                         .HasMaxLength(255);
 
                     b.Property<bool>("Confirmed")
-                        .HasColumnName("confirmed")
-                        .HasMaxLength(50);
+                        .HasColumnName("confirmed");
 
                     b.Property<DateTime>("CreateTime")
                         .HasColumnName("create_time");
@@ -42,20 +242,22 @@ namespace NTCore.WebFront.Migrations
                     b.Property<int>("CreatorId")
                         .HasColumnName("creator_id");
 
+                    b.Property<int>("DataSort")
+                        .HasColumnName("data_sort");
+
                     b.Property<int>("DataState")
                         .HasColumnName("data_state");
 
                     b.Property<string>("Email")
                         .IsRequired()
                         .HasColumnName("email")
-                        .HasMaxLength(50);
-
-                    b.Property<int>("HotelId")
-                        .HasColumnName("hotel_id");
+                        .HasColumnType("varchar(100)")
+                        .HasMaxLength(100);
 
                     b.Property<string>("MobileNumber")
                         .IsRequired()
                         .HasColumnName("mobile_number")
+                        .HasColumnType("varchar(50)")
                         .HasMaxLength(50);
 
                     b.Property<string>("Nickname")
@@ -66,7 +268,11 @@ namespace NTCore.WebFront.Migrations
                     b.Property<string>("Password")
                         .IsRequired()
                         .HasColumnName("password")
+                        .HasColumnType("varchar(50)")
                         .HasMaxLength(50);
+
+                    b.Property<int>("SiteId")
+                        .HasColumnName("site_id");
 
                     b.Property<DateTime>("UpdateTime")
                         .HasColumnName("update_time");
@@ -77,7 +283,7 @@ namespace NTCore.WebFront.Migrations
                     b.Property<string>("Username")
                         .IsRequired()
                         .HasColumnName("username")
-                        .HasColumnType("varchar(32)")
+                        .HasColumnType("varchar(50)")
                         .HasMaxLength(50);
 
                     b.HasKey("Id");

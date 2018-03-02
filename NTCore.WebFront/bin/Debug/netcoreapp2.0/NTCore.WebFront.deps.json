@@ -24,9 +24,11 @@
       "NTCore.WebFront/1.0.0": {
         "dependencies": {
           "Microsoft.AspNetCore.All": "2.0.5",
+          "Microsoft.Extensions.Caching.Memory": "2.0.0",
           "Microsoft.NETCore.App": "2.0.0",
           "MySql.Data": "8.0.10-rc",
           "MySql.Data.EntityFrameworkCore": "8.0.10-rc",
+          "NTCore.BizLogic": "1.0.0",
           "NTCore.DataAccess": "1.0.0",
           "NTCore.DataModel": "1.0.0",
           "NTCore.Extensions": "1.0.0",
@@ -4105,6 +4107,17 @@
           "lib/netstandard1.3/Microsoft.WindowsAzure.Storage.dll": {}
         }
       },
+      "NTCore.BizLogic/1.0.0": {
+        "dependencies": {
+          "NTCore.DataAccess": "1.0.0"
+        },
+        "runtime": {
+          "NTCore.BizLogic.dll": {}
+        },
+        "compile": {
+          "NTCore.BizLogic.dll": {}
+        }
+      },
       "NTCore.DataAccess/1.0.0": {
         "dependencies": {
           "Microsoft.EntityFrameworkCore": "2.0.1",
@@ -4130,6 +4143,7 @@
           "Microsoft.AspNetCore.Mvc": "2.0.2",
           "Microsoft.Extensions.Configuration": "2.0.0",
           "Microsoft.Extensions.Logging": "2.0.0",
+          "NTCore.BizLogic": "1.0.0",
           "NTCore.Utility": "1.0.0",
           "log4net": "2.0.8"
         },
@@ -4152,6 +4166,9 @@
         }
       },
       "NTCore.Utility/1.0.0": {
+        "dependencies": {
+          "Microsoft.Extensions.Caching.Memory": "2.0.0"
+        },
         "runtime": {
           "NTCore.Utility.dll": {}
         },
@@ -6442,6 +6459,11 @@
       "sha512": "sha512-W6ZZ0/o7+3Qb77mRAQyLjPudHG3OMeeQ4p9yY13PUdJArmRCx2cLMm5F4tpIjJXxzHC0ew0oK7DMDGILMdfCnw==",
       "path": "windowsazure.storage/8.1.4",
       "hashPath": "windowsazure.storage.8.1.4.nupkg.sha512"
+    },
+    "NTCore.BizLogic/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
     },
     "NTCore.DataAccess/1.0.0": {
       "type": "project",

@@ -11,6 +11,7 @@ using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.ModelBinding.Metadata;
 using Microsoft.AspNetCore.Mvc.ModelBinding.Validation;
 using Microsoft.Extensions.Logging;
+using NTCore.BizLogic;
 using NTCore.DataAccess;
 using NTCore.Extensions.MvcFilter;
 using NTCore.RedisAccess;
@@ -26,6 +27,7 @@ namespace NTCore.WebFront.Controllers
 
         public ValuesController(ILogger<ValuesController> logger, MainContext dbContext)
         {
+            
             this.logger = logger;
             this.dbContext = dbContext;
         }
@@ -63,8 +65,20 @@ namespace NTCore.WebFront.Controllers
 
         // POST api/values
         [HttpPost]
-        public void Post([FromBody]string value)
+        public ReturnValue<object> Post([FromBody]string value)
         {
+            var o = this.dbContext.Article.FirstOrDefault(x => x.ChannelId == int.Parse(value));
+            var rm = new ReturnValue<object>(null);
+            if (o == null)
+            {
+                rm.ErrorCode = ErrorCodeDefine.DbNotData;
+                rm.Message = ErrorCodeDefine.Description[ErrorCodeDefine.DbNotData];
+            }
+            else
+            {
+                rm.Data = new { TitleImage = o.TitleImage, Content = o.Content };
+            }
+            return rm;
         }
 
         // PUT api/values/5

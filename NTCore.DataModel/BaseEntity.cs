@@ -24,7 +24,7 @@ namespace NTCore.DataModel
         /// </summary>
         //[DataMember(Name = "create_time", EmitDefaultValue = true)]
         [Required, DefaultValue(DataEnum.DbDefaultDatetime), Column("create_time")]
-        public DateTime CreateTime { get; set; }
+        public DateTime CreateTime { get; set; } = DateTime.Now;
 
         /// <summary>
         /// 更新时间
@@ -32,7 +32,7 @@ namespace NTCore.DataModel
         //[DataMember(Name = "update_time")]
         [Required, DefaultValue(DataEnum.DbDefaultDatetime), Column("update_time")]
 
-        public DateTime UpdateTime { get; set; }
+        public DateTime UpdateTime { get; set; } = DataEnum.DbNullDatetime;
 
         [Required, DefaultValue(0), Column("creator_id")]
         public int CreatorId { get; set; }
@@ -42,11 +42,17 @@ namespace NTCore.DataModel
         public int UpdaterId { get; set; }
 
         /// <summary>
+        /// 排序
+        /// </summary>
+        [Required, DefaultValue(0), Column("data_sort")]
+        public int DataSort { get; set; }
+
+        /// <summary>
         /// 状态
         /// </summary>
         //[DataMember(Name = "data_state", EmitDefaultValue = true)]
         [Required, DefaultValue(0), Column("data_state")]
-        public DataStateType DataState { get; set; }
+        public DataStateType DataState { get; set; } = DataStateType.Normal;
     }
 
     public partial class SiteEntity : BaseEntity

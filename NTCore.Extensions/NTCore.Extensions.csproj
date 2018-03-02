@@ -12,6 +12,7 @@
   </ItemGroup>
 
   <ItemGroup>
+    <ProjectReference Include="..\NTCore.BizLogic\NTCore.BizLogic.csproj" />
     <ProjectReference Include="..\NTCore.Utility\NTCore.Utility.csproj" />
   </ItemGroup>
 

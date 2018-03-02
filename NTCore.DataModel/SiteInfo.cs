@@ -14,24 +14,24 @@ namespace NTCore.DataModel
         /// 站点名称
         /// </summary>
         [Required(AllowEmptyStrings = true), DefaultValue(""), Column("site_name", TypeName = "nvarchar(255)"), MaxLength(255)]
-        public string SiteName { get; set; }
+        public string SiteName { get; set; } = string.Empty;
 
         /// <summary>
         /// 站点地址
         /// </summary>
         [Required, DefaultValue(""), Column("site_url", TypeName = "varchar(255)"), MaxLength(255)]
-        public string SiteUrl { get; set; }
+        public string SiteUrl { get; set; } = string.Empty;
 
         /// <summary>
         /// 站点状态
         /// </summary>
         [Required, DefaultValue(1), Column("site_state", TypeName = "tinyint")]
-        public DataEnum.SiteStateType SiteState { get; set; }
+        public DataEnum.SiteStateType SiteState { get; set; } = DataEnum.SiteStateType.Normal;
 
         /// <summary>
         /// 过期时间
         /// </summary>
         [Required, DefaultValue(DataEnum.DbDefaultDatetime), Column("expire_time")]
-        public DateTime ExpireTime { get; set; }
+        public DateTime ExpireTime { get; set; } = DateTime.Now.AddYears(1);
     }
 }

@@ -91,6 +91,63 @@ namespace NTCore.DataModel
             [Description("锁定")]
             Lock = 2,
         }
+
+        public enum ActionRecordType
+        {
+            [Description("请求记录")]
+            Request = 10,
+
+            [Description("修改数据")]
+            Modify = 20,
+
+            [Description("删除数据")]
+            Delete = 30,
+        }
+
+
+        /// <summary>
+        /// 附件关联数据的类型
+        /// </summary>
+        public enum AttachmentRelationType
+        {
+            [Description("文章")]
+            Article = 10,
+
+            [Description("分类")]
+            Category = 20,
+
+            [Description("栏目")]
+            Channel = 30,
+
+        }
+
+        public enum VerificationCodeSendStatus
+        {
+            [Description("已发送")]
+            Send = 1,
+
+            [Description("已成功")]
+            Success = 2,
+        }
+
+        public enum PositionRelationType
+        {
+            [Description("文章")]
+            Article = 1,
+        }
+
+
+        public enum PositionShowType
+        {
+            [Description("图片")]
+            Picture = 1,
+
+            [Description("文字")]
+            Text = 2,
+
+            [Description("网页")]
+            Page = 1,
+        }
         #endregion
 
     }

@@ -27,6 +27,6 @@ namespace NTCore.DataModel
         /// 
         /// </summary>
         [Required(AllowEmptyStrings = true), DefaultValue(""), Column("email", TypeName = "varchar(100)"), MaxLength(100)]
-        public string ViewCode { get; set; }
+        public string ViewCode { get; set; } = string.Empty;
     }
 }

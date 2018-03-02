@@ -31,3 +31,9 @@ E:\NTCore\NTCore.Extensions\obj\Debug\netcoreapp2.0\NTCore.Extensions.AssemblyIn
 E:\NTCore\NTCore.Extensions\obj\Debug\netcoreapp2.0\NTCore.Extensions.AssemblyInfo.cs
 E:\NTCore\NTCore.Extensions\obj\Debug\netcoreapp2.0\NTCore.Extensions.dll
 E:\NTCore\NTCore.Extensions\obj\Debug\netcoreapp2.0\NTCore.Extensions.pdb
+E:\NTCore\NTCore.Extensions\bin\Debug\netcoreapp2.0\NTCore.BizLogic.dll
+E:\NTCore\NTCore.Extensions\bin\Debug\netcoreapp2.0\NTCore.DataAccess.dll
+E:\NTCore\NTCore.Extensions\bin\Debug\netcoreapp2.0\NTCore.DataModel.dll
+E:\NTCore\NTCore.Extensions\bin\Debug\netcoreapp2.0\NTCore.BizLogic.pdb
+E:\NTCore\NTCore.Extensions\bin\Debug\netcoreapp2.0\NTCore.DataAccess.pdb
+E:\NTCore\NTCore.Extensions\bin\Debug\netcoreapp2.0\NTCore.DataModel.pdb

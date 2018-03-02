@@ -12,7 +12,7 @@ namespace NTCore.DataModel
     {
 
         [Required, DefaultValue(""), Column("role_name"), MaxLength(50)]
-        public string RoleName { get; set; }
+        public string RoleName { get; set; } = string.Empty;
 
     }
 }

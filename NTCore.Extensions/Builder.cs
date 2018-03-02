@@ -1,5 +1,7 @@
 ﻿using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
+using Microsoft.Extensions.DependencyInjection.Extensions;
+using NTCore.BizLogic.DbAccess;
 using System;
 
 namespace NTCore.Extensions
@@ -8,7 +10,7 @@ namespace NTCore.Extensions
     {
         public static void UseWSBuilder(this IServiceCollection services, IConfiguration configuration)
         {
-            //services.TryAddTransient<ActionRecordRepository>();
+            services.TryAddTransient<ActionRecordRepository>();
             //services.TryAddTransient<HotelRoomRepository>();
 
 

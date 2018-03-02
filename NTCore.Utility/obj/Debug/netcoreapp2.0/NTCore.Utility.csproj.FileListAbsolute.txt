@@ -23,4 +23,3 @@ E:\NTCore\NTCore.Utility\obj\Debug\netcoreapp2.0\NTCore.Utility.AssemblyInfoInpu
 E:\NTCore\NTCore.Utility\obj\Debug\netcoreapp2.0\NTCore.Utility.AssemblyInfo.cs
 E:\NTCore\NTCore.Utility\obj\Debug\netcoreapp2.0\NTCore.Utility.dll
 E:\NTCore\NTCore.Utility\obj\Debug\netcoreapp2.0\NTCore.Utility.pdb
-E:\NTCore\NTCore.Utility\obj\Debug\netcoreapp2.0\NTCore.Utility.csprojResolveAssemblyReference.cache

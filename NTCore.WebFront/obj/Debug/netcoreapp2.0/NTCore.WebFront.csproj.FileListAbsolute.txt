@@ -59,3 +59,5 @@ E:\NTCore\NTCore.WebFront\obj\Debug\netcoreapp2.0\NTCore.WebFront.AssemblyInfoIn
 E:\NTCore\NTCore.WebFront\obj\Debug\netcoreapp2.0\NTCore.WebFront.AssemblyInfo.cs
 E:\NTCore\NTCore.WebFront\obj\Debug\netcoreapp2.0\NTCore.WebFront.dll
 E:\NTCore\NTCore.WebFront\obj\Debug\netcoreapp2.0\NTCore.WebFront.pdb
+E:\NTCore\NTCore.WebFront\bin\Debug\netcoreapp2.0\NTCore.BizLogic.dll
+E:\NTCore\NTCore.WebFront\bin\Debug\netcoreapp2.0\NTCore.BizLogic.pdb
